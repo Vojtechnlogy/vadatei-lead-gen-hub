@@ -1,12 +1,46 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Process from "@/components/Process";
+import Services from "@/components/Services";
+import CaseStudies from "@/components/CaseStudies";
+import Testimonials from "@/components/Testimonials";
+import Partners from "@/components/Partners";
+import Footer from "@/components/Footer";
+import BookingModal from "@/components/BookingModal";
 
 const Index = () => {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
+  const handleBookingClick = () => {
+    setIsBookingModalOpen(true);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* Header with fixed positioning */}
+      <Header onBookingClick={handleBookingClick} />
+      
+      {/* Main content with top padding for fixed header */}
+      <main className="pt-16">
+        <Hero onBookingClick={handleBookingClick} />
+        <About />
+        <Process />
+        <Services />
+        <CaseStudies />
+        <Testimonials />
+        <Partners />
+      </main>
+      
+      {/* Footer */}
+      <Footer onBookingClick={handleBookingClick} />
+      
+      {/* Booking Modal */}
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={() => setIsBookingModalOpen(false)} 
+      />
     </div>
   );
 };
