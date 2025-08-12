@@ -4,9 +4,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Process from "@/components/Process";
 import Services from "@/components/Services";
-import CaseStudies from "@/components/CaseStudies";
-import Testimonials from "@/components/Testimonials";
-import Partners from "@/components/Partners";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
 
@@ -28,9 +25,6 @@ const Index = () => {
         <About />
         <Process />
         <Services />
-        <CaseStudies />
-        <Testimonials />
-        <Partners />
       </main>
       
       {/* Footer */}

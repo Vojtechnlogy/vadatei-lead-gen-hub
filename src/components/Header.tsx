@@ -70,12 +70,6 @@ const Header = ({ onBookingClick }: HeaderProps) => {
               Process
             </button>
             
-            <button
-              onClick={() => scrollToSection("testimonials")}
-              className="text-foreground hover:text-primary transition-colors font-body"
-            >
-              Testimonials
-            </button>
 
             <Button 
               variant="cta" 
@@ -123,12 +117,6 @@ const Header = ({ onBookingClick }: HeaderProps) => {
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
               >
                 Process
-              </button>
-              <button
-                onClick={() => scrollToSection("testimonials")}
-                className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
-              >
-                Testimonials
               </button>
               <div className="px-3 py-2">
                 <Button 

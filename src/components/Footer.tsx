@@ -89,30 +89,6 @@ const Footer = ({ onBookingClick }: FooterProps) => {
                   Our Process
                 </button>
               </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection("case-studies")}
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Case Studies
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection("testimonials")}
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Testimonials
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection("partners")}
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  Partners
-                </button>
-              </li>
             </ul>
           </div>
 
