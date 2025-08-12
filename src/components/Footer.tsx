@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { 
   Linkedin, 
-  Twitter, 
   Mail, 
   Phone, 
   MapPin,
   ArrowRight
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface FooterProps {
   onBookingClick: () => void;
@@ -189,12 +189,6 @@ const Footer = ({ onBookingClick }: FooterProps) => {
               </button>
               <button 
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </button>
-              <button 
-                className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
@@ -203,12 +197,18 @@ const Footer = ({ onBookingClick }: FooterProps) => {
             
             {/* Legal Links */}
             <div className="flex gap-6 text-sm font-body">
-              <button className="text-white/60 hover:text-white transition-colors">
+              <Link 
+                to="/privacy-policy" 
+                className="text-white/60 hover:text-white transition-colors"
+              >
                 Privacy Policy
-              </button>
-              <button className="text-white/60 hover:text-white transition-colors">
+              </Link>
+              <Link 
+                to="/terms-of-service" 
+                className="text-white/60 hover:text-white transition-colors"
+              >
                 Terms of Service
-              </button>
+              </Link>
             </div>
           </div>
         </div>
