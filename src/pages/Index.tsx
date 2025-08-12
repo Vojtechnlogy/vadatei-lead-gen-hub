@@ -24,7 +24,7 @@ const Index = () => {
         <Hero onBookingClick={handleBookingClick} />
         <About />
         <Process />
-        <Services />
+        <Services onBookingClick={handleBookingClick} />
       </main>
       
       {/* Footer */}

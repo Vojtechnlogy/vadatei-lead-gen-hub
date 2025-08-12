@@ -1,12 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { Menu, X } from "lucide-react";
 
 interface HeaderProps {
   onBookingClick: () => void;
@@ -43,25 +37,12 @@ const Header = ({ onBookingClick }: HeaderProps) => {
               About
             </button>
             
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-foreground hover:text-primary transition-colors font-body">
-                Services <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background border border-border shadow-lg">
-                <DropdownMenuItem onClick={() => scrollToSection("services")}>
-                  All Services
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("services")}>
-                  IT Health Check
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("services")}>
-                  Digital Transformation
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => scrollToSection("services")}>
-                  CIO-as-a-Service
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-foreground hover:text-primary transition-colors font-body"
+            >
+              Services
+            </button>
 
             <button
               onClick={() => scrollToSection("process")}

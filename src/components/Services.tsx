@@ -12,7 +12,11 @@ import {
 } from "lucide-react";
 import ServiceModal from "./ServiceModal";
 
-const Services = () => {
+interface ServicesProps {
+  onBookingClick: () => void;
+}
+
+const Services = ({ onBookingClick }: ServicesProps) => {
   const [selectedService, setSelectedService] = useState<string | null>(null);
 
   const services = [
@@ -133,12 +137,10 @@ const Services = () => {
               variant="corporate-outline" 
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary"
-              onClick={() => {
-                const element = document.getElementById("contact");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
+              onClick={onBookingClick}
             >
-              Start Your Transformation
+              Book My Discovery Call
+              <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
