@@ -43,12 +43,9 @@ const Footer = ({ onBookingClick }: FooterProps) => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-white/60" />
-                <span className="font-body">info@vadatei.com</span>
+                <span className="font-body">marek@tolasz.com</span>
               </div>
-              <div className="flex items-center gap-3">
-                <MapPin className="h-5 w-5 text-white/60" />
-                <span className="font-body">123 Business Plaza, Suite 500<br />New York, NY 10001</span>
-              </div>
+
             </div>
 
             <Button 
