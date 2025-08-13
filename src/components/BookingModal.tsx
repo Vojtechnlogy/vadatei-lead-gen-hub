@@ -102,26 +102,17 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
               Choose Your Preferred Time
             </h3>
             
-            {/* Simulated Google Calendar Embed */}
-            <div className="bg-white rounded-lg border border-border min-h-[400px] flex items-center justify-center">
-              <div className="text-center space-y-4">
-                <Calendar className="h-16 w-16 text-primary mx-auto" />
-                <div>
-                  <h4 className="text-lg font-heading font-semibold text-primary mb-2">
-                    Calendar Integration
-                  </h4>
-                  <p className="text-muted-foreground font-body text-sm max-w-sm">
-                    In a live environment, this would be a Google Calendar booking widget where clients can select their preferred time slot.
-                  </p>
-                </div>
-                <div className="bg-corporate-light p-4 rounded-lg">
-                  <p className="text-sm text-primary font-body">
-                    <strong>Contact us directly:</strong><br />
-                    📧 info@vadatei.com<br />
-                    📞 (555) 123-4567
-                  </p>
-                </div>
-              </div>
+            {/* Google Calendar Embed */}
+            <div className="bg-white rounded-lg border border-border overflow-hidden">
+              <iframe 
+                src="https://calendar.google.com/calendar/embed?src=vojtech.tolasznl%40gmail.com&ctz=Europe%2FAmsterdam" 
+                style={{ border: 0 }} 
+                width="100%" 
+                height="600" 
+                frameBorder="0" 
+                scrolling="no"
+                className="w-full"
+              />
             </div>
 
             <div className="mt-6 text-center">
