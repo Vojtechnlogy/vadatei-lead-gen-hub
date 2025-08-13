@@ -1,28 +1,31 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Users, Lightbulb, Target } from "lucide-react";
+import { BriefcaseBusiness , ChartSpline,Zap, Handshake} from "lucide-react";
 import teamImage from "@/assets/team-collaboration.jpg";
 
+// Bubbles at the bottom of the about section that display core values
+// Each bubble contains an icon, title, and description
+// The bubbles are styled to be visually appealing and consistent with the corporate theme
 const About = () => {
   const values = [
     {
-      icon: CheckCircle,
-      title: "Proven Expertise",
-      description: "Three decades of technology leadership across industries"
+      icon: BriefcaseBusiness, // chanage this to a briefcase or another relevant icon
+      title: "30+ Years Experience",
+      description: "Decades of proven results leading IT teams and transformation projects accross multiple industries"
     },
     {
-      icon: Users,
-      title: "Strategic Partnership",
-      description: "We become an extension of your team, not just a vendor"
+      icon: ChartSpline, // change this to a rocket ship a graph going up or another relevant icon
+      title: "Measurable Business Impact",
+      description: "Solutions designed to cut costs, imporve efficiency and drive sustainable growth"
     },
     {
-      icon: Lightbulb,
-      title: "Innovation Focus",
-      description: "Cutting-edge solutions tailored to your business needs"
+      icon: Zap,// change this to a lightning bolt or another relevant icon
+      title: "Fast Insightful Diagnosis",
+      description: "We pinpoint the real issues quickly, so every improvment is targeted and effective"
     },
     {
-      icon: Target,
-      title: "Results Driven",
-      description: "Measurable outcomes that directly impact your bottom line"
+      icon: Handshake, // change this to hads shaking or another relevant icon
+      title: "Low Risk first Step",
+      description: "Start with a focused discovery phase before commiting to larger projects"
     }
   ];
 
@@ -34,7 +37,7 @@ const About = () => {
             About Vadatei
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-body leading-relaxed">
-            We don't just provide IT solutions—we forge strategic partnerships that drive transformation and growth.
+            Experience you can trust results you can measure.
           </p>
         </div>
 
@@ -44,36 +47,12 @@ const About = () => {
               Your Strategic Technology Partner
             </h3>
             <p className="text-lg text-foreground mb-6 font-body leading-relaxed">
-              For over 30 years, Vadatei has been at the forefront of enterprise technology consulting. 
-              We understand that technology is not just about systems and software—it's about enabling 
-              your business to reach its full potential.
+              With over 30 years in IT leadership and transformation, Marek Tolasz has helped organizations streamline operations, cut costs, and unlock growth.
             </p>
             <p className="text-lg text-foreground mb-8 font-body leading-relaxed">
-              Our approach combines deep technical expertise with strategic business acumen. We don't 
-              just solve today's problems; we architect solutions that position your organization for 
-              sustained success in an ever-evolving digital landscape.
+              Vadatei was created to bring that expertise to businesses that want IT to be a strategic advantage, 
+              not just a support function. We identify the real challenges, design practical solutions, and help you implement them for lasting results.
             </p>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <CheckCircle className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-primary font-heading">30+ Years</div>
-                  <div className="text-sm text-muted-foreground font-body">Industry Experience</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Users className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-primary font-heading">Fortune 500</div>
-                  <div className="text-sm text-muted-foreground font-body">Trusted by Leaders</div>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="relative">
@@ -82,10 +61,6 @@ const About = () => {
               alt="Vadatei team collaboration" 
               className="rounded-lg shadow-corporate w-full h-96 object-cover"
             />
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-card">
-              <div className="text-2xl font-heading font-bold text-primary">500+</div>
-              <div className="text-sm text-muted-foreground font-body">Successful Projects</div>
-            </div>
           </div>
         </div>
 
