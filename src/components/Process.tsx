@@ -1,31 +1,35 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Search, BarChart3, Map, Handshake } from "lucide-react";
+import { Search, BarChart3, Map, Rocket} from "lucide-react";
 
 const Process = () => {
   const steps = [
     {
       icon: Search,
       number: "01",
-      title: "Discovery",
-      description: "We deep-dive into your current technology landscape, business objectives, and challenges to understand your unique needs."
+      title: "Audit & Discovery",
+      description: "We conduct in depth interviews and assessments to identify your unique priorities, challenges, and opportunities." +
+      "This first step establishes a clear baseline for the rest of our collaboration"
     },
     {
       icon: BarChart3,
       number: "02", 
-      title: "Analysis",
-      description: "Our experts analyze your systems, processes, and goals to identify opportunities for optimization and growth."
+      title: "Building a Strategy",
+      description: "We immerse ourselves in your business to uncover actionable steps that drive your goals forward." +
+        "This stage is about gathering insights that will guide every decision moving forward"
     },
     {
       icon: Map,
       number: "03",
       title: "Roadmap",
-      description: "We create a comprehensive, actionable roadmap tailored to your business priorities and technical requirements."
+      description: "We create a comprehensive, actionable roadmap tailored to your business with implementable changes, projects, and workshops that help you succeed." +
+        "This roadmap serves as a guiding document, ensuring alignment and focus on your key objectives."
     },
     {
-      icon: Handshake,
+      icon: Rocket,
       number: "04",
-      title: "Partnership",
-      description: "We work alongside your team to implement solutions, providing ongoing support and strategic guidance."
+      title: "Deployment",
+      description: "We execute the plan alongside your team ensuring a rapid and efficient implementation. Leveraging organizational models create lasting and measurable results" +
+        "This step is the most critical, as it transforms our strategic vision into tangible outcomes. Furthermore we utilize existing frameworks to drive success."
     }
   ];
 

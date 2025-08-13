@@ -39,11 +39,11 @@ const Footer = ({ onBookingClick }: FooterProps) => {
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-white/60" />
-                <span className="font-body">(555) 123-4567</span>
+                <span className="font-body">+31 6 82 49 46 90 or +420 602 396 416</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-white/60" />
-                <span className="font-body">marek@tolasz.com</span>
+                <span className="font-body">marek.tolasz@gmail.com</span>
               </div>
 
             </div>
@@ -176,20 +176,24 @@ const Footer = ({ onBookingClick }: FooterProps) => {
           </div>
           
           <div className="flex items-center gap-6">
-            {/* Social Links */}
+            {/* Social Links */} 
             <div className="flex gap-4">
-              <button 
+              <a
+                href="https://linkedin.com/in/marek-tolasz/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
-              </button>
-              <button 
+              </a>
+              <a
+                href="mailto:marek.tolasz@gmail.com"
                 className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
-              </button>
+              </a>
             </div>
             
             {/* Legal Links */}

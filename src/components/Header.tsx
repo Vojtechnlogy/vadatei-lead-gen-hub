@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import vadateiLogo from "../assets/vadatei_logo_vector_sharp_clean.jpg"; // Add the correct extension if it's .png, .jpg, or .svg
 
 interface HeaderProps {
   onBookingClick: () => void;
@@ -22,7 +23,12 @@ const Header = ({ onBookingClick }: HeaderProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center">
+            <img
+              src={vadateiLogo}
+              alt="Vadatei Logo"
+              className="h-8 w-8 mr-3"
+            />
             <h1 className="text-2xl font-heading font-bold text-primary">
               Vadatei
             </h1>

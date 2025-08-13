@@ -19,7 +19,7 @@ const TermsOfService = () => {
             Back to Home
           </Button>
           <h1 className="text-4xl font-heading font-bold">Terms of Service</h1>
-          <p className="text-white/90 mt-2">Last updated: January 2025</p>
+          <p className="text-white/90 mt-2">Last updated: August 2025</p>
         </div>
       </header>
 
@@ -118,9 +118,8 @@ const TermsOfService = () => {
             <div className="bg-muted p-4 rounded-lg">
               <p className="text-foreground">
                 <strong>Vadatei</strong><br />
-                Email: legal@vadatei.com<br />
-                Phone: (555) 123-4567<br />
-                Address: 123 Business Plaza, Suite 500, New York, NY 10001
+                Email: marek.tolasz@gmail.com<br />
+                Phone: +31 6 82 49 46 90 or +420 602 396 416<br />
               </p>
             </div>
           </section>

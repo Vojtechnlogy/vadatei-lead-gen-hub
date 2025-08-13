@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { BriefcaseBusiness , ChartSpline,Zap, Handshake} from "lucide-react";
 import teamImage from "@/assets/team-collaboration.jpg";
+import marekTolasz from '../assets/marekTolasz.jpg';
 
 // Bubbles at the bottom of the about section that display core values
 // Each bubble contains an icon, title, and description
@@ -43,23 +44,23 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-3xl font-heading font-semibold text-primary mb-6">
+            <h3 className="text-[2.1rem] md:text-[3.3rem] font-heading font-semibold text-primary mb-7">
               Your Strategic Technology Partner
             </h3>
-            <p className="text-lg text-foreground mb-6 font-body leading-relaxed">
+            <p className="text-[1.21rem] text-foreground mb-7 font-body leading-relaxed">
               With over 30 years in IT leadership and transformation, Marek Tolasz has helped organizations streamline operations, cut costs, and unlock growth.
             </p>
-            <p className="text-lg text-foreground mb-8 font-body leading-relaxed">
+            <p className="text-[1.21rem] text-foreground mb-9 font-body leading-relaxed">
               Vadatei was created to bring that expertise to businesses that want IT to be a strategic advantage, 
               not just a support function. We identify the real challenges, design practical solutions, and help you implement them for lasting results.
             </p>
           </div>
 
           <div className="relative">
-            <img 
-              src={teamImage} 
-              alt="Vadatei team collaboration" 
-              className="rounded-lg shadow-corporate w-full h-96 object-cover"
+            <img
+              src={marekTolasz}
+              alt="Marek Tolasz"
+              className="rounded-lg shadow-corporate w-full h-[660px] object-cover" // 10% bigger than 600px
             />
           </div>
         </div>

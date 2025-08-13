@@ -96,28 +96,25 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
             </div>
           </div>
 
-          {/* Calendar Embed */}
-          <div className="bg-gradient-subtle p-6 rounded-lg">
+          {/* Calendar Booking Button */}
+          <div className="bg-gradient-subtle p-6 rounded-lg flex flex-col items-center justify-center">
             <h3 className="text-xl font-heading font-semibold text-primary mb-6 text-center">
               Choose Your Preferred Time
             </h3>
-            
-            {/* Google Calendar Embed */}
-            <div className="bg-white rounded-lg border border-border overflow-hidden">
-              <iframe 
-                src="https://calendar.google.com/calendar/embed?src=vojtech.tolasznl%40gmail.com&ctz=Europe%2FAmsterdam" 
-                style={{ border: 0 }} 
-                width="100%" 
-                height="600" 
-                frameBorder="0" 
-                scrolling="no"
-                className="w-full"
-              />
-            </div>
-
+            <p className="text-center text-muted-foreground mb-6">
+              Click the button below to select an available time slot and schedule your call instantly.
+            </p>
+            <a
+              href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2R-61xrnPdxo4iPyGj1izkHRM7J7FDe1ST16P2QYHEallprHTR5lBnBFBZ2Dhf4zZtUqYnZ2JD?gv=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-md hover:bg-primary-dark transition"
+            >
+              Book a Time Slot
+            </a>
             <div className="mt-6 text-center">
               <div className="text-sm text-muted-foreground font-body">
-                Available Monday - Friday, 9 AM - 6 PM EST
+                Available Monday - Friday, 8:00 - 16:00 CET
               </div>
             </div>
           </div>

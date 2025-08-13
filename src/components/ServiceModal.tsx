@@ -23,11 +23,11 @@ interface ServiceModalProps {
 
 const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
   const [formData, setFormData] = useState({
-    name: "",
+    fullName: "",
     email: "",
-    company: "",
+    companyName: "",
     phone: "",
-    message: ""
+    details: ""
   });
   const { toast } = useToast();
 
@@ -38,25 +38,54 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Simulate form submission
-    toast({
-      title: "Inquiry Submitted Successfully",
-      description: `Thank you for your interest in ${service.title}. We'll be in touch within 24 hours.`,
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      message: ""
-    });
-    
-    onClose();
+
+    // Prepare data in the required order
+    const submission = {
+      timeStamp: new Date().toISOString(),
+      service: service.title,
+      fullName: formData.fullName,
+      email: formData.email,
+      companyName: formData.companyName,
+      phone: formData.phone,
+      details: formData.details,
+    };
+
+    const encoded = Object.keys(submission)
+      .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(submission[k]))
+      .join('&');
+
+    try {
+      await fetch('https://script.google.com/macros/s/AKfycbzFxCIwgXEmP_ag-iJYTcm2RIK3H8kMEowWdLSIf5nIk2l2CnuO9Mw4aV5f5U47sgoNjA/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: encoded,
+      });
+
+      toast({
+        title: "Inquiry Submitted Successfully",
+        description: `Thank you for your interest in ${service.title}. We'll be in touch within 24 hours.`,
+      });
+
+      setFormData({
+        fullName: "",
+        email: "",
+        companyName: "",
+        phone: "",
+        details: ""
+      });
+
+      onClose();
+    } catch (error) {
+      toast({
+        title: "Submission Failed",
+        description: "There was an error submitting your inquiry. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -117,11 +146,11 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="name" className="font-body">Full Name *</Label>
+                  <Label htmlFor="fullName" className="font-body">Full Name *</Label>
                   <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="fullName"
+                    name="fullName"
+                    value={formData.fullName}
                     onChange={handleInputChange}
                     required
                     className="mt-1"
@@ -143,11 +172,11 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="company" className="font-body">Company</Label>
+                  <Label htmlFor="companyName" className="font-body">Company Name</Label>
                   <Input
-                    id="company"
-                    name="company"
-                    value={formData.company}
+                    id="companyName"
+                    name="companyName"
+                    value={formData.companyName}
                     onChange={handleInputChange}
                     className="mt-1"
                   />
@@ -166,13 +195,13 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
               </div>
 
               <div>
-                <Label htmlFor="message" className="font-body">
-                  Message (Interest in: {service.title})
+                <Label htmlFor="details" className="font-body">
+                  Details (Interest in: {service.title})
                 </Label>
                 <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
+                  id="details"
+                  name="details"
+                  value={formData.details}
                   onChange={handleInputChange}
                   rows={4}
                   className="mt-1"
@@ -189,11 +218,11 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
               <div className="flex items-center gap-4 text-sm text-muted-foreground font-body">
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  <span>info@vadatei.com</span>
+                  <span>marek.tolasz@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  <span>(555) 123-4567</span>
+                  <span> +31 6 82 49 46 90 or +420 602 396 416 </span>
                 </div>
               </div>
             </div>
