@@ -37,28 +37,28 @@ const Services = ({ onBookingClick }: ServicesProps) => {
       fullDescription: "Transform your business with our comprehensive Digital Transformation Roadmap service. We help you navigate the complex journey of modernizing your technology infrastructure, optimizing business processes, and implementing digital solutions that drive growth and efficiency. Our strategic approach ensures successful adoption and measurable business outcomes."
     },
     {
-      id: "cio-service",
+      id: "digital-advisory",
       icon: Users,
-      title: "CIO-as-a-Service",
-      description: "Executive-level technology leadership and strategic guidance without the overhead of a full-time Chief Information Officer.",
+      title: "Digital Advisory",
+      description: "Expert guidance on digital strategy and tools to help your business grow and work more efficiently.",
       features: ["Strategic Leadership", "Technology Planning", "Vendor Management", "Budget Optimization"],
-      fullDescription: "Access executive-level IT leadership with our CIO-as-a-Service offering. Our experienced technology executives provide strategic guidance, oversee your IT operations, and ensure technology investments align with business objectives. Perfect for organizations that need senior IT leadership without the cost of a full-time CIO."
+      fullDescription: "Navigate the digital landscape with confidence. We provide expert guidance on digital strategy, technology adoption, and online initiatives, helping your business leverage tools and trends to achieve measurable growth and efficiency."
     },
     {
-      id: "cloud-migration",
+      id: "compatibility-assessment",
       icon: Cloud,
-      title: "Cloud Migration & Strategy",
-      description: "Expert guidance for migrating to cloud platforms with minimal disruption and maximum efficiency gains.",
-      features: ["Migration Planning", "Cloud Architecture", "Cost Optimization", "Security Implementation"],
-      fullDescription: "Accelerate your cloud journey with our expert Cloud Migration & Strategy service. We provide end-to-end support for planning, executing, and optimizing your cloud migration. Our proven methodology minimizes downtime, reduces costs, and ensures your cloud infrastructure is secure, scalable, and aligned with your business needs."
+      title: "Team Compatibility Coaching and Mentoring",
+      description: "Improve team dynamics and individual growth. We assess strengths, address gaps, and provide coaching to boost collaboration, communication, and overall performance.",
+      features: ["Team Assessment", "Collaboration Strategies", "Communication Improvement", "Performance Metrics"],
+      fullDescription: "Unlock your team's potential with our Team Compatibility Coaching and Mentoring service. We conduct thorough evaluations of team dynamics, identify areas for improvement, and implement tailored strategies to enhance collaboration and communication. Our data-driven approach ensures measurable improvements in team performance and satisfaction."
     },
     {
-      id: "cybersecurity",
+      id: "organizational-assessment",
       icon: Lock,
-      title: "Cybersecurity Consulting",
-      description: "Protect your organization with comprehensive security assessments, compliance guidance, and incident response planning.",
-      features: ["Security Assessment", "Compliance Management", "Incident Response", "Risk Mitigation"],
-      fullDescription: "Strengthen your cybersecurity posture with our comprehensive Cybersecurity Consulting service. We assess your current security landscape, identify vulnerabilities, and implement robust protection strategies. Our services include security policy development, compliance management, and incident response planning to keep your organization secure."
+      title: "Organizational Assessment",
+      description: "Streamline your operations and improve efficiency. We evaluate organizational structure, workflow, and processes to identify opportunities for optimization, ensuring your team and resources are aligned for maximum impact.",
+      features: ["Workflow Analysis", "Process Optimization", "Change Management", "Performance Metrics"],
+      fullDescription: "Transform your organization with our Organizational Assessment service. We conduct comprehensive evaluations of your structure and processes, identifying areas for improvement and implementing strategies that enhance efficiency and effectiveness. Our data-driven approach ensures that your organization is well-positioned to achieve its goals."
     },
     {
       id: "performance-optimization",
