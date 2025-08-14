@@ -118,8 +118,9 @@ const TermsOfService = () => {
             <div className="bg-muted p-4 rounded-lg">
               <p className="text-foreground">
                 <strong>Vadatei</strong><br />
-                Email: marek.tolasz@gmail.com<br />
-                Phone: +31 6 82 49 46 90 or +420 602 396 416<br />
+                Email: email <br />
+                Phone: phone number <br /> 
+               
               </p>
             </div>
           </section>
@@ -130,3 +131,5 @@ const TermsOfService = () => {
 };
 
 export default TermsOfService;
+// marek.tolasz@gmail.com
+//31 6 82 49 46 90 or +420 602 396 416

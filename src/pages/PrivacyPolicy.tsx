@@ -117,8 +117,8 @@ const PrivacyPolicy = () => {
             <div className="bg-muted p-4 rounded-lg">
               <p className="text-foreground">
                 <strong>Vadatei</strong><br />
-                Email: marek.tolasz@gmail.com<br />
-                Phone: +31 6 82 49 46 90 or +420 602 396 416<br />
+                Email: blank for now<br />
+                Phone: blank for now<br />
               </p>
             </div>
           </section>
@@ -129,3 +129,6 @@ const PrivacyPolicy = () => {
 };
 
 export default PrivacyPolicy;
+
+// marek.tolasz@gmail.com
+//31 6 82 49 46 90 or +420 602 396 416

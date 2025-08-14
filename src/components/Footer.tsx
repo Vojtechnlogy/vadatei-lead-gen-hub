@@ -39,11 +39,11 @@ const Footer = ({ onBookingClick }: FooterProps) => {
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-white/60" />
-                <span className="font-body">+31 6 82 49 46 90 or +420 602 396 416</span>
+                <span className="font-body">Blank for now</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-white/60" />
-                <span className="font-body">marek.tolasz@gmail.com</span>
+                <span className="font-body">blank for now </span>
               </div>
 
             </div>
@@ -219,3 +219,6 @@ const Footer = ({ onBookingClick }: FooterProps) => {
 };
 
 export default Footer;
+
+// marek.tolasz@gmail.com
+//31 6 82 49 46 90 or +420 602 396 416
