@@ -204,12 +204,6 @@ const Footer = ({ onBookingClick }: FooterProps) => {
               >
                 Privacy Policy
               </Link>
-              <Link 
-                to="/terms-of-service" 
-                className="text-white/60 hover:text-white transition-colors"
-              >
-                Terms of Service
-              </Link>
             </div>
           </div>
         </div>

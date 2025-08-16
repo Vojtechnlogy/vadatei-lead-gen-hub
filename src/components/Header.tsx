@@ -29,9 +29,13 @@ const Header = ({ onBookingClick }: HeaderProps) => {
               alt="Vadatei Logo"
               className="h-8 w-8 mr-3"
             />
-            <h1 className="text-2xl font-heading font-bold text-primary">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="text-2xl font-heading font-bold text-primary focus:outline-none bg-transparent border-none cursor-pointer"
+              style={{ background: "none", border: "none", padding: 0 }}
+            >
               Vadatei
-            </h1>
+            </button>
           </div>
 
           {/* Desktop Navigation */}

@@ -102,7 +102,6 @@ const PrivacyPolicy = () => {
               You have the right to:
             </p>
             <ul className="list-disc pl-6 mb-4 text-foreground">
-              <li>Access and update your personal information</li>
               <li>Request deletion of your personal information</li>
               <li>Opt-out of marketing communications</li>
               <li>Request a copy of your personal information</li>
