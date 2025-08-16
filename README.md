@@ -21,7 +21,7 @@ This project is built with:
 
 
 !!!!!!!
-make sure that the favico loads on all websites - favico path is not set up corectlly for git hub pages check co pilot
+make sure that the favico loads on all websites - favico path is not set up corectlly for git hub pages check co pilot ----
 do mobile integration right now its fine but it could be better
 add phone number and email
 change google caladar and google sheets to new email
