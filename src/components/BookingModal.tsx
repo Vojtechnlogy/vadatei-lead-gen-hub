@@ -91,7 +91,7 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
                 Ready to Transform Your IT?
               </h4>
               <p className="text-white/90 font-body text-sm">
-                Join hundreds of successful organizations that have partnered with Vadatei to achieve their technology goals.
+                Become another successful organization that has partnered with Vadatei to achieve their technology goals.
               </p>
             </div>
           </div>

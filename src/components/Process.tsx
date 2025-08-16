@@ -7,29 +7,29 @@ const Process = () => {
       icon: Search,
       number: "01",
       title: "Audit & Discovery",
-      description: "We conduct in depth interviews and assessments to identify your unique priorities, challenges, and opportunities." +
+      description: "We conduct in depth interviews and assessments to identify your unique priorities, challenges, and opportunities. " +
       "This first step establishes a clear baseline for the rest of our collaboration"
     },
     {
       icon: BarChart3,
       number: "02", 
       title: "Building a Strategy",
-      description: "We immerse ourselves in your business to uncover actionable steps that drive your goals forward." +
+      description: "We immerse ourselves in your business to uncover actionable steps that drive your goals forward. " +
         "This stage is about gathering insights that will guide every decision moving forward"
     },
     {
       icon: Map,
       number: "03",
       title: "Roadmap",
-      description: "We create a comprehensive, actionable roadmap tailored to your business with implementable changes, projects, and workshops that help you succeed." +
+      description: "We create a comprehensive, actionable roadmap tailored to your business with implementable changes, projects, and workshops that help you succeed. " +
         "This roadmap serves as a guiding document, ensuring alignment and focus on your key objectives."
     },
     {
       icon: Rocket,
       number: "04",
       title: "Deployment",
-      description: "We execute the plan alongside your team ensuring a rapid and efficient implementation. Leveraging organizational models create lasting and measurable results" +
-        "This step is the most critical, as it transforms our strategic vision into tangible outcomes. Furthermore we utilize existing frameworks to drive success."
+      description: "We execute the plan alongside your team ensuring a rapid and efficient implementation. Leveraging organizational models create lasting and measurable results. " +
+        "This step is the most critical, as it transforms our strategic vision into tangible outcomes."
     }
   ];
 
@@ -45,7 +45,7 @@ const Process = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               <Card className="border-none shadow-card hover:shadow-corporate transition-all duration-300 hover:-translate-y-2 h-full">
@@ -78,6 +78,35 @@ const Process = () => {
               )}
             </div>
           ))}
+
+          {/* Guidance & Collaboration Card */}
+          <div className="relative">
+            <Card className="border-none shadow-card hover:shadow-corporate transition-all duration-300 hover:-translate-y-2 h-full">
+              <CardContent className="p-8 text-center relative">
+                {/* Step Number */}
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-heading font-bold text-lg">
+                    &#8734;
+                  </div>
+                </div>
+                {/* Icon (Lucide Users) */}
+                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 mt-4">
+                  <svg className="h-10 w-10 text-primary" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-primary mb-4">
+                  Guidance &amp; Collaboration
+                </h3>
+                <p className="text-muted-foreground font-body leading-relaxed italic mb-2">
+                  Ongoing support and partnership throughout every phase, ensuring you and your team are kept in the loop, empowered and aligned at all times.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Process Benefits */}

@@ -122,7 +122,7 @@ const Footer = ({ onBookingClick }: FooterProps) => {
                   onClick={() => scrollToSection("services")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  Cloud Migration
+                  Team Coaching and Mentoring
                 </button>
               </li>
               <li>
@@ -130,7 +130,7 @@ const Footer = ({ onBookingClick }: FooterProps) => {
                   onClick={() => scrollToSection("services")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  Cybersecurity
+                  Organizational Assessment
                 </button>
               </li>
               <li>

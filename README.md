@@ -21,13 +21,21 @@ This project is built with:
 
 
 !!!!!!!
-make sure that the favico loads on all websites - favico path is not set up corectlly for git hub pages check co pilot ----
-do mobile integration right now its fine but it could be better
+make sure that the favico loads on all websites - favico path is not set up corectlly for git hub pages check co pilot # I think i did the step but idk should work
+
+do mobile integration right now its fine but it could be better HONESTLY I THINK MOBILE IS GOOD
+
 add phone number and email
+
 change google caladar and google sheets to new email
-change the service section and the corospoding footer
+
+change the service section and the corospoding footer DONE
+
 chnage the url to the custom url
-add Baras recomendation
-present dad as the ceo or the main guy so that people know its a small company but there are others
+
+add Baras recomendation DONE
+
+present dad as the ceo or the main guy so that people know its a small company but there are others DONE
+
 !!!!!!!!
 

@@ -38,7 +38,7 @@ const About = () => {
             About Vadatei
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-body leading-relaxed">
-            Experience you can trust results you can measure.
+            Experience you can trust, results you can measure.
           </p>
         </div>
 
@@ -52,16 +52,23 @@ const About = () => {
             </p>
             <p className="text-[1.21rem] text-foreground mb-9 font-body leading-relaxed">
               Vadatei was created to bring that expertise to businesses that want IT to be a strategic advantage, 
-              not just a support function. We identify the real challenges, design practical solutions, and help you implement them for lasting results.
+              not just a support function. We identify the real challenges, design practical solutions, and help you implement them for lasting measurable results.
             </p>
           </div>
 
-          <div className="relative">
+          <div className="relative flex flex-col items-end w-full">
             <img
               src={marekTolasz}
               alt="Marek Tolasz"
-              className="rounded-lg shadow-corporate w-full h-[660px] object-cover" // 10% bigger than 600px
+              className="rounded-lg shadow-corporate w-full h-[660px] object-cover"
             />
+            {/* Marek Tolasz name in the bottom right corner of the image */}
+            <span className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-sm font-semibold text-primary shadow">
+              Marek Tolasz
+            </span>
+            <span className="mt-2 text-sm italic text-muted-foreground">
+              Vadatei, Founder &amp; Principle Consultant
+            </span>
           </div>
         </div>
 

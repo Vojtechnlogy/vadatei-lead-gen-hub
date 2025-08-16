@@ -64,7 +64,7 @@ const Hero = ({ onBookingClick }: HeroProps) => {
               <div className="text-white/80 font-body">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-heading font-bold text-white mb-2">98%</div>
+              <div className="text-4xl font-heading font-bold text-white mb-2">100%</div>
               <div className="text-white/80 font-body">Client Satisfaction</div>
             </div>
           </div>

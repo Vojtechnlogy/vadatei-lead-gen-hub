@@ -4,11 +4,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { 
   Shield, 
   Route, 
+  UserStar, 
   Users, 
-  Cloud, 
-  Lock, 
+  LayoutList, 
   TrendingUp,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 import ServiceModal from "./ServiceModal";
 
@@ -37,24 +37,24 @@ const Services = ({ onBookingClick }: ServicesProps) => {
       fullDescription: "Transform your business with our comprehensive Digital Transformation Roadmap service. We help you navigate the complex journey of modernizing your technology infrastructure, optimizing business processes, and implementing digital solutions that drive growth and efficiency. Our strategic approach ensures successful adoption and measurable business outcomes."
     },
     {
-      id: "digital-advisory",
-      icon: Users,
-      title: "Digital Advisory",
+      id: "CIO-as-a-Service",
+      icon: UserStar,
+      title: "CIO as a Service",
       description: "Expert guidance on digital strategy and tools to help your business grow and work more efficiently.",
       features: ["Strategic Leadership", "Technology Planning", "Vendor Management", "Budget Optimization"],
       fullDescription: "Navigate the digital landscape with confidence. We provide expert guidance on digital strategy, technology adoption, and online initiatives, helping your business leverage tools and trends to achieve measurable growth and efficiency."
     },
     {
       id: "compatibility-assessment",
-      icon: Cloud,
-      title: "Team Compatibility Coaching and Mentoring",
+      icon: Users,
+      title: "Team Coaching and Mentoring",
       description: "Improve team dynamics and individual growth. We assess strengths, address gaps, and provide coaching to boost collaboration, communication, and overall performance.",
       features: ["Team Assessment", "Collaboration Strategies", "Communication Improvement", "Performance Metrics"],
       fullDescription: "Unlock your team's potential with our Team Compatibility Coaching and Mentoring service. We conduct thorough evaluations of team dynamics, identify areas for improvement, and implement tailored strategies to enhance collaboration and communication. Our data-driven approach ensures measurable improvements in team performance and satisfaction."
     },
     {
       id: "organizational-assessment",
-      icon: Lock,
+      icon: LayoutList,
       title: "Organizational Assessment",
       description: "Streamline your operations and improve efficiency. We evaluate organizational structure, workflow, and processes to identify opportunities for optimization, ensuring your team and resources are aligned for maximum impact.",
       features: ["Workflow Analysis", "Process Optimization", "Change Management", "Performance Metrics"],
