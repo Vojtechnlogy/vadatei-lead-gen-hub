@@ -28,8 +28,8 @@ const Process = () => {
       icon: Rocket,
       number: "04",
       title: "Deployment",
-      description: "We execute the plan alongside your team ensuring a rapid and efficient implementation. Leveraging organizational models create lasting and measurable results. " +
-        "This step is the most critical, as it transforms our strategic vision into tangible outcomes."
+      description: "We believe the longest lasting results come when your team owns the execution that's why we empower you and your team with the tools, " +  
+      "and confidence to implement effective changes internally, offering ongoing support, coaching and mentoring."
     }
   ];
 
@@ -102,7 +102,7 @@ const Process = () => {
                   Guidance &amp; Collaboration
                 </h3>
                 <p className="text-muted-foreground font-body leading-relaxed italic mb-2">
-                  Ongoing support and partnership throughout every phase, ensuring you and your team are kept in the loop, empowered and aligned at all times.
+                  Ongoing support, coaching, and mentoring throughout every phase, ensuring you and your team are kept in the loop, empowered, and aligned at all times.
                 </p>
               </CardContent>
             </Card>
