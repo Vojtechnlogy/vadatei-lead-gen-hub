@@ -39,7 +39,7 @@ const Footer = ({ onBookingClick }: FooterProps) => {
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-white/60" />
-                <span className="font-body">+31 682 49 46 90 or +420 602 396 416</span>
+                <span className="font-body">+31 682 49 46 90   or   +420 602 396 416</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-white/60" />
