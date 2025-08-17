@@ -77,10 +77,6 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                  Potential solutions and approaches
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
                   Next steps and recommendations
                 </li>
               </ul>
