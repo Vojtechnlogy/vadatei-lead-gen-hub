@@ -105,7 +105,7 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
               Click the button below to select an available time slot and schedule your call instantly.
             </p>
             <a
-              href="https://calendar.app.google/2cAaQ71B7FsnvX7c7"
+              href="https://calendar.google.com/calendar/u/0?cid=Y2FsZW5kYXIuYm9va2luZ0B2YWRhdGVpLmNvbQ"
               rel="noopener noreferrer"
               className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-md hover:bg-primary-dark transition"
             >
