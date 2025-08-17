@@ -29,6 +29,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
     phone: "",
     details: ""
   });
+  const [loading, setLoading] = useState(false);
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -40,10 +41,13 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (loading) return; // Prevent double submit
+
+    setLoading(true);
 
     // Prepare data in the required order
     const submission = {
-      timeStamp: new Date().toISOString(),
+      timeStamp: getCentralEuropeanTimestamp(),
       service: service.title,
       fullName: formData.fullName,
       email: formData.email,
@@ -57,7 +61,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
       .join('&');
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbypF2UslTMIJ7p99mf1XsS5v5FB9rWG1uh1DChh3IbTZxwkpEm20_mJIJVEW18kyDE0/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbwTIlHCN6n4kfm7kL3kAeEZFTDI82KHq5b4Fm-bO-iFySCINavzJzcO1TcspnibR_H7/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -85,6 +89,8 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
         description: "There was an error submitting your inquiry. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -209,8 +215,8 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                 />
               </div>
 
-              <Button type="submit" variant="cta" className="w-full">
-                Send Inquiry
+              <Button type="submit" variant="cta" className="w-full" disabled={loading}>
+                {loading ? "Sending..." : "Send Inquiry"}
               </Button>
             </form>
 
@@ -232,5 +238,9 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
     </Dialog>
   );
 };
+
+function getCentralEuropeanTimestamp() {
+  return new Date().toLocaleString("en-GB", { timeZone: "Europe/Berlin" });
+}
 
 export default ServiceModal;
