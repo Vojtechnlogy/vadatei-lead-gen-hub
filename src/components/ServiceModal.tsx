@@ -57,7 +57,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
       .join('&');
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbzFxCIwgXEmP_ag-iJYTcm2RIK3H8kMEowWdLSIf5nIk2l2CnuO9Mw4aV5f5U47sgoNjA/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbypF2UslTMIJ7p99mf1XsS5v5FB9rWG1uh1DChh3IbTZxwkpEm20_mJIJVEW18kyDE0/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
