@@ -21,21 +21,15 @@ This project is built with:
 
 
 !!!!!!!
-make sure that the favico loads on all websites - favico path is not set up corectlly for git hub pages check co pilot # I think i did the step but idk should work
+add phone number and email in Privacy Policy and also in the Book Now Page
 
-do mobile integration right now its fine but it could be better HONESTLY I THINK MOBILE IS GOOD
+Try to Add Czech Langauge switch
 
-add phone number and email
+Try to figure out a way that we can add a phone number calling code - picker not priority
 
-change google caladar and google sheets to new email
+Re think the Services Marek said it should be fine but idk ask
 
-change the service section and the corospoding footer DONE
-
-chnage the url to the custom url
-
-add Baras recomendation DONE
-
-present dad as the ceo or the main guy so that people know its a small company but there are others DONE
+Future add a Partners section and a Reviews section
 
 !!!!!!!!
 
