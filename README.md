@@ -27,7 +27,7 @@ Try to Add Czech Langauge switch
 
 Try to figure out a way that we can add a phone number calling code - picker not priority
 
-Re think the Services Marek said it should be fine but idk ask
+Re think the Services Marek said it should be fine but idk ask Limit the Services to three
 
 Future add a Partners section and a Reviews section
 
