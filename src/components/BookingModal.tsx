@@ -77,10 +77,6 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                  Potential solutions and approaches
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
                   Next steps and recommendations
                 </li>
               </ul>
@@ -105,7 +101,7 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
               Click the button below to select an available time slot and schedule your call instantly.
             </p>
             <a
-              href="https://calendar.app.google/2cAaQ71B7FsnvX7c7"
+              href="https://calendar.app.google/3Gr57kHkBUGkHsgS9"
               rel="noopener noreferrer"
               className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-md hover:bg-primary-dark transition"
             >

@@ -21,21 +21,37 @@ This project is built with:
 
 
 !!!!!!!
-make sure that the favico loads on all websites - favico path is not set up corectlly for git hub pages check co pilot # I think i did the step but idk should work
+add phone number and email in Privacy Policy and also in the Book Now Page
 
-do mobile integration right now its fine but it could be better HONESTLY I THINK MOBILE IS GOOD
+Try to Add Czech Langauge switch
 
-add phone number and email
+Try to figure out a way that we can add a phone number calling code - picker not priority
 
-change google caladar and google sheets to new email
+Re think the Services Marek said it should be fine but idk ask ----Limit the Services to three---- 
 
-change the service section and the corospoding footer DONE
+1 IT Health Check
+2 Digital Transformation (Core Offer)
+3 CIO as a Service On going Support
 
-chnage the url to the custom url
+Create new tab called Aditional services or Add customize Service to the individual services
+There users will be able to look at all the actual services that are being offerd but can also choose 
+faster delivery
+Additional Mentoring and Coaching of Staff 
+Performance Optimization or Risk evaluation
 
-add Baras recomendation DONE
+Add Buttons to the Services that people can toggle and when going over with mouse they can see additional information
 
-present dad as the ceo or the main guy so that people know its a small company but there are others DONE
+
+
+and the rest of the stuff can go into 
+
+Future add a Partners section and a Reviews section
+
+
+If Getting too few leads add Sign up to the main page.
+
+
+Add a FAQ section
 
 !!!!!!!!
 
