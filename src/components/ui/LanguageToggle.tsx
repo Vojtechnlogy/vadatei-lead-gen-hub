@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
 
-const LANGS: { code: "en" | "cz" | "de"; label: string }[] = [
+const LANGS = [
   { code: "en", label: "EN" },
   { code: "cz", label: "CZ" },
   { code: "de", label: "DE" },
@@ -9,6 +10,9 @@ const LANGS: { code: "en" | "cz" | "de"; label: string }[] = [
 
 export default function LanguageToggle() {
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { lang } = useParams<{ lang: string }>();
   const [open, setOpen] = useState(false);
   const closeTimeout = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -19,8 +23,17 @@ export default function LanguageToggle() {
     ) || LANGS[0];
 
   const setLang = (lng: string) => {
+    // Replace the language part of the URL
+    const pathParts = location.pathname.split("/");
+    if (LANGS.some((l) => l.code === pathParts[1])) {
+      pathParts[1] = lng;
+    } else {
+      pathParts.splice(1, 0, lng);
+    }
+    const newPath = pathParts.join("/") || `/${lng}`;
     i18n.changeLanguage(lng);
     localStorage.setItem("lng", lng);
+    navigate(newPath, { replace: true });
     setOpen(false);
   };
 
@@ -88,7 +101,9 @@ export default function LanguageToggle() {
 
         {/* chevron that flips between down (v) and up (∧) */}
         <svg
-          className={`w-4 h-4 transform transition-transform duration-200 ease-out ${open ? "rotate-180" : "rotate-0"}`}
+          className={`w-4 h-4 transform transition-transform duration-200 ease-out ${
+            open ? "rotate-180" : "rotate-0"
+          }`}
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

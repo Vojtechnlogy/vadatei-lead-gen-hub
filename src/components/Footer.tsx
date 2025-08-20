@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { localizedPath } from "../lib/localize";
 
 interface FooterProps {
   onBookingClick: () => void;
@@ -192,7 +193,7 @@ const Footer = ({ onBookingClick }: FooterProps) => {
             {/* Legal Links */}
             <div className="flex gap-6 text-sm font-body">
               <Link
-                to="/privacy-policy"
+                to={localizedPath("privacy-policy")}
                 className="text-white/60 hover:text-white transition-colors"
               >
                 {t("footer.privacy")}

@@ -35,3 +35,9 @@ Create QR code and advertizing for the website
 
 !!!!!!!!
 
+Add this with the langauge toggle button so that the link acctually
+
+import { Link } from "react-router-dom";
+import { localizedPath } from "@/lib/localize";
+
+<Link to={localizedPath("privacyPolicy")}>Privacy Policy</Link>

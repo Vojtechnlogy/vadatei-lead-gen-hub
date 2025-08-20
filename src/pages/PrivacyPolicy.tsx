@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { localizedPath } from "../lib/localize";
 
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const PrivacyPolicy = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button
             variant="ghost"
-            onClick={() => navigate("/")}
+            onClick={() => navigate(localizedPath())}
             className="text-white hover:bg-white/10 mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
