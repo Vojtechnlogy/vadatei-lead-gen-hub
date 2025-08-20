@@ -21,34 +21,17 @@ This project is built with:
 
 
 !!!!!!!
-Try to Add Czech Langauge switch and German also add a varible that checks for what langaue is used so that when the user sends email we can see what lang they prefer to use
+Create good quality translations for the website ask Daniel for German Translation and ask Czech Person for Czech Translation
 
 Try to figure out a way that we can add a phone number calling code - picker not priority
 
-Re think the Services Marek said it should be fine but idk ask ----Limit the Services to three---- 
-
-1 IT Health Check
-2 Digital Transformation (Core Offer)
-3 CIO as a Service On going Support
-
-Create new tab called Aditional services or Add customize Service to the individual services
-There users will be able to look at all the actual services that are being offerd but can also choose 
-faster delivery
-Additional Mentoring and Coaching of Staff 
-Performance Optimization or Risk evaluation
-
-Add Buttons to the Services that people can toggle and when going over with mouse they can see additional information
-
-
-and the rest of the stuff can go into 
-
 Future add a Partners section and a Reviews section
-
 
 If Getting too few leads add Sign up to the main page.
 
-
 Add a FAQ section
+
+Create QR code and advertizing for the website
 
 !!!!!!!!
 
