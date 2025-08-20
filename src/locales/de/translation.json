@@ -1,0 +1,208 @@
+{
+  "about": {
+    "title": "Über Vadatei",
+    "tagline": "Erfahrung, der Sie vertrauen können, messbare Ergebnisse.",
+    "heading": "Ihr strategischer Technologiepartner",
+    "p1": "Mit über 30 Jahren in IT‑Führung und Transformation hat Marek Tolasz Organisationen geholfen, Abläufe zu straffen, Kosten zu senken und Wachstum zu erschließen.",
+    "p2": "Vadatei wurde gegründet, um dieses Fachwissen Unternehmen zugänglich zu machen, die IT als strategischen Vorteil und nicht nur als Support‑Funktion sehen. Wir identifizieren die echten Herausforderungen, entwerfen praktische Lösungen und helfen bei der Umsetzung für nachhaltige, messbare Ergebnisse.",
+    "imageName": "Marek Tolasz",
+    "imageRole": "Vadatei, Gründer & Principal Consultant",
+    "values": {
+      "experience": {
+        "title": "Über 30 Jahre Erfahrung",
+        "description": "Jahrzehnte nachgewiesener Erfolge in der Leitung von IT‑Teams und Transformationsprojekten in verschiedenen Branchen"
+      },
+      "impact": {
+        "title": "Messbarer Geschäftseinfluss",
+        "description": "Lösungen, die Kosten senken, Effizienz steigern und nachhaltiges Wachstum vorantreiben"
+      },
+      "diagnosis": {
+        "title": "Schnelle, präzise Diagnose",
+        "description": "Wir finden schnell die eigentlichen Probleme, sodass Verbesserungen gezielt und wirksam sind"
+      },
+      "lowRisk": {
+        "title": "Niedrigrisiko-Erstschritt",
+        "description": "Beginnen Sie mit einer fokussierten Discovery‑Phase, bevor Sie sich zu größeren Projekten verpflichten"
+      }
+    }
+  },
+  "serviceModal": {
+    "title": "Weitere Informationen anfordern: {{service}}",
+    "sr_description": "Füllen Sie das Formular aus, um weitere Informationen zu {{service}} anzufordern.",
+    "overviewTitle": "Überblick",
+    "featuresTitle": "Wesentliche Merkmale",
+    "heading": "Weitere Informationen anfordern",
+    "details_label": "Details (Interesse an: {{service}})",
+    "placeholder_details": "Erzählen Sie uns mehr über Ihre Bedürfnisse bezüglich {{service}}...",
+    "sending": "Wird gesendet...",
+    "submit": "Anfrage senden",
+    "toast": {
+      "successTitle": "Anfrage gesendet",
+      "successDescription": "Danke für Ihr Interesse an {{service}}. Wir melden uns innerhalb von 24 Stunden.",
+      "errorTitle": "Senden fehlgeschlagen",
+      "errorDescription": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "bookingModal": {
+    "title": "Buchen Sie Ihr Erstgespräch",
+    "whatToExpect": "Was Sie erwartet",
+    "consultationTitle": "30‑minütige Beratung",
+    "consultationDesc": "Fokussiertes Gespräch über Ihre Technologie‑Herausforderungen und Ziele",
+    "formatTitle": "Video oder Telefon",
+    "formatDesc": "Wählen Sie Ihr bevorzugtes Besprechungsformat",
+    "noObligationTitle": "Ohne Verpflichtung",
+    "noObligationDesc": "Kostenlose Beratung ohne Verpflichtungen",
+    "weWillDiscussTitle": "Wir besprechen:",
+    "discussItem1": "Ihre aktuellen Technologie‑Herausforderungen",
+    "discussItem2": "Strategische Technologieziele und Prioritäten",
+    "discussItem3": "Nächste Schritte und Empfehlungen",
+    "readyTitle": "Bereit, Ihr IT zu transformieren?",
+    "readyBody": "Werden Sie eine weitere erfolgreiche Organisation, die mit Vadatei zusammenarbeitet, um ihre Technologieziele zu erreichen.",
+    "chooseTimeTitle": "Wählen Sie Ihre bevorzugte Zeit",
+    "chooseTimeDesc": "Klicken Sie unten auf die Schaltfläche, um einen verfügbaren Zeitpunkt auszuwählen und Ihren Anruf sofort zu planen.",
+    "bookButton": "Zeit buchen",
+    "availability": "Verfügbar Mo–Fr, 08:00–16:00 CET"
+  },
+  "form": {
+    "fullName": "Vollständiger Name *",
+    "email": "E‑Mail‑Adresse *",
+    "companyName": "Firmenname",
+    "phone": "Telefonnummer"
+  },
+  "infoCard": {
+    "readyTitle": "Bereit loszulegen?",
+    "readyBody": "Füllen Sie das Kontaktformular aus, um mehr darüber zu erfahren, wie {{service}} Ihrer Organisation zugutekommen kann."
+  },
+  "hero": {
+    "headline": "Führendes IT‑Beratungshaus",
+    "subhead": "Mit über 30 Jahren Branchenerfahrung bieten wir strategische Technologieberatung, die Unternehmen transformiert. Arbeiten Sie mit uns zusammen, um komplexe IT‑Herausforderungen zu meistern und das volle Potenzial Ihrer Organisation freizusetzen.",
+    "cta": {
+      "book": "Mein Erstgespräch buchen",
+      "services": "Unsere Leistungen"
+    },
+    "stats": {
+      "years": "Jahre Erfahrung",
+      "projects": "Abgeschlossene Projekte",
+      "satisfaction": "Kundenzufriedenheit"
+    }
+  },
+  "footer": {
+    "company": "Vadatei",
+    "description": "Wir unterstützen Organisationen bei der Modernisierung ihrer IT, Leistungssteigerung und Kostensenkung.",
+    "bookDiscovery": "Erstgespräch buchen",
+    "quickLinks": {
+      "title": "Schnellzugriff",
+      "about": "Über uns",
+      "services": "Leistungen",
+      "process": "Unser Vorgehen"
+    },
+    "services": {
+      "title": "Leistungen",
+      "itHealthCheck": "IT‑Health & Performance",
+      "digitalTransformation": "Digitale Transformation",
+      "cioAsAService": "CIO as a Service"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Erhalten Sie gelegentliche Updates und Einblicke zu IT‑Strategie und Transformation.",
+      "placeholder": "Ihre E‑Mail‑Adresse",
+      "subscribe": "Abonnieren"
+    },
+    "copy": "© {{year}} Vadatei. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung"
+  },
+  "contact": {
+    "email": "info@vadatei.com",
+    "phone": "+31 6 82 49 46 90 oder +420 602 396 416"
+  },
+  "header": {
+    "company": "Vadatei",
+    "logoAlt": "Vadatei Logo",
+    "nav": {
+      "about": "Über uns",
+      "services": "Dienstleistungen",
+      "process": "Prozess"
+    },
+    "bookNow": "Jetzt buchen",
+    "bookDiscovery": "Mein Erstgespräch buchen"
+  },
+  "process": {
+    "heading": "Unser erprobter Prozess",
+    "subhead": "Ein systematischer Ansatz, der sicherstellt, dass jedes Engagement maximalen Wert und nachhaltige Ergebnisse liefert.",
+    "steps": {
+      "audit": {
+        "title": "Audit & Discovery",
+        "description": "Wir führen ausführliche Interviews und Bewertungen durch, um Ihre Prioritäten, Herausforderungen und Chancen zu identifizieren. Dieser Schritt schafft eine klare Basis für die weitere Zusammenarbeit."
+      },
+      "strategy": {
+        "title": "Strategieentwicklung",
+        "description": "Wir tauchen in Ihr Geschäft ein, um umsetzbare Schritte aufzudecken, die Ihre Ziele voranbringen. Diese Phase sammelt Erkenntnisse, die jede Entscheidung leiten."
+      },
+      "roadmap": {
+        "title": "Roadmap",
+        "description": "Wir erstellen eine umfassende, umsetzbare Roadmap, die auf Ihr Unternehmen zugeschnitten ist, mit Maßnahmen, Projekten und Workshops, die Ihnen zum Erfolg verhelfen."
+      },
+      "deployment": {
+        "title": "Implementierung",
+        "description": "Wir befähigen Ihr Team, die Umsetzung zu übernehmen, und bieten Werkzeuge, Coaching und fortlaufende Unterstützung, damit Verbesserungen effektiv und nachhaltig umgesetzt werden."
+      }
+    },
+    "guidance": {
+      "title": "Beratung & Zusammenarbeit",
+      "description": "Laufende Unterstützung, Coaching und Mentoring in jeder Phase, damit Ihr Team gestärkt, ausgerichtet und stets informiert bleibt."
+    },
+    "benefits": {
+      "heading": "Warum unser Prozess funktioniert",
+      "item1": "Transparente Kommunikation",
+      "item2": "Jahre der Verfeinerung",
+      "item3": "Erfolgreiche Implementierungen"
+    }
+  },
+  "services": {
+    "sectionTitle": "Unsere Dienstleistungen",
+    "sectionIntro": "Umfassende IT‑Beratung und Umsetzungsleistungen zur Modernisierung Ihrer Technologie, Steigerung der Performance und Senkung der Kosten.",
+    "moreInfoButton": "Mehr Informationen",
+    "cta": {
+      "title": "Bereit für die IT‑Transformation?",
+      "body": "Lassen Sie uns besprechen, wie unsere Expertise Ihrer Organisation hilft, messbaren Mehrwert aus Technologieinvestitionen zu erzielen.",
+      "button": "Erstgespräch buchen"
+    },
+
+    "it-health-check": {
+      "title": "IT‑Health & Performance",
+      "description": "Audits und Optimierungen zur Verbesserung von Stabilität, Performance und Kosteneffizienz.",
+      "features": [
+        "Sicherheitsprüfung",
+        "Performance‑Optimierung",
+        "Kostensenkungspotenziale",
+        "Verbesserung der Zuverlässigkeit"
+      ],
+      "fullDescription": "Unser IT‑Health & Performance Service kombiniert tiefgehende Audits mit priorisierten Maßnahmen. Wir identifizieren Sicherheits‑ und Betriebsrisiken, diagnostizieren Performance‑Engpässe und erstellen einen pragmatischen Plan zur Kostensenkung und Steigerung der Verfügbarkeit."
+    },
+
+    "digital-transformation": {
+      "title": "Digitale Transformation & Roadmap",
+      "description": "Strategische Roadmap und Unterstützung bei der Umsetzung zur Modernisierung von Technologie und Prozessen.",
+      "features": [
+        "Strategische Roadmap",
+        "Technologiemodernisierung",
+        "Projektportfolio & Delivery",
+        "Change‑ und Adoptionsmanagement"
+      ],
+      "fullDescription": "Wir erstellen eine pragmatische Transformations‑Roadmap, die an den Geschäftszielen ausgerichtet ist. Von Priorisierung und Lösungswahl bis zur Lieferplanung und Einführung – wir unterstützen phasenweise, um messbaren Nutzen bei minimaler Störung zu liefern."
+    },
+
+    "cio-as-a-service": {
+      "title": "CIO as a Service & Team Enablement",
+      "description": "Erfahrene, teilzeitliche CIO‑Führung und praktisches Coaching zur Ausrichtung von Strategie, Governance und Delivery.",
+      "features": [
+        "Fractional CIO‑Führung",
+        "Strategische Beratung",
+        "Team‑Coaching & Enablement",
+        "Vendor‑ und Budget‑Beratung"
+      ],
+      "fullDescription": "Profitieren Sie von erfahrener CIO‑Führung ohne Festanstellung. Wir liefern strategische Führung, Governance, Vendor‑Management und praktisches Coaching, um Ihre Teams zu befähigen und Initiativen erfolgreich umzusetzen."
+    }
+  }
+}
+

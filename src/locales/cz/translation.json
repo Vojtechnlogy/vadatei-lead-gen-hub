@@ -1,0 +1,208 @@
+{
+  "about": {
+    "title": "O Vadatei",
+    "tagline": "Zkušenosti, kterým můžete věřit, výsledky, které lze měřit.",
+    "heading": "Váš strategický technologický partner",
+    "p1": "S více než 30 lety v oblasti IT vedení a transformace pomohl Marek Tolasz organizacím zefektivnit provoz, snížit náklady a otevřít růstové příležitosti.",
+    "p2": "Vadatei vznikla, aby přinesla tuto odbornost firmám, které chtějí, aby IT bylo strategickou výhodou, nikoli pouze podpůrnou funkcí. Identifikujeme skutečné výzvy, navrhujeme praktická řešení a pomáháme je implementovat pro trvalé měřitelné výsledky.",
+    "imageName": "Marek Tolasz",
+    "imageRole": "Vadatei, zakladatel & hlavní konzultant",
+    "values": {
+      "experience": {
+        "title": "30+ let zkušeností",
+        "description": "Desetiletí ověřených výsledků při vedení IT týmů a transformačních projektů v různých odvětvích"
+      },
+      "impact": {
+        "title": "Měřitelný dopad na byznys",
+        "description": "Řešení navržená ke snížení nákladů, zlepšení efektivity a podpoře udržitelného růstu"
+      },
+      "diagnosis": {
+        "title": "Rychlá a přesná diagnostika",
+        "description": "Rychle identifikujeme skutečné problémy, aby byla každá změna cílená a efektivní"
+      },
+      "lowRisk": {
+        "title": "Nízkorizikový první krok",
+        "description": "Začněte se zaměřenou fází discovery před závazkem k větším projektům"
+      }
+    }
+  },
+  "serviceModal": {
+    "title": "Požádejte o více informací: {{service}}",
+    "sr_description": "Vyplňte formulář a požádejte o více informací o {{service}}.",
+    "overviewTitle": "Přehled",
+    "featuresTitle": "Hlavní funkce",
+    "heading": "Požádejte o více informací",
+    "details_label": "Podrobnosti (zájem o: {{service}})",
+    "placeholder_details": "Řekněte nám více o vašich potřebách ohledně {{service}}...",
+    "sending": "Odesílání...",
+    "submit": "Odeslat poptávku",
+    "toast": {
+      "successTitle": "Poptávka odeslána",
+      "successDescription": "Děkujeme za váš zájem o {{service}}. Ozveme se do 24 hodin.",
+      "errorTitle": "Odeslání selhalo",
+      "errorDescription": "Při odesílání došlo k chybě. Zkuste to prosím později."
+    }
+  },
+  "bookingModal": {
+    "title": "Rezervujte si úvodní konzultaci",
+    "whatToExpect": "Co očekávat",
+    "consultationTitle": "30minutová konzultace",
+    "consultationDesc": "Zaměřená diskuse o vašich technologických výzvách a cílech",
+    "formatTitle": "Video nebo telefon",
+    "formatDesc": "Vyberte preferovaný formát schůzky",
+    "noObligationTitle": "Bez závazků",
+    "noObligationDesc": "Bezplatná konzultace bez závazků",
+    "weWillDiscussTitle": "Probereme:",
+    "discussItem1": "Vaše současné technologické výzvy",
+    "discussItem2": "Strategické technologické cíle a priority",
+    "discussItem3": "Další kroky a doporučení",
+    "readyTitle": "Připraveni transformovat své IT?",
+    "readyBody": "Staňte se dalším úspěšným partnerem Vadatei a dosáhněte svých technologických cílů.",
+    "chooseTimeTitle": "Vyberte preferovaný čas",
+    "chooseTimeDesc": "Klikněte na tlačítko níže a vyberte dostupný čas pro okamžité naplánování hovoru.",
+    "bookButton": "Rezervovat termín",
+    "availability": "Dostupné Po–Pá, 8:00–16:00 CET"
+  },
+  "form": {
+    "fullName": "Jméno a příjmení *",
+    "email": "E-mailová adresa *",
+    "companyName": "Název společnosti",
+    "phone": "Telefonní číslo"
+  },
+  "infoCard": {
+    "readyTitle": "Připraveni začít?",
+    "readyBody": "Vyplňte kontaktní formulář a zjistěte více o tom, jak může {{service}} prospět vaší organizaci."
+  },
+  "hero": {
+    "headline": "Přední IT poradenství",
+    "subhead": "S více než 30 lety odborných zkušeností poskytujeme strategické technologické poradenství, které transformuje firmy. Spolupracujte s námi, abyste zvládli složité IT výzvy a uvolnili plný potenciál vaší organizace.",
+    "cta": {
+      "book": "Rezervovat konzultaci",
+      "services": "Naše služby"
+    },
+    "stats": {
+      "years": "Let zkušeností",
+      "projects": "Dokončené projekty",
+      "satisfaction": "Spokojenost klientů"
+    }
+  },
+  "footer": {
+    "company": "Vadatei",
+    "description": "Pomáháme organizacím modernizovat IT, zlepšovat výkon a snižovat náklady.",
+    "bookDiscovery": "Rezervovat konzultaci",
+    "quickLinks": {
+      "title": "Rychlé odkazy",
+      "about": "O nás",
+      "services": "Služby",
+      "process": "Náš proces"
+    },
+    "services": {
+      "title": "Služby",
+      "itHealthCheck": "IT Health & Výkon",
+      "digitalTransformation": "Digitální transformace",
+      "cioAsAService": "CIO jako služba"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Získejte občasné novinky a poznatky o IT strategii a transformaci.",
+      "placeholder": "Vaše e-mailová adresa",
+      "subscribe": "Odebírat"
+    },
+    "copy": "© {{year}} Vadatei. Všechna práva vyhrazena.",
+    "privacy": "Zásady ochrany osobních údajů"
+  },
+  "contact": {
+    "email": "info@vadatei.com",
+    "phone": "+31 6 82 49 46 90 nebo +420 602 396 416"
+  },
+  "header": {
+    "company": "Vadatei",
+    "logoAlt": "Logo Vadatei",
+    "nav": {
+      "about": "O nás",
+      "services": "Služby",
+      "process": "Proces"
+    },
+    "bookNow": "Rezervovat",
+    "bookDiscovery": "Rezervovat úvodní konzultaci"
+  },
+  "process": {
+    "heading": "Náš osvědčený proces",
+    "subhead": "Systematický přístup, který zajišťuje, že každé zapojení přináší maximální hodnotu a trvalé výsledky.",
+    "steps": {
+      "audit": {
+        "title": "Audit a discovery",
+        "description": "Provádíme hloubkové rozhovory a hodnocení, abychom identifikovali vaše priority, výzvy a příležitosti. Tento krok vytvoří jasný výchozí bod pro další spolupráci."
+      },
+      "strategy": {
+        "title": "Vytvoření strategie",
+        "description": "Ponoříme se do vašeho podnikání, abychom odhalili konkrétní kroky, které posunou vaše cíle vpřed. Tato fáze shromažďuje poznatky, které vedou každé rozhodnutí."
+      },
+      "roadmap": {
+        "title": "Roadmapa",
+        "description": "Vytvoříme komplexní, realizovatelnou roadmapu přizpůsobenou vašemu podnikání s implementovatelnými změnami, projekty a workshopy, které vám pomohou uspět."
+      },
+      "deployment": {
+        "title": "Nasazení",
+        "description": "Posilujeme váš tým, aby převzal provádění, poskytujeme nástroje, školení a průběžnou podporu, aby byly změny provedeny efektivně a udržitelně."
+      }
+    },
+    "guidance": {
+      "title": "Poradenství a spolupráce",
+      "description": "Průběžná podpora, školení a mentoring v každé fázi, aby byl váš tým posílený, sladěný a vždy informovaný."
+    },
+    "benefits": {
+      "heading": "Proč náš proces funguje",
+      "item1": "Transparentní komunikace",
+      "item2": "Roky zdokonalení",
+      "item3": "Úspěšné implementace"
+    }
+  },
+  "services": {
+    "sectionTitle": "Naše služby",
+    "sectionIntro": "Komplexní IT poradenské a realizační služby pro modernizaci technologií, zlepšení výkonu a snížení nákladů.",
+    "moreInfoButton": "Více informací",
+    "cta": {
+      "title": "Připraveni transformovat IT?",
+      "body": "Pojďme probrat, jak vám naše zkušenosti pomohou dosahovat měřitelných výsledků z vašich investic do technologií.",
+      "button": "Rezervovat konzultaci"
+    },
+
+    "it-health-check": {
+      "title": "IT Health & Výkon",
+      "description": "Audit a optimalizace pro vyšší stabilitu, výkon a efektivitu nákladů.",
+      "features": [
+        "Bezpečnostní audit",
+        "Optimalizace výkonu",
+        "Příležitosti ke snížení nákladů",
+        "Zvýšení spolehlivosti"
+      ],
+      "fullDescription": "Služba IT Health & Výkon kombinuje důkladné audity s prioritními doporučeními. Identifikujeme bezpečnostní a provozní mezery, diagnostikujeme úzká místa výkonu a připravíme praktický plán pro snížení nákladů a zvýšení dostupnosti."
+    },
+
+    "digital-transformation": {
+      "title": "Digitální transformace a roadmapa",
+      "description": "Strategické plánování a podpora nasazení pro modernizaci technologií a procesů.",
+      "features": [
+        "Strategická roadmapa",
+        "Modernizace technologií",
+        "Portfolio projektů a dodávky",
+        "Řízení změn a adopce"
+      ],
+      "fullDescription": "Vytvoříme pragmatickou roadmapu transformace sladěnou s obchodními cíli. Od stanovení priorit a výběru řešení po plánování dodání a adopce — pomáháme organizacím modernizovat etapovitě s měřitelným přínosem."
+    },
+
+    "cio-as-a-service": {
+      "title": "CIO jako služba & posílení týmu",
+      "description": "Zkušené frakční CIO vedení a praktické koučování pro sladění strategie, řízení a dodání.",
+      "features": [
+        "Frakční CIO vedení",
+        "Strategické poradenství",
+        "Koučování a posílení týmu",
+        "Poradenství s dodavateli a rozpočtem"
+      ],
+      "fullDescription": "Získejte zkušené CIO schopnosti bez plného úvazku. Poskytujeme strategické vedení, governance, řízení dodavatelů a praktické koučování k posílení týmů a efektivnímu provedení iniciativ."
+    }
+  }
+}
+

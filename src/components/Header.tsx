@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import vadateiLogo from "../assets/vadatei_logo_vector_sharp_clean.jpg"; // Add the correct extension if it's .png, .jpg, or .svg
+import vadateiLogo from "../assets/vadatei_logo_vector_sharp_clean.jpg";
+// import LanguageToggle from "./ui/LanguageToggle"; // temporarily disabled
+import { useTranslation } from "react-i18next";
 
 interface HeaderProps {
   onBookingClick: () => void;
@@ -9,6 +11,7 @@ interface HeaderProps {
 
 const Header = ({ onBookingClick }: HeaderProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -26,7 +29,7 @@ const Header = ({ onBookingClick }: HeaderProps) => {
           <div className="flex-shrink-0 flex items-center">
             <img
               src={vadateiLogo}
-              alt="Vadatei Logo"
+              alt={t("header.logoAlt")}
               className="h-8 w-8 mr-3"
             />
             <button
@@ -34,40 +37,46 @@ const Header = ({ onBookingClick }: HeaderProps) => {
               className="text-2xl font-heading font-bold text-primary focus:outline-none bg-transparent border-none cursor-pointer"
               style={{ background: "none", border: "none", padding: 0 }}
             >
-              Vadatei
+              {t("header.company")}
             </button>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4">
             <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors font-body"
             >
-              About
+              {t("header.nav.about")}
             </button>
             
             <button
               onClick={() => scrollToSection("services")}
               className="text-foreground hover:text-primary transition-colors font-body"
             >
-              Services
+              {t("header.nav.services")}
             </button>
 
             <button
               onClick={() => scrollToSection("process")}
               className="text-foreground hover:text-primary transition-colors font-body"
             >
-              Process
+              {t("header.nav.process")}
             </button>
             
+            {/* move language toggle between Process and Book Now */}
+
+            {/*---- Language toggle temporarily disabled remove the comments also in imports---------------------------------- */}
+            {/* <div className="ml-2">
+              <LanguageToggle />
+            </div> */}
 
             <Button 
               variant="cta" 
               onClick={onBookingClick}
               className="ml-4"
             >
-              Book Now
+              {t("header.bookNow")}
             </Button>
           </nav>
 
@@ -95,19 +104,19 @@ const Header = ({ onBookingClick }: HeaderProps) => {
                 onClick={() => scrollToSection("about")}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
               >
-                About
+                {t("header.nav.about")}
               </button>
               <button
                 onClick={() => scrollToSection("services")}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
               >
-                Services
+                {t("header.nav.services")}
               </button>
               <button
                 onClick={() => scrollToSection("process")}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
               >
-                Process
+                {t("header.nav.process")}
               </button>
               <div className="px-3 py-2">
                 <Button 
@@ -115,7 +124,7 @@ const Header = ({ onBookingClick }: HeaderProps) => {
                   onClick={onBookingClick}
                   className="w-full"
                 >
-                  Book My Discovery Call
+                  {t("header.bookDiscovery")}
                 </Button>
               </div>
             </div>

@@ -1,36 +1,35 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Search, BarChart3, Map, Rocket} from "lucide-react";
+import { Search, BarChart3, Map, Rocket } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Process = () => {
+  const { t } = useTranslation();
+
   const steps = [
     {
       icon: Search,
       number: "01",
-      title: "Audit & Discovery",
-      description: "We conduct in depth interviews and assessments to identify your unique priorities, challenges, and opportunities. " +
-      "This first step establishes a clear baseline for the rest of our collaboration"
+      titleKey: "process.steps.audit.title",
+      descKey: "process.steps.audit.description",
     },
     {
       icon: BarChart3,
-      number: "02", 
-      title: "Building a Strategy",
-      description: "We immerse ourselves in your business to uncover actionable steps that drive your goals forward. " +
-        "This stage is about gathering insights that will guide every decision moving forward"
+      number: "02",
+      titleKey: "process.steps.strategy.title",
+      descKey: "process.steps.strategy.description",
     },
     {
       icon: Map,
       number: "03",
-      title: "Roadmap",
-      description: "We create a comprehensive, actionable roadmap tailored to your business with implementable changes, projects, and workshops that help you succeed. " +
-        "This roadmap serves as a guiding document, ensuring alignment and focus on your key objectives."
+      titleKey: "process.steps.roadmap.title",
+      descKey: "process.steps.roadmap.description",
     },
     {
       icon: Rocket,
       number: "04",
-      title: "Deployment",
-      description: "We believe the longest lasting results come when your team owns the execution that's why we empower you and your team with the tools, " +  
-      "and confidence to implement effective changes internally, offering ongoing support, coaching and mentoring."
-    }
+      titleKey: "process.steps.deployment.title",
+      descKey: "process.steps.deployment.description",
+    },
   ];
 
   return (
@@ -38,10 +37,10 @@ const Process = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-            Our Proven Process
+            {t("process.heading")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-body leading-relaxed">
-            A systematic approach that ensures every engagement delivers maximum value and lasting results.
+            {t("process.subhead")}
           </p>
         </div>
 
@@ -64,10 +63,10 @@ const Process = () => {
 
                   {/* Content */}
                   <h3 className="text-2xl font-heading font-bold text-primary mb-4">
-                    {step.title}
+                    {t(step.titleKey)}
                   </h3>
                   <p className="text-muted-foreground font-body leading-relaxed">
-                    {step.description}
+                    {t(step.descKey)}
                   </p>
                 </CardContent>
               </Card>
@@ -99,10 +98,10 @@ const Process = () => {
                   </svg>
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-primary mb-4">
-                  Guidance &amp; Collaboration
+                  {t("process.guidance.title")}
                 </h3>
                 <p className="text-muted-foreground font-body leading-relaxed italic mb-2">
-                  Ongoing support, coaching, and mentoring throughout every phase, ensuring you and your team are kept in the loop, empowered, and aligned at all times.
+                  {t("process.guidance.description")}
                 </p>
               </CardContent>
             </Card>
@@ -112,20 +111,20 @@ const Process = () => {
         {/* Process Benefits */}
         <div className="mt-20 bg-gradient-corporate rounded-2xl p-8 md:p-12 text-center">
           <h3 className="text-3xl font-heading font-bold text-white mb-6">
-            Why Our Process Works
+            {t("process.benefits.heading")}
           </h3>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div>
               <div className="text-4xl font-heading font-bold text-white mb-2">100%</div>
-              <div className="text-white/90 font-body">Transparent Communication</div>
+              <div className="text-white/90 font-body">{t("process.benefits.item1")}</div>
             </div>
             <div>
               <div className="text-4xl font-heading font-bold text-white mb-2">30+</div>
-              <div className="text-white/90 font-body">Years of Refinement</div>
+              <div className="text-white/90 font-body">{t("process.benefits.item2")}</div>
             </div>
             <div>
               <div className="text-4xl font-heading font-bold text-white mb-2">500+</div>
-              <div className="text-white/90 font-body">Successful Implementations</div>
+              <div className="text-white/90 font-body">{t("process.benefits.item3")}</div>
             </div>
           </div>
         </div>

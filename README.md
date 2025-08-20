@@ -21,9 +21,7 @@ This project is built with:
 
 
 !!!!!!!
-add phone number and email in Privacy Policy and also in the Book Now Page
-
-Try to Add Czech Langauge switch
+Try to Add Czech Langauge switch and German also add a varible that checks for what langaue is used so that when the user sends email we can see what lang they prefer to use
 
 Try to figure out a way that we can add a phone number calling code - picker not priority
 
@@ -40,7 +38,6 @@ Additional Mentoring and Coaching of Staff
 Performance Optimization or Risk evaluation
 
 Add Buttons to the Services that people can toggle and when going over with mouse they can see additional information
-
 
 
 and the rest of the stuff can go into 

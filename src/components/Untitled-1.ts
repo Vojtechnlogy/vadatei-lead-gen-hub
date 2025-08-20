@@ -1,1 +1,0 @@
-import logo from '../assets/favicon.ico'; // or from 'public/favicon.ico' if you use public

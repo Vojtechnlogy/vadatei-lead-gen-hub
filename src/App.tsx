@@ -6,6 +6,8 @@ import { Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import LanguageToggle from "./components/ui/LanguageToggle";
+import Header from "./components/Header";
 
 const queryClient = new QueryClient();
 
@@ -14,12 +16,15 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Header onBookingClick={() => {}} />
+      <main className="pt-0">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
     </TooltipProvider>
   </QueryClientProvider>
 );

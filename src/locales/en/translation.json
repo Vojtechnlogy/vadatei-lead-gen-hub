@@ -1,0 +1,210 @@
+{
+  "about": {
+    "title": "About Vadatei",
+    "tagline": "Experience you can trust, results you can measure.",
+    "heading": "Your Strategic Technology Partner",
+    "p1": "With over 30 years in IT leadership and transformation, Marek Tolasz has helped organizations streamline operations, cut costs, and unlock growth.",
+    "p2": "Vadatei was created to bring that expertise to businesses that want IT to be a strategic advantage, not just a support function. We identify the real challenges, design practical solutions, and help you implement them for lasting measurable results.",
+    "imageName": "Marek Tolasz",
+    "imageRole": "Vadatei, Founder & Principle Consultant",
+    "values": {
+      "experience": {
+        "title": "30+ Years Experience",
+        "description": "Decades of proven results leading IT teams and transformation projects across multiple industries"
+      },
+      "impact": {
+        "title": "Measurable Business Impact",
+        "description": "Solutions designed to cut costs, improve efficiency and drive sustainable growth"
+      },
+      "diagnosis": {
+        "title": "Fast Insightful Diagnosis",
+        "description": "We pinpoint the real issues quickly, so every improvement is targeted and effective"
+      },
+      "lowRisk": {
+        "title": "Low Risk First Step",
+        "description": "Start with a focused discovery phase before committing to larger projects"
+      }
+    }    
+  },
+  "serviceModal": {
+    "title": "Request More Information: {{service}}",
+    "sr_description": "Fill out the form to request more information about {{service}}.",
+    "overviewTitle": "Overview",
+    "featuresTitle": "Key Features",
+    "heading": "Request More Information",
+    "details_label": "Details (Interest in: {{service}})",
+    "placeholder_details": "Tell us more about your {{service}} needs...",
+    "sending": "Sending...",
+    "submit": "Send Inquiry",
+    "toast": {
+      "successTitle": "Inquiry Submitted",
+      "successDescription": "Thank you for your interest in {{service}}. We'll be in touch within 24 hours.",
+      "errorTitle": "Submission Failed",
+      "errorDescription": "There was an error submitting your inquiry. Please try again later."
+    }
+  },
+
+  "bookingModal": {
+    "title": "Book Your Discovery Call",
+    "whatToExpect": "What to Expect",
+    "consultationTitle": "30-Minute Consultation",
+    "consultationDesc": "Focused discussion on your technology challenges and goals",
+    "formatTitle": "Video or Phone",
+    "formatDesc": "Choose your preferred meeting format",
+    "noObligationTitle": "No Obligation",
+    "noObligationDesc": "Free consultation with no strings attached",
+    "weWillDiscussTitle": "We'll Discuss:",
+    "discussItem1": "Your current technology challenges",
+    "discussItem2": "Strategic technology goals and priorities",
+    "discussItem3": "Next steps and recommendations",
+    "readyTitle": "Ready to Transform Your IT?",
+    "readyBody": "Become another successful organization that has partnered with Vadatei to achieve their technology goals.",
+    "chooseTimeTitle": "Choose Your Preferred Time",
+    "chooseTimeDesc": "Click the button below to select an available time slot and schedule your call instantly.",
+    "bookButton": "Book a Time Slot",
+    "availability": "Available Monday - Friday, 8:00 - 16:00 CET"
+  },
+
+  "form": {
+    "fullName": "Full Name *",
+    "email": "Email Address *",
+    "companyName": "Company Name",
+    "phone": "Phone Number"
+  },
+  "infoCard": {
+    "readyTitle": "Ready to Get Started?",
+    "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization."
+  },
+  "hero": {
+    "headline": "Leading IT Consulting",
+    "subhead": "With over 30 years of industry expertise, we provide strategic technology guidance that transforms businesses. Partner with us to navigate complex IT challenges and unlock your organization's full potential.",
+    "cta": {
+      "book": "Book My Discovery Call",
+      "services": "Our Services"
+    },
+    "stats": {
+      "years": "Years Experience",
+      "projects": "Projects Completed",
+      "satisfaction": "Client Satisfaction"
+    }
+  },
+  "footer": {
+    "company": "Vadatei",
+    "description": "We help organisations modernize their IT, improve performance and reduce costs.",
+    "bookDiscovery": "Book a Discovery Call",
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About",
+      "services": "Services",
+      "process": "Our Process"
+    },
+    "services": {
+      "title": "Services",
+      "itHealthCheck": "IT Health & Performance",
+      "digitalTransformation": "Digital Transformation",
+      "cioAsAService": "CIO as a Service"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Get occasional updates and insights about IT strategy and transformation.",
+      "placeholder": "Your email address",
+      "subscribe": "Subscribe"
+    },
+    "copy": "© {{year}} Vadatei. All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "contact": {
+    "email": "info@vadatei.com",
+    "phone": "+31 6 82 49 46 90 or +420 602 396 416"
+  },
+  "header": {
+    "company": "Vadatei",
+    "logoAlt": "Vadatei Logo",
+    "nav": {
+      "about": "About",
+      "services": "Services",
+      "process": "Process"
+    },
+    "bookNow": "Book Now",
+    "bookDiscovery": "Book My Discovery Call"
+  },
+  "process": {
+    "heading": "Our Proven Process",
+    "subhead": "A systematic approach that ensures every engagement delivers maximum value and lasting results.",
+    "steps": {
+      "audit": {
+        "title": "Audit & Discovery",
+        "description": "We conduct in‑depth interviews and assessments to identify your priorities, challenges, and opportunities. This establishes a clear baseline for the rest of our collaboration."
+      },
+      "strategy": {
+        "title": "Building a Strategy",
+        "description": "We immerse ourselves in your business to uncover actionable steps that drive your goals forward. This stage gathers insights that guide every decision moving forward."
+      },
+      "roadmap": {
+        "title": "Roadmap",
+        "description": "We create a comprehensive, actionable roadmap tailored to your business with implementable changes, projects, and workshops that help you succeed."
+      },
+      "deployment": {
+        "title": "Deployment",
+        "description": "We empower your team to own execution, providing tools, coaching and ongoing support so improvements are implemented effectively and sustainably."
+      }
+    },
+    "guidance": {
+      "title": "Guidance & Collaboration",
+      "description": "Ongoing support, coaching, and mentoring throughout every phase, ensuring your team is empowered, aligned, and kept in the loop."
+    },
+    "benefits": {
+      "heading": "Why Our Process Works",
+      "item1": "Transparent Communication",
+      "item2": "Years of Refinement",
+      "item3": "Successful Implementations"
+    }
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionIntro": "Comprehensive IT consulting and delivery services to modernize your technology, improve performance and reduce costs.",
+    "moreInfoButton": "More information",
+    "cta": {
+      "title": "Ready to transform your IT?",
+      "body": "Let's discuss how our expertise can help you deliver measurable value from your technology investments.",
+      "button": "Book a discovery call"
+    },
+
+    "it-health-check": {
+      "title": "IT Health & Performance",
+      "description": "Audit and optimisation to increase stability, performance and cost-efficiency.",
+      "features": [
+        "Security assessment",
+        "Performance optimisation",
+        "Cost reduction opportunities",
+        "Reliability improvements"
+      ],
+      "fullDescription": "Our IT Health & Performance engagement combines deep‑dive audits with prioritized remediation. We identify security and resilience gaps, diagnose performance bottlenecks and deliver a pragmatic plan to reduce cost while improving uptime and user experience."
+    },
+
+    "digital-transformation": {
+      "title": "Digital Transformation",
+      "description": "Strategic roadmapping and delivery support for technology modernization and process change.",
+      "features": [
+        "Strategic roadmap",
+        "Technology modernization",
+        "Project portfolio & delivery",
+        "Change & adoption management"
+      ],
+      "fullDescription": "We create a pragmatic transformation roadmap aligned to business outcomes. From prioritisation and solution selection to delivery planning and adoption, we help organisations modernise in phases that deliver measurable value and minimise disruption."
+    },
+
+    "cio-as-a-service": {
+      "title": "CIO as a Service",
+      "description": "Experienced part-time CIO leadership and hands‑on coaching to align strategy, governance and delivery.",
+      "features": [
+        "Part-time CIO leadership",
+        "Strategic advisory",
+        "Team coaching & enablement",
+        "Vendor & budget guidance"
+      ],
+      "fullDescription": "Access senior CIO capability without a full‑time hire. We provide strategic direction, governance, vendor management and practical coaching to upskill teams and ensure initiatives are executed effectively."
+    }
+  }
+}
+
