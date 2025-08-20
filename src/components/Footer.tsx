@@ -39,12 +39,29 @@ const Footer = ({ onBookingClick }: FooterProps) => {
 
             <div className="space-y-3 mb-6">
               <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-white/60" />
-                <span className="font-body">{t("contact.phone")}</span>
+                <Phone className="h-6 w-6 text-white/60" />
+                <div className="flex flex-col justify-center">
+                  {(() => {
+                    const raw = t("contact.phone");
+                    const phones: string[] = Array.isArray(raw)
+                      ? (raw as string[])
+                      : String(raw).split(/\s*(?:,|\bor\b|\||\/|;|\n)\s*/i);
+
+                    return phones
+                      .filter((p) => Boolean(p))
+                      .map((p: string, i: number) => (
+                        <a key={i} href={`tel:${p.replace(/\s+/g, "")}`} className="font-body text-white/80">
+                          {p}
+                        </a>
+                      ));
+                  })()}
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-white/60" />
-                <span className="font-body">{t("contact.email")}</span>
+                <a href={`mailto:${t("contact.email")}`} className="font-body text-white/80 underline">
+                  {t("contact.email")}
+                </a>
               </div>
             </div>
 
