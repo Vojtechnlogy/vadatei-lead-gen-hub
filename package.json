@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "generate-sitemap": "node ./scripts/generate-sitemap-from-pages.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

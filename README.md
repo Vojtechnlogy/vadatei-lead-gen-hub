@@ -20,6 +20,9 @@ This project is built with:
 - Tailwind CSS
 
 
+run script in terminal this generates or updates the site map
+npm run generate-sitemap
+
 !!!!!!!
 Create good quality translations for the website ask Daniel for German Translation and ask Czech Person for Czech Translation
 
