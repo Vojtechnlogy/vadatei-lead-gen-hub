@@ -51,17 +51,17 @@ const Header = ({ onBookingClick }: HeaderProps) => {
             </button>
             
             <button
-              onClick={() => scrollToSection("services")}
-              className="text-foreground hover:text-primary transition-colors font-body"
-            >
-              {t("header.nav.services")}
-            </button>
-
-            <button
               onClick={() => scrollToSection("process")}
               className="text-foreground hover:text-primary transition-colors font-body"
             >
               {t("header.nav.process")}
+            </button>
+
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-foreground hover:text-primary transition-colors font-body"
+            >
+              {t("header.nav.services")}
             </button>
             
             {/* move language toggle between Process and Book Now */}
@@ -107,16 +107,16 @@ const Header = ({ onBookingClick }: HeaderProps) => {
                 {t("header.nav.about")}
               </button>
               <button
-                onClick={() => scrollToSection("services")}
-                className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
-              >
-                {t("header.nav.services")}
-              </button>
-              <button
                 onClick={() => scrollToSection("process")}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
               >
                 {t("header.nav.process")}
+              </button>
+              <button
+                onClick={() => scrollToSection("services")}
+                className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
+              >
+                {t("header.nav.services")}
               </button>
               <div className="px-3 py-2">
                 <Button 
