@@ -40,15 +40,8 @@ jobs:
           # ensure SPA fallback: copy index.html to 404.html so Pages serves deep routes
           if [ -f dist/index.html ] && [ ! -f dist/404.html ]; then cp dist/index.html dist/404.html; fi
 
-      - name: Debug - list dist contents
-        run: |
-          echo "=== dist listing ==="
-          ls -la dist || true
-          echo "=== head of dist/index.html ==="
-          head -n 20 dist/index.html || true
-
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
       - name: Deploy to GitHub Pages
