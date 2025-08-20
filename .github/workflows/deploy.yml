@@ -41,7 +41,7 @@ jobs:
           if [ -f dist/index.html ] && [ ! -f dist/404.html ]; then cp dist/index.html dist/404.html; fi
 
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@main
         with:
           path: ./dist
       - name: Deploy to GitHub Pages
