@@ -117,7 +117,7 @@ const PrivacyPolicy = () => {
               <p className="text-foreground">
                 <strong>Vadatei</strong><br />
                 Email: info@vadatei.com<br />
-                Phone: blank for now<br />
+                Phone: +31 682 49 46 90 &nbsp;&nbsp;&nbsp; or &nbsp;&nbsp; +420 602 396 416<br />
               </p>
             </div>
           </section>
