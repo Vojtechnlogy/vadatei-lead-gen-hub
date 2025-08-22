@@ -36,9 +36,15 @@ Add a FAQ section
 
 Create QR code and advertizing for the website
 
+Examples section so that the clients have examples
+
+Add and SEO page so that users who search stuff up have a good chance of finding somthing maybe a blog or case studies
+
+AI SEO optimization
+
 !!!!!!!!
 
-Add this with the langauge toggle button so that the link acctually
+Add this with the langauge toggle button
 
 import { Link } from "react-router-dom";
 import { localizedPath } from "@/lib/localize";
