@@ -63,6 +63,14 @@ const Header = ({ onBookingClick }: HeaderProps) => {
             >
               {t("header.nav.services")}
             </button>
+
+            {/* FAQ nav button */}
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="text-foreground hover:text-primary transition-colors font-body"
+            >
+              {t("header.nav.faq", "FAQ")}
+            </button>
             
             {/* move language toggle between Process and Book Now */}
 
@@ -117,6 +125,12 @@ const Header = ({ onBookingClick }: HeaderProps) => {
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
               >
                 {t("header.nav.services")}
+              </button>
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
+              >
+                {t("header.nav.faq", "FAQ")}
               </button>
               <div className="px-3 py-2">
                 <Button 

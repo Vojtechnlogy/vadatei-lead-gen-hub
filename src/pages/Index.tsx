@@ -6,6 +6,7 @@ import Process from "@/components/Process";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
 import BookingModal from "@/components/BookingModal";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
@@ -25,6 +26,7 @@ const Index = () => {
         <About />
         <Process />
         <Services onBookingClick={handleBookingClick} />
+        <FAQ />
       </main>
       
       {/* Footer */}

@@ -206,6 +206,100 @@
       "fullDescription": "Access senior CIO capability without a full‑time hire. We provide strategic direction, governance, vendor management and practical coaching to upskill teams and ensure initiatives are executed effectively."
     }
   },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "categories": {
+      "services": {
+        "label": "Services",
+        "items": [
+          {
+            "question": "What does an IT consultant do?",
+            "answer": "An IT consultant assesses your technology, recommends improvements, designs solutions and helps implement strategic projects to meet business goals."
+          },
+          {
+            "question": "Why should my business hire an IT consultant?",
+            "answer": "A consultant brings experience and objectivity to solve technical problems faster, reduce risk, optimise costs and align IT with your business strategy."
+          },
+          {
+            "question": "Do you offer cloud migration services?",
+            "answer": "Yes — we plan migrations, select cloud providers, design the target architecture, migrate workloads and validate performance and security post-migration."
+          },
+          {
+            "question": "Can you help integrate new software into my current systems?",
+            "answer": "Yes — we design integration patterns, build connectors, plan data migrations and validate end-to-end workflows to ensure smooth adoption."
+          }
+        ]
+      },
+      "locations": {
+        "label": "Locations & Availability",
+        "items": [
+          {
+            "question": "Where are your services available?",
+            "answer": "We are based in Ostrava and serve clients across the Czech Republic and the EU; onsite visits are available when needed."
+          },
+          {
+            "question": "Do you offer remote IT consulting?",
+            "answer": "Yes — most work can be done remotely; we combine remote collaboration with onsite visits for workshops or deployments."
+          },
+          {
+            "question": "How quickly can we start working together?",
+            "answer": "Typical timeline: initial discovery within days, proposal within 1–2 weeks and project start once scope and terms are agreed."
+          }
+        ]
+      },
+      "process": {
+        "label": "Process & Onboarding",
+        "items": [
+          {
+            "question": "What is your consulting process like?",
+            "answer": "We start with discovery, define goals, design solutions, implement in phases and validate results with KPIs and knowledge transfer to your team."
+          },
+          {
+            "question": "Do you provide one-time consultations or ongoing support?",
+            "answer": "Both — we offer one-off advisory sessions, project engagements and retainer-based ongoing support depending on your needs."
+          },
+          {
+            "question": "Do you offer a free consultation?",
+            "answer": "Yes — we offer a short introductory consultation to understand your needs and propose next steps at no charge."
+          }
+        ]
+      },
+      "security": {
+        "label": "Security & Trust",
+        "items": [
+          {
+            "question": "Can you help with cybersecurity audits?",
+            "answer": "Yes — we perform security assessments, vulnerability reviews, policy audits and recommend remediation and best practices to reduce cyber risk."
+          },
+          {
+            "question": "Do you sign NDAs with clients?",
+            "answer": "Yes — we sign NDAs to protect confidential information before detailed discussions or access to sensitive data."
+          },
+          {
+            "question": "How do you ensure my company’s data stays secure?",
+            "answer": "We follow security best practices, use encrypted channels, apply least-privilege principles and help implement policies and controls to protect data."
+          }
+        ]
+      },
+      "results": {
+        "label": "Results & ROI",
+        "items": [
+          {
+            "question": "How will IT consulting improve my business?",
+            "answer": "Consulting improves efficiency, reduces downtime, enables better decision-making and aligns technology investments with business objectives."
+          },
+          {
+            "question": "Can you help reduce IT costs?",
+            "answer": "Yes — through optimisation, consolidation, automation and selecting cost-effective cloud and licensing strategies we reduce total cost of ownership."
+          },
+          {
+            "question": "What ROI can I expect from working with you?",
+            "answer": "ROI varies by project; we focus on measurable outcomes (cost savings, productivity gains, revenue enablement) and define success metrics during discovery."
+          }
+        ]
+      }
+    }
+  },
   "lang": "en",
   "title": "Vadatei - Expert IT Consulting for Business Growth",
   "description": "Boost productivity and cut costs with tailored IT consulting. Over 30 years of experience helping businesses scale smarter.",

@@ -207,6 +207,100 @@
   "lang": "cs",
   "title": "Vadatei – IT poradenství pro růst vašeho podnikání",
   "description": "Zvyšte produktivitu a snižte náklady s na míru šitým IT poradenstvím. Více než 30 let zkušeností.",
-  "ogImage": "https://vadatei.com/og-cz.png"
+  "ogImage": "https://vadatei.com/og-cz.png",
+  "faq": {
+    "title": "Často kladené dotazy",
+    "categories": {
+      "services": {
+        "label": "Služby",
+        "items": [
+          {
+            "question": "Co dělá IT konzultant?",
+            "answer": "IT konzultant zhodnotí vaši technologii, doporučí vylepšení, navrhne řešení a pomůže realizovat strategické projekty pro dosažení obchodních cílů."
+          },
+          {
+            "question": "Proč by moje firma měla najmout IT konzultanta?",
+            "answer": "Konzultant přináší zkušenosti a nestranný pohled, vyřeší technické problémy rychleji, sníží rizika, optimalizuje náklady a sladí IT s obchodní strategií."
+          },
+          {
+            "question": "Nabízíte služby migrace do cloudu?",
+            "answer": "Ano — plánujeme migrace, vybíráme poskytovatele cloudu, navrhujeme cílovou architekturu, migrujeme pracovní zátěže a ověřujeme výkon a bezpečnost po migraci."
+          },
+          {
+            "question": "Můžete pomoci integrovat nový software do našich systémů?",
+            "answer": "Ano — navrhujeme integrační vzory, vytváříme konektory, plánujeme migrace dat a ověřujeme end‑to‑end procesy pro hladké nasazení."
+          }
+        ]
+      },
+      "locations": {
+        "label": "Lokality & Dostupnost",
+        "items": [
+          {
+            "question": "Kde jsou vaše služby dostupné?",
+            "answer": "Sídlíme v Ostravě a působíme po celé České republice a EU; v případě potřeby poskytujeme i onsite návštěvy."
+          },
+          {
+            "question": "Nabízíte vzdálené IT poradenství?",
+            "answer": "Ano — většinu práce lze provádět vzdáleně; kombinujeme vzdálenou spolupráci s onsite návštěvami pro workshopy nebo nasazení."
+          },
+          {
+            "question": "Jak rychle můžeme začít spolupracovat?",
+            "answer": "Obvyklý postup: úvodní setkání během několika dnů, návrh řešení do 1–2 týdnů, zahájení projektu po dohodě rozsahu a podmínek."
+          }
+        ]
+      },
+      "process": {
+        "label": "Proces & Zavedení",
+        "items": [
+          {
+            "question": "Jak probíhá váš konzultační proces?",
+            "answer": "Začínáme discovery, definujeme cíle, navrhujeme řešení, implementujeme po fázích a ověřujeme výsledky pomocí KPI a předáváme znalosti vašemu týmu."
+          },
+          {
+            "question": "Poskytujete jednorázové konzultace nebo průběžnou podporu?",
+            "answer": "Obojí — nabízíme jednorázová poradenství, projektové zapojení i dlouhodobou podporu na bázi retaineru podle potřeby."
+          },
+          {
+            "question": "Nabízíte bezplatnou konzultaci?",
+            "answer": "Ano — nabízíme krátké úvodní setkání zdarma, abychom porozuměli potřebám a navrhli další kroky."
+          }
+        ]
+      },
+      "security": {
+        "label": "Bezpečnost & Důvěra",
+        "items": [
+          {
+            "question": "Můžete pomoci s bezpečnostními audity?",
+            "answer": "Ano — provádíme bezpečnostní hodnocení, kontroly zranitelností, audity politik a doporučujeme opatření k snížení rizika."
+          },
+          {
+            "question": "Podepisujete s klienty dohody o mlčenlivosti (NDA)?",
+            "answer": "Ano — podepisujeme NDA, abychom chránili důvěrné informace před podrobnějšími jednáními nebo přístupem k citlivým datům."
+          },
+          {
+            "question": "Jak zajistíte bezpečnost našich dat?",
+            "answer": "Řídíme se bezpečnostními best practices, používáme šifrované kanály, princip nejmenších oprávnění a pomáháme zavádět kontroly a politiky."
+          }
+        ]
+      },
+      "results": {
+        "label": "Výsledky & ROI",
+        "items": [
+          {
+            "question": "Jak IT poradenství zlepší mé podnikání?",
+            "answer": "Poradenství zlepší efektivitu, sníží výpadky, umožní lepší rozhodování a sladí investice do technologií s obchodními cíli."
+          },
+          {
+            "question": "Můžete pomoci snížit náklady na IT?",
+            "answer": "Ano — optimalizací, konsolidací, automatizací a výběrem nákladově efektivních cloudových a licenčních strategií snižujeme celkové náklady."
+          },
+          {
+            "question": "Jaký návratnost investice (ROI) mohu očekávat?",
+            "answer": "ROI se liší podle projektu; během discovery fáze definujeme měřitelné KPI a zaměřujeme se na hmatatelné výsledky."
+          }
+        ]
+      }
+    }
+  }
 }
 

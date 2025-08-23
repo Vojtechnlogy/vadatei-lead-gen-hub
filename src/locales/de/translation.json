@@ -207,6 +207,100 @@
   "lang": "de",
   "title": "Vadatei – IT‑Consulting für Unternehmenswachstum",
   "description": "Steigern Sie Produktivität und senken Sie Kosten mit maßgeschneidertem IT‑Consulting. Über 30 Jahre Erfahrung.",
-  "ogImage": "https://vadatei.com/og-de.png"
+  "ogImage": "https://vadatei.com/og-de.png",
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "categories": {
+      "services": {
+        "label": "Dienstleistungen",
+        "items": [
+          {
+            "question": "Was macht ein IT‑Berater?",
+            "answer": "Ein IT‑Berater bewertet Ihre Technologie, empfiehlt Verbesserungen, entwirft Lösungen und hilft bei der Umsetzung strategischer Projekte zur Erreichung Ihrer Geschäftsziele."
+          },
+          {
+            "question": "Warum sollte mein Unternehmen einen IT‑Berater beauftragen?",
+            "answer": "Ein Berater bringt Erfahrung und Objektivität mit, löst technische Probleme schneller, reduziert Risiken, optimiert Kosten und richtet die IT an der Geschäftsstrategie aus."
+          },
+          {
+            "question": "Bieten Sie Cloud‑Migrationsdienste an?",
+            "answer": "Ja — wir planen Migrationen, wählen Cloud‑Anbieter, entwerfen die Zielarchitektur, migrieren Workloads und prüfen Leistung sowie Sicherheit nach der Migration."
+          },
+          {
+            "question": "Können Sie neue Software in meine bestehenden Systeme integrieren?",
+            "answer": "Ja — wir entwerfen Integrationsmuster, bauen Connectoren, planen Datenmigrationen und validieren End‑to‑End‑Workflows für eine reibungslose Einführung."
+          }
+        ]
+      },
+      "locations": {
+        "label": "Standorte & Verfügbarkeit",
+        "items": [
+          {
+            "question": "Wo sind Ihre Dienstleistungen verfügbar?",
+            "answer": "Wir sind in Ostrava ansässig und betreuen Kunden in ganz Tschechien und der EU; Vor‑Ort‑Besuche sind bei Bedarf möglich."
+          },
+          {
+            "question": "Bieten Sie Remote‑IT‑Beratung an?",
+            "answer": "Ja — die meisten Arbeiten lassen sich remote durchführen; wir kombinieren Remote‑Zusammenarbeit mit Vor‑Ort‑Einsätzen für Workshops oder Implementierungen."
+          },
+          {
+            "question": "Wie schnell können wir mit der Zusammenarbeit beginnen?",
+            "answer": "Üblicher Ablauf: Erstgespräch innerhalb weniger Tage, Angebot in 1–2 Wochen, Projektstart nach Abstimmung von Umfang und Bedingungen."
+          }
+        ]
+      },
+      "process": {
+        "label": "Prozess & Onboarding",
+        "items": [
+          {
+            "question": "Wie läuft Ihr Beratungsprozess ab?",
+            "answer": "Wir beginnen mit einer Bestandsaufnahme, definieren Ziele, entwerfen Lösungen, implementieren phasenweise und validieren Ergebnisse anhand von KPIs sowie Wissenstransfer."
+          },
+          {
+            "question": "Bieten Sie einmalige Beratungen oder fortlaufende Unterstützung an?",
+            "answer": "Beides — Einzelberatungen, Projektengagements und retainer‑basierte fortlaufende Unterstützung je nach Bedarf."
+          },
+          {
+            "question": "Bieten Sie eine kostenlose Erstberatung an?",
+            "answer": "Ja — wir bieten ein kurzes Einführungs­gespräch, um Ihre Bedürfnisse zu verstehen und nächste Schritte vorzuschlagen, kostenfrei an."
+          }
+        ]
+      },
+      "security": {
+        "label": "Sicherheit & Vertrauen",
+        "items": [
+          {
+            "question": "Können Sie bei Cybersecurity‑Audits helfen?",
+            "answer": "Ja — wir führen Sicherheitsbewertungen, Schwachstellen‑Analysen, Policy‑Audits durch und geben Empfehlungen zur Behebung und Risikoreduzierung."
+          },
+          {
+            "question": "Unterschreiben Sie Vertraulichkeitsvereinbarungen (NDAs)?",
+            "answer": "Ja — wir unterschreiben NDAs, um vertrauliche Informationen vor detaillierten Gesprächen oder Zugriff zu schützen."
+          },
+          {
+            "question": "Wie stellen Sie die Sicherheit unserer Firmendaten sicher?",
+            "answer": "Wir folgen Best Practices, nutzen verschlüsselte Verbindungen, setzen Least‑Privilege‑Prinzipien um und unterstützen bei der Implementierung von Kontrollen und Richtlinien."
+          }
+        ]
+      },
+      "results": {
+        "label": "Ergebnisse & ROI",
+        "items": [
+          {
+            "question": "Wie verbessert IT‑Beratung mein Unternehmen?",
+            "answer": "Beratung erhöht die Effizienz, reduziert Ausfallzeiten, ermöglicht bessere Entscheidungen und richtet Technologieinvestitionen an den Geschäftszielen aus."
+          },
+          {
+            "question": "Können Sie helfen, IT‑Kosten zu senken?",
+            "answer": "Ja — durch Optimierung, Konsolidierung, Automatisierung und kosteneffiziente Cloud‑/Lizenzstrategien senken wir die Gesamtkosten."
+          },
+          {
+            "question": "Welchen ROI kann ich erwarten?",
+            "answer": "Der ROI variiert je nach Projekt; wir definieren messbare KPIs während der Discovery‑Phase und konzentrieren uns auf greifbare Ergebnisse."
+          }
+        ]
+      }
+    }
+  }
 }
 
