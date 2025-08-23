@@ -16,11 +16,6 @@ const CATEGORIES: Record<string, FaqItem[]> = {
         "A consultant brings experience and objectivity to solve technical problems faster, reduce risk, optimise costs and align IT with your business strategy.",
     },
     {
-      question: "Do you offer cloud migration services?",
-      answer:
-        "Yes — we plan migrations, select cloud providers, design the target architecture, migrate workloads and validate performance and security post‑migration.",
-    },
-    {
       question: "Can you help integrate new software into my current systems?",
       answer:
         "Yes — we design integration patterns, build connectors, plan data migrations and validate end‑to‑end workflows to ensure smooth adoption.",

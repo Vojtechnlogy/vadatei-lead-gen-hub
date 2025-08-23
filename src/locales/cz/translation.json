@@ -223,10 +223,6 @@
             "answer": "Konzultant přináší zkušenosti a nestranný pohled, vyřeší technické problémy rychleji, sníží rizika, optimalizuje náklady a sladí IT s obchodní strategií."
           },
           {
-            "question": "Nabízíte služby migrace do cloudu?",
-            "answer": "Ano — plánujeme migrace, vybíráme poskytovatele cloudu, navrhujeme cílovou architekturu, migrujeme pracovní zátěže a ověřujeme výkon a bezpečnost po migraci."
-          },
-          {
             "question": "Můžete pomoci integrovat nový software do našich systémů?",
             "answer": "Ano — navrhujeme integrační vzory, vytváříme konektory, plánujeme migrace dat a ověřujeme end‑to‑end procesy pro hladké nasazení."
           }

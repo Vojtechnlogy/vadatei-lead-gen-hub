@@ -223,10 +223,6 @@
             "answer": "Ein Berater bringt Erfahrung und Objektivität mit, löst technische Probleme schneller, reduziert Risiken, optimiert Kosten und richtet die IT an der Geschäftsstrategie aus."
           },
           {
-            "question": "Bieten Sie Cloud‑Migrationsdienste an?",
-            "answer": "Ja — wir planen Migrationen, wählen Cloud‑Anbieter, entwerfen die Zielarchitektur, migrieren Workloads und prüfen Leistung sowie Sicherheit nach der Migration."
-          },
-          {
             "question": "Können Sie neue Software in meine bestehenden Systeme integrieren?",
             "answer": "Ja — wir entwerfen Integrationsmuster, bauen Connectoren, planen Datenmigrationen und validieren End‑to‑End‑Workflows für eine reibungslose Einführung."
           }
