@@ -224,7 +224,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
               <div className="flex items-center gap-4 text-sm text-muted-foreground font-body">
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  <span>marek.tolasz@gmail.com</span>
+                  <span>info@vadatei.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
