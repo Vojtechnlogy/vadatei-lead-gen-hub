@@ -1,17 +1,36 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import vadateiLogo from "../assets/vadatei_logo_vector_sharp_clean.jpg";
-// import LanguageToggle from "./ui/LanguageToggle"; // temporarily disabled
+import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 interface HeaderProps {
   onBookingClick: () => void;
 }
 
+const SUPPORTED_LANGS = ["en", "cz", "de"];
+
 const Header = ({ onBookingClick }: HeaderProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { t } = useTranslation();
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const langMenuTimeout = useRef<NodeJS.Timeout | null>(null);
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const lang = location.pathname.split("/")[1] || "en";
+
+  const changeLanguage = (newLang: string) => {
+    const segments = location.pathname.split("/").filter(Boolean);
+    if (SUPPORTED_LANGS.includes(segments[0])) {
+      segments[0] = newLang;
+    } else {
+      segments.unshift(newLang);
+    }
+    navigate("/" + segments.join("/"));
+    i18n.changeLanguage(newLang);
+    setIsLangMenuOpen(false); // Close menu after selection
+  };
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -49,38 +68,83 @@ const Header = ({ onBookingClick }: HeaderProps) => {
             >
               {t("header.nav.about")}
             </button>
-            
             <button
               onClick={() => scrollToSection("process")}
               className="text-foreground hover:text-primary transition-colors font-body"
             >
               {t("header.nav.process")}
             </button>
-
             <button
               onClick={() => scrollToSection("services")}
               className="text-foreground hover:text-primary transition-colors font-body"
             >
               {t("header.nav.services")}
             </button>
-
-            {/* FAQ nav button */}
             <button
               onClick={() => scrollToSection("faq")}
               className="text-foreground hover:text-primary transition-colors font-body"
             >
               {t("header.nav.faq", "FAQ")}
             </button>
-            
-            {/* move language toggle between Process and Book Now */}
 
-            {/*---- Language toggle temporarily disabled remove the comments also in imports---------------------------------- */}
-            {/* <div className="ml-2">
-              <LanguageToggle />
-            </div> */}
+            {/* Language Burger Menu */}
+            <div className="relative ml-2">
+              <button
+                onClick={() => setIsLangMenuOpen((open) => !open)}
+                className="flex items-center px-2 py-1 rounded bg-white text-gray-800 hover:bg-gray-100"
+                aria-label="Language menu"
+                style={{ border: "none" }}
+                onMouseEnter={() => {
+                  if (langMenuTimeout.current) clearTimeout(langMenuTimeout.current);
+                  setIsLangMenuOpen(true);
+                }}
+                onMouseLeave={() => {
+                  langMenuTimeout.current = setTimeout(() => setIsLangMenuOpen(false), 250); // 250ms delay
+                }}
+              >
+                {lang.toUpperCase()}
+                <svg
+                  className={`w-4 h-4 ml-1 transition-transform duration-200 ${isLangMenuOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {isLangMenuOpen && (
+                <div
+                  className="absolute right-0 mt-2 w-24 bg-white border border-slate-200 rounded shadow-lg z-50"
+                  onMouseEnter={() => {
+                    if (langMenuTimeout.current) clearTimeout(langMenuTimeout.current);
+                    setIsLangMenuOpen(true);
+                  }}
+                  onMouseLeave={() => {
+                    langMenuTimeout.current = setTimeout(() => setIsLangMenuOpen(false), 250); // 250ms delay
+                  }}
+                >
+                  {SUPPORTED_LANGS.map((lng) => (
+                    <button
+                      key={lng}
+                      onClick={() => changeLanguage(lng)}
+                      disabled={i18n.language === lng}
+                      className={`block w-full text-left px-4 py-2 text-sm ${
+                        i18n.language === lng
+                          ? "bg-primary text-primary-foreground"
+                          : "hover:bg-primary/10"
+                      }`}
+                    >
+                      {lng.toUpperCase()}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
 
-            <Button 
-              variant="cta" 
+            <Button
+              variant="cta"
               onClick={onBookingClick}
               className="ml-4"
             >
@@ -132,9 +196,32 @@ const Header = ({ onBookingClick }: HeaderProps) => {
               >
                 {t("header.nav.faq", "FAQ")}
               </button>
+
+              {/* Language Switcher for Mobile */}
+              <div className="flex gap-1 px-3 py-2">
+                {SUPPORTED_LANGS.map((lng) => (
+                  <button
+                    key={lng}
+                    onClick={() => {
+                      changeLanguage(lng);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    disabled={i18n.language === lng}
+                    className={`px-2 py-1 rounded text-xs font-semibold border ${
+                      i18n.language === lng
+                        ? "bg-primary text-primary-foreground border-primary"
+                        : "bg-transparent text-primary border-primary/20 hover:bg-primary hover:text-primary-foreground"
+                    }`}
+                    aria-label={lng.toUpperCase()}
+                  >
+                    {lng.toUpperCase()}
+                  </button>
+                ))}
+              </div>
+
               <div className="px-3 py-2">
-                <Button 
-                  variant="cta" 
+                <Button
+                  variant="cta"
                   onClick={onBookingClick}
                   className="w-full"
                 >
