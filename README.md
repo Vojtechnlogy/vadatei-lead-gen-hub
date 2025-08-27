@@ -49,5 +49,4 @@ find the old read me and update this one with the information on there or honest
 
 TODO
 
-Creat a translation for the Privacy Policy should be easy
-Create a Examples page similiar to the privacy policy page but with examples of what DAD has accomplished
+Add ---schemas--- to the website so things can be given to the user 
