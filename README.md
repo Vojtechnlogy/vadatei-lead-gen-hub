@@ -32,21 +32,22 @@ Future add a Partners section and a Reviews section
 
 If Getting too few leads add Sign up to the main page.
 
-Add a FAQ section
-
 Create QR code and advertizing for the website
 
 Examples section so that the clients have examples
 
 Add and SEO page so that users who search stuff up have a good chance of finding somthing maybe a blog or case studies
 
-AI SEO optimization
-
 !!!!!!!!
 
 Add this with the langauge toggle button
 
-import { Link } from "react-router-dom";
-import { localizedPath } from "@/lib/localize";
+Old read me file vanished... songs will be writen about the great tragedy that happened on 26/08/2025
+find the old read me and update this one with the information on there or honestly this could be a sign for you to update the readme cause it honeslty didn't make much sense
 
-<Link to={localizedPath("privacyPolicy")}>Privacy Policy</Link>
+
+
+TODO
+
+Creat a translation for the Privacy Policy should be easy
+Create a Examples page similiar to the privacy policy page but with examples of what DAD has accomplished
