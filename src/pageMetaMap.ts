@@ -5,16 +5,27 @@ export interface PageMetaData {
   description: string;
   canonical: string;
   lang: string;
+  image: string; // Add this line
 }
 
 export const pages: PageMetaData[] = [
   {
     url: "index.html",
     bundleEntryPoint: "/src/main.tsx",
+    title: "...",
+    description: "...",
+    canonical: "https://vadatei.com/",
+    lang: "en",
+    image: "https://vadatei.com/digital-transformation.jpg"
+  },
+  {
+    url: "en/index.html",
+    bundleEntryPoint: "/src/main.tsx",
     title: "Vadatei - Leading IT Consulting",
     description: "Innovate with expert IT consulting tailored to your business. 30+ years of experience helping companies boost efficiency and reduce costs. Book your free consultation today",
-    canonical: "https://vadatei.com/",
-    lang: "en"
+    canonical: "https://vadatei.com/en/",
+    lang: "en",
+    image: "https://vadatei.com/digital-transformation.jpg"
   },
   {
     url: "cz/index.html",
@@ -22,7 +33,8 @@ export const pages: PageMetaData[] = [
     title: "Vadatei - Špičkové IT poradenství",
     description: "Inovujte s odborným IT poradenstvím na míru vašemu podnikání. 30+ let zkušeností s efektivitou a snižováním nákladů. Objednejte si bezplatnou konzultaci ještě dnes",
     canonical: "https://vadatei.com/cz/",
-    lang: "cs"
+    lang: "cs",
+    image: "https://vadatei.com/digital-transformation.jpg"
   },
   {
     url: "de/index.html",
@@ -30,6 +42,7 @@ export const pages: PageMetaData[] = [
     title: "Vadatei - Führende IT-Beratung",
     description: "Innovieren Sie mit maßgeschneiderter IT-Beratung für Ihr Unternehmen. Über 30 Jahre Erfahrung zur Steigerung der Effizienz und Kostensenkung. Buchen Sie jetzt Ihre kostenlose Beratung",
     canonical: "https://vadatei.com/de/",
-    lang: "de"
+    lang: "de",
+    image: "https://vadatei.com/digital-transformation.jpg"
   }
 ];

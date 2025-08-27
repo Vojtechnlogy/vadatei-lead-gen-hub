@@ -1,7 +1,7 @@
 import React from "react";
 import type { PageMetaData } from "./pageMetaMap";
 
-const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, lang }) => (
+const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, lang, image }) => (
   <html lang={lang}>
     <head>
       {/* Google tag (gtag.js) - load once and configure both IDs */}
@@ -38,12 +38,12 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://vadatei.com/your-og-image.png" />
+      <meta property="og:image" content={image} />
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@vadatei" />
-      <meta name="twitter:image" content="https://vadatei.com/your-og-image.png" />
+      <meta name="twitter:image" content={image} />
 
       {/* Canonical + Hreflang */}
       <link rel="canonical" href={canonical} />
