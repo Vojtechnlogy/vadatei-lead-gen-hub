@@ -82,9 +82,34 @@ const Services = ({ onBookingClick }: ServicesProps) => {
 
   return (
     <section id="services" className="py-20 bg-corporate-light">
+      {/* Service structured data (keep if you want) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
+      {/* Product structured data for all services */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            services.map((service) => ({
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              "name": t(`services.${service.id}.title`),
+              "description": t(`services.${service.id}.description`),
+              "image": service.image,
+              "brand": {
+                "@type": "Brand",
+                "name": "Vadatei"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://vadatei.com/", // or a specific service URL if you have one
+                "availability": "https://schema.org/InStock"
+              }
+            }))
+          )
+        }}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">

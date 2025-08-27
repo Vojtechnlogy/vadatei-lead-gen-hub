@@ -197,6 +197,28 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              "name": service.title,
+              "description": service.fullDescription,
+              // Add your actual image URL if available:
+              // "image": "https://vadatei.com/path-to-service-image.jpg",
+              "brand": {
+                "@type": "Brand",
+                "name": "Vadatei"
+              },
+              "offers": {
+                "@type": "Offer",
+                "url": "https://vadatei.com/",
+                "availability": "https://schema.org/InStock"
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
               "name": service.title,
@@ -206,8 +228,6 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                 "name": "Vadatei",
                 "url": "https://vadatei.com/"
               },
-              // Optionally add an image if you have one for the service:
-              // "image": "https://vadatei.com/path-to-service-image.jpg"
               "areaServed": "EU",
               "serviceType": service.title,
               "offers": {
