@@ -56,7 +56,7 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description }) => (
       <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       <link rel="shortcut icon" href="/favicon.ico" />
       <link rel="manifest" href="/site.webmanifest" />
-      <link rel="apple-touch-icon" href="/favicon_192x192.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     </head>
     <body>
       <div id="root"></div>
