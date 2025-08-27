@@ -91,7 +91,7 @@ const Header = ({ onBookingClick }: HeaderProps) => {
             <div className="relative ml-2">
               <button
                 onClick={() => setIsLangMenuOpen((open) => !open)}
-                className="flex items-center px-2 py-1 rounded bg-white text-gray-800 hover:bg-gray-100"
+                className="flex items-center px-2 py-1 rounded text-foreground hover:text-primary bg-transparent transition-colors"
                 aria-label="Language menu"
                 style={{ border: "none" }}
                 onMouseEnter={() => {
@@ -99,7 +99,7 @@ const Header = ({ onBookingClick }: HeaderProps) => {
                   setIsLangMenuOpen(true);
                 }}
                 onMouseLeave={() => {
-                  langMenuTimeout.current = setTimeout(() => setIsLangMenuOpen(false), 250); // 250ms delay
+                  langMenuTimeout.current = setTimeout(() => setIsLangMenuOpen(false), 250);
                 }}
               >
                 {lang.toUpperCase()}
@@ -116,13 +116,13 @@ const Header = ({ onBookingClick }: HeaderProps) => {
               </button>
               {isLangMenuOpen && (
                 <div
-                  className="absolute right-0 mt-2 w-24 bg-white border border-slate-200 rounded shadow-lg z-50"
+                  className="absolute right-0 mt-2 w-24 bg-background border border-slate-200 rounded shadow-lg z-50"
                   onMouseEnter={() => {
                     if (langMenuTimeout.current) clearTimeout(langMenuTimeout.current);
                     setIsLangMenuOpen(true);
                   }}
                   onMouseLeave={() => {
-                    langMenuTimeout.current = setTimeout(() => setIsLangMenuOpen(false), 250); // 250ms delay
+                    langMenuTimeout.current = setTimeout(() => setIsLangMenuOpen(false), 250);
                   }}
                 >
                   {SUPPORTED_LANGS.map((lng) => (
