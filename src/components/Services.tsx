@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Shield, 
-  Route, 
-  UserStar, 
-  Users, 
-  LayoutList, 
+import {
+  Shield,
+  Route,
+  UserStar,
+  Users,
+  LayoutList,
   TrendingUp,
   ArrowRight,
 } from "lucide-react";
@@ -19,19 +19,17 @@ interface ServicesProps {
 
 const Services = ({ onBookingClick }: ServicesProps) => {
   const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const services = [
-    // condensed to three umbrella services for clearer messaging / higher conversions
-    { id: "it-health-check", icon: Shield },
-    { id: "digital-transformation", icon: Route },
-    { id: "cio-as-a-service", icon: UserStar },
+    { id: "it-health-check", icon: Shield, image: "https://vadatei.com/it-health-check.jpg" },
+    { id: "digital-transformation", icon: Route, image: "https://vadatei.com/digital-transformation.jpg" },
+    { id: "cio-as-a-service", icon: UserStar, image: "https://vadatei.com/cio-as-a-service.jpg" },
   ];
 
   const openService = (id: string) => setSelectedServiceId(id);
   const closeService = () => setSelectedServiceId(null);
 
-  // build the service object passed into ServiceModal (modal expects service.title etc.)
   const getServiceObject = (id: string | null) => {
     if (!id) return null;
     const svc = services.find((s) => s.id === id)!;
@@ -48,11 +46,46 @@ const Services = ({ onBookingClick }: ServicesProps) => {
       features: features || [],
       fullDescription: t(`services.${id}.fullDescription`),
       icon: svc.icon,
+      image: svc.image,
     };
+  };
+
+  // Structured data for SEO
+  const servicesJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": {
+      "@type": "Organization",
+      "name": "Vadatei",
+      "url": "https://vadatei.com/"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": t("services.sectionTitle"),
+      "itemListElement": services.map((service) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": t(`services.${service.id}.title`),
+          "description": t(`services.${service.id}.description`),
+          "provider": {
+            "@type": "Organization",
+            "name": "Vadatei"
+          },
+          "areaServed": i18n.language === "cs" ? "CZ" : i18n.language === "de" ? "DE" : "EU",
+          "serviceType": t(`services.${service.id}.title`),
+          "image": service.image
+        }
+      }))
+    }
   };
 
   return (
     <section id="services" className="py-20 bg-corporate-light">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
@@ -77,11 +110,11 @@ const Services = ({ onBookingClick }: ServicesProps) => {
                   <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                     <service.icon className="h-8 w-8 text-primary" />
                   </div>
-                  
+
                   <h3 className="text-2xl font-heading font-bold text-primary mb-4">
                     {t(`services.${service.id}.title`)}
                   </h3>
-                  
+
                   <p className="text-muted-foreground font-body mb-6 leading-relaxed">
                     {t(`services.${service.id}.description`)}
                   </p>
@@ -89,7 +122,7 @@ const Services = ({ onBookingClick }: ServicesProps) => {
                   <div className="mb-6">
                     <div className="flex flex-wrap gap-2">
                       {(features || []).map((feature, index) => (
-                        <span 
+                        <span
                           key={index}
                           className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-body"
                         >
@@ -99,8 +132,8 @@ const Services = ({ onBookingClick }: ServicesProps) => {
                     </div>
                   </div>
 
-                  <Button 
-                    variant="corporate-outline" 
+                  <Button
+                    variant="corporate-outline"
                     className="w-full group-hover:bg-primary group-hover:text-white transition-all"
                     onClick={() => openService(service.id)}
                   >
@@ -122,8 +155,8 @@ const Services = ({ onBookingClick }: ServicesProps) => {
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto font-body">
               {t("services.cta.body")}
             </p>
-            <Button 
-              variant="corporate-outline" 
+            <Button
+              variant="corporate-outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary"
               onClick={onBookingClick}
