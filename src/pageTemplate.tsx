@@ -53,10 +53,13 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
       <link rel="alternate" href="https://vadatei.com/" hrefLang="x-default" />
 
       {/* Favicons / Touch icons / Manifest */}
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      <link rel="shortcut icon" href="/favicon.ico" />
-      <link rel="manifest" href="/site.webmanifest" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <meta name="apple-mobile-web-app-title" content="Vadatei" />
+      <meta name="application-name" content="Vadatei" />
     </head>
     <body>
       <div id="root"></div>
