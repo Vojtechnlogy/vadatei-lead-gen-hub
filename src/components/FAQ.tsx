@@ -1,100 +1,35 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 
-type FaqItem = { question: string; answer: string };
-
-const CATEGORIES: Record<string, FaqItem[]> = {
-  Services: [
-    {
-      question: "What does an IT consultant do?",
-      answer:
-        "An IT consultant assesses your technology, recommends improvements, designs solutions and helps implement strategic projects to meet business goals.",
-    },
-    {
-      question: "Why should my business hire an IT consultant?",
-      answer:
-        "A consultant brings experience and objectivity to solve technical problems faster, reduce risk, optimise costs and align IT with your business strategy.",
-    },
-    {
-      question: "Can you help integrate new software into my current systems?",
-      answer:
-        "Yes — we design integration patterns, build connectors, plan data migrations and validate end‑to‑end workflows to ensure smooth adoption.",
-    },
-  ],
-  "Locations & Availability": [
-    {
-      question: "Where are your services available?",
-      answer:
-        "We are based out of Ostrava and serve clients across the Czech Republic and EU; onsite visits available where needed.",
-    },
-    {
-      question: "Do you offer remote IT consulting?",
-      answer:
-        "Yes — most work can be done remotely; we combine remote collaboration with onsite visits for workshops or deployments.",
-    },
-    {
-      question: "How quickly can we start working together?",
-      answer:
-        "Initial discovery within days, proposal in 1–2 weeks, project start once scope and terms are agreed.",
-    },
-  ],
-  "Process & Onboarding": [
-    {
-      question: "What is your consulting process like?",
-      answer:
-        "We start with discovery, define goals, design solutions, implement in phases and validate results with KPIs and knowledge transfer to your team.",
-    },
-    {
-      question: "Do you provide one-time consultations or ongoing support?",
-      answer:
-        "Both — one‑off advisory sessions, project engagements and retainer-based ongoing support as needed.",
-    },
-    {
-      question: "Do you offer a free consultation?",
-      answer:
-        "Yes — a short introductory consultation to understand needs and propose next steps at no charge.",
-    },
-  ],
-  "Security & Trust": [
-    {
-      question: "Can you help with cybersecurity audits?",
-      answer:
-        "Yes — security assessments, vulnerability reviews, policy audits and remediation guidance are available.",
-    },
-    {
-      question: "Do you sign NDAs with clients?",
-      answer:
-        "Yes — we sign NDAs to protect confidential information before detailed discussions or access to sensitive data.",
-    },
-    {
-      question: "How do you ensure my company’s data stays secure?",
-      answer:
-        "We follow security best practices, use encrypted channels, apply least-privilege and help implement controls and policies.",
-    },
-  ],
-  "Results & ROI": [
-    {
-      question: "How will IT consulting improve my business?",
-      answer:
-        "Consulting improves efficiency, reduces downtime, enables better decisions and aligns tech investments with business objectives.",
-    },
-    {
-      question: "Can you help reduce IT costs?",
-      answer:
-        "Yes — via optimisation, consolidation, automation and cost‑effective cloud/licensing strategies to lower TCO.",
-    },
-    {
-      question: "What ROI can I expect from working with you?",
-      answer:
-        "ROI varies by project; we define measurable KPIs during discovery and focus on tangible outcomes.",
-    },
-  ],
-};
+const CATEGORY_KEYS = [
+  "services",
+  "locations",
+  "process",
+  "security",
+  "results",
+];
 
 export default function FAQ(): JSX.Element {
-  const tabs = Object.keys(CATEGORIES);
+  const { t } = useTranslation();
+
+  // Get translated category names
+  const tabs = CATEGORY_KEYS.map((key) => t(`faq.categories.${key}`));
+
+  // Get translated questions/answers for each category
+  const categories: Record<string, { question: string; answer: string }[]> = {};
+  CATEGORY_KEYS.forEach((catKey) => {
+    categories[t(`faq.categories.${catKey}`)] = (t(
+      `faq.questions.${catKey}`,
+      { returnObjects: true }
+    ) as { q: string; a: string }[]).map((item) => ({
+      question: item.q,
+      answer: item.a,
+    }));
+  });
+
   const [activeTab, setActiveTab] = useState<number>(0);
-  const [openSet, setOpenSet] = useState<Set<string>>(() => new Set()); // keys: `${tabIndex}-${itemIndex}`
+  const [openSet, setOpenSet] = useState<Set<string>>(() => new Set());
 
   const toggle = (t: number, i: number) => {
     const key = `${t}-${i}`;
@@ -106,7 +41,13 @@ export default function FAQ(): JSX.Element {
     });
   };
 
-  const allItems = tabs.flatMap((tab) => CATEGORIES[tab]);
+  // For FAQ structured data (schema.org)
+  const allItems = CATEGORY_KEYS.flatMap((catKey) =>
+    (t(`faq.questions.${catKey}`, { returnObjects: true }) as { q: string; a: string }[]).map((item) => ({
+      question: item.q,
+      answer: item.a,
+    }))
+  );
   const ld = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -124,14 +65,14 @@ export default function FAQ(): JSX.Element {
       </Helmet>
 
       <div className="mb-6">
-        <h2 className="text-3xl font-semibold text-center">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-semibold text-center">{t("faq.title")}</h2>
       </div>
 
       {/* Tab list */}
       <div role="tablist" aria-label="FAQ categories" className="flex gap-2 justify-center mb-6 flex-wrap">
-        {tabs.map((t, idx) => (
+        {tabs.map((tab, idx) => (
           <button
-            key={t}
+            key={tab}
             type="button"
             role="tab"
             aria-selected={activeTab === idx}
@@ -145,15 +86,15 @@ export default function FAQ(): JSX.Element {
                   : "bg-transparent text-primary border-primary/20 hover:bg-primary hover:text-primary-foreground"
               }`}
           >
-            {t}
+            {tab}
           </button>
         ))}
       </div>
 
       {/* Panels */}
-      {tabs.map((t, idx) => (
+      {tabs.map((tab, idx) => (
         <div
-          key={t}
+          key={tab}
           id={`faq-panel-${idx}`}
           role="tabpanel"
           aria-labelledby={`faq-tab-${idx}`}
@@ -161,7 +102,7 @@ export default function FAQ(): JSX.Element {
           className={activeTab === idx ? "block" : "hidden"}
         >
           <div className="flex flex-col gap-4">
-            {CATEGORIES[t].map((it, i) => {
+            {categories[tab].map((it, i) => {
               const key = `${idx}-${i}`;
               const isOpen = openSet.has(key);
               return (
