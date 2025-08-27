@@ -14,6 +14,7 @@ const SUPPORTED_LANGS = ["en", "cz", "de"];
 const Header = ({ onBookingClick }: HeaderProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const [isMobileLangMenuOpen, setIsMobileLangMenuOpen] = useState(false);
   const langMenuTimeout = useRef<NodeJS.Timeout | null>(null);
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
@@ -198,25 +199,47 @@ const Header = ({ onBookingClick }: HeaderProps) => {
               </button>
 
               {/* Language Switcher for Mobile */}
-              <div className="flex gap-1 px-3 py-2">
-                {SUPPORTED_LANGS.map((lng) => (
-                  <button
-                    key={lng}
-                    onClick={() => {
-                      changeLanguage(lng);
-                      setIsMobileMenuOpen(false);
-                    }}
-                    disabled={i18n.language === lng}
-                    className={`px-2 py-1 rounded text-xs font-semibold border ${
-                      i18n.language === lng
-                        ? "bg-primary text-primary-foreground border-primary"
-                        : "bg-transparent text-primary border-primary/20 hover:bg-primary hover:text-primary-foreground"
-                    }`}
-                    aria-label={lng.toUpperCase()}
+              <div className="relative px-3 py-2">
+                <button
+                  onClick={() => setIsMobileLangMenuOpen((open) => !open)}
+                  className="flex items-center w-full px-2 py-1 rounded text-foreground hover:text-primary bg-transparent transition-colors"
+                  aria-label="Language menu"
+                  style={{ border: "none" }}
+                >
+                  {lang.toUpperCase()}
+                  <svg
+                    className={`w-4 h-4 ml-1 transition-transform duration-200 ${isMobileLangMenuOpen ? "rotate-180" : ""}`}
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
-                    {lng.toUpperCase()}
-                  </button>
-                ))}
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {isMobileLangMenuOpen && (
+                  <div className="absolute left-0 mt-2 w-full bg-background border border-slate-200 rounded shadow-lg z-50">
+                    {SUPPORTED_LANGS.map((lng) => (
+                      <button
+                        key={lng}
+                        onClick={() => {
+                          changeLanguage(lng);
+                          setIsMobileMenuOpen(false);
+                          setIsMobileLangMenuOpen(false);
+                        }}
+                        disabled={i18n.language === lng}
+                        className={`block w-full text-left px-4 py-2 text-sm ${
+                          i18n.language === lng
+                            ? "bg-primary text-primary-foreground"
+                            : "hover:bg-primary/10"
+                        }`}
+                      >
+                        {lng.toUpperCase()}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
 
               <div className="px-3 py-2">
