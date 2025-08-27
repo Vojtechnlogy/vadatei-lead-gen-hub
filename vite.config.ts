@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     metaMapPlugin({
       pageMetaMapFilePath: "./src/pageMetaMap.ts",
-      pageTemplateFilePath: "./src/PageTemplate.tsx",
+      pageTemplateFilePath: "./src/pageTemplate.tsx",
     }),
   ],
   resolve: {
