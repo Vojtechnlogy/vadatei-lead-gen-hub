@@ -57,12 +57,12 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content="https://vadatei.com/assets/digital-transformation.jpg" />
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@vadatei" />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content="https://vadatei.com/assets/digital-transformation.jpg" />
 
       {/* Canonical + Hreflang */}
       <link rel="canonical" href={canonical} />
