@@ -210,7 +210,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
               "offers": [
                 {
                   "@type": "Offer",
-                  "price": t("services.contactForQuote"),
+                  "price": 0,
                   "priceCurrency": "EUR",
                   "priceValidUntil": "2026-08-29",
                   "url": "https://vadatei.com/",
@@ -218,7 +218,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                 },
                 {
                   "@type": "Offer",
-                  "price": t("services.contactForQuote"),
+                  "price": 0,
                   "priceCurrency": "CZK",
                   "priceValidUntil": "2026-08-29",
                   "url": "https://vadatei.com/",

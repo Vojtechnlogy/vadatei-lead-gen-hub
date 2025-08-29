@@ -105,7 +105,7 @@ const Services = ({ onBookingClick }: ServicesProps) => {
               "offers": [
                 {
                   "@type": "Offer",
-                  "price": t("services.contactForQuote"),
+                  "price": 0,
                   "priceCurrency": "EUR",
                   "priceValidUntil": "2026-08-29",
                   "url": "https://vadatei.com/",
@@ -113,7 +113,7 @@ const Services = ({ onBookingClick }: ServicesProps) => {
                 },
                 {
                   "@type": "Offer",
-                  "price": t("services.contactForQuote"),
+                  "price": 0,
                   "priceCurrency": "CZK",
                   "priceValidUntil": "2026-08-29",
                   "url": "https://vadatei.com/",
