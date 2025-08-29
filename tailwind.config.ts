@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
 	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{ts,tsx}",
@@ -20,7 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'serif': ['Lora', 'serif'],
-				'sans': ['Lato', 'sans-serif'],
+				'sans': ['Inter', 'Lato', 'Lora', 'Arial', 'Helvetica', 'sans-serif'],
 				'heading': ['Lora', 'serif'],
 				'body': ['Lato', 'sans-serif'],
 			},
@@ -117,4 +117,5 @@ export default {
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+};
+export default config;

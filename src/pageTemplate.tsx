@@ -26,14 +26,13 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
       <meta name="robots" content="index, follow" />
       <meta name="theme-color" content="#0f172a" />
 
-      {/* Google Fonts */}
+      {/* Google Fonts (single import with latin-ext for Czech support) */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@300;400;700&family=Lora:wght@400;700&display=swap&subset=latin-ext"
         rel="stylesheet"
       />
-      <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
 
       {/* Open Graph Meta Tags */}
       <meta property="og:title" content={title} />
