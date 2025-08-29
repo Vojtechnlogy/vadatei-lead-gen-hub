@@ -40,6 +40,8 @@ studies
 
 ADD PRODUCT PRICE SCHEMA--------------------------------- ADD EVENT SCHEMA
 
+ADD aggregateRating and Review to the Schema
+
 
 !!!!!!!!
 
