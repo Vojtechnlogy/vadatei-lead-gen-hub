@@ -12,8 +12,8 @@ export const pages: PageMetaData[] = [
   {
     url: "index.html",
     bundleEntryPoint: "/src/main.tsx",
-    title: "...",
-    description: "...",
+    title: "Vadatei - Leading IT Consulting",
+    description: "Innovate with expert IT consulting tailored to your business. 30+ years of experience helping companies boost efficiency and reduce costs. Book your free consultation today",
     canonical: "https://vadatei.com/",
     lang: "en",
     image: "https://vadatei.com/digital-transformation.jpg"
