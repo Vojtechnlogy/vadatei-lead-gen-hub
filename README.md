@@ -13,45 +13,41 @@
 
 This project is built with:
 
-- Vite
 - TypeScript
-- React
+- React + Vite
 - shadcn-ui
 - Tailwind CSS
 
 
-!!!!!!!
-add phone number and email in Privacy Policy and also in the Book Now Page
+run script in terminal this generates or updates the site map
+npm run generate-sitemap
 
-Try to Add Czech Langauge switch
+!!!!!!!
+Create good quality translations for the website ask Daniel for German Translation and ask Czech Person for Czech Translation
 
 Try to figure out a way that we can add a phone number calling code - picker not priority
 
-Re think the Services Marek said it should be fine but idk ask ----Limit the Services to three---- 
-
-1 IT Health Check
-2 Digital Transformation (Core Offer)
-3 CIO as a Service On going Support
-
-Create new tab called Aditional services or Add customize Service to the individual services
-There users will be able to look at all the actual services that are being offerd but can also choose 
-faster delivery
-Additional Mentoring and Coaching of Staff 
-Performance Optimization or Risk evaluation
-
-Add Buttons to the Services that people can toggle and when going over with mouse they can see additional information
-
-
-
-and the rest of the stuff can go into 
-
 Future add a Partners section and a Reviews section
-
 
 If Getting too few leads add Sign up to the main page.
 
+Create QR code and advertizing for the website
 
-Add a FAQ section
+Examples section so that the clients have examples
+
+Add and SEO page so that users who search stuff up have a good chance of finding somthing maybe a blog or case 
+studies
+
+ADD PRODUCT PRICE SCHEMA--------------------------------- ADD EVENT SCHEMA
+
+ADD aggregateRating and Review to the Schema
+
 
 !!!!!!!!
+
+Add this with the langauge toggle button
+
+Old read me file vanished... songs will be writen about the great tragedy that happened on 26/08/2025
+find the old read me and update this one with the information on there or honestly this could be a sign for you to update the readme cause it honeslty didn't make much sense
+
 

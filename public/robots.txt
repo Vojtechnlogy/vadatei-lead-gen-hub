@@ -10,5 +10,6 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+Sitemap: https://vadatei.com/sitemap.xml
 User-agent: *
 Allow: /

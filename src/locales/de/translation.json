@@ -1,0 +1,347 @@
+{
+  "about": {
+    "title": "Über Vadatei",
+    "tagline": "Erfahrung, der Sie vertrauen können. Ergebnisse, die Sie messen können.",
+    "heading": "Ihr strategischer Technologiepartner",
+    "p1": "Mit über 30 Jahren Erfahrung in IT-Führung und Transformation hat Marek Tolasz Unternehmen geholfen, Abläufe zu optimieren, Kosten zu senken und Wachstum zu ermöglichen.",
+    "p2": "Vadatei wurde gegründet, um dieses Know-how Unternehmen zu bieten, die IT als strategischen Vorteil nutzen möchten. Wir identifizieren die wahren Herausforderungen, entwickeln praktische Lösungen und helfen bei der Umsetzung für nachhaltige, messbare Ergebnisse.",
+    "imageName": "Marek Tolasz",
+    "imageRole": "Vadatei, Gründer & Hauptberater",
+    "values": {
+      "experience": {
+        "title": "30+ Jahre Erfahrung",
+        "description": "Jahrzehntelange nachgewiesene Erfolge in der Leitung von IT-Teams und Transformationsprojekten in verschiedenen Branchen"
+      },
+      "impact": {
+        "title": "Messbarer Geschäftserfolg",
+        "description": "Lösungen zur Kostensenkung, Effizienzsteigerung und nachhaltigem Wachstum"
+      },
+      "diagnosis": {
+        "title": "Schnelle, präzise Diagnose",
+        "description": "Wir erkennen die wahren Probleme schnell, sodass jede Verbesserung gezielt und effektiv ist"
+      },
+      "lowRisk": {
+        "title": "Risikofreier erster Schritt",
+        "description": "Starten Sie mit einer gezielten Analyse, bevor Sie größere Projekte beginnen"
+      }
+    }
+  },
+  "serviceModal": {
+    "title": "Weitere Informationen anfordern: {{service}}",
+    "sr_description": "Füllen Sie das Formular aus, um weitere Informationen zu {{service}} anzufordern.",
+    "overviewTitle": "Überblick",
+    "featuresTitle": "Hauptmerkmale",
+    "heading": "Weitere Informationen anfordern",
+    "details_label": "Details (Interesse an: {{service}})",
+    "placeholder_details": "Beschreiben Sie Ihre Anforderungen an {{service}}...",
+    "sending": "Wird gesendet...",
+    "submit": "Anfrage senden",
+    "toast": {
+      "successTitle": "Anfrage gesendet",
+      "successDescription": "Vielen Dank für Ihr Interesse an {{service}}. Wir melden uns innerhalb von 24 Stunden.",
+      "errorTitle": "Übermittlung fehlgeschlagen",
+      "errorDescription": "Beim Senden Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+  },
+  "bookingModal": {
+    "title": "Ihr Beratungsgespräch buchen",
+    "whatToExpect": "Was Sie erwartet",
+    "consultationTitle": "30-minütige Beratung",
+    "consultationDesc": "Fokussiertes Gespräch über Ihre technologischen Herausforderungen und Ziele",
+    "formatTitle": "Video oder Telefon",
+    "formatDesc": "Wählen Sie Ihr bevorzugtes Format",
+    "noObligationTitle": "Unverbindlich",
+    "noObligationDesc": "Kostenlose Beratung ohne Verpflichtung",
+    "weWillDiscussTitle": "Wir besprechen:",
+    "discussItem1": "Ihre aktuellen Technologie-Herausforderungen",
+    "discussItem2": "Strategische Technologieziele und Prioritäten",
+    "discussItem3": "Nächste Schritte und Empfehlungen",
+    "readyTitle": "Bereit für Ihre IT-Transformation?",
+    "readyBody": "Werden Sie ein weiteres erfolgreiches Unternehmen, das mit Vadatei seine Technologieziele erreicht hat.",
+    "chooseTimeTitle": "Wählen Sie Ihren Wunschtermin",
+    "chooseTimeDesc": "Klicken Sie unten, um einen verfügbaren Termin auszuwählen und Ihr Gespräch zu buchen.",
+    "bookButton": "Termin buchen",
+    "availability": "Verfügbar Montag – Freitag, 8:00 – 16:00 Uhr"
+  },
+  "form": {
+    "fullName": "Vollständiger Name *",
+    "email": "E-Mail-Adresse *",
+    "companyName": "Firmenname",
+    "phone": "Telefonnummer"
+  },
+  "infoCard": {
+    "readyTitle": "Bereit loszulegen?",
+    "readyBody": "Füllen Sie das Kontaktformular aus, um mehr darüber zu erfahren, wie {{service}} Ihrem Unternehmen helfen kann."
+  },
+  "hero": {
+    "headline": "Führende IT-Beratung",
+    "subhead": "Über 30 Jahre Branchenerfahrung. Wir bieten strategische Technologieberatung, die Unternehmen transformiert. Arbeiten Sie mit uns zusammen, um komplexe IT-Herausforderungen zu meistern und das volle Potenzial Ihres Unternehmens auszuschöpfen.",
+    "cta": {
+      "book": "Beratungsgespräch buchen",
+      "services": "Unsere Leistungen"
+    },
+    "stats": {
+      "years": "Jahre Erfahrung",
+      "projects": "Abgeschlossene Projekte",
+      "satisfaction": "Kundenzufriedenheit"
+    }
+  },
+  "footer": {
+    "company": "Vadatei",
+    "description": "Wir helfen Unternehmen, ihre IT zu modernisieren, die Leistung zu steigern und Kosten zu senken.",
+    "bookDiscovery": "Beratungsgespräch buchen",
+    "quickLinks": {
+      "title": "Schnellzugriff",
+      "about": "Über uns",
+      "services": "Leistungen",
+      "process": "Unser Prozess"
+    },
+    "services": {
+      "title": "Leistungen",
+      "itHealthCheck": "IT-Gesundheit & Performance",
+      "digitalTransformation": "Digitale Transformation",
+      "cioAsAService": "CIO as a Service",
+      "contactForQuote": "Preis auf Anfrage"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Erhalten Sie gelegentliche Updates und Einblicke zu IT-Strategie und Transformation.",
+      "placeholder": "Ihre E-Mail-Adresse",
+      "subscribe": "Abonnieren"
+    },
+    "copy": "© {{year}} Vadatei. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung"
+  },
+  "contact": {
+    "email": "info@vadatei.com",
+    "phone": "+31 6 82 49 46 90 oder +420 602 396 416"
+  },
+  "header": {
+    "company": "Vadatei",
+    "logoAlt": "Vadatei Logo",
+    "nav": {
+      "about": "Über uns",
+      "services": "Leistungen",
+      "process": "Prozess"
+    },
+    "bookNow": "Jetzt buchen",
+    "bookDiscovery": "Beratungsgespräch buchen"
+  },
+  "process": {
+    "heading": "Unser bewährter Prozess",
+    "subhead": "Ein systematischer Ansatz, der maximalen Mehrwert und nachhaltige Ergebnisse garantiert.",
+    "steps": {
+      "audit": {
+        "title": "Audit & Analyse",
+        "description": "Wir führen ausführliche Interviews und Analysen durch, um Ihre Prioritäten, Herausforderungen und Chancen zu identifizieren. Das schafft eine klare Basis für die weitere Zusammenarbeit."
+      },
+      "strategy": {
+        "title": "Strategieentwicklung",
+        "description": "Wir tauchen tief in Ihr Unternehmen ein und entwickeln konkrete Maßnahmen, die Ihre Ziele voranbringen."
+      },
+      "roadmap": {
+        "title": "Fahrplan",
+        "description": "Wir erstellen einen umfassenden, umsetzbaren Fahrplan mit konkreten Veränderungen, Projekten und Workshops."
+      },
+      "deployment": {
+        "title": "Umsetzung",
+        "description": "Wir unterstützen Ihr Team bei der Umsetzung, stellen Tools, Coaching und laufende Unterstützung bereit."
+      }
+    },
+    "guidance": {
+      "title": "Begleitung & Zusammenarbeit",
+      "description": "Laufende Unterstützung, Coaching und Mentoring in jeder Phase, damit Ihr Team informiert und motiviert bleibt."
+    },
+    "benefits": {
+      "heading": "Warum unser Prozess funktioniert",
+      "item1": "Transparente Kommunikation",
+      "item2": "Jahre der Optimierung",
+      "item3": "Erfolgreiche Implementierungen"
+    }
+  },
+  "services": {
+    "sectionTitle": "Unsere Leistungen",
+    "sectionIntro": "Umfassende IT-Beratung und Umsetzung zur Modernisierung Ihrer Technologie, Leistungssteigerung und Kostensenkung.",
+    "moreInfoButton": "Mehr Informationen",
+    "cta": {
+      "title": "Bereit für Ihre IT-Transformation?",
+      "body": "Lassen Sie uns besprechen, wie unsere Expertise Ihnen messbaren Mehrwert bringen kann.",
+      "button": "Beratungsgespräch buchen"
+    },
+    "it-health-check": {
+      "title": "IT-Gesundheit & Performance",
+      "description": "Audit und Optimierung für mehr Stabilität, Performance und Kosteneffizienz.",
+      "features": [
+        "Sicherheitsaudit",
+        "Performance-Optimierung",
+        "Kostensenkungspotenziale",
+        "Zuverlässigkeitssteigerung"
+      ],
+      "fullDescription": "Unser IT-Gesundheits- & Performance-Angebot kombiniert tiefgehende Audits mit priorisierten Maßnahmen. Wir identifizieren Sicherheits- und Betriebsrisiken, diagnostizieren Engpässe und liefern einen pragmatischen Plan zur Kostensenkung und Verbesserung von Verfügbarkeit und Nutzererlebnis."
+    },
+    "digital-transformation": {
+      "title": "Digitale Transformation",
+      "description": "Strategische Planung und Unterstützung für Technologie-Modernisierung und Prozesswandel.",
+      "features": [
+        "Strategischer Fahrplan",
+        "Technologie-Modernisierung",
+        "Projektportfolio & Umsetzung",
+        "Change- & Adoption-Management"
+      ],
+      "fullDescription": "Wir erstellen einen praxisnahen Transformationsfahrplan, der auf Geschäftsergebnisse ausgerichtet ist. Von Priorisierung und Lösungswahl bis zur Umsetzung und Adoption helfen wir Unternehmen, in messbaren Schritten zu modernisieren."
+    },
+    "cio-as-a-service": {
+      "title": "CIO as a Service",
+      "description": "Erfahrene CIO-Führung auf Teilzeitbasis und praxisnahes Coaching für Strategie, Governance und Umsetzung.",
+      "features": [
+        "Teilzeit-CIO-Führung",
+        "Strategische Beratung",
+        "Team-Coaching & Enablement",
+        "Beratung zu Anbietern & Budget"
+      ],
+      "fullDescription": "Nutzen Sie erfahrene CIO-Kompetenz ohne Festanstellung. Wir bieten strategische Führung, Governance, Lieferantenmanagement und praxisnahes Coaching für die Teamentwicklung und effektive Umsetzung."
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "categories": {
+      "services": "Leistungen",
+      "locations": "Standorte & Verfügbarkeit",
+      "process": "Prozess & Onboarding",
+      "security": "Sicherheit & Vertrauen",
+      "results": "Ergebnisse & ROI"
+    },
+    "questions": {
+      "services": [
+        {
+          "q": "Was macht ein IT-Berater?",
+          "a": "Ein IT-Berater bewertet Ihre Technologie, empfiehlt Verbesserungen, entwickelt Lösungen und unterstützt bei der Umsetzung strategischer Projekte."
+        },
+        {
+          "q": "Warum sollte mein Unternehmen einen IT-Berater engagieren?",
+          "a": "Ein Berater bringt Erfahrung und Objektivität, löst technische Probleme schneller, reduziert Risiken, optimiert Kosten und richtet IT an der Geschäftsstrategie aus."
+        },
+        {
+          "q": "Können Sie neue Software in meine bestehenden Systeme integrieren?",
+          "a": "Ja — wir entwerfen Integrationsmuster, bauen Konnektoren, planen Datenmigrationen und prüfen End-to-End-Workflows für eine reibungslose Einführung."
+        }
+      ],
+      "locations": [
+        {
+          "q": "Wo sind Ihre Leistungen verfügbar?",
+          "a": "Wir sind in Ostrava ansässig und betreuen Kunden in ganz Tschechien und der EU; Vor-Ort-Besuche nach Bedarf."
+        },
+        {
+          "q": "Bieten Sie Remote-IT-Beratung an?",
+          "a": "Ja — die meisten Arbeiten können remote erledigt werden; wir kombinieren Remote-Zusammenarbeit mit Vor-Ort-Besuchen für Workshops oder Implementierungen."
+        },
+        {
+          "q": "Wie schnell können wir zusammenarbeiten?",
+          "a": "Erste Analyse innerhalb weniger Tage, Angebot in 1–2 Wochen, Projektstart nach Einigung über Umfang und Konditionen."
+        }
+      ],
+      "process": [
+        {
+          "q": "Wie sieht Ihr Beratungsprozess aus?",
+          "a": "Wir starten mit einer Analyse, definieren Ziele, entwickeln Lösungen, setzen diese schrittweise um und validieren die Ergebnisse mit KPIs und Wissenstransfer an Ihr Team."
+        },
+        {
+          "q": "Bieten Sie einmalige Beratungen oder dauerhafte Unterstützung an?",
+          "a": "Beides — einmalige Beratung, Projektengagements und laufende Unterstützung nach Bedarf."
+        },
+        {
+          "q": "Bieten Sie ein kostenloses Erstgespräch an?",
+          "a": "Ja — ein kurzes, kostenloses Erstgespräch, um den Bedarf zu verstehen und nächste Schritte vorzuschlagen."
+        }
+      ],
+      "security": [
+        {
+          "q": "Können Sie bei Sicherheits-Audits helfen?",
+          "a": "Ja — Sicherheitsbewertungen, Schwachstellenanalysen, Richtlinienprüfungen und Empfehlungen zur Behebung sind möglich."
+        },
+        {
+          "q": "Schließen Sie NDAs mit Kunden ab?",
+          "a": "Ja — wir schließen NDAs ab, um vertrauliche Informationen vor detaillierten Gesprächen oder Zugriff auf sensible Daten zu schützen."
+        },
+        {
+          "q": "Wie stellen Sie die Sicherheit der Unternehmensdaten sicher?",
+          "a": "Wir befolgen Sicherheitsstandards, nutzen verschlüsselte Kanäle, setzen das Prinzip der minimalen Rechte um und helfen bei der Einführung von Richtlinien."
+        }
+      ],
+      "results": [
+        {
+          "q": "Wie verbessert IT-Beratung mein Unternehmen?",
+          "a": "Beratung steigert die Effizienz, reduziert Ausfallzeiten, ermöglicht bessere Entscheidungen und richtet Technologieinvestitionen an den Geschäftszielen aus."
+        },
+        {
+          "q": "Können Sie IT-Kosten senken?",
+          "a": "Ja — durch Optimierung, Konsolidierung, Automatisierung und kosteneffiziente Cloud-/Lizenzstrategien senken wir die Gesamtkosten."
+        },
+        {
+          "q": "Welchen ROI kann ich erwarten?",
+          "a": "Der ROI variiert je nach Projekt; wir definieren messbare KPIs während der Analyse und konzentrieren uns auf konkrete Ergebnisse."
+        }
+      ]
+    }
+  },
+  "lang": "de",
+  "title": "Vadatei – Experten-IT-Beratung für Unternehmenswachstum",
+  "description": "Steigern Sie die Produktivität und senken Sie Kosten mit maßgeschneiderter IT-Beratung. Über 30 Jahre Erfahrung für nachhaltiges Wachstum.",
+  "ogImage": "https://vadatei.com/og-de.png",
+  "privacy": {
+    "backToHome": "Zurück zur Startseite",
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Zuletzt aktualisiert: August 2025",
+    "introTitle": "Einleitung",
+    "introText": "Vadatei (\"wir\", \"unsere\" oder \"uns\") verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Datenschutzerklärung erläutert, wie wir Ihre Daten erfassen, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen und unsere Dienstleistungen nutzen.",
+    "infoCollectTitle": "Welche Informationen wir erfassen",
+    "personalInfoTitle": "Persönliche Daten",
+    "personalInfoText": "Wir können personenbezogene Daten erfassen, die Sie uns freiwillig zur Verfügung stellen, wenn Sie:",
+    "personalInfoContact": "Uns über die Website oder per E-Mail kontaktieren",
+    "personalInfoDiscovery": "Ein Erstgespräch oder eine Beratung vereinbaren",
+    "personalInfoNewsletter": "Den Newsletter abonnieren",
+    "personalInfoRequest": "Informationen zu unseren Leistungen anfordern",
+    "personalInfoIncludes": "Dazu können Ihr Name, Ihre E-Mail-Adresse, Telefonnummer, Firma, Position und weitere von Ihnen bereitgestellte Informationen gehören.",
+    "autoInfoTitle": "Automatisch erfasste Informationen",
+    "autoInfoText": "Wir können bestimmte technische Daten automatisch erfassen, z. B.:",
+    "autoInfoIP": "IP-Adresse und Standort",
+    "autoInfoBrowser": "Browsertyp und -version",
+    "autoInfoPages": "Besuchte Seiten und Verweildauer",
+    "autoInfoReferrer": "Verweisende Website oder Suchbegriff",
+    "useInfoTitle": "Wie wir Ihre Daten verwenden",
+    "useInfoText": "Wir verwenden Ihre Daten, um:",
+    "useInfoProvide": "Unsere Beratungsleistungen zu erbringen und zu verbessern",
+    "useInfoRespond": "Auf Ihre Anfragen und Wünsche zu reagieren",
+    "useInfoSchedule": "Beratungen zu planen und durchzuführen",
+    "useInfoSend": "Relevante Informationen zu senden",
+    "useInfoAnalyze": "Website-Nutzung zu analysieren und das Nutzererlebnis zu verbessern",
+    "useInfoLegal": "Gesetzliche Verpflichtungen zu erfüllen",
+    "sharingTitle": "Informationsweitergabe",
+    "sharingText": "Wir verkaufen Ihre personenbezogenen Daten nicht. Wir geben Ihre Daten nur weiter:",
+    "sharingConsent": "Mit Ihrer ausdrücklichen Zustimmung",
+    "sharingProviders": "An vertrauenswürdige Dienstleister, die uns beim Betrieb der Website und des Geschäfts unterstützen",
+    "sharingLaw": "Wenn dies gesetzlich vorgeschrieben ist oder zum Schutz unserer Rechte",
+    "sharingTransfer": "Im Zusammenhang mit einer Geschäftsübertragung oder Fusion",
+    "securityTitle": "Datensicherheit",
+    "securityText": "Wir setzen geeignete Sicherheitsmaßnahmen ein, um Ihre Daten vor unbefugtem Zugriff, Änderung oder Verlust zu schützen. Kein Verfahren zur Datenübertragung im Internet ist jedoch 100% sicher.",
+    "rightsTitle": "Ihre Rechte",
+    "rightsText": "Sie haben das Recht:",
+    "rightsDelete": "Die Löschung Ihrer personenbezogenen Daten zu verlangen",
+    "rightsOptOut": "Sich von Marketingmitteilungen abzumelden",
+    "rightsCopy": "Eine Kopie Ihrer Daten anzufordern",
+    "contactTitle": "Kontaktieren Sie uns",
+    "contactText": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder zu Ihren Daten haben, kontaktieren Sie uns bitte unter:",
+    "or": "oder"
+  },
+  "breadcrumbs": {
+    "home": "Startseite",
+    "about": "Über Vadatei",
+    "privacy": "Datenschutzerklärung"
+  },
+  "organization": {
+    "name": "Vadatei",
+    "contactType": "Kundendienst",
+    "areaServed": "EU"
+  }
+}
+

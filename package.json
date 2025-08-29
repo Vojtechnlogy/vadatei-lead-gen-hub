@@ -7,8 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build:en": "vite build --outDir dist/en --base /en/ && node ./scripts/localize.cjs en",
+    "build:cz": "vite build --outDir dist/cz --base /cz/ && node ./scripts/localize.cjs cz",
+    "build:de": "vite build --outDir dist/de --base /de/ && node ./scripts/localize.cjs de",
+    "build:all": "npm run build:en && npm run build:cz && npm run build:de",
+    "predeploy": "npm run build:all",
+    "deploy": "gh-pages -d dist",
+    "generate-sitemap": "node ./scripts/generate-sitemap-from-pages.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -46,13 +51,16 @@
     "cmdk": "^1.1.1",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.6.0",
+    "i18next": "^25.3.6",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.539.0",
     "next-themes": "^0.3.0",
     "react": "^18.3.1",
     "react-day-picker": "^8.10.1",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
     "react-hook-form": "^7.61.1",
+    "react-i18next": "^15.6.1",
     "react-resizable-panels": "^2.1.9",
     "react-router-dom": "^6.30.1",
     "recharts": "^2.15.4",
@@ -80,6 +88,7 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
-    "vite": "^5.4.19"
+    "vite": "^5.4.19",
+    "vite-plugin-react-meta-map": "^1.0.8"
   }
 }

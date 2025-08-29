@@ -1,9 +1,45 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { localizedPath } from "../lib/localize";
+import { useTranslation } from "react-i18next";
 
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": t("organization.name"),
+    "url": "https://vadatei.com/",
+    "logo": "https://vadatei.com/favicon.ico",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+31 682 49 46 90",
+        "contactType": t("organization.contactType"),
+        "areaServed": t("organization.areaServed"),
+        "email": "info@vadatei.com"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+420 602 396 416",
+        "contactType": t("organization.contactType"),
+        "areaServed": t("organization.areaServed"),
+        "email": "info@vadatei.com"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/marek-tolasz/"
+    ]
+  };
+
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -12,14 +48,14 @@ const PrivacyPolicy = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button
             variant="ghost"
-            onClick={() => navigate("/")}
+            onClick={() => navigate(localizedPath())}
             className="text-white hover:bg-white/10 mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
+            {t("privacy.backToHome")}
           </Button>
-          <h1 className="text-4xl font-heading font-bold">Privacy Policy</h1>
-          <p className="text-white/90 mt-2">Last updated: August 2025</p>
+          <h1 className="text-4xl font-heading font-bold">{t("privacy.title")}</h1>
+          <p className="text-white/90 mt-2">{t("privacy.lastUpdated")}</p>
         </div>
       </header>
 
@@ -27,97 +63,97 @@ const PrivacyPolicy = () => {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-lg max-w-none font-body">
           <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Introduction</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("privacy.introTitle")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
-              Vadatei ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+              {t("privacy.introText")}
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Information We Collect</h2>
-            <h3 className="text-xl font-heading font-semibold text-primary mb-3">Personal Information</h3>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("privacy.infoCollectTitle")}</h2>
+            <h3 className="text-xl font-heading font-semibold text-primary mb-3">{t("privacy.personalInfoTitle")}</h3>
             <p className="text-foreground leading-relaxed mb-4">
-              We may collect personal information that you voluntarily provide to us when you:
+              {t("privacy.personalInfoText")}
             </p>
             <ul className="list-disc pl-6 mb-4 text-foreground">
-              <li>Contact us through our website or email</li>
-              <li>Schedule a discovery call or consultation</li>
-              <li>Subscribe to our newsletter</li>
-              <li>Request information about our services</li>
+              <li>{t("privacy.personalInfoContact")}</li>
+              <li>{t("privacy.personalInfoDiscovery")}</li>
+              <li>{t("privacy.personalInfoNewsletter")}</li>
+              <li>{t("privacy.personalInfoRequest")}</li>
             </ul>
             <p className="text-foreground leading-relaxed mb-4">
-              This information may include your name, email address, phone number, company name, job title, and any other information you choose to provide.
+              {t("privacy.personalInfoIncludes")}
             </p>
 
-            <h3 className="text-xl font-heading font-semibold text-primary mb-3">Automatically Collected Information</h3>
+            <h3 className="text-xl font-heading font-semibold text-primary mb-3">{t("privacy.autoInfoTitle")}</h3>
             <p className="text-foreground leading-relaxed mb-4">
-              We may automatically collect certain information about your device and usage patterns, including:
+              {t("privacy.autoInfoText")}
             </p>
             <ul className="list-disc pl-6 mb-4 text-foreground">
-              <li>IP address and geographic location</li>
-              <li>Browser type and version</li>
-              <li>Pages visited and time spent on our website</li>
-              <li>Referring website and search terms</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">How We Use Your Information</h2>
-            <p className="text-foreground leading-relaxed mb-4">
-              We use the information we collect to:
-            </p>
-            <ul className="list-disc pl-6 mb-4 text-foreground">
-              <li>Provide and improve our consulting services</li>
-              <li>Respond to your inquiries and requests</li>
-              <li>Schedule and conduct discovery calls and consultations</li>
-              <li>Send you relevant information about our services</li>
-              <li>Analyze website usage and improve user experience</li>
-              <li>Comply with legal obligations</li>
+              <li>{t("privacy.autoInfoIP")}</li>
+              <li>{t("privacy.autoInfoBrowser")}</li>
+              <li>{t("privacy.autoInfoPages")}</li>
+              <li>{t("privacy.autoInfoReferrer")}</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Information Sharing</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("privacy.useInfoTitle")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
-              We do not sell, trade, or otherwise transfer your personal information to third parties except:
+              {t("privacy.useInfoText")}
             </p>
             <ul className="list-disc pl-6 mb-4 text-foreground">
-              <li>With your explicit consent</li>
-              <li>To trusted service providers who assist us in operating our website and conducting our business</li>
-              <li>When required by law or to protect our rights</li>
-              <li>In connection with a business transfer or merger</li>
+              <li>{t("privacy.useInfoProvide")}</li>
+              <li>{t("privacy.useInfoRespond")}</li>
+              <li>{t("privacy.useInfoSchedule")}</li>
+              <li>{t("privacy.useInfoSend")}</li>
+              <li>{t("privacy.useInfoAnalyze")}</li>
+              <li>{t("privacy.useInfoLegal")}</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Data Security</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("privacy.sharingTitle")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
-              We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.
-            </p>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Your Rights</h2>
-            <p className="text-foreground leading-relaxed mb-4">
-              You have the right to:
+              {t("privacy.sharingText")}
             </p>
             <ul className="list-disc pl-6 mb-4 text-foreground">
-              <li>Request deletion of your personal information</li>
-              <li>Opt-out of marketing communications</li>
-              <li>Request a copy of your personal information</li>
+              <li>{t("privacy.sharingConsent")}</li>
+              <li>{t("privacy.sharingProviders")}</li>
+              <li>{t("privacy.sharingLaw")}</li>
+              <li>{t("privacy.sharingTransfer")}</li>
             </ul>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Contact Us</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("privacy.securityTitle")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
-              If you have questions about this Privacy Policy or our data practices, please contact us at:
+              {t("privacy.securityText")}
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("privacy.rightsTitle")}</h2>
+            <p className="text-foreground leading-relaxed mb-4">
+              {t("privacy.rightsText")}
+            </p>
+            <ul className="list-disc pl-6 mb-4 text-foreground">
+              <li>{t("privacy.rightsDelete")}</li>
+              <li>{t("privacy.rightsOptOut")}</li>
+              <li>{t("privacy.rightsCopy")}</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("privacy.contactTitle")}</h2>
+            <p className="text-foreground leading-relaxed mb-4">
+              {t("privacy.contactText")}
             </p>
             <div className="bg-muted p-4 rounded-lg">
               <p className="text-foreground">
                 <strong>Vadatei</strong><br />
-                Email: blank for now<br />
-                Phone: blank for now<br />
+                Email: info@vadatei.com<br />
+                Phone: +31 682 49 46 90 &nbsp;&nbsp;&nbsp; {t("privacy.or")} &nbsp;&nbsp; +420 602 396 416<br />
               </p>
             </div>
           </section>
@@ -129,5 +165,4 @@ const PrivacyPolicy = () => {
 
 export default PrivacyPolicy;
 
-// marek.tolasz@gmail.com
 //31 6 82 49 46 90 or +420 602 396 416
