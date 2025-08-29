@@ -100,7 +100,8 @@
       "title": "Služby",
       "itHealthCheck": "IT zdraví & výkon",
       "digitalTransformation": "Digitální transformace",
-      "cioAsAService": "CIO jako služba"
+      "cioAsAService": "CIO jako služba",
+      "contactForQuote": "Cena na vyžádání"
     },
     "newsletter": {
       "title": "Newsletter",
@@ -199,7 +200,8 @@
         "Poradenství k dodavatelům a rozpočtu"
       ],
       "fullDescription": "Získejte zkušeného CIO bez nutnosti plného úvazku. Poskytujeme strategické vedení, řízení, správu dodavatelů a praktický koučink pro rozvoj týmu a efektivní realizaci projektů."
-    }
+    },
+    "contactForQuote": "Cena na vyžádání"
   },
   "faq": {
     "title": "Často kladené dotazy",

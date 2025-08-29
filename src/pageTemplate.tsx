@@ -33,6 +33,7 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
         href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet"
       />
+      <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
 
       {/* Open Graph Meta Tags */}
       <meta property="og:title" content={title} />
