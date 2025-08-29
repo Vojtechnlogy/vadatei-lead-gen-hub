@@ -35,7 +35,11 @@ Create QR code and advertizing for the website
 
 Examples section so that the clients have examples
 
-Add and SEO page so that users who search stuff up have a good chance of finding somthing maybe a blog or case studies
+Add and SEO page so that users who search stuff up have a good chance of finding somthing maybe a blog or case 
+studies
+
+ADD PRODUCT PRICE SCHEMA--------------------------------- ADD EVENT SCHEMA
+
 
 !!!!!!!!
 
@@ -44,8 +48,4 @@ Add this with the langauge toggle button
 Old read me file vanished... songs will be writen about the great tragedy that happened on 26/08/2025
 find the old read me and update this one with the information on there or honestly this could be a sign for you to update the readme cause it honeslty didn't make much sense
 
-ADD PRODUCT PRICE SCHEMA--------------------------------- ADD EVENT SCHEMA
 
-TODO
-
-Add ---schemas--- to the website so things can be given to the user 
