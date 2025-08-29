@@ -207,11 +207,24 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                 "@type": "Brand",
                 "name": "Vadatei"
               },
-              "offers": {
-                "@type": "Offer",
-                "url": "https://vadatei.com/",
-                "availability": "https://schema.org/InStock"
-              }
+              "offers": [
+                {
+                  "@type": "Offer",
+                  "price": t("services.contactForQuote"),
+                  "priceCurrency": "EUR",
+                  "priceValidUntil": "2026-08-29",
+                  "url": "https://vadatei.com/",
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "price": t("services.contactForQuote"),
+                  "priceCurrency": "CZK",
+                  "priceValidUntil": "2026-08-29",
+                  "url": "https://vadatei.com/",
+                  "availability": "https://schema.org/InStock"
+                }
+              ]
             })
           }}
         />
