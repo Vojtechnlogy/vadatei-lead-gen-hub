@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { BriefcaseBusiness , ChartSpline,Zap, Handshake} from "lucide-react";
-import teamImage from "@/assets/team-collaboration.jpg";
 import marekTolasz from '../assets/marekTolasz.jpg';
 import { useTranslation } from "react-i18next";
 

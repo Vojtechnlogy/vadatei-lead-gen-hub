@@ -58,7 +58,7 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="https://vadatei.com/assets/digital-transformation.jpg" />
-      <meta property="og:see_also" content="https://www.linkedin.com/company/vadatei/" /> {/* LinkedIn SEO improvement */}
+      <meta property="og:see_also" content="https://www.linkedin.com/company/vadatei/" />
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
