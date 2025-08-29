@@ -60,6 +60,7 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
       <link rel="manifest" href="/site.webmanifest" />
       <meta name="apple-mobile-web-app-title" content="Vadatei" />
       <meta name="application-name" content="Vadatei" />
+      <meta name="seznam-wmt" content="ruOcgLZS6YX6uElt0IUgJN322pygUuji" />
     </head>
     <body>
       <div id="root"></div>
