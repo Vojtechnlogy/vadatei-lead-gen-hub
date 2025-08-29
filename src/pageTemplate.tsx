@@ -65,12 +65,12 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
       <meta name="twitter:image" content="https://vadatei.com/assets/digital-transformation.jpg" />
 
       {/* Canonical + Hreflang */}
-      <link rel="canonical" href={canonical} />
-      <link rel="alternate" href="https://vadatei.com/en/" hrefLang="en" />
-      <link rel="alternate" href="https://vadatei.com/cz/" hrefLang="cs" />
-      <link rel="alternate" href="https://vadatei.com/de/" hrefLang="de" />
-      <link rel="alternate" href="https://vadatei.com/" hrefLang="x-default" />
-
+    <link rel="canonical" href="https://vadatei.com/en/" />
+    <link rel="alternate" href="https://vadatei.com/en/" hrefLang="en" />
+    <link rel="alternate" href="https://vadatei.com/cz/" hrefLang="cs" />
+    <link rel="alternate" href="https://vadatei.com/de/" hrefLang="de" />
+    <link rel="alternate" href="https://vadatei.com/" hrefLang="x-default" />
+    
       {/* Favicons / Touch icons / Manifest */}
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
