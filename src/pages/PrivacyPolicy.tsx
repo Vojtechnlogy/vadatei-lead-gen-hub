@@ -9,6 +9,33 @@ const PrivacyPolicy = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": t("organization.name"),
+    "url": "https://vadatei.com/",
+    "logo": "https://vadatei.com/favicon.ico",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+31 682 49 46 90",
+        "contactType": t("organization.contactType"),
+        "areaServed": t("organization.areaServed"),
+        "email": "info@vadatei.com"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+420 602 396 416",
+        "contactType": t("organization.contactType"),
+        "areaServed": t("organization.areaServed"),
+        "email": "info@vadatei.com"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/marek-tolasz/"
+    ]
+  };
+
   // Scroll to top on mount
   useEffect(() => {
     window.scrollTo(0, 0);

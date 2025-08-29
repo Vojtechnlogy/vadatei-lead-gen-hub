@@ -1,44 +1,44 @@
 {
   "about": {
     "title": "O Vadatei",
-    "tagline": "Zkušenosti, kterým můžete věřit, výsledky, které lze měřit.",
+    "tagline": "Zkušenosti, kterým můžete věřit, výsledky, které můžete měřit.",
     "heading": "Váš strategický technologický partner",
-    "p1": "S více než 30 lety v oblasti IT vedení a transformace pomohl Marek Tolasz organizacím zefektivnit provoz, snížit náklady a otevřít růstové příležitosti.",
-    "p2": "Vadatei vznikla, aby přinesla tuto odbornost firmám, které chtějí, aby IT bylo strategickou výhodou, nikoli pouze podpůrnou funkcí. Identifikujeme skutečné výzvy, navrhujeme praktická řešení a pomáháme je implementovat pro trvalé měřitelné výsledky.",
+    "p1": "S více než 30 lety zkušeností v IT vedení a transformaci pomáhá Marek Tolasz organizacím zefektivnit provoz, snížit náklady a podpořit růst.",
+    "p2": "Vadatei vzniklo, aby přineslo tuto odbornost firmám, které chtějí, aby IT bylo strategickou výhodou, ne jen podpůrnou funkcí. Identifikujeme skutečné výzvy, navrhujeme praktická řešení a pomáháme je implementovat pro trvalé a měřitelné výsledky.",
     "imageName": "Marek Tolasz",
     "imageRole": "Vadatei, zakladatel & hlavní konzultant",
     "values": {
       "experience": {
         "title": "30+ let zkušeností",
-        "description": "Desetiletí ověřených výsledků při vedení IT týmů a transformačních projektů v různých odvětvích"
+        "description": "Desítky let ověřených výsledků při vedení IT týmů a transformačních projektů v různých odvětvích"
       },
       "impact": {
-        "title": "Měřitelný dopad na byznys",
-        "description": "Řešení navržená ke snížení nákladů, zlepšení efektivity a podpoře udržitelného růstu"
+        "title": "Měřitelný obchodní dopad",
+        "description": "Řešení navržená ke snížení nákladů, zvýšení efektivity a podpoře udržitelného růstu"
       },
       "diagnosis": {
         "title": "Rychlá a přesná diagnostika",
-        "description": "Rychle identifikujeme skutečné problémy, aby byla každá změna cílená a efektivní"
+        "description": "Rychle identifikujeme skutečné problémy, takže každé zlepšení je cílené a efektivní"
       },
       "lowRisk": {
         "title": "Nízkorizikový první krok",
-        "description": "Začněte se zaměřenou fází discovery před závazkem k větším projektům"
+        "description": "Začněte s cílenou úvodní analýzou před většími projekty"
       }
     }
   },
   "serviceModal": {
-    "title": "Požádejte o více informací: {{service}}",
-    "sr_description": "Vyplňte formulář a požádejte o více informací o {{service}}.",
+    "title": "Žádost o více informací: {{service}}",
+    "sr_description": "Vyplňte formulář a požádejte o více informací o službě {{service}}.",
     "overviewTitle": "Přehled",
-    "featuresTitle": "Hlavní funkce",
-    "heading": "Požádejte o více informací",
-    "details_label": "Podrobnosti (zájem o: {{service}})",
-    "placeholder_details": "Řekněte nám více o vašich potřebách ohledně {{service}}...",
+    "featuresTitle": "Klíčové vlastnosti",
+    "heading": "Žádost o více informací",
+    "details_label": "Detaily (Zájem o: {{service}})",
+    "placeholder_details": "Popište své potřeby ohledně služby {{service}}...",
     "sending": "Odesílání...",
     "submit": "Odeslat poptávku",
     "toast": {
       "successTitle": "Poptávka odeslána",
-      "successDescription": "Děkujeme za váš zájem o {{service}}. Ozveme se do 24 hodin.",
+      "successDescription": "Děkujeme za váš zájem o službu {{service}}. Ozveme se vám do 24 hodin.",
       "errorTitle": "Odeslání selhalo",
       "errorDescription": "Při odesílání došlo k chybě. Zkuste to prosím později."
     }
@@ -49,40 +49,40 @@
     "consultationTitle": "30minutová konzultace",
     "consultationDesc": "Zaměřená diskuse o vašich technologických výzvách a cílech",
     "formatTitle": "Video nebo telefon",
-    "formatDesc": "Vyberte preferovaný formát schůzky",
+    "formatDesc": "Zvolte preferovaný formát schůzky",
     "noObligationTitle": "Bez závazků",
     "noObligationDesc": "Bezplatná konzultace bez závazků",
     "weWillDiscussTitle": "Probereme:",
-    "discussItem1": "Vaše současné technologické výzvy",
+    "discussItem1": "Vaše aktuální technologické výzvy",
     "discussItem2": "Strategické technologické cíle a priority",
     "discussItem3": "Další kroky a doporučení",
-    "readyTitle": "Připraveni transformovat své IT?",
-    "readyBody": "Staňte se dalším úspěšným partnerem Vadatei a dosáhněte svých technologických cílů.",
+    "readyTitle": "Připraveni transformovat vaše IT?",
+    "readyBody": "Staňte se další úspěšnou organizací, která s námi dosáhla svých technologických cílů.",
     "chooseTimeTitle": "Vyberte preferovaný čas",
-    "chooseTimeDesc": "Klikněte na tlačítko níže a vyberte dostupný čas pro okamžité naplánování hovoru.",
+    "chooseTimeDesc": "Klikněte na tlačítko níže a vyberte si volný termín pro schůzku.",
     "bookButton": "Rezervovat termín",
-    "availability": "Dostupné Po–Pá, 8:00–16:00 CET"
+    "availability": "K dispozici pondělí – pátek, 8:00 – 16:00"
   },
   "form": {
-    "fullName": "Jméno a příjmení *",
+    "fullName": "Celé jméno *",
     "email": "E-mailová adresa *",
     "companyName": "Název společnosti",
     "phone": "Telefonní číslo"
   },
   "infoCard": {
     "readyTitle": "Připraveni začít?",
-    "readyBody": "Vyplňte kontaktní formulář a zjistěte více o tom, jak může {{service}} prospět vaší organizaci."
+    "readyBody": "Vyplňte kontaktní formulář a zjistěte, jak vám služba {{service}} může pomoci."
   },
   "hero": {
-    "headline": "Přední IT poradenství",
-    "subhead": "S více než 30 lety odborných zkušeností poskytujeme strategické technologické poradenství, které transformuje firmy. Spolupracujte s námi, abyste zvládli složité IT výzvy a uvolnili plný potenciál vaší organizace.",
+    "headline": "Špičkové IT poradenství",
+    "subhead": "Více než 30 let zkušeností v oboru. Poskytujeme strategické technologické vedení, které transformuje podnikání. Spolupracujte s námi na řešení složitých IT výzev a využijte plný potenciál vaší organizace.",
     "cta": {
       "book": "Rezervovat konzultaci",
       "services": "Naše služby"
     },
     "stats": {
       "years": "Let zkušeností",
-      "projects": "Dokončené projekty",
+      "projects": "Realizovaných projektů",
       "satisfaction": "Spokojenost klientů"
     }
   },
@@ -98,14 +98,14 @@
     },
     "services": {
       "title": "Služby",
-      "itHealthCheck": "IT Health & Výkon",
+      "itHealthCheck": "IT zdraví & výkon",
       "digitalTransformation": "Digitální transformace",
       "cioAsAService": "CIO jako služba"
     },
     "newsletter": {
       "title": "Newsletter",
-      "desc": "Získejte občasné novinky a poznatky o IT strategii a transformaci.",
-      "placeholder": "Vaše e-mailová adresa",
+      "desc": "Získejte občasné novinky a tipy o IT strategii a transformaci.",
+      "placeholder": "Váš e-mail",
       "subscribe": "Odebírat"
     },
     "copy": "© {{year}} Vadatei. Všechna práva vyhrazena.",
@@ -124,216 +124,223 @@
       "process": "Proces"
     },
     "bookNow": "Rezervovat",
-    "bookDiscovery": "Rezervovat úvodní konzultaci"
+    "bookDiscovery": "Rezervovat konzultaci"
   },
   "process": {
     "heading": "Náš osvědčený proces",
-    "subhead": "Systematický přístup, který zajišťuje, že každé zapojení přináší maximální hodnotu a trvalé výsledky.",
+    "subhead": "Systematický přístup, který zajišťuje maximální hodnotu a trvalé výsledky.",
     "steps": {
       "audit": {
-        "title": "Audit a discovery",
-        "description": "Provádíme hloubkové rozhovory a hodnocení, abychom identifikovali vaše priority, výzvy a příležitosti. Tento krok vytvoří jasný výchozí bod pro další spolupráci."
+        "title": "Audit & analýza",
+        "description": "Provedeme hloubkové rozhovory a analýzy, abychom zjistili vaše priority, výzvy a příležitosti. To stanoví jasný základ pro další spolupráci."
       },
       "strategy": {
-        "title": "Vytvoření strategie",
-        "description": "Ponoříme se do vašeho podnikání, abychom odhalili konkrétní kroky, které posunou vaše cíle vpřed. Tato fáze shromažďuje poznatky, které vedou každé rozhodnutí."
+        "title": "Tvorba strategie",
+        "description": "Detailně poznáme vaše podnikání a navrhneme konkrétní kroky, které posunou vaše cíle vpřed."
       },
       "roadmap": {
-        "title": "Roadmapa",
-        "description": "Vytvoříme komplexní, realizovatelnou roadmapu přizpůsobenou vašemu podnikání s implementovatelnými změnami, projekty a workshopy, které vám pomohou uspět."
+        "title": "Plán",
+        "description": "Vytvoříme komplexní a realizovatelný plán na míru s konkrétními změnami, projekty a workshopy."
       },
       "deployment": {
-        "title": "Nasazení",
-        "description": "Posilujeme váš tým, aby převzal provádění, poskytujeme nástroje, školení a průběžnou podporu, aby byly změny provedeny efektivně a udržitelně."
+        "title": "Implementace",
+        "description": "Podpoříme váš tým při realizaci, poskytneme nástroje, koučink a průběžnou podporu."
       }
     },
     "guidance": {
-      "title": "Poradenství a spolupráce",
-      "description": "Průběžná podpora, školení a mentoring v každé fázi, aby byl váš tým posílený, sladěný a vždy informovaný."
+      "title": "Podpora & spolupráce",
+      "description": "Průběžná podpora, koučink a mentoring v každé fázi, aby byl váš tým informovaný a motivovaný."
     },
     "benefits": {
       "heading": "Proč náš proces funguje",
       "item1": "Transparentní komunikace",
-      "item2": "Roky zdokonalení",
+      "item2": "Léta zdokonalování",
       "item3": "Úspěšné implementace"
     }
   },
   "services": {
     "sectionTitle": "Naše služby",
-    "sectionIntro": "Komplexní IT poradenské a realizační služby pro modernizaci technologií, zlepšení výkonu a snížení nákladů.",
+    "sectionIntro": "Komplexní IT poradenství a realizace pro modernizaci technologií, zvýšení výkonu a snížení nákladů.",
     "moreInfoButton": "Více informací",
     "cta": {
-      "title": "Připraveni transformovat IT?",
-      "body": "Pojďme probrat, jak vám naše zkušenosti pomohou dosahovat měřitelných výsledků z vašich investic do technologií.",
+      "title": "Připraveni transformovat vaše IT?",
+      "body": "Proberme, jak vám naše odbornost může přinést měřitelnou hodnotu.",
       "button": "Rezervovat konzultaci"
     },
-
     "it-health-check": {
-      "title": "IT Health & Výkon",
+      "title": "IT zdraví & výkon",
       "description": "Audit a optimalizace pro vyšší stabilitu, výkon a efektivitu nákladů.",
       "features": [
         "Bezpečnostní audit",
         "Optimalizace výkonu",
-        "Příležitosti ke snížení nákladů",
+        "Možnosti snížení nákladů",
         "Zvýšení spolehlivosti"
       ],
-      "fullDescription": "Služba IT Health & Výkon kombinuje důkladné audity s prioritními doporučeními. Identifikujeme bezpečnostní a provozní mezery, diagnostikujeme úzká místa výkonu a připravíme praktický plán pro snížení nákladů a zvýšení dostupnosti."
+      "fullDescription": "Naše služba IT zdraví & výkon kombinuje hloubkový audit s prioritizovanými opatřeními. Identifikujeme bezpečnostní a provozní mezery, diagnostikujeme úzká místa a navrhneme plán pro snížení nákladů a zvýšení dostupnosti i uživatelského komfortu."
     },
-
     "digital-transformation": {
-      "title": "Digitální transformace a roadmapa",
-      "description": "Strategické plánování a podpora nasazení pro modernizaci technologií a procesů.",
+      "title": "Digitální transformace",
+      "description": "Strategické plánování a podpora modernizace technologií a procesů.",
       "features": [
-        "Strategická roadmapa",
+        "Strategický plán",
         "Modernizace technologií",
-        "Portfolio projektů a dodávky",
+        "Portfolio projektů & realizace",
         "Řízení změn a adopce"
       ],
-      "fullDescription": "Vytvoříme pragmatickou roadmapu transformace sladěnou s obchodními cíli. Od stanovení priorit a výběru řešení po plánování dodání a adopce — pomáháme organizacím modernizovat etapovitě s měřitelným přínosem."
+      "fullDescription": "Vytvoříme praktický transformační plán zaměřený na obchodní výsledky. Od prioritizace a výběru řešení po plánování a adopci pomáháme organizacím modernizovat v postupných krocích s měřitelnou hodnotou."
     },
-
     "cio-as-a-service": {
-      "title": "CIO jako služba & posílení týmu",
-      "description": "Zkušené frakční CIO vedení a praktické koučování pro sladění strategie, řízení a dodání.",
+      "title": "CIO jako služba",
+      "description": "Zkušené CIO vedení na částečný úvazek a praktický koučink pro sladění strategie, řízení a realizace.",
       "features": [
-        "Frakční CIO vedení",
+        "CIO na částečný úvazek",
         "Strategické poradenství",
-        "Koučování a posílení týmu",
-        "Poradenství s dodavateli a rozpočtem"
+        "Koučink a rozvoj týmu",
+        "Poradenství k dodavatelům a rozpočtu"
       ],
-      "fullDescription": "Získejte zkušené CIO schopnosti bez plného úvazku. Poskytujeme strategické vedení, governance, řízení dodavatelů a praktické koučování k posílení týmů a efektivnímu provedení iniciativ."
+      "fullDescription": "Získejte zkušeného CIO bez nutnosti plného úvazku. Poskytujeme strategické vedení, řízení, správu dodavatelů a praktický koučink pro rozvoj týmu a efektivní realizaci projektů."
     }
   },
-  "lang": "cs",
-  "title": "Vadatei – IT poradenství pro růst vašeho podnikání",
-  "description": "Zvyšte produktivitu a snižte náklady s na míru šitým IT poradenstvím. Více než 30 let zkušeností.",
-  "ogImage": "https://vadatei.com/og-cz.png",
   "faq": {
     "title": "Často kladené dotazy",
     "categories": {
       "services": "Služby",
-      "locations": "Lokality a dostupnost",
-      "process": "Proces a onboarding",
-      "security": "Bezpečnost a důvěra",
-      "results": "Výsledky a návratnost"
+      "locations": "Lokalita & dostupnost",
+      "process": "Proces & spolupráce",
+      "security": "Bezpečnost & důvěra",
+      "results": "Výsledky & návratnost"
     },
     "questions": {
       "services": [
         {
           "q": "Co dělá IT konzultant?",
-          "a": "IT konzultant hodnotí vaši technologii, doporučuje vylepšení, navrhuje řešení a pomáhá realizovat strategické projekty k dosažení obchodních cílů."
+          "a": "IT konzultant hodnotí vaši technologii, doporučuje vylepšení, navrhuje řešení a pomáhá s implementací strategických projektů."
         },
         {
-          "q": "Proč by si moje firma měla najmout IT konzultanta?",
-          "a": "Konzultant přináší zkušenosti a objektivitu pro rychlejší řešení technických problémů, snížení rizik, optimalizaci nákladů a sladění IT se strategií firmy."
+          "q": "Proč si najmout IT konzultanta?",
+          "a": "Konzultant přináší zkušenosti a objektivitu, řeší technické problémy rychleji, snižuje rizika, optimalizuje náklady a sladí IT s obchodní strategií."
         },
         {
-          "q": "Můžete pomoci s integrací nového softwaru do stávajících systémů?",
-          "a": "Ano — navrhujeme integrační vzory, vytváříme konektory, plánujeme migrace dat a ověřujeme procesy pro hladké zavedení."
+          "q": "Pomůžete s integrací nového softwaru?",
+          "a": "Ano — navrhujeme integrační postupy, vytváříme konektory, plánujeme migrace dat a ověřujeme funkčnost celého řešení."
         }
       ],
       "locations": [
         {
           "q": "Kde jsou vaše služby dostupné?",
-          "a": "Sídlíme v Ostravě a obsluhujeme klienty po celé ČR i EU; osobní návštěvy jsou možné dle potřeby."
+          "a": "Sídlíme v Ostravě a obsluhujeme klienty po celé ČR a EU; osobní návštěvy dle potřeby."
         },
         {
-          "q": "Nabízíte vzdálené IT konzultace?",
-          "a": "Ano — většinu práce lze provést na dálku; kombinujeme vzdálenou spolupráci s osobními návštěvami pro workshopy nebo nasazení."
+          "q": "Nabízíte vzdálené IT poradenství?",
+          "a": "Ano — většinu práce lze provést na dálku, kombinujeme vzdálenou spolupráci s osobními návštěvami pro workshopy nebo implementace."
         },
         {
           "q": "Jak rychle můžeme začít spolupracovat?",
-          "a": "Úvodní schůzka během několika dnů, návrh řešení do 1–2 týdnů, zahájení projektu po dohodě o rozsahu a podmínkách."
+          "a": "Úvodní analýza během několika dnů, návrh do 1–2 týdnů, zahájení projektu po dohodě o rozsahu a podmínkách."
         }
       ],
       "process": [
         {
           "q": "Jak vypadá váš konzultační proces?",
-          "a": "Začínáme analýzou, definujeme cíle, navrhujeme řešení, implementujeme po fázích a ověřujeme výsledky pomocí KPI a předáním znalostí vašemu týmu."
+          "a": "Začínáme analýzou, stanovíme cíle, navrhneme řešení, implementujeme po fázích a ověřujeme výsledky pomocí KPI a předání znalostí vašemu týmu."
         },
         {
-          "q": "Poskytujete jednorázové konzultace nebo dlouhodobou podporu?",
-          "a": "Obojí — jednorázové poradenství, projektové zakázky i dlouhodobá podpora na základě smlouvy."
+          "q": "Nabízíte jednorázové konzultace i dlouhodobou podporu?",
+          "a": "Obojí — jednorázové poradenství, projektové spolupráce i dlouhodobá podpora dle potřeby."
         },
         {
           "q": "Nabízíte úvodní konzultaci zdarma?",
-          "a": "Ano — krátká úvodní konzultace pro pochopení potřeb a návrh dalších kroků je zdarma."
+          "a": "Ano — krátká úvodní konzultace zdarma pro pochopení potřeb a návrh dalších kroků."
         }
       ],
       "security": [
         {
-          "q": "Pomůžete s kybernetickým auditem?",
-          "a": "Ano — nabízíme bezpečnostní audity, hodnocení zranitelností, kontrolu politik a doporučení k nápravě."
+          "q": "Pomůžete s bezpečnostním auditem?",
+          "a": "Ano — nabízíme bezpečnostní audity, zhodnocení zranitelností, kontrolu politik a doporučení k nápravě."
         },
         {
-          "q": "Podepisujete s klienty NDA?",
-          "a": "Ano — podepisujeme NDA pro ochranu důvěrných informací před detailní diskuzí nebo přístupem k citlivým datům."
+          "q": "Podepisujete NDA s klienty?",
+          "a": "Ano — podepisujeme NDA pro ochranu důvěrných informací před detailní diskusí nebo přístupem k citlivým datům."
         },
         {
           "q": "Jak zajistíte bezpečnost dat mé firmy?",
-          "a": "Dodržujeme bezpečnostní standardy, používáme šifrované kanály, princip minimálních oprávnění a pomáháme zavádět kontrolní mechanismy."
+          "a": "Dodržujeme bezpečnostní standardy, používáme šifrované kanály, princip minimálních oprávnění a pomáháme zavádět potřebné politiky."
         }
       ],
       "results": [
         {
-          "q": "Jak IT konzultace zlepší mé podnikání?",
-          "a": "Konzultace zvyšují efektivitu, snižují prostoje, umožňují lepší rozhodování a sladění investic do technologií s obchodními cíli."
+          "q": "Jak IT poradenství zlepší mé podnikání?",
+          "a": "Poradenství zvyšuje efektivitu, snižuje výpadky, umožňuje lepší rozhodování a sladí investice do technologií s obchodními cíli."
         },
         {
-          "q": "Můžete pomoci snížit náklady na IT?",
+          "q": "Pomůžete snížit IT náklady?",
           "a": "Ano — optimalizací, konsolidací, automatizací a efektivními cloud/licenčními strategiemi snižujeme celkové náklady."
         },
         {
           "q": "Jakou návratnost mohu očekávat?",
-          "a": "Návratnost závisí na projektu; během analýzy stanovíme měřitelné cíle a zaměříme se na konkrétní výsledky."
+          "a": "ROI závisí na projektu; během analýzy stanovíme měřitelné cíle a zaměříme se na konkrétní výsledky."
         }
       ]
     }
   },
+  "lang": "cz",
+  "title": "Vadatei - Špičkové IT poradenství pro růst vašeho podnikání",
+  "description": "Zvyšte produktivitu a snižte náklady s IT poradenstvím na míru. Více než 30 let zkušeností s rozvojem firem.",
+  "ogImage": "https://vadatei.com/og-cz.png",
   "privacy": {
-    "backToHome": "Zpět na hlavní stránku",
+    "backToHome": "Zpět na domovskou stránku",
     "title": "Zásady ochrany osobních údajů",
     "lastUpdated": "Naposledy aktualizováno: srpen 2025",
     "introTitle": "Úvod",
-    "introText": "Vadatei (\"my\", \"naše\" nebo \"nás\") se zavazuje chránit vaše soukromí. Tyto zásady ochrany osobních údajů vysvětlují, jak shromažďujeme, používáme, zveřejňujeme a chráníme vaše informace při návštěvě našich webových stránek a využívání našich služeb.",
-    "infoCollectTitle": "Informace, které shromažďujeme",
+    "introText": "Vadatei (\"my\", \"naše\" nebo \"nás\") se zavazuje chránit vaše soukromí. Tyto zásady vysvětlují, jak shromažďujeme, používáme, zveřejňujeme a chráníme vaše údaje při návštěvě našeho webu a využívání našich služeb.",
+    "infoCollectTitle": "Jaké informace shromažďujeme",
     "personalInfoTitle": "Osobní údaje",
-    "personalInfoText": "Můžeme shromažďovat osobní údaje, které nám dobrovolně poskytnete, když:",
-    "personalInfoContact": "Kontaktujete nás prostřednictvím webu nebo e-mailu",
-    "personalInfoDiscovery": "Si domluvíte úvodní nebo konzultační hovor",
-    "personalInfoNewsletter": "Odebíráte náš newsletter",
+    "personalInfoText": "Můžeme shromažďovat osobní údaje, které nám dobrovolně poskytnete, například když:",
+    "personalInfoContact": "Nás kontaktujete přes web nebo e-mail",
+    "personalInfoDiscovery": "Si domluvíte úvodní hovor nebo konzultaci",
+    "personalInfoNewsletter": "Se přihlásíte k odběru newsletteru",
     "personalInfoRequest": "Požádáte o informace o našich službách",
-    "personalInfoIncludes": "Tyto údaje mohou zahrnovat vaše jméno, e-mail, telefon, název společnosti, pracovní pozici a další informace, které se rozhodnete poskytnout.",
+    "personalInfoIncludes": "Tyto údaje mohou zahrnovat vaše jméno, e-mail, telefon, společnost, pracovní pozici a další informace, které se rozhodnete sdílet.",
     "autoInfoTitle": "Automaticky shromažďované informace",
-    "autoInfoText": "Můžeme automaticky shromažďovat určité informace o vašem zařízení a způsobu používání, včetně:",
-    "autoInfoIP": "IP adresa a geografická poloha",
+    "autoInfoText": "Můžeme automaticky shromažďovat určité technické údaje, například:",
+    "autoInfoIP": "IP adresa a poloha",
     "autoInfoBrowser": "Typ a verze prohlížeče",
     "autoInfoPages": "Navštívené stránky a čas strávený na webu",
-    "autoInfoReferrer": "Odkazující web a vyhledávací dotazy",
-    "useInfoTitle": "Jak vaše informace používáme",
-    "useInfoText": "Shromážděné informace používáme k:",
-    "useInfoProvide": "Poskytování a zlepšování našich konzultačních služeb",
-    "useInfoRespond": "Reakci na vaše dotazy a požadavky",
-    "useInfoSchedule": "Plánování a realizaci úvodních a konzultačních hovorů",
-    "useInfoSend": "Zasílání relevantních informací o našich službách",
+    "autoInfoReferrer": "Odkazující web nebo vyhledávací dotaz",
+    "useInfoTitle": "Jak vaše údaje používáme",
+    "useInfoText": "Vaše údaje používáme k:",
+    "useInfoProvide": "Poskytování a zlepšování našich poradenských služeb",
+    "useInfoRespond": "Reakci na vaše dotazy a žádosti",
+    "useInfoSchedule": "Plánování a realizaci konzultací",
+    "useInfoSend": "Zasílání relevantních informací",
     "useInfoAnalyze": "Analýze používání webu a zlepšování uživatelského zážitku",
-    "useInfoLegal": "Plnění zákonných povinností",
+    "useInfoLegal": "Splnění zákonných povinností",
     "sharingTitle": "Sdílení informací",
-    "sharingText": "Vaše osobní údaje neprodáváme, nepronajímáme ani jinak nepředáváme třetím stranám, s výjimkou:",
+    "sharingText": "Vaše osobní údaje neprodáváme. Vaše data můžeme sdílet pouze:",
     "sharingConsent": "S vaším výslovným souhlasem",
-    "sharingProviders": "Důvěryhodným poskytovatelům služeb, kteří nám pomáhají s provozem webu a podnikáním",
-    "sharingLaw": "Když to vyžaduje zákon nebo k ochraně našich práv",
-    "sharingTransfer": "V souvislosti s převodem nebo sloučením společnosti",
+    "sharingProviders": "S důvěryhodnými poskytovateli služeb, kteří nám pomáhají provozovat web a podnikání",
+    "sharingLaw": "Pokud to vyžaduje zákon nebo k ochraně našich práv",
+    "sharingTransfer": "V souvislosti s převodem nebo fúzí firmy",
     "securityTitle": "Zabezpečení dat",
-    "securityText": "Zavádíme vhodná technická a organizační opatření k ochraně vašich osobních údajů před neoprávněným přístupem, změnou, zveřejněním nebo zničením. Žádný způsob přenosu přes internet však není 100% bezpečný.",
+    "securityText": "Používáme vhodná bezpečnostní opatření k ochraně vašich údajů před neoprávněným přístupem, změnou nebo ztrátou. Žádný způsob přenosu dat po internetu však není 100% bezpečný.",
     "rightsTitle": "Vaše práva",
     "rightsText": "Máte právo:",
     "rightsDelete": "Požádat o smazání svých osobních údajů",
-    "rightsOptOut": "Odhlásit se z marketingové komunikace",
-    "rightsCopy": "Požádat o kopii svých osobních údajů",
+    "rightsOptOut": "Odhlásit se z marketingových sdělení",
+    "rightsCopy": "Požádat o kopii svých údajů",
     "contactTitle": "Kontaktujte nás",
-    "contactText": "Pokud máte dotazy k těmto zásadám ochrany osobních údajů nebo k našim postupům, kontaktujte nás na:",
+    "contactText": "Pokud máte dotazy k těmto zásadám nebo ke svým údajům, kontaktujte nás na:",
     "or": "nebo"
+  },
+  "breadcrumbs": {
+    "home": "Domů",
+    "about": "O Vadatei",
+    "privacy": "Zásady ochrany osobních údajů"
+  },
+  "organization": {
+    "name": "Vadatei",
+    "contactType": "zákaznický servis",
+    "areaServed": "EU"
   }
 }
 

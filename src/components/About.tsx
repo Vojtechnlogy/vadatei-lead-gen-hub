@@ -19,6 +19,93 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 bg-corporate-light">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": t("breadcrumbs.home"),
+                "item":
+                  window.location.pathname.startsWith("/cz")
+                    ? "https://vadatei.com/cz"
+                    : window.location.pathname.startsWith("/de")
+                    ? "https://vadatei.com/de"
+                    : "https://vadatei.com/en"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": t("breadcrumbs.privacy"),
+                "item": window.location.origin + window.location.pathname
+              }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": t("organization.name"),
+            "url": "https://vadatei.com/",
+            "logo": "https://vadatei.com/favicon.ico",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+31 682 49 46 90",
+                "contactType": t("organization.contactType"),
+                "areaServed": t("organization.areaServed"),
+                "email": "info@vadatei.com"
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+420 602 396 416",
+                "contactType": t("organization.contactType"),
+                "areaServed": t("organization.areaServed"),
+                "email": "info@vadatei.com"
+              }
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/marek-tolasz/"
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": t("about.imageName"),
+            "jobTitle": t("about.imageRole"),
+            "image": "https://vadatei.com/assets/marekTolasz-BVH_HwWS.jpg",
+            "worksFor": {
+              "@type": "Organization",
+              "name": t("organization.name")
+            },
+            "url": "https://www.linkedin.com/in/marek-tolasz/"
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Vadatei",
+            "url": "https://vadatei.com/"
+          })
+        }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
