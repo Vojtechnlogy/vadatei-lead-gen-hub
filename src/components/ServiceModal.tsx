@@ -287,17 +287,6 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                 </ul>
               </div>
 
-<<<<<<< HEAD
-            <div className="mt-6 pt-6 border-t border-border">
-              <div className="flex items-center gap-4 text-sm text-muted-foreground font-body">
-                <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
-                  <span>info@vadatei.com</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  <span> +31 6 82 49 46 90 or +420 602 396 416 </span>
-=======
               <div className="bg-corporate-light p-6 rounded-lg">
                 <h4 className="font-heading font-semibold text-primary mb-2">
                   {t("infoCard.readyTitle")}
@@ -336,7 +325,6 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                       })()}
                     </div>
                   </div>
->>>>>>> 1d576fa89be1e5e965433630f1eb3d8659e7ee7b
                 </div>
               </div>
             </div>
