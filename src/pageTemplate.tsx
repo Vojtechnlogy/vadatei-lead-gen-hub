@@ -1,41 +1,46 @@
 import React from "react";
 import type { PageMetaData } from "./pageMetaMap";
+import { ENABLE_COOKIES } from "@/lib/utils";
 
 const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, lang, image }) => (
   <html lang={lang}>
     <head>
-      {/* Cookiebot Consent Management */}
-      <script
-        id="Cookiebot"
-        src="https://consent.cookiebot.com/uc.js"
-        data-cbid="c73a80bb-4f3f-436a-bc67-9688e2dfa18c"
-        data-blockingmode="auto"
-        type="text/javascript"
-      />
-      {/* Google Consent Mode */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('consent', 'default', {
-              'ad_storage': 'denied',
-              'analytics_storage': 'denied'
-            });
-          `,
-        }}
-      />
-      {/* Google tag (gtag.js) - load once and configure both IDs */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLZ99GFK4S"></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            gtag('js', new Date());
-            gtag('config', 'G-NLZ99GFK4S');
-            gtag('config', 'AW-17502148935');
-          `,
-        }}
-      />
+      {/* Cookiebot and gtag (guarded by ENABLE_COOKIES) */}
+      {ENABLE_COOKIES && (
+        <>
+          <script
+            id="Cookiebot"
+            src="https://consent.cookiebot.com/uc.js"
+            data-cbid="c73a80bb-4f3f-436a-bc67-9688e2dfa18c"
+            data-blockingmode="auto"
+            type="text/javascript"
+          />
+          {/* Google Consent Mode */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);} 
+                gtag('consent', 'default', {
+                  'ad_storage': 'denied',
+                  'analytics_storage': 'denied'
+                });
+              `,
+            }}
+          />
+          {/* Google tag (gtag.js) - load once and configure both IDs */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLZ99GFK4S"></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                gtag('js', new Date());
+                gtag('config', 'G-NLZ99GFK4S');
+                gtag('config', 'AW-17502148935');
+              `,
+            }}
+          />
+        </>
+      )}
 
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
