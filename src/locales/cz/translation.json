@@ -1,28 +1,28 @@
 {
   "about": {
     "title": "O Vadatei",
-    "tagline": "Zkušenosti, kterým můžete věřit, výsledky, které můžete měřit.",
-    "heading": "Váš strategický technologický partner",
-    "p1": "S více než 30 lety zkušeností v IT vedení a transformaci pomáhá Marek Tolasz organizacím zefektivnit provoz, snížit náklady a podpořit růst.",
-    "p2": "Vadatei vzniklo, aby přineslo tuto odbornost firmám, které chtějí, aby IT bylo strategickou výhodou, ne jen podpůrnou funkcí. Identifikujeme skutečné výzvy, navrhujeme praktická řešení a pomáháme je implementovat pro trvalé a měřitelné výsledky.",
+    "tagline": "Zkušenosti, kterým můžete věřit. Výsledky, které můžete měřit.",
+    "heading": "Váš strategický partner pro transformaci a technologie",
+    "p1": "S více než 30 lety v IT vedení a transformacích Marek Tolasz pomohl organizacím zefektivnit provoz, snížit náklady a nastartovat růst.",
+    "p2": "Vadatei vzniklo, aby přineslo tuto odbornost rostoucím firmám, které chtějí navrhnout a restrukturalizovat své podnikání pro škálovatelný a strategický růst. Od identifikace klíčových výzev po implementaci praktických řešení zajišťujeme, že vaše systémy a týmy jsou sladěny pro měřitelný úspěch.",
     "imageName": "Marek Tolasz",
     "imageRole": "Vadatei, zakladatel & hlavní konzultant",
     "values": {
       "experience": {
         "title": "30+ let zkušeností",
-        "description": "Desítky let ověřených výsledků při vedení IT týmů a transformačních projektů v různých odvětvích"
+        "description": "Více než 30 let ověřených výsledků s vedením IT týmů a transformačních projektů v různých odvětvích"
       },
       "impact": {
         "title": "Měřitelný obchodní dopad",
-        "description": "Řešení navržená ke snížení nákladů, zvýšení efektivity a podpoře udržitelného růstu"
+        "description": "Řešení, která snižují náklady, zefektivňují provoz a přinášejí měřitelné výsledky"
       },
       "diagnosis": {
         "title": "Rychlá a přesná diagnostika",
-        "description": "Rychle identifikujeme skutečné problémy, takže každé zlepšení je cílené a efektivní"
+        "description": "Rychle identifikujeme skutečné překážky, takže každé řešení je cílené, efektivní a s vysokým dopadem"
       },
       "lowRisk": {
         "title": "Nízkorizikový první krok",
-        "description": "Začněte s cílenou úvodní analýzou před většími projekty"
+        "description": "Začněte s cílenou úvodní analýzou — nízké riziko, jasné poznatky a plán pro škálovatelné zlepšení"
       }
     }
   },
@@ -74,15 +74,15 @@
     "readyBody": "Vyplňte kontaktní formulář a zjistěte, jak vám služba {{service}} může pomoci."
   },
   "hero": {
-    "headline": "Špičkové IT poradenství",
-    "subhead": "Více než 30 let zkušeností v oboru. Poskytujeme strategické technologické vedení, které transformuje podnikání. Spolupracujte s námi na řešení složitých IT výzev a využijte plný potenciál vaší organizace.",
+    "headline": "Vytvořte páteř, kterou vaše firma potřebuje",
+    "subhead": "Pomáháme rostoucím firmám restrukturalizovat IT a provozní oddělení tak, aby systémy, procesy a týmy byly připraveny na efektivní a bezpečné škálování.",
     "cta": {
-      "book": "Rezervovat konzultaci",
-      "services": "Naše služby"
+      "book": "Rezervovat bezplatnou 30min konzultaci",
+      "services": "S čím pomáháme"
     },
     "stats": {
       "years": "Let zkušeností",
-      "projects": "Realizovaných projektů",
+      "projects": "Dokončených projektů",
       "satisfaction": "Spokojenost klientů"
     }
   },
