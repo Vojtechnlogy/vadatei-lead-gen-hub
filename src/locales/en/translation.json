@@ -2,27 +2,27 @@
   "about": {
     "title": "About Vadatei",
     "tagline": "Experience you can trust, results you can measure.",
-    "heading": "Your Strategic Transformation Partner",
+    "heading": "Your Strategic Technology Partner",
     "p1": "With over 30 years in IT leadership and transformation, Marek Tolasz has helped organizations streamline operations, cut costs, and unlock growth.",
-    "p2": "Vadatei was created to bring that expertise to businesses that want IT to be a strategic advantage, not just a support function. We identify the real challenges, design practical solutions, and help you implement them for lasting measurable results.",
+    "p2": "Vadatei was created to bring that expertise to growing companies seeking to design and restructure their company  for scalable and strategic growth. From identifying key challenges to implementing practical solutions, we ensure your systems and teams are aligned for measurable success.",
     "imageName": "Marek Tolasz",
     "imageRole": "Vadatei, Founder & Principal Consultant",
     "values": {
       "experience": {
         "title": "30+ Years Experience",
-        "description": "Decades of proven results leading IT teams and transformation projects across multiple industries"
+        "description": "Over 30 years of proven results leading IT teams and transformation projects across multiple industries"
       },
       "impact": {
         "title": "Measurable Business Impact",
-        "description": "Solutions designed to cut costs, improve efficiency and drive sustainable growth"
+        "description": "Solutions that cut costs, streamline operations, and deliver measurable business results"
       },
       "diagnosis": {
         "title": "Fast Insightful Diagnosis",
-        "description": "We pinpoint the real issues quickly, so every improvement is targeted and effective"
+        "description": "We quickly identify the real bottlenecks, so every solution is targeted, effective, and high-impact"
       },
       "lowRisk": {
         "title": "Low Risk First Step",
-        "description": "Start with a focused discovery phase before committing to larger projects"
+        "description": "Begin with a focused discovery phase — low risk, clear insights, and a roadmap for scalable improvement"
       }
     }    
   },
@@ -127,11 +127,11 @@
     "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization."
   },
   "hero": {
-    "headline": "Leading IT Consulting",
-    "subhead": "With over 30 years of industry expertise, we provide strategic technology guidance that transforms businesses. Partner with us to navigate complex IT challenges and unlock your organization's full potential.",
+    "headline": "Create the Backbone Your Company Needs",
+    "subhead": "We help expanding businesses restructure their IT and operational departments ensuring systems, workflows, and teams are built to scale efficiently and securely.",
     "cta": {
-      "book": "Book My Discovery Call",
-      "services": "Our Services"
+      "book": "Book Free 30 Min Call",
+      "services": "What We Help With"
     },
     "stats": {
       "years": "Years Experience",
@@ -180,7 +180,7 @@
     "bookDiscovery": "Book My Discovery Call"
   },
   "process": {
-    "heading": "Our Proven Process",
+    "heading": "Our Structured Transformation Approach",
     "subhead": "A systematic approach that ensures every engagement delivers maximum value and lasting results.",
     "steps": {
       "audit": {

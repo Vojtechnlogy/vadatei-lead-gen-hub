@@ -20,7 +20,7 @@ const About = () => {
     <section id="about" className="py-20 bg-corporate-light">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
+        dangerouslySetInnerHTML={{ 
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -117,7 +117,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-[2.1rem] md:text-[3.3rem] font-heading font-semibold text-primary mb-7">
+            <h3 className="text-[1.6rem] md:text-[2.4rem] font-heading font-semibold text-primary mb-7 text-center">
               {t("about.heading")}
             </h3>
             <p className="text-[1.21rem] text-foreground mb-7 font-body leading-relaxed">

@@ -55,21 +55,7 @@ const Hero = ({ onBookingClick }: HeroProps) => {
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-heading font-bold text-white mb-2">30+</div>
-              <div className="text-white/80 font-body">{t("hero.stats.years")}</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-heading font-bold text-white mb-2">500+</div>
-              <div className="text-white/80 font-body">{t("hero.stats.projects")}</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-heading font-bold text-white mb-2">100%</div>
-              <div className="text-white/80 font-body">{t("hero.stats.satisfaction")}</div>
-            </div>
-          </div>
+          {/* Stats removed per request */}
         </div>
       </div>
 

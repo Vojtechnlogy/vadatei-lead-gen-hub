@@ -2,27 +2,27 @@
   "about": {
     "title": "Über Vadatei",
     "tagline": "Erfahrung, der Sie vertrauen können. Ergebnisse, die Sie messen können.",
-    "heading": "Ihr strategischer Technologiepartner",
+    "heading": "Ihr strategischer Partner für Transformation & Technologie",
     "p1": "Mit über 30 Jahren Erfahrung in IT-Führung und Transformation hat Marek Tolasz Unternehmen geholfen, Abläufe zu optimieren, Kosten zu senken und Wachstum zu ermöglichen.",
-    "p2": "Vadatei wurde gegründet, um dieses Know-how Unternehmen zu bieten, die IT als strategischen Vorteil nutzen möchten. Wir identifizieren die wahren Herausforderungen, entwickeln praktische Lösungen und helfen bei der Umsetzung für nachhaltige, messbare Ergebnisse.",
+    "p2": "Vadatei wurde gegründet, um dieses Know-how wachsenden Unternehmen zu bieten, die ihr Unternehmen für skalierbares und strategisches Wachstum gestalten und restrukturieren möchten. Von der Identifizierung der wichtigsten Herausforderungen bis zur Umsetzung praxisnaher Lösungen sorgen wir dafür, dass Ihre Systeme und Teams auf messbaren Erfolg ausgerichtet sind.",
     "imageName": "Marek Tolasz",
     "imageRole": "Vadatei, Gründer & Hauptberater",
     "values": {
       "experience": {
         "title": "30+ Jahre Erfahrung",
-        "description": "Jahrzehntelange nachgewiesene Erfolge in der Leitung von IT-Teams und Transformationsprojekten in verschiedenen Branchen"
+        "description": "Über 30 Jahre nachgewiesene Erfolge in der Leitung von IT-Teams und Transformationsprojekten in verschiedenen Branchen"
       },
       "impact": {
         "title": "Messbarer Geschäftserfolg",
-        "description": "Lösungen zur Kostensenkung, Effizienzsteigerung und nachhaltigem Wachstum"
+        "description": "Lösungen, die Kosten senken, Abläufe optimieren und messbare Geschäftsergebnisse liefern"
       },
       "diagnosis": {
         "title": "Schnelle, präzise Diagnose",
-        "description": "Wir erkennen die wahren Probleme schnell, sodass jede Verbesserung gezielt und effektiv ist"
+        "description": "Wir identifizieren Engpässe schnell, sodass jede Lösung gezielt, effektiv und wirkungsvoll ist"
       },
       "lowRisk": {
-        "title": "Risikofreier erster Schritt",
-        "description": "Starten Sie mit einer gezielten Analyse, bevor Sie größere Projekte beginnen"
+        "title": "Risikoarmer erster Schritt",
+        "description": "Starten Sie mit einer gezielten Analyse – geringes Risiko, klare Erkenntnisse und ein Fahrplan für skalierbare Verbesserungen"
       }
     }
   },
@@ -74,11 +74,11 @@
     "readyBody": "Füllen Sie das Kontaktformular aus, um mehr darüber zu erfahren, wie {{service}} Ihrem Unternehmen helfen kann."
   },
   "hero": {
-    "headline": "Führende IT-Beratung",
-    "subhead": "Über 30 Jahre Branchenerfahrung. Wir bieten strategische Technologieberatung, die Unternehmen transformiert. Arbeiten Sie mit uns zusammen, um komplexe IT-Herausforderungen zu meistern und das volle Potenzial Ihres Unternehmens auszuschöpfen.",
+    "headline": "Schaffen Sie das Rückgrat, das Ihr Unternehmen braucht",
+    "subhead": "Wir helfen wachsenden Unternehmen, ihre IT- und Betriebsabteilungen so zu restrukturieren, dass Systeme, Abläufe und Teams effizient und sicher skalierbar sind.",
     "cta": {
-      "book": "Beratungsgespräch buchen",
-      "services": "Unsere Leistungen"
+      "book": "Kostenloses 30-minütiges Gespräch buchen",
+      "services": "Wobei wir helfen"
     },
     "stats": {
       "years": "Jahre Erfahrung",
