@@ -29,8 +29,6 @@ Try to figure out a way that we can add a phone number calling code - picker not
 
 Future add a Partners section and a Reviews section
 
-If Getting too few leads add Sign up to the main page.
-
 Create QR code and advertizing for the website
 
 Examples section so that the clients have examples
@@ -38,16 +36,18 @@ Examples section so that the clients have examples
 Add and SEO page so that users who search stuff up have a good chance of finding somthing maybe a blog or case 
 studies
 
-ADD PRODUCT PRICE SCHEMA--------------------------------- ADD EVENT SCHEMA
 
 ADD aggregateRating and Review to the Schema
 
+Make sure that google indexing is good
+
+Create markers so that data can be tracked if user click More Information keep track of that
+
+Add pictures to make everything look nice small icons in the service section would go a long way
+
+Update the form so that information is stored properly-------------------------------------------------Should be easy just change the varibles
+
+Important make the Services Model Section work the way it is supposed to
 
 !!!!!!!!
-
-Add this with the langauge toggle button
-
-Old read me file vanished... songs will be writen about the great tragedy that happened on 26/08/2025
-find the old read me and update this one with the information on there or honestly this could be a sign for you to update the readme cause it honeslty didn't make much sense
-
 

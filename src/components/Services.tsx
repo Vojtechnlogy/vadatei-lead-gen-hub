@@ -22,9 +22,9 @@ const Services = ({ onBookingClick }: ServicesProps) => {
   const { t, i18n } = useTranslation();
 
   const services = [
-    { id: "it-health-check", icon: Shield, image: "https://vadatei.com/it-health-check.jpg" },
-    { id: "digital-transformation", icon: Route, image: "https://vadatei.com/digital-transformation.jpg" },
-    { id: "cio-as-a-service", icon: UserStar, image: "https://vadatei.com/cio-as-a-service.jpg" },
+    { id: "diagnostic-deep-dive", icon: Shield, image: "https://vadatei.com/it-health-check.jpg" },
+    { id: "targeted-transformation", icon: Route, image: "https://vadatei.com/digital-transformation.jpg" },
+    { id: "extended-oversight", icon: UserStar, image: "https://vadatei.com/cio-as-a-service.jpg" },
   ];
 
   const openService = (id: string) => setSelectedServiceId(id);

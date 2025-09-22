@@ -2,11 +2,11 @@
   "about": {
     "title": "About Vadatei",
     "tagline": "Experience you can trust, results you can measure.",
-    "heading": "Your Strategic Technology Partner",
+    "heading": "Your Strategic Transformation Partner",
     "p1": "With over 30 years in IT leadership and transformation, Marek Tolasz has helped organizations streamline operations, cut costs, and unlock growth.",
     "p2": "Vadatei was created to bring that expertise to businesses that want IT to be a strategic advantage, not just a support function. We identify the real challenges, design practical solutions, and help you implement them for lasting measurable results.",
     "imageName": "Marek Tolasz",
-    "imageRole": "Vadatei, Founder & Principle Consultant",
+    "imageRole": "Vadatei, Founder & Principal Consultant",
     "values": {
       "experience": {
         "title": "30+ Years Experience",
@@ -41,6 +41,57 @@
       "successDescription": "Thank you for your interest in {{service}}. We'll be in touch within 24 hours.",
       "errorTitle": "Submission Failed",
       "errorDescription": "There was an error submitting your inquiry. Please try again later."
+    },
+
+    "priorityServices": {
+      "title": "Priority Areas (Select One or More)",
+      "options": {
+        "vendorSelection": "Vendor selection",
+        "projectPortfolio": "Drive project portfolio",
+        "changeManagement": "Change management & organisation",
+        "resourceNeeds": "Defining resource needs"
+      }
+    },
+
+    "premiumServices": {
+      "title": "Premium services",
+      "options": {
+        "coaching": "Coaching and mentoring",
+        "strategicAdvisory": "Strategic advisory",
+        "teamManagement": "Team management",
+        "crisisManagement": "Crisis & incident management",
+        "interimLeadership": "Interim Leadership / Executive Support",
+        "implementationManagement": "Implementation Management",
+        "riskCompliance": "Risk & Compliance Oversight",
+        "performanceMonitoring": "Performance Monitoring & Reporting",
+        "stakeholderAlignment": "Stakeholder & Team Alignment",
+        "continuousImprovement": "Continuous Improvement"
+      },
+      "hints": {
+        "interimLeadership": "Embed senior-level guidance directly into your organization to oversee critical transformation initiatives.",
+        "implementationManagement": "Directly manage the execution of departmental changes, monitoring progress and resolving roadblocks.",
+        "riskCompliance": "Identify and mitigate risks during implementation, ensuring processes meet legal, security, and operational standards.",
+        "performanceMonitoring": "Track KPIs and project milestones while providing actionable insights to leadership.",
+        "stakeholderAlignment": "Coordinate teams, vendors, and executives to maintain clear communication and accountability.",
+        "continuousImprovement": "Make iterative adjustments during execution to ensure lasting, measurable results."
+      }
+    },
+    "priorityAreas": {
+      "title": "Priority Areas (Select One or More)",
+      "options": {
+        "securityRisk": "Security & Risk",
+        "itSystems": "IT & Systems",
+        "peopleRoles": "People & Roles (HR)",
+        "operationsWorkflow": "Operations & Workflow",
+        "costsResources": "Costs & Resource Allocation"
+      },
+      "hints": {
+        "securityRisk": "Assess vulnerabilities in your IT environment, data handling, and compliance posture.",
+        "itSystems": "Audit infrastructure, software, device management, and digital workflows. Identify risks, inefficiencies, or misaligned tools.",
+        "peopleRoles": "Review team structure, role clarity, internal communication, hiring processes, and performance systems.",
+        "operationsWorkflow": "Map and analyze how work gets done across departments. Identify bottlenecks, duplications, and automation opportunities.",
+        "costsResources": "Analyze spend vs. value, staffing levels, tool usage, and underperforming investments to highlight cost-saving opportunities."
+      }
     }
   },
 
@@ -170,38 +221,35 @@
       "button": "Book a discovery call"
     },
 
-    "it-health-check": {
-      "title": "IT Health & Performance",
-      "description": "Audit and optimisation to increase stability, performance and cost-efficiency.",
+    "diagnostic-deep-dive": {
+      "title": "Diagnostic Deep Dive",
+      "description": "Find the bottlenecks. Unlock opportunities.",
       "features": [
-        "Security assessment",
-        "Performance optimisation",
-        "Cost reduction opportunities",
-        "Reliability improvements"
+        "Comprehensive Systems Audit",
+        "Pain Points Identification",
+        "Actionable Insight Report"
       ],
-      "fullDescription": "Our IT Health & Performance engagement combines deep‑dive audits with prioritized remediation. We identify security and resilience gaps, diagnose performance bottlenecks and deliver a pragmatic plan to reduce cost while improving uptime and user experience."
+      "fullDescription": "Focused expert analysis that uncovers root causes, quantifies impact and defines practical next steps. For targeted diagnostic please select priority areas on the right."
     },
 
-    "digital-transformation": {
-      "title": "Digital Transformation",
-      "description": "Strategic roadmapping and delivery support for technology modernization and process change.",
+    "targeted-transformation": {
+      "title": "Targeted Transformation",
+      "description": "Turn problems into solutions",
       "features": [
-        "Strategic roadmap",
-        "Technology modernization",
-        "Project portfolio & delivery",
-        "Change & adoption management"
+        "Process Redesign & Optimization",
+        "Leadership Enablement",
+        "Documentation & Transition Plans"
       ],
-      "fullDescription": "We create a pragmatic transformation roadmap aligned to business outcomes. From prioritisation and solution selection to delivery planning and adoption, we help organisations modernise in phases that deliver measurable value and minimise disruption."
+      "fullDescription": "You know what needs to change now it's time to make it happen. We help growing companies restructure key departments, redesign processes, manage change, and align people, tools and strategy for long-term success. Let us know how we can help you by filling out the form on the right."
     },
 
-    "cio-as-a-service": {
-      "title": "CIO as a Service",
-      "description": "Experienced part-time CIO leadership and hands‑on coaching to align strategy, governance and delivery.",
+    "extended-oversight": {
+      "title": "Extended Oversight",
+      "description": "Expert long term guidance",
       "features": [
-        "Part-time CIO leadership",
-        "Strategic advisory",
-        "Team coaching & enablement",
-        "Vendor & budget guidance"
+        "Performance Monitoring & Adjustments",
+        "Risk Management",
+        "Team Alignment & Stakeholder Coordination"
       ],
       "fullDescription": "Access senior CIO capability without a full‑time hire. We provide strategic direction, governance, vendor management and practical coaching to upskill teams and ensure initiatives are executed effectively."
     },
