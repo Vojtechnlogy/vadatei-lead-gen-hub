@@ -22,10 +22,10 @@ const Index = () => {
       
       {/* Main content with top padding for fixed header */}
       <main className="pt-16">
-        <Hero onBookingClick={handleBookingClick} />
-        <About />
-        <Process />
+        <Hero onBookingClick={handleBookingClick} />  
         <Services onBookingClick={handleBookingClick} />
+        <Process />
+        <About />
         <FAQ />
       </main>
       

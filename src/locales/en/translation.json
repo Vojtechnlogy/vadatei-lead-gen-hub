@@ -127,11 +127,11 @@
     "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization."
   },
   "hero": {
-    "headline": "Create the Backbone Your Company Needs",
-    "subhead": "We help expanding businesses restructure their IT and operational departments ensuring systems, workflows, and teams are built to scale efficiently and securely.",
+    "headline": "Analyze, Align & Transform.",
+    "subhead": "If your operations are slowing you down, we’ll help you figure out why and what to do next. From targeted diagnostics to full operational redesign, we guide you through change with clarity, structure, and calm execution.",
     "cta": {
-      "book": "Book Free 30 Min Call",
-      "services": "What We Help With"
+      "book": "Start with an Operational Diagnostic",
+      "services": "Or See How Transformation Works"
     },
     "stats": {
       "years": "Years Experience",
