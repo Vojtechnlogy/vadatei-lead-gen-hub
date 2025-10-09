@@ -24,7 +24,7 @@ const Index = () => {
       <main className="pt-16">
         <Hero onBookingClick={handleBookingClick} />  
         <Services onBookingClick={handleBookingClick} />
-        <Process />
+        {/* <Process /> */}
         <About />
         <FAQ />
       </main>

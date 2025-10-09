@@ -9,9 +9,12 @@ import {
   LayoutList,
   TrendingUp,
   ArrowRight,
+  Gift,
 } from "lucide-react";
 import ServiceModal from "./ServiceModal";
 import { useTranslation } from "react-i18next";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
 
 interface ServicesProps {
   onBookingClick: () => void;
@@ -143,9 +146,9 @@ const Services = ({ onBookingClick }: ServicesProps) => {
               ? [rawFeatures]
               : [];
             return (
-              <Card key={service.id} className="border-none shadow-card hover:shadow-corporate transition-all duration-300 hover:-translate-y-2 group">
-                <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+              <Card key={service.id} className="border-none shadow-card transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col">
+                <CardContent className="p-8 flex flex-col h-full">
+                  <div className="w-16 h-16 bg-corporate-light rounded-lg flex items-center justify-center mb-6 transition-colors">
                     <service.icon className="h-8 w-8 text-primary" />
                   </div>
 
@@ -157,22 +160,27 @@ const Services = ({ onBookingClick }: ServicesProps) => {
                     {t(`services.${service.id}.description`)}
                   </p>
 
+                  {/* What You Receive subtitle with icon and separator */}
+                  <div className="flex items-center gap-2 mb-3 mt-2">
+                    <Gift className="h-5 w-5 text-primary" />
+                    <h4 className="text-lg font-heading font-semibold text-primary">What You Receive: </h4>
+                  </div>
+                  <Separator className="mb-4 bg-primary/20" />
+
                   <div className="mb-6">
                     <div className="flex flex-wrap gap-2">
                       {(features || []).map((feature, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full font-body"
-                        >
+                        <Badge key={index} variant="secondary" className="px-4 py-2 text-sm font-body">
                           {feature}
-                        </span>
+                        </Badge>
                       ))}
                     </div>
                   </div>
 
+                  <div className="flex-1" />
                   <Button
                     variant="corporate-outline"
-                    className="w-full group-hover:bg-primary group-hover:text-white transition-all"
+                    className="w-full group-hover:bg-primary group-hover:text-white transition-all mt-auto"
                     onClick={() => openService(service.id)}
                   >
                     {t("services.moreInfoButton")}

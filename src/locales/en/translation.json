@@ -212,8 +212,8 @@
     }
   },
   "services": {
-    "sectionTitle": "Our Services",
-    "sectionIntro": "Comprehensive IT consulting and delivery services to modernize your technology, improve performance and reduce costs.",
+    "sectionTitle": "How We Move You Forward",
+    "sectionIntro": "We help you break through operational bottlenecks by diagnosing whats not working, designing smarter processes and coordinating transformation without bloated overhead. Whether you need a roadmap a rebuild or long-term support we guide the change",
     "moreInfoButton": "More information",
     "cta": {
       "title": "Ready to transform your IT?",
@@ -222,34 +222,41 @@
     },
 
     "diagnostic-deep-dive": {
-      "title": "Diagnostic Deep Dive",
-      "description": "Find the bottlenecks. Unlock opportunities.",
+      "title": "Strategy & Diagnostic",
+      "description": "Find out what's slowing you down before you invest time trying to fix it.",
       "features": [
-        "Comprehensive Systems Audit",
-        "Pain Points Identification",
-        "Actionable Insight Report"
+        "Operational bottlenecks analysis",
+        "Tool and process audit",
+        "Solutions report",
+        "Transformation readiness assessment",
+        "Presentation deck for leadership",
+        "And more!"
       ],
       "fullDescription": "Focused expert analysis that uncovers root causes, quantifies impact and defines practical next steps. For targeted diagnostic please select priority areas on the right."
     },
 
     "targeted-transformation": {
-      "title": "Targeted Transformation",
-      "description": "Turn problems into solutions",
+      "title": "Roadmap & Transformation",
+      "description": "Turn Strategy into action without building an internal operations team.",
       "features": [
-        "Process Redesign & Optimization",
-        "Leadership Enablement",
-        "Documentation & Transition Plans"
+        "Full transformation roadmap",
+        "Internal alignment coordination",
+        "Full execution oversight",
+        "Detailed transformation reports",
+        "Measurable results"
       ],
       "fullDescription": "You know what needs to change now it's time to make it happen. We help growing companies restructure key departments, redesign processes, manage change, and align people, tools and strategy for long-term success. Let us know how we can help you by filling out the form on the right."
     },
 
     "extended-oversight": {
-      "title": "Extended Oversight",
-      "description": "Expert long term guidance",
+      "title": "Extended Support",
+      "description": "Keep your systems clean and your team aligned with ongoing expert support.",
       "features": [
-        "Performance Monitoring & Adjustments",
-        "Risk Management",
-        "Team Alignment & Stakeholder Coordination"
+        "On going support & optimization",
+        "Staff training & retraining",
+        "KPI tracking & systems improvement",
+        "Strategic guidance",
+        "A life long business partner"
       ],
       "fullDescription": "Access senior CIO capability without a full‑time hire. We provide strategic direction, governance, vendor management and practical coaching to upskill teams and ensure initiatives are executed effectively."
     },
