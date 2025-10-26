@@ -141,7 +141,7 @@
   },
   "footer": {
     "company": "Vadatei",
-    "description": "We help organisations modernize their IT, improve performance and reduce costs.",
+    "description": "We analyze how your organization operates, identify bottlenecks, and create structured plans to improve efficiency and alignment.",
     "bookDiscovery": "Book a Discovery Call",
     "quickLinks": {
       "title": "Quick Links",
@@ -151,9 +151,9 @@
     },
     "services": {
       "title": "Services",
-      "itHealthCheck": "IT Health & Performance",
-      "digitalTransformation": "Digital Transformation",
-      "cioAsAService": "CIO as a Service"
+      "itHealthCheck": "Strategy & Diagnostic",
+      "digitalTransformation": "Roadmap & Transformation",
+      "cioAsAService": "Extended Support"
     },
     "newsletter": {
       "title": "Newsletter",
@@ -173,8 +173,9 @@
     "logoAlt": "Vadatei Logo",
     "nav": {
       "about": "About",
-      "services": "Services",
-      "process": "Process"
+      "services": "How We Help",
+      "process": "Process",
+      "faq": "FAQ"
     },
     "bookNow": "Book Now",
     "bookDiscovery": "Book My Discovery Call"

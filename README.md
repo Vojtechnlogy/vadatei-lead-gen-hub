@@ -36,7 +36,6 @@ Examples section so that the clients have examples
 Add and SEO page so that users who search stuff up have a good chance of finding somthing maybe a blog or case 
 studies
 
-
 ADD aggregateRating and Review to the Schema
 
 Make sure that google indexing is good
