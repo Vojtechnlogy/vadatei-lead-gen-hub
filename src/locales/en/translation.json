@@ -128,7 +128,7 @@
   },
   "hero": {
     "headline": "Analyze, Align & Transform.",
-    "subhead": "If your operations are slowing you down, we’ll help you figure out why and what to do next. From targeted diagnostics to full operational redesign, we guide you through change with clarity, structure, and calm execution.",
+    "subhead": "Your operations are slowing you down, we're here to help you figure out why and what to do next. From diagnostics to full operational redesign, we guide you through every step.",
     "cta": {
       "book": "Start with an Operational Diagnostic",
       "services": "Or See How Transformation Works"
@@ -214,7 +214,7 @@
   },
   "services": {
     "sectionTitle": "How We Move You Forward",
-    "sectionIntro": "We help you break through operational bottlenecks by diagnosing whats not working, designing smarter processes and coordinating transformation without bloated overhead. Whether you need a roadmap a rebuild or long-term support we guide the change",
+    "sectionIntro": "We help you break through operational bottlenecks by diagnosing whats not working, designing smarter processes and coordinating transformation. Whether you need a roadmap a rebuild or long-term support we guide the change.",
     "moreInfoButton": "More information",
     "cta": {
       "title": "Ready to transform your IT?",
