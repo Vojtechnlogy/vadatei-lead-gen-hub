@@ -14,7 +14,7 @@
       },
       "impact": {
         "title": "Measurable Business Impact",
-        "description": "Solutions that cut costs, streamline operations, and deliver measurable business results"
+        "description": "Solutions that cut costs and do more. While streamlining operations, and delivering measurable business results"
       },
       "diagnosis": {
         "title": "Fast Insightful Diagnosis",
@@ -99,17 +99,17 @@
     "title": "Book Your Discovery Call",
     "whatToExpect": "What to Expect",
     "consultationTitle": "30-Minute Consultation",
-    "consultationDesc": "Focused discussion on your technology challenges and goals",
+    "consultationDesc": "Focused discussion on your transformation goals",
     "formatTitle": "Video or Phone",
     "formatDesc": "Choose your preferred meeting format",
     "noObligationTitle": "No Obligation",
     "noObligationDesc": "Free consultation with no strings attached",
     "weWillDiscussTitle": "We'll Discuss:",
-    "discussItem1": "Your current technology challenges",
-    "discussItem2": "Strategic technology goals and priorities",
+    "discussItem1": "Your current transformation plans and challenges",
+    "discussItem2": "Company Goals and priorities",
     "discussItem3": "Next steps and recommendations",
-    "readyTitle": "Ready to Transform Your IT?",
-    "readyBody": "Become another successful organization that has partnered with Vadatei to achieve their technology goals.",
+    "readyTitle": "Ready to Transform Business?",
+    "readyBody": "Become another successful organization that has partnered with Vadatei to achieve their transformation goals.",
     "chooseTimeTitle": "Choose Your Preferred Time",
     "chooseTimeDesc": "Click the button below to select an available time slot and schedule your call instantly.",
     "bookButton": "Book a Time Slot",
@@ -127,11 +127,11 @@
     "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization."
   },
   "hero": {
-    "headline": "Organizational Change & Transformation",
+    "headline": "Change & Transformation Management",
     "subhead": "We help organizations understand what needs to change, plan how to do it, and make those changes last.",
     "cta": {
       "book": "Start with a Diagnostic Call",
-      "services": "Or Start Your Transformation"
+      "services": "Start Your Transformation"
     },
     "stats": {
       "years": "Years Experience",
@@ -213,7 +213,7 @@
     }
   },
   "services": {
-    "sectionTitle": "Structured Support for Every Stage of Change",
+    "sectionTitle": "The Change Process",
     "sectionIntro": "Every organization faces change differently. We provide structured consulting support across the full transformation cycle from diagnosing what needs to change, to managing implementation, to ensuring lasting results.",
     "moreInfoButton": "More information",
     "cta": {

@@ -12,8 +12,8 @@ export const pages: PageMetaData[] = [
   {
     url: "index.html",
     bundleEntryPoint: "/src/main.tsx",
-    title: "Vadatei - Leading IT Consulting",
-    description: "Innovate with expert IT consulting tailored to your business. 30+ years of experience helping companies boost efficiency and reduce costs. Book your free consultation today",
+    title: "Vadatei - Change & Transformation Management",
+    description: "We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     canonical: "https://vadatei.com/",
     lang: "en",
     image: "https://vadatei.com/digital-transformation.jpg"
@@ -22,7 +22,7 @@ export const pages: PageMetaData[] = [
     url: "en/index.html",
     bundleEntryPoint: "/src/main.tsx",
     title: "Vadatei - Leading IT Consulting",
-    description: "Innovate with expert IT consulting tailored to your business. 30+ years of experience helping companies boost efficiency and reduce costs. Book your free consultation today",
+    description: "We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     canonical: "https://vadatei.com/en/",
     lang: "en",
     image: "https://vadatei.com/digital-transformation.jpg"
@@ -30,8 +30,8 @@ export const pages: PageMetaData[] = [
   {
     url: "cz/index.html",
     bundleEntryPoint: "/src/main.tsx",
-    title: "Vadatei - Špičkové IT poradenství",
-    description: "Inovujte s odborným IT poradenstvím na míru vašemu podnikání. 30+ let zkušeností s efektivitou a snižováním nákladů. Objednejte si bezplatnou konzultaci ještě dnes",
+    title: "Vadatei - Řízení Změn a Transformace",
+    description: "Pomáháme organizacím pochopit, co je třeba změnit, efektivně implementovat transformaci a udržovat trvalé zlepšení.",
     canonical: "https://vadatei.com/cz/",
     lang: "cs",
     image: "https://vadatei.com/digital-transformation.jpg"
@@ -39,8 +39,8 @@ export const pages: PageMetaData[] = [
   {
     url: "de/index.html",
     bundleEntryPoint: "/src/main.tsx",
-    title: "Vadatei - Führende IT-Beratung",
-    description: "Innovieren Sie mit maßgeschneiderter IT-Beratung für Ihr Unternehmen. Über 30 Jahre Erfahrung zur Steigerung der Effizienz und Kostensenkung. Buchen Sie jetzt Ihre kostenlose Beratung",
+    title: "Vadatei – Change-und Transformationsmanagement",
+    description: "Wir helfen Organisationen zu verstehen, was sich ändern muss, den Wandel effektiv umzusetzen und nachhaltige Verbesserungen zu erzielen.",
     canonical: "https://vadatei.com/de/",
     lang: "de",
     image: "https://vadatei.com/digital-transformation.jpg"
