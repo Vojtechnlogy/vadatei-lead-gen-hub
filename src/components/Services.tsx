@@ -10,6 +10,7 @@ import {
   TrendingUp,
   ArrowRight,
   Gift,
+  Check,
 } from "lucide-react";
 import ServiceModal from "./ServiceModal";
 import { useTranslation } from "react-i18next";
@@ -168,13 +169,14 @@ const Services = ({ onBookingClick }: ServicesProps) => {
                   <Separator className="mb-4 bg-primary/20" />
 
                   <div className="mb-6">
-                    <div className="flex flex-wrap gap-2">
+                    <ul className="space-y-3">
                       {(features || []).map((feature, index) => (
-                        <Badge key={index} variant="secondary" className="px-4 py-2 text-sm font-body">
-                          {feature}
-                        </Badge>
+                        <li key={index} className="flex items-start gap-3">
+                          <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                          <span className="text-foreground font-body leading-relaxed">{feature}</span>
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </div>
 
                   <div className="flex-1" />

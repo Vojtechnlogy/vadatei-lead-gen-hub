@@ -64,12 +64,17 @@ const Header = ({ onBookingClick }: HeaderProps) => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-4">
             <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="text-foreground hover:text-primary transition-colors font-body"
+            >
+              {t("header.nav.home")}
+            </button>
+            <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors font-body"
             >
               {t("header.nav.about")}
             </button>
-            {/* Removed Process from desktop navigation */}
             <button
               onClick={() => scrollToSection("services")}
               className="text-foreground hover:text-primary transition-colors font-body"
@@ -84,10 +89,10 @@ const Header = ({ onBookingClick }: HeaderProps) => {
             </button>
 
             {/* Language Burger Menu */}
-            <div className="relative ml-2">
+            <div className="relative">
               <button
                 onClick={() => setIsLangMenuOpen((open) => !open)}
-                className="flex items-center px-2 py-1 rounded text-foreground hover:text-primary bg-transparent transition-colors"
+                className="flex items-center px-3 py-2 rounded text-foreground hover:text-primary bg-transparent transition-colors font-body"
                 aria-label="Language menu"
                 style={{ border: "none" }}
                 onMouseEnter={() => {
@@ -142,7 +147,7 @@ const Header = ({ onBookingClick }: HeaderProps) => {
             <Button
               variant="cta"
               onClick={onBookingClick}
-              className="ml-4"
+              className=""
             >
               {t("header.bookNow")}
             </Button>
@@ -169,12 +174,20 @@ const Header = ({ onBookingClick }: HeaderProps) => {
           <div className="md:hidden border-t border-border bg-background">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                  setIsMobileMenuOpen(false);
+                }}
+                className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
+              >
+                {t("header.nav.home")}
+              </button>
+              <button
                 onClick={() => scrollToSection("about")}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"
               >
                 {t("header.nav.about")}
               </button>
-              {/* Removed Process from mobile navigation */}
               <button
                 onClick={() => scrollToSection("services")}
                 className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors font-body"

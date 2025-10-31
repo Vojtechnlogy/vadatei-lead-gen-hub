@@ -127,11 +127,11 @@
     "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization."
   },
   "hero": {
-    "headline": "Analyze, Align & Transform.",
-    "subhead": "Your operations are slowing you down, we're here to help you figure out why and what to do next. From diagnostics to full operational redesign, we guide you through every step.",
+    "headline": "Organizational Change & Transformation",
+    "subhead": "We help organizations understand what needs to change, plan how to do it, and make those changes last.",
     "cta": {
-      "book": "Start with an Operational Diagnostic",
-      "services": "Or See How Transformation Works"
+      "book": "Start with a Diagnostic Call",
+      "services": "Or Start Your Transformation"
     },
     "stats": {
       "years": "Years Experience",
@@ -172,9 +172,9 @@
     "company": "Vadatei",
     "logoAlt": "Vadatei Logo",
     "nav": {
+      "home": "Home",
       "about": "About",
-      "services": "How We Help",
-      "process": "Process",
+      "services": "Our Approach",
       "faq": "FAQ"
     },
     "bookNow": "Book Now",
@@ -213,51 +213,53 @@
     }
   },
   "services": {
-    "sectionTitle": "How We Move You Forward",
-    "sectionIntro": "We help you break through operational bottlenecks by diagnosing whats not working, designing smarter processes and coordinating transformation. Whether you need a roadmap a rebuild or long-term support we guide the change.",
+    "sectionTitle": "Structured Support for Every Stage of Change",
+    "sectionIntro": "Every organization faces change differently. We provide structured consulting support across the full transformation cycle from diagnosing what needs to change, to managing implementation, to ensuring lasting results.",
     "moreInfoButton": "More information",
     "cta": {
-      "title": "Ready to transform your IT?",
-      "body": "Let's discuss how our expertise can help you deliver measurable value from your technology investments.",
-      "button": "Book a discovery call"
+      "title": "Ready to start your transformation journey?",
+      "body": "Book an initial diagnostic session to find out how we can help you transform your organization.",
+      "button": "Start With a Diagnostic Call"
     },
 
     "diagnostic-deep-dive": {
-      "title": "Strategy & Diagnostic",
-      "description": "Find out what's slowing you down before you invest time trying to fix it.",
+      "title": "Change Strategy & Diagnostic",
+      "description": "Understand what needs to change, and why.",
       "features": [
-        "Operational bottlenecks analysis",
-        "Tool and process audit",
-        "Solutions report",
-        "Transformation readiness assessment",
-        "Presentation deck for leadership",
+        "Organizational assessment",
+        "Stakeholder interviews",
+        "Readiness evaluation",
+        "Gap and risk analysis",
+        "Transformation roadmap",
         "And more!"
       ],
       "fullDescription": "Focused expert analysis that uncovers root causes, quantifies impact and defines practical next steps. For targeted diagnostic please select priority areas on the right."
     },
 
     "targeted-transformation": {
-      "title": "Roadmap & Transformation",
-      "description": "Turn Strategy into action without building an internal operations team.",
+      "title": "Change Management & Implementation",
+      "description": "Turn Strategy into action and action into results.",
       "features": [
-        "Full transformation roadmap",
-        "Internal alignment coordination",
-        "Full execution oversight",
-        "Detailed transformation reports",
-        "Measurable results"
+        "Change planning",
+        "Alignment workshops",
+        "Governance setup",
+        "Communication strategy",
+        "Capability and culture development",
+        "Adoption tracking",
+        "Full Implementation oversight"
       ],
       "fullDescription": "You know what needs to change now it's time to make it happen. We help growing companies restructure key departments, redesign processes, manage change, and align people, tools and strategy for long-term success. Let us know how we can help you by filling out the form on the right."
     },
 
     "extended-oversight": {
-      "title": "Extended Support",
-      "description": "Keep your systems clean and your team aligned with ongoing expert support.",
+      "title": "Change Sustainment & Continuous Improvement",
+      "description": "Make change stick and people aligned",
       "features": [
-        "On going support & optimization",
-        "Staff training & retraining",
-        "KPI tracking & systems improvement",
-        "Strategic guidance",
-        "A life long business partner"
+        "Post-implementation reviews",
+        "Leadership and team coaching",
+        "Process audits & optimization",
+        "Continuous improvement sessions",
+        "Sustainment planning"
       ],
       "fullDescription": "Access senior CIO capability without a full‑time hire. We provide strategic direction, governance, vendor management and practical coaching to upskill teams and ensure initiatives are executed effectively."
     },
