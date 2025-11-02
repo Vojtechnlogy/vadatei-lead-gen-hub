@@ -21,7 +21,7 @@ export const pages: PageMetaData[] = [
   {
     url: "en/index.html",
     bundleEntryPoint: "/src/main.tsx",
-    title: "Vadatei - Leading IT Consulting",
+    title: "Vadatei - Change & Transformation Management",
     description: "We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     canonical: "https://vadatei.com/en/",
     lang: "en",
