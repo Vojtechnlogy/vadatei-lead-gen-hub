@@ -117,7 +117,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h3 className="text-[1.6rem] md:text-[2.4rem] font-heading font-semibold text-primary mb-7 text-center">
+            <h3 className="text-xl md:text-2xl font-heading font-semibold text-primary mb-7 text-left">
               {t("about.heading")}
             </h3>
             <p className="text-[1.21rem] text-foreground mb-7 font-body leading-relaxed">
@@ -155,6 +155,12 @@ const About = () => {
         </div>
 
         {/* Core Values */}
+        <div className="mb-16">
+          <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 text-center">
+            {t("about.valuesHeading")}
+          </h3>
+        </div>
+        
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
             <Card key={index} className="border-none shadow-card hover:shadow-corporate transition-all duration-300 hover:-translate-y-1">

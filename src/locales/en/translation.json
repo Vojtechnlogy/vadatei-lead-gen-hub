@@ -3,10 +3,11 @@
     "title": "About Vadatei",
     "tagline": "",
     "heading": "Your Strategic Change & Transformation Partner",
-    "p1": "With over 30 years in IT leadership and transformation management, Marek Tolasz has helped organizations streamline operations, cut costs, and unlock growth.",
-    "p2": "Vadatei was created to bring that expertise to growing companies seeking to design and restructure their company  for scalable and strategic growth. From identifying key challenges to implementing practical solutions, we ensure your systems and teams are aligned for measurable success.",
+    "p1": "With over 30 years of experience leading IT teams and managing complex transformations, Marek Tolasz helps organizations cut costs, streamline operations, and unlock scalable growth. His results-driven approach is grounded in practical execution and high-impact leadership.",
+    "p2": "Vadatei was created to bring that expertise to growing companies seeking to design and restructure their company for scalable and strategic growth. From identifying key challenges to implementing practical solutions, we ensure your systems and teams are aligned for measurable success.",
     "imageName": "Marek Tolasz",
     "imageRole": "Vadatei, Founder & Principal Consultant",
+    "valuesHeading": "Why Clients Choose Vadatei",
     "values": {
       "experience": {
         "title": "30+ Years Experience",
@@ -129,7 +130,7 @@
   },
   "hero": {
     "headline": "Change & Transformation Management",
-    "subhead": "We help organizations understand what needs to change, manage the change and make those changes last.",
+    "subhead": "70% of organizational change efforts fail. We make sure you're in the winning 30%. By helping you understand what needs to change, manage the change effectively and making those changes last.",
     "cta": {
       "book": "Start with a Diagnostic Call",
       "services": "Start Your Change Process"
@@ -316,7 +317,7 @@
   },
   "lang": "en",
   "title": "Vadatei - Change & Transformation Management",
-  "description": "We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
+  "description": "70% of Organizational Change Efforts Fail. Let’s Make Sure Yours Doesn’t. By helping organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
   "ogImage": "https://vadatei.com/og-en.png",
   "privacy": {
     "backToHome": "Back to Home",
