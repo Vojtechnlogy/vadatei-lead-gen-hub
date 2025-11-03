@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { BriefcaseBusiness , ChartSpline,Zap, Handshake} from "lucide-react";
+import { BriefcaseBusiness , ChartSpline,Zap, Handshake, Linkedin} from "lucide-react";
 import marekTolasz from '../assets/marekTolasz.jpg';
 import { useTranslation } from "react-i18next";
 
@@ -134,10 +134,20 @@ const About = () => {
               alt="Marek Tolasz"
               className="rounded-lg shadow-corporate w-full h-[660px] object-cover"
             />
-            {/* Marek Tolasz name in the bottom right corner of the image */}
+            {/* Marek Tolasz name in the bottom left corner of the image */}
             <span className="absolute bottom-4 left-4 bg-white/90 px-3 py-1 rounded text-sm font-semibold text-primary shadow">
               {t("about.imageName")}
             </span>
+            {/* LinkedIn link in the bottom right corner of the image */}
+            <a
+              href="https://linkedin.com/in/marek-tolasz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 right-4 bg-white/90 p-2 rounded shadow hover:bg-white transition-colors"
+              aria-label="Connect with Marek Tolasz on LinkedIn"
+            >
+              <Linkedin className="h-5 w-5 text-primary" />
+            </a>
             <span className="mt-2 text-sm italic text-muted-foreground">
               {t("about.imageRole")}
             </span>

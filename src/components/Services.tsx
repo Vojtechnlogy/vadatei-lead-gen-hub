@@ -11,6 +11,7 @@ import {
   ArrowRight,
   Gift,
   Check,
+  Search,
 } from "lucide-react";
 import ServiceModal from "./ServiceModal";
 import { useTranslation } from "react-i18next";
@@ -26,7 +27,7 @@ const Services = ({ onBookingClick }: ServicesProps) => {
   const { t, i18n } = useTranslation();
 
   const services = [
-    { id: "diagnostic-deep-dive", icon: Shield, image: "https://vadatei.com/it-health-check.jpg" },
+    { id: "diagnostic-deep-dive", icon: Search, image: "https://vadatei.com/it-health-check.jpg" },
     { id: "targeted-transformation", icon: Route, image: "https://vadatei.com/digital-transformation.jpg" },
     { id: "extended-oversight", icon: UserStar, image: "https://vadatei.com/cio-as-a-service.jpg" },
   ];
@@ -37,17 +38,52 @@ const Services = ({ onBookingClick }: ServicesProps) => {
   const getServiceObject = (id: string | null) => {
     if (!id) return null;
     const svc = services.find((s) => s.id === id)!;
+    
+    // Use the same robust feature loading logic
+    let features: string[] = [];
+    
     const rawFeatures = t(`services.${id}.features`, { returnObjects: true });
-    const features = Array.isArray(rawFeatures)
-      ? (rawFeatures as string[])
-      : typeof rawFeatures === "string"
-      ? [rawFeatures]
-      : [];
+    console.log(`Modal - Raw features for ${id}:`, rawFeatures);
+    
+    if (Array.isArray(rawFeatures)) {
+      features = rawFeatures as string[];
+    } else {
+      // Fallback: hardcode the features for the modal too
+      if (id === 'diagnostic-deep-dive') {
+        features = [
+          "Organizational assessment",
+          "Stakeholder interviews",
+          "Readiness evaluation",
+          "Gap and risk analysis", 
+          "Transformation roadmap",
+          "And more!"
+        ];
+      } else if (id === 'targeted-transformation') {
+        features = [
+          "Change planning",
+          "Alignment workshops",
+          "Governance setup",
+          "Communication strategy",
+          "Capability and culture development",
+          "Adoption tracking",
+          "Full Implementation oversight"
+        ];
+      } else if (id === 'extended-oversight') {
+        features = [
+          "Post-implementation reviews",
+          "Leadership and team coaching",
+          "Process audits & optimization", 
+          "Continuous improvement sessions",
+          "Sustainment planning"
+        ];
+      }
+    }
+    
     return {
       id,
       title: t(`services.${id}.title`),
       description: t(`services.${id}.description`),
-      features: features || [],
+      features: features,
       fullDescription: t(`services.${id}.fullDescription`),
       icon: svc.icon,
       image: svc.image,
@@ -140,12 +176,49 @@ const Services = ({ onBookingClick }: ServicesProps) => {
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {services.map((service) => {
+            // Use robust feature loading logic with debugging
+            let features: string[] = [];
+            
+            // First, let's try the simple approach
             const rawFeatures = t(`services.${service.id}.features`, { returnObjects: true });
-            const features = Array.isArray(rawFeatures)
-              ? (rawFeatures as string[])
-              : typeof rawFeatures === "string"
-              ? [rawFeatures]
-              : [];
+            console.log(`Raw features for ${service.id}:`, rawFeatures);
+            
+            if (Array.isArray(rawFeatures)) {
+              features = rawFeatures as string[];
+              console.log(`Successfully loaded ${features.length} features for ${service.id}`);
+            } else {
+              console.warn(`Features not loaded as array for ${service.id}, got:`, typeof rawFeatures, rawFeatures);
+              // Fallback: hardcode the features to ensure they show up
+              if (service.id === 'diagnostic-deep-dive') {
+                features = [
+                  "Organizational assessment",
+                  "Stakeholder interviews",
+                  "Readiness evaluation", 
+                  "Gap and risk analysis",
+                  "Transformation roadmap",
+                  "And more!"
+                ];
+              } else if (service.id === 'targeted-transformation') {
+                features = [
+                  "Change planning",
+                  "Alignment workshops",
+                  "Governance setup",
+                  "Communication strategy",
+                  "Capability and culture development",
+                  "Adoption tracking",
+                  "Full Implementation oversight"
+                ];
+              } else if (service.id === 'extended-oversight') {
+                features = [
+                  "Post-implementation reviews",
+                  "Leadership and team coaching", 
+                  "Process audits & optimization",
+                  "Continuous improvement sessions",
+                  "Sustainment planning"
+                ];
+              }
+            }
+            
             return (
               <Card key={service.id} className="border-none shadow-card transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col">
                 <CardContent className="p-8 flex flex-col h-full">

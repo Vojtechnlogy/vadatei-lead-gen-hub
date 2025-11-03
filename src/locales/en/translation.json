@@ -1,9 +1,9 @@
 {
   "about": {
     "title": "About Vadatei",
-    "tagline": "Experience you can trust, results you can measure.",
-    "heading": "Your Strategic Technology Partner",
-    "p1": "With over 30 years in IT leadership and transformation, Marek Tolasz has helped organizations streamline operations, cut costs, and unlock growth.",
+    "tagline": "",
+    "heading": "Your Strategic Change & Transformation Partner",
+    "p1": "With over 30 years in IT leadership and transformation management, Marek Tolasz has helped organizations streamline operations, cut costs, and unlock growth.",
     "p2": "Vadatei was created to bring that expertise to growing companies seeking to design and restructure their company  for scalable and strategic growth. From identifying key challenges to implementing practical solutions, we ensure your systems and teams are aligned for measurable success.",
     "imageName": "Marek Tolasz",
     "imageRole": "Vadatei, Founder & Principal Consultant",
@@ -17,6 +17,7 @@
         "description": "Solutions that cut costs and do more. While streamlining operations, and delivering measurable business results"
       },
       "diagnosis": {
+
         "title": "Fast Insightful Diagnosis",
         "description": "We quickly identify the real bottlenecks, so every solution is targeted, effective, and high-impact"
       },
@@ -131,7 +132,7 @@
     "subhead": "We help organizations understand what needs to change, manage the change and make those changes last.",
     "cta": {
       "book": "Start with a Diagnostic Call",
-      "services": "Start Your Transformation"
+      "services": "Start Your Change Process"
     },
     "stats": {
       "years": "Years Experience",
@@ -145,15 +146,15 @@
     "bookDiscovery": "Book a Discovery Call",
     "quickLinks": {
       "title": "Quick Links",
+      "home": "Home",
       "about": "About",
-      "services": "Services",
-      "process": "Our Process"
+      "services": "Services"
     },
     "services": {
       "title": "Services",
-      "itHealthCheck": "Strategy & Diagnostic",
-      "digitalTransformation": "Roadmap & Transformation",
-      "cioAsAService": "Extended Support"
+      "itHealthCheck": "Change Strategy & Diagnostic",
+      "digitalTransformation": "Change Management & Implementation",
+      "cioAsAService": "Change Sustainment & Improvement"
     },
     "newsletter": {
       "title": "Newsletter",
@@ -224,7 +225,7 @@
 
     "diagnostic-deep-dive": {
       "title": "Change Strategy & Diagnostic",
-      "description": "Understand what needs to change, and why.",
+      "description": "Understand what needs to change, why and how",
       "features": [
         "Organizational assessment",
         "Stakeholder interviews",
@@ -238,7 +239,7 @@
 
     "targeted-transformation": {
       "title": "Change Management & Implementation",
-      "description": "Turn Strategy into action and action into results.",
+      "description": "Turn strategy into action and action into implementation",
       "features": [
         "Change planning",
         "Alignment workshops",
@@ -248,11 +249,11 @@
         "Adoption tracking",
         "Full Implementation oversight"
       ],
-      "fullDescription": "You know what needs to change now it's time to make it happen. We help growing companies restructure key departments, redesign processes, manage change, and align people, tools and strategy for long-term success. Let us know how we can help you by filling out the form on the right."
+      "fullDescription": "Once priorities are clear, this phase focuses on execution aligning teams, managing communication, and ensuring change actually happens."
     },
 
     "extended-oversight": {
-      "title": "Change Sustainment & Continuous Improvement",
+      "title": "Change Sustainment & Improvement",
       "description": "Make change stick and people aligned",
       "features": [
         "Post-implementation reviews",
@@ -261,12 +262,12 @@
         "Continuous improvement sessions",
         "Sustainment planning"
       ],
-      "fullDescription": "Access senior CIO capability without a full‑time hire. We provide strategic direction, governance, vendor management and practical coaching to upskill teams and ensure initiatives are executed effectively."
+      "fullDescription": "Transformation isn't finished when implementation ends this phase ensures results stick, and your teams continue to improve."
     },
     "contactForQuote": "Contact for quote"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "Still Have Questions?",
     "categories": {
       "services": "Services",
       "locations": "Locations & Availability",
@@ -277,74 +278,40 @@
     "questions": {
       "services": [
         {
-          "q": "What does an IT consultant do?",
-          "a": "An IT consultant assesses your technology, recommends improvements, designs solutions and helps implement strategic projects to meet business goals."
+          "q": "What kinds of organizations do you work with?",
+          "a": "We work with small and medium-sized companies in industries such as hospitality, manufacturing, and transportation — particularly those undergoing growth, restructuring, or modernization. Most clients reach out when their operations or culture are no longer aligned with their goals."
         },
         {
-          "q": "Why should my business hire an IT consultant?",
-          "a": "A consultant brings experience and objectivity to solve technical problems faster, reduce risk, optimise costs and align IT with your business strategy."
+          "q": "How long does a typical engagement last?",
+          "a": "Projects usually run between 3 and 16 weeks, depending on the scope. You'll find more detail in the Services section, and a clear timeline is always established during the discovery phase."
         },
         {
-          "q": "Can you help integrate new software into my current systems?",
-          "a": "Yes — we design integration patterns, build connectors, plan data migrations and validate end‑to‑end workflows to ensure smooth adoption."
+          "q": "How is pricing structured?",
+          "a": "All work is billed hourly, with estimated ranges displayed in the Services section. A detailed project estimate is agreed upon before we begin — no hidden fees or open-ended billing."
         }
       ],
       "locations": [
         {
-          "q": "Where are your services available?",
-          "a": "We are based out of Ostrava and serve clients across the Czech Republic and EU; onsite visits available where needed."
+          "q": "Can we start with a smaller project?",
+          "a": "Yes — many companies begin with an initial assessment or strategy phase to clarify priorities before moving into full implementation."
         },
         {
-          "q": "Do you offer remote IT consulting?",
-          "a": "Yes — most work can be done remotely; we combine remote collaboration with onsite visits for workshops or deployments."
-        },
-        {
-          "q": "How quickly can we start working together?",
-          "a": "Initial discovery within days, proposal in 1–2 weeks, project start once scope and terms are agreed."
+          "q": "Do you work remotely or on-site?",
+          "a": "Most work is done remotely, but we also conduct on-site workshops and leadership sessions when in-person collaboration adds value."
         }
       ],
       "process": [
         {
-          "q": "What is your consulting process like?",
-          "a": "We start with discovery, define goals, design solutions, implement in phases and validate results with KPIs and knowledge transfer to your team."
+          "q": "What's the first step if we want to work together?",
+          "a": "Start with a short discovery call — a no-pressure conversation about your goals, challenges, and priorities. From there, we'll outline next steps, including a project scope, estimated timeline, and pricing."
         },
         {
-          "q": "Do you provide one-time consultations or ongoing support?",
-          "a": "Both — one‑off advisory sessions, project engagements and retainer-based ongoing support as needed."
-        },
-        {
-          "q": "Do you offer a free consultation?",
-          "a": "Yes — a short introductory consultation to understand needs and propose next steps at no charge."
+          "q": "What outcomes can we expect?",
+          "a": "You can expect clearer priorities, smoother operations, stronger team alignment, and measurable progress in how your company works and communicates."
         }
       ],
-      "security": [
-        {
-          "q": "Can you help with cybersecurity audits?",
-          "a": "Yes — security assessments, vulnerability reviews, policy audits and remediation guidance are available."
-        },
-        {
-          "q": "Do you sign NDAs with clients?",
-          "a": "Yes — we sign NDAs to protect confidential information before detailed discussions or access to sensitive data."
-        },
-        {
-          "q": "How do you ensure my company’s data stays secure?",
-          "a": "We follow security best practices, use encrypted channels, apply least-privilege and help implement controls and policies."
-        }
-      ],
-      "results": [
-        {
-          "q": "How will IT consulting improve my business?",
-          "a": "Consulting improves efficiency, reduces downtime, enables better decisions and aligns tech investments with business objectives."
-        },
-        {
-          "q": "Can you help reduce IT costs?",
-          "a": "Yes — via optimisation, consolidation, automation and cost‑effective cloud/licensing strategies to lower TCO."
-        },
-        {
-          "q": "What ROI can I expect from working with you?",
-          "a": "ROI varies by project; we define measurable KPIs during discovery and focus on tangible outcomes."
-        }
-      ]
+      "security": [],
+      "results": []
     }
   },
   "lang": "en",

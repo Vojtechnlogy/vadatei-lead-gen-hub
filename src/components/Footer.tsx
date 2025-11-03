@@ -81,18 +81,18 @@ const Footer = ({ onBookingClick }: FooterProps) => {
             <ul className="space-y-3 font-body">
               <li>
                 <button
-                  onClick={() => scrollToSection("about")}
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  {t("footer.quickLinks.about")}
+                  {t("footer.quickLinks.home")}
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection("process")}
+                  onClick={() => scrollToSection("about")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  {t("footer.quickLinks.process")}
+                  {t("footer.quickLinks.about")}
                 </button>
               </li>
               <li>
