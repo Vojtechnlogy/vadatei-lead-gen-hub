@@ -27,9 +27,9 @@ const Services = ({ onBookingClick }: ServicesProps) => {
   const { t, i18n } = useTranslation();
 
   const services = [
-    { id: "diagnostic-deep-dive", icon: Search, image: "https://vadatei.com/it-health-check.jpg" },
-    { id: "targeted-transformation", icon: Route, image: "https://vadatei.com/digital-transformation.jpg" },
-    { id: "extended-oversight", icon: UserStar, image: "https://vadatei.com/cio-as-a-service.jpg" },
+    { id: "diagnostic-deep-dive", icon: Search, image: "/src/assets/digital-transformation.jpg" },
+    { id: "targeted-transformation", icon: Route, image: "/src/assets/digital-transformation.jpg" },
+    { id: "extended-oversight", icon: UserStar, image: "/src/assets/hero-consulting.jpg" },
   ];
 
   const openService = (id: string) => setSelectedServiceId(id);
@@ -97,72 +97,82 @@ const Services = ({ onBookingClick }: ServicesProps) => {
     "provider": {
       "@type": "Organization",
       "name": "Vadatei",
-      "url": "https://vadatei.com/"
+      "description": t("organization.description"),
+      "url": "https://vadatei.com/",
+      "logo": "https://vadatei.com/favicon.ico",
+      "sameAs": [
+        "https://www.linkedin.com/in/marek-tolasz/"
+      ]
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": t("services.sectionTitle"),
-      "itemListElement": services.map((service) => ({
+      "itemListElement": services.map((service, index) => ({
         "@type": "Offer",
+        "position": index + 1,
         "itemOffered": {
           "@type": "Service",
           "name": t(`services.${service.id}.title`),
           "description": t(`services.${service.id}.description`),
+          "image": service.image,
           "provider": {
             "@type": "Organization",
-            "name": "Vadatei"
+            "name": "Vadatei",
+            "description": t("organization.description")
           },
-          "areaServed": i18n.language === "cs" ? "CZ" : i18n.language === "de" ? "DE" : "EU",
-          "serviceType": t(`services.${service.id}.title`),
-          "image": service.image
+          "areaServed": ["Europe", "EU", "Czech Republic", "Germany", "Netherlands"],
+          "serviceType": "Business Consulting",
+          "category": "Change Management",
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "Business"
+          },
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "validFrom": new Date().toISOString().split('T')[0],
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "Price on request",
+              "priceCurrency": "EUR"
+            }
+          }
         }
       }))
     }
   };
 
+  // Breadcrumb structured data
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://vadatei.com/"
+      },
+      {
+        "@type": "ListItem", 
+        "position": 2,
+        "name": t("services.sectionTitle"),
+        "item": "https://vadatei.com/#services"
+      }
+    ]
+  };
+
   return (
     <section id="services" className="py-20 bg-corporate-light">
-      {/* Service structured data (keep if you want) */}
+      {/* Service structured data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
       />
-      {/* Product structured data for all services */}
+      {/* Breadcrumb structured data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            services.map((service) => ({
-              "@context": "https://schema.org/",
-              "@type": "Product",
-              "name": t(`services.${service.id}.title`),
-              "description": t(`services.${service.id}.description`),
-              "image": service.image,
-              "brand": {
-                "@type": "Brand",
-                "name": "Vadatei"
-              },
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "price": 0,
-                  "priceCurrency": "EUR",
-                  "priceValidUntil": "2026-08-29",
-                  "url": "https://vadatei.com/",
-                  "availability": "https://schema.org/InStock"
-                },
-                {
-                  "@type": "Offer",
-                  "price": 0,
-                  "priceCurrency": "CZK",
-                  "priceValidUntil": "2026-08-29",
-                  "url": "https://vadatei.com/",
-                  "availability": "https://schema.org/InStock"
-                }
-              ]
-            }))
-          )
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -222,9 +232,9 @@ const Services = ({ onBookingClick }: ServicesProps) => {
             return (
               <Card key={service.id} className="border-none shadow-card transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col">
                 <CardContent className="p-8 flex flex-col h-full">
-                  <div className="w-16 h-16 bg-corporate-light rounded-lg flex items-center justify-center mb-6 transition-colors">
-                    <service.icon className="h-8 w-8 text-primary" />
-                  </div>
+                  <header className="w-16 h-16 bg-corporate-light rounded-lg flex items-center justify-center mb-6 transition-colors">
+                    <service.icon className="h-8 w-8 text-primary" aria-hidden="true" />
+                  </header>
 
                   <h3 className="text-2xl font-heading font-bold text-primary mb-4">
                     {t(`services.${service.id}.title`)}
@@ -236,30 +246,31 @@ const Services = ({ onBookingClick }: ServicesProps) => {
 
                   {/* What You Receive subtitle with icon and separator */}
                   <div className="flex items-center gap-2 mb-3 mt-2">
-                    <Gift className="h-5 w-5 text-primary" />
+                    <Gift className="h-5 w-5 text-primary" aria-hidden="true" />
                     <h4 className="text-lg font-heading font-semibold text-primary">What You Receive: </h4>
                   </div>
                   <Separator className="mb-4 bg-primary/20" />
 
-                  <div className="mb-6">
-                    <ul className="space-y-3">
+                  <section className="mb-6">
+                    <ul className="space-y-3" role="list">
                       {(features || []).map((feature, index) => (
                         <li key={index} className="flex items-start gap-3">
-                          <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                          <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" aria-hidden="true" />
                           <span className="text-foreground font-body leading-relaxed">{feature}</span>
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </section>
 
                   <div className="flex-1" />
                   <Button
                     variant="corporate-outline"
                     className="w-full group-hover:bg-primary group-hover:text-white transition-all mt-auto"
                     onClick={() => openService(service.id)}
+                    aria-label={`Learn more about ${t(`services.${service.id}.title`)}`}
                   >
                     {t("services.moreInfoButton")}
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                   </Button>
                 </CardContent>
               </Card>

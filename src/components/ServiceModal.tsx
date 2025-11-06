@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { X, Mail, Phone, Building } from "lucide-react";
+import { X, Mail, Phone, Building, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from "react-i18next";
 
@@ -14,6 +14,7 @@ interface Service {
   fullDescription: string;
   features: string[];
   icon: any;
+  image?: string;
 }
 
 interface ServiceModalProps {
@@ -148,21 +149,47 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
               "@type": "Service",
               "name": service.title,
               "description": service.fullDescription,
+              "image": service.image || "/src/assets/digital-transformation.jpg",
               "provider": {
                 "@type": "Organization",
                 "name": "Vadatei",
-                "url": "https://vadatei.com/"
+                "description": t("organization.description"),
+                "url": "https://vadatei.com/",
+                "logo": "https://vadatei.com/favicon.ico",
+                "sameAs": [
+                  "https://www.linkedin.com/in/marek-tolasz/"
+                ]
               },
-              "areaServed": "EU",
-              "serviceType": service.title,
+              "areaServed": ["Europe", "EU", "Czech Republic", "Germany", "Netherlands"],
+              "serviceType": "Business Consulting",
+              "category": "Change Management",
+              "audience": {
+                "@type": "Audience",
+                "audienceType": "Business"
+              },
               "offers": {
                 "@type": "Offer",
-                "availability": "https://schema.org/InStock"
+                "availability": "https://schema.org/InStock",
+                "validFrom": new Date().toISOString().split('T')[0],
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "price": "Price on request",
+                  "priceCurrency": "EUR"
+                }
+              },
+              "hasOfferCatalog": {
+                "@type": "ItemList",
+                "numberOfItems": service.features?.length || 0,
+                "itemListElement": (service.features || []).map((feature, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "name": feature
+                }))
               }
             })
           }}
         />
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto" aria-describedby="service-description">
           <DialogHeader>
             <DialogTitle className="text-2xl font-heading font-bold text-primary pr-8">
               {t("serviceModal.title", { service: service.title })}
@@ -171,51 +198,69 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
 
           <div className="grid lg:grid-cols-2 gap-8 mt-4">
             {/* Service Information */}
-            <div className="space-y-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                <service.icon className="h-8 w-8 text-primary" />
-              </div>
+            <article className="space-y-6" id="service-description">
+              <header className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                <service.icon className="h-8 w-8 text-primary" aria-hidden="true" />
+              </header>
 
-              <div>
-                <h3 className="text-xl font-heading font-semibold text-primary mb-4">
+              <section>
+                <h3 className="text-lg font-heading font-semibold text-primary mb-4">
                   {t("serviceModal.overviewTitle")}
                 </h3>
-                <p className="text-muted-foreground font-body leading-relaxed">
+                <p className="text-base text-muted-foreground font-body leading-relaxed">
                   {service.fullDescription}
                 </p>
-              </div>
+              </section>
 
-              <div>
-                <h3 className="text-xl font-heading font-semibold text-primary mb-4">
+              <section>
+                <h3 className="text-lg font-heading font-semibold text-primary mb-4">
                   {t("serviceModal.featuresTitle")}
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-2" role="list">
                   {(Array.isArray(service.features) ? service.features : []).map((feature, index) => (
                     <li key={index} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-muted-foreground font-body">{feature}</span>
+                      <div className="w-2 h-2 bg-primary rounded-full" aria-hidden="true"></div>
+                      <span className="text-base text-muted-foreground font-body">{feature}</span>
                     </li>
                   ))}
                 </ul>
-              </div>
+              </section>
 
-              <div className="bg-corporate-light p-6 rounded-lg">
-                <h4 className="font-heading font-semibold text-primary mb-2">
+              <section className="bg-corporate-light p-6 rounded-lg">
+                <h4 className="text-base font-heading font-semibold text-primary mb-2">
                   {t("infoCard.readyTitle")}
                 </h4>
-                <p className="text-sm text-muted-foreground font-body">
+                <p className="text-sm text-muted-foreground font-body leading-relaxed">
                   {t("infoCard.readyBody", { service: service.title })}
                 </p>
-              </div>
+                
+                {/* View Full Service Page Button */}
+                <Button
+                  variant="outline"
+                  className="w-full mt-4"
+                  onClick={() => {
+                    const serviceUrlMap: Record<string, string> = {
+                      'diagnostic-deep-dive': 'change-strategy-diagnostic',
+                      'targeted-transformation': 'change-management-implementation',
+                      'extended-oversight': 'change-sustainment-improvement'
+                    };
+                    const serviceSlug = serviceUrlMap[service.id] || service.id;
+                    window.location.href = `/en/services/${serviceSlug}`;
+                  }}
+                >
+                  View Full Service Details
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </section>
 
               {/* Contact (moved here under "Ready to get started") */}
-              <div className="mt-6 pt-6 border-t border-border">
+              <footer className="mt-6 pt-6 border-t border-border">
                 <div className="flex items-start gap-4 text-sm text-muted-foreground font-body">
                   <div className="flex items-center gap-2">
                     <Mail className="h-4 w-4" />
                     <a
                       href={`mailto:${t("contact.email")}`}
-                      className="text-sm text-muted-foreground underline hover:text-primary"
+                      className="text-sm text-muted-foreground font-body underline hover:text-primary"
                     >
                       {t("contact.email")}
                     </a>
@@ -230,7 +275,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                           ? raw
                           : String(raw).split(/\s*(?:,|\bor\b|\||\/|;|\n)\s*/i).filter(Boolean);
                         return parts.map((p, i) => (
-                          <a key={i} href={`tel:${p.replace(/\s+/g, "")}`} className="text-sm text-muted-foreground">
+                          <a key={i} href={`tel:${p.replace(/\s+/g, "")}`} className="text-sm text-muted-foreground font-body">
                             {p}
                           </a>
                         ));
@@ -238,14 +283,21 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </footer>
+            </article>
 
             {/* Contact Form */}
             <div className="bg-gradient-subtle p-6 rounded-lg">
-              <h3 className="text-xl font-heading font-semibold text-primary mb-6">
-                {t("serviceModal.heading")}
+              <h3 className="text-lg font-heading font-semibold text-primary mb-4">
+                {t(`serviceModal.headings.${service.id}`, { 
+                  defaultValue: t("serviceModal.heading")
+                })}
               </h3>
+              
+              {/* Subtitle appears under the heading for all services */}
+              <p className="text-sm text-primary/80 font-body italic mb-6 leading-relaxed">
+                {t(`services.${service.id}.subtitle`)}
+              </p>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
@@ -309,11 +361,11 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                     onChange={handleInputChange}
                     rows={4}
                     className="mt-1"
-                    placeholder={t("serviceModal.placeholder_details", { service: service.title })}
+                    placeholder={t(`serviceModal.placeholders.${service.id}`, { 
+                      defaultValue: t("serviceModal.placeholder_details", { service: service.title })
+                    })}
                   />
                 </div>
-
-
                 
                 <Button
                   type="submit"

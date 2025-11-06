@@ -27,26 +27,17 @@ Create good quality translations for the website ask Daniel for German Translati
 
 Try to figure out a way that we can add a phone number calling code - picker not priority
 
-Future add a Partners section and a Reviews section
+Future add a Partners section and a Reviews section -- ADD aggregateRating and Review to the Schema
 
 Create QR code and advertizing for the website
 
 Examples section so that the clients have examples
 
-Add and SEO page so that users who search stuff up have a good chance of finding somthing maybe a blog or case 
-studies
-
-ADD aggregateRating and Review to the Schema
-
 Make sure that google indexing is good
 
 Create markers so that data can be tracked if user click More Information keep track of that
 
-Add pictures to make everything look nice small icons in the service section would go a long way
-
-Update the form so that information is stored properly-------------------------------------------------Should be easy just change the varibles
-
-Important make the Services Model Section work the way it is supposed to
+Use the excel sheet and the PDF at the same time so when a user is booking a call as for information that then gets stored
 
 !!!!!!!!
 

@@ -1,4 +1,12 @@
 {
+  "title": "Vadatei - Strategic Change & Transformation Partner | 30+ Years Experience",
+  "description": "70% of change efforts fail. We ensure you're in the winning 30%. Expert change management consulting with 30+ years experience. Start with our diagnostic deep-dive to discover the 5 hidden warning signs most leadership teams miss.",
+  "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
+  "meta": {
+    "title": "Vadatei - Strategic Change & Transformation Partner | 30+ Years Experience",
+    "description": "70% of change efforts fail. We ensure you're in the winning 30%. Expert change management consulting with 30+ years experience. Start with our diagnostic deep-dive to discover the 5 hidden warning signs most leadership teams miss.",
+    "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
+  },
   "about": {
     "title": "About Vadatei",
     "tagline": "",
@@ -29,15 +37,25 @@
     }    
   },
   "serviceModal": {
-    "title": "Request More Information: {{service}}",
+    "title": "Start Your: {{service}}",
     "sr_description": "Fill out the form to request more information about {{service}}.",
     "overviewTitle": "Overview",
     "featuresTitle": "Key Features",
-    "heading": "Request More Information",
-    "details_label": "Details (Interest in: {{service}})",
+    "heading": "Tell Us About Yourself",
+    "headings": {
+      "diagnostic-deep-dive": "Is Your Organization Ready for Change?",
+      "targeted-transformation": "Tell Us About Your Transformation Goals?", 
+      "extended-oversight": "Tell Us About Your Ongoing Needs?"
+    },
+    "details_label": "Details for {{service}}",
     "placeholder_details": "Tell us more about your {{service}} needs...",
+    "placeholders": {
+      "diagnostic-deep-dive": "What challenges are you facing? What areas of your organization need the most attention? Share any specific concerns or goals you'd like us to focus on during the diagnostic phase.",
+      "targeted-transformation": "What transformation goals do you have? Which departments or processes need restructuring? Tell us about your timeline, priorities, and any specific changes you want to implement.",
+      "extended-oversight": "What ongoing support do you need? Which areas require continuous improvement? Share details about your current state and long-term sustainment goals."
+    },
     "sending": "Sending...",
-    "submit": "Send Inquiry",
+    "submit": "Receive Free Targeted Advice",
     "toast": {
       "successTitle": "Inquiry Submitted",
       "successDescription": "Thank you for your interest in {{service}}. We'll be in touch within 24 hours.",
@@ -143,7 +161,7 @@
   },
   "footer": {
     "company": "Vadatei",
-    "description": "We analyze how your organization operates, identify bottlenecks, and create structured plans to improve efficiency and alignment.",
+    "description": "Strategic change & transformation partner with 30+ years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     "bookDiscovery": "Book a Discovery Call",
     "quickLinks": {
       "title": "Quick Links",
@@ -169,6 +187,12 @@
   "contact": {
     "email": "info@vadatei.com",
     "phone": "+31 6 82 49 46 90 or +420 602 396 416"
+  },
+  "organization": {
+    "name": "Vadatei",
+    "description": "Strategic change & transformation partner with 30+ years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
+    "contactType": "customer service",
+    "areaServed": "Europe"
   },
   "header": {
     "company": "Vadatei",
@@ -215,7 +239,7 @@
     }
   },
   "services": {
-    "sectionTitle": "The Change Process",
+    "sectionTitle": "The Vadatei Transformation Model",
     "sectionIntro": "Every organization faces change differently. We provide structured consulting support across the full transformation cycle from diagnosing what needs to change, to managing implementation, to ensuring lasting results.",
     "moreInfoButton": "More information",
     "cta": {
@@ -227,13 +251,13 @@
     "diagnostic-deep-dive": {
       "title": "Change Strategy & Diagnostic",
       "description": "Understand what needs to change, why and how",
+      "subtitle": "Discover the 5 hidden warning signs that most leadership teams miss and how to fix them before it's too late.",
       "features": [
         "Organizational assessment",
         "Stakeholder interviews",
         "Readiness evaluation",
         "Gap and risk analysis",
-        "Transformation roadmap",
-        "And more!"
+        "Transformation roadmap"
       ],
       "fullDescription": "Focused expert analysis that uncovers root causes, quantifies impact and defines practical next steps. For targeted diagnostic please select priority areas on the right."
     },
@@ -241,6 +265,7 @@
     "targeted-transformation": {
       "title": "Change Management & Implementation",
       "description": "Turn strategy into action and action into implementation",
+      "subtitle": "Receive a proven step-by-step checklist to help you align your people, processes, and priorities — before launching your next transformation.",
       "features": [
         "Change planning",
         "Alignment workshops",
@@ -256,6 +281,7 @@
     "extended-oversight": {
       "title": "Change Sustainment & Improvement",
       "description": "Make change stick and people aligned",
+      "subtitle": "Transformation is only half the battle — sustaining it is where real value is delivered. Discover 5 tactics to make your change stick.",
       "features": [
         "Post-implementation reviews",
         "Leadership and team coaching",
@@ -316,9 +342,6 @@
     }
   },
   "lang": "en",
-  "title": "Vadatei - Change & Transformation Management",
-  "description": "70% of Organizational Change Efforts Fail. Let’s Make Sure Yours Doesn’t. By helping organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
-  "ogImage": "https://vadatei.com/og-en.png",
   "privacy": {
     "backToHome": "Back to Home",
     "title": "Privacy Policy",

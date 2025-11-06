@@ -1,4 +1,12 @@
 {
+  "title": "Vadatei - Strategický Partner pro Řízení Změn | 30+ Let Zkušeností",
+  "description": "70% organizačních změn selže. Zajistíme, aby vaše patřila mezi úspěšných 30%. Expertní poradenství v řízení změn s více než 30 lety zkušeností. Začněte s naší diagnostickou analýzou.",
+  "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
+  "meta": {
+    "title": "Vadatei - Strategický Partner pro Řízení Změn | 30+ Let Zkušeností",
+    "description": "70% organizačních změn selže. Zajistíme, aby vaše patřila mezi úspěšných 30%. Expertní poradenství v řízení změn s více než 30 lety zkušeností. Začněte s naší diagnostickou analýzou.",
+    "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
+  },
   "about": {
     "title": "O Vadatei",
     "tagline": "Zkušenosti, kterým můžete věřit. Výsledky, které můžete měřit.",
@@ -115,6 +123,12 @@
   "contact": {
     "email": "info@vadatei.com",
     "phone": "+31 6 82 49 46 90 nebo +420 602 396 416"
+  },
+  "organization": {
+    "name": "Vadatei",
+    "description": "Strategický partner pro řízení změn s více než 30 lety zkušeností. Pomáháme organizacím pochopit, co je třeba změnit, efektivně implementovat transformaci a udržovat trvalé zlepšení.",
+    "contactType": "zákaznický servis",
+    "areaServed": "Evropa"
   },
   "header": {
     "company": "Vadatei",
@@ -286,9 +300,6 @@
     }
   },
   "lang": "cz",
-  "title": "Vadatei - Špičkové IT poradenství pro růst vašeho podnikání",
-  "description": "Zvyšte produktivitu a snižte náklady s IT poradenstvím na míru. Více než 30 let zkušeností s rozvojem firem.",
-  "ogImage": "https://vadatei.com/og-cz.png",
   "privacy": {
     "backToHome": "Zpět na domovskou stránku",
     "title": "Zásady ochrany osobních údajů",
@@ -338,11 +349,6 @@
     "home": "Domů",
     "about": "O Vadatei",
     "privacy": "Zásady ochrany osobních údajů"
-  },
-  "organization": {
-    "name": "Vadatei",
-    "contactType": "zákaznický servis",
-    "areaServed": "EU"
   }
 }
 

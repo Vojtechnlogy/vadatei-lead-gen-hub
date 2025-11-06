@@ -36,25 +36,46 @@ export default function FAQ(): JSX.Element {
   const ld = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: allQuestions.map((q) => ({
+    "name": t("faq.title"),
+    "description": "Frequently asked questions about Vadatei's change management and transformation consulting services",
+    "url": "https://vadatei.com/#faq",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vadatei",
+      "url": "https://vadatei.com/",
+      "logo": "https://vadatei.com/favicon.ico"
+    },
+    "mainEntity": allQuestions.map((q, index) => ({
       "@type": "Question",
-      name: q.question,
-      acceptedAnswer: { "@type": "Answer", text: q.answer },
+      "name": q.question,
+      "position": index + 1,
+      "acceptedAnswer": { 
+        "@type": "Answer", 
+        "text": q.answer,
+        "inLanguage": "en",
+        "author": {
+          "@type": "Organization",
+          "name": "Vadatei"
+        }
+      },
     })),
+    "dateModified": new Date().toISOString().split('T')[0],
+    "dateCreated": "2024-01-01"
   };
 
   return (
-    <section id="faq" className="max-w-6xl mx-auto py-16 px-4">
+    <section id="faq" className="max-w-6xl mx-auto py-16 px-4" itemScope itemType="https://schema.org/FAQPage">
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(ld)}</script>
       </Helmet>
 
-      <div className="mb-8">
-        <h2 className="text-3xl font-semibold text-center">{t("faq.title")}</h2>
-      </div>
+      <header className="mb-8">
+        <h2 className="text-3xl font-semibold text-center" itemProp="name">{t("faq.title")}</h2>
+      </header>
 
       {/* Single continuous list of all FAQ items */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4" role="list">
         {allQuestions.map((item, index) => {
           const isOpen = openSet.has(index);
           return (
@@ -62,9 +83,17 @@ export default function FAQ(): JSX.Element {
               key={index}
               aria-labelledby={`faq-q-${index}`}
               className="bg-white/5 dark:bg-slate-800 rounded-lg p-4 shadow-sm"
+              itemScope 
+              itemType="https://schema.org/Question"
+              itemProp="mainEntity"
+              role="listitem"
             >
               <div className="flex items-start justify-between">
-                <h3 id={`faq-q-${index}`} className="text-lg font-medium">
+                <h3 
+                  id={`faq-q-${index}`} 
+                  className="text-lg font-medium"
+                  itemProp="name"
+                >
                   {item.question}
                 </h3>
 
@@ -74,9 +103,10 @@ export default function FAQ(): JSX.Element {
                   onClick={() => toggle(index)}
                   type="button"
                   className="ml-4 inline-flex items-center justify-center w-10 h-10 rounded-full text-sm"
+                  aria-label={isOpen ? "Close answer" : "Open answer"}
                 >
                   <svg
-                    className={`w-4 h-4 transform ${isOpen ? "rotate-90" : "rotate-0"}`}
+                    className={`w-4 h-4 transform transition-transform ${isOpen ? "rotate-90" : "rotate-0"}`}
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -94,9 +124,12 @@ export default function FAQ(): JSX.Element {
                 id={`faq-a-${index}`}
                 role="region"
                 aria-labelledby={`faq-q-${index}`}
-                className={`mt-3 text-sm leading-relaxed ${isOpen ? "block" : "hidden"}`}
+                className={`mt-3 text-sm leading-relaxed transition-all ${isOpen ? "block" : "hidden"}`}
+                itemScope
+                itemType="https://schema.org/Answer"
+                itemProp="acceptedAnswer"
               >
-                {item.answer}
+                <div itemProp="text">{item.answer}</div>
               </div>
             </article>
           );

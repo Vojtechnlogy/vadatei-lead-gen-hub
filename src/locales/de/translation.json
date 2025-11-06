@@ -1,4 +1,12 @@
 {
+  "title": "Vadatei - Strategischer Change & Transformationspartner | 30+ Jahre Erfahrung",
+  "description": "70% der Veränderungsprojekte scheitern. Wir sorgen dafür, dass Sie zu den erfolgreichen 30% gehören. Experten-Beratung im Change Management mit über 30 Jahren Erfahrung. Starten Sie mit unserer Diagnose-Analyse.",
+  "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
+  "meta": {
+    "title": "Vadatei - Strategischer Change & Transformationspartner | 30+ Jahre Erfahrung",
+    "description": "70% der Veränderungsprojekte scheitern. Wir sorgen dafür, dass Sie zu den erfolgreichen 30% gehören. Experten-Beratung im Change Management mit über 30 Jahren Erfahrung. Starten Sie mit unserer Diagnose-Analyse.",
+    "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
+  },
   "about": {
     "title": "Über Vadatei",
     "tagline": "Erfahrung, der Sie vertrauen können. Ergebnisse, die Sie messen können.",
@@ -115,6 +123,12 @@
   "contact": {
     "email": "info@vadatei.com",
     "phone": "+31 6 82 49 46 90 oder +420 602 396 416"
+  },
+  "organization": {
+    "name": "Vadatei",
+    "description": "Strategischer Change & Transformationspartner mit über 30 Jahren Erfahrung. Wir helfen Organisationen zu verstehen, was sich ändern muss, Transformationen effektiv umzusetzen und nachhaltige Verbesserungen zu erzielen.",
+    "contactType": "Kundendienst",
+    "areaServed": "Europa"
   },
   "header": {
     "company": "Vadatei",
@@ -285,9 +299,6 @@
     }
   },
   "lang": "de",
-  "title": "Vadatei – Experten-IT-Beratung für Unternehmenswachstum",
-  "description": "Steigern Sie die Produktivität und senken Sie Kosten mit maßgeschneiderter IT-Beratung. Über 30 Jahre Erfahrung für nachhaltiges Wachstum.",
-  "ogImage": "https://vadatei.com/og-de.png",
   "privacy": {
     "backToHome": "Zurück zur Startseite",
     "title": "Datenschutzerklärung",
@@ -337,11 +348,6 @@
     "home": "Startseite",
     "about": "Über Vadatei",
     "privacy": "Datenschutzerklärung"
-  },
-  "organization": {
-    "name": "Vadatei",
-    "contactType": "Kundendienst",
-    "areaServed": "EU"
   }
 }
 

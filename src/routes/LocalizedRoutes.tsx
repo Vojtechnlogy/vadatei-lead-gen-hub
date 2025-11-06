@@ -3,6 +3,9 @@ import { Routes, Route, Navigate, useParams, useNavigate } from "react-router-do
 import { useTranslation } from "react-i18next";
 import Index from "../pages/Index";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
+import DiagnosticDeepDive from "../pages/services/DiagnosticDeepDive";
+import TargetedTransformation from "../pages/services/TargetedTransformation";
+import ExtendedOversight from "../pages/services/ExtendedOversight";
 
 const SUPPORTED = ["en", "cz", "de"];
 
@@ -26,6 +29,9 @@ export default function LocalizedRoutes() {
       <Route path="/" element={<Navigate to="/en" replace />} />
       <Route path="/:lang" element={<LangWrapper><Index /></LangWrapper>} />
       <Route path="/:lang/privacy-policy" element={<LangWrapper><PrivacyPolicy /></LangWrapper>} />
+      <Route path="/:lang/services/change-strategy-diagnostic" element={<LangWrapper><DiagnosticDeepDive /></LangWrapper>} />
+      <Route path="/:lang/services/change-management-implementation" element={<LangWrapper><TargetedTransformation /></LangWrapper>} />
+      <Route path="/:lang/services/change-sustainment-improvement" element={<LangWrapper><ExtendedOversight /></LangWrapper>} />
       {/* add other localized routes here */}
       <Route path="*" element={<Navigate to="/en" replace />} />
     </Routes>
