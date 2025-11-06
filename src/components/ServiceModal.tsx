@@ -24,7 +24,7 @@ interface ServiceModalProps {
 }
 
 const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   const [formData, setFormData] = useState({
     fullName: "",
@@ -245,7 +245,8 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                       'extended-oversight': 'change-sustainment-improvement'
                     };
                     const serviceSlug = serviceUrlMap[service.id] || service.id;
-                    window.location.href = `/en/services/${serviceSlug}`;
+                    const currentLang = i18n.language || 'en';
+                    window.location.href = `/${currentLang}/services/${serviceSlug}`;
                   }}
                 >
                   View Full Service Details

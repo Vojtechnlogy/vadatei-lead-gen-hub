@@ -214,7 +214,51 @@
         "Beratung zu Anbietern & Budget"
       ],
       "fullDescription": "Nutzen Sie erfahrene CIO-Kompetenz ohne Festanstellung. Wir bieten strategische Führung, Governance, Lieferantenmanagement und praxisnahes Coaching für die Teamentwicklung und effektive Umsetzung."
-    }
+    },
+    
+    "diagnostic-deep-dive": {
+      "title": "Veränderungsstrategie & Diagnostik",
+      "description": "Finden Sie heraus, was Sie ändern müssen und warum",
+      "subtitle": "Erhalten Sie klare Einblicke in das, was funktioniert, was nicht, und einen präzisen Plan für die erfolgreiche Transformation Ihrer Organisation.",
+      "features": [
+        "Organisationsbewertung",
+        "Stakeholder-Interviews",
+        "Bereitschaftsevaluierung",
+        "Lücken- und Risikoanalyse",
+        "Transformations-Roadmap",
+        "Implementierungsempfehlungen"
+      ],
+      "fullDescription": "Bevor Sie eine Veränderung beginnen, ist es entscheidend, den aktuellen Zustand zu verstehen und Chancen zu identifizieren. Diese Phase liefert klare Diagnose und strategische Richtung."
+    },
+    "targeted-transformation": {
+      "title": "Change Management & Implementierung",
+      "description": "Verwandeln Sie Strategie in Aktion und Aktion in Implementierung",
+      "subtitle": "Erhalten Sie eine bewährte Schritt-für-Schritt-Checkliste, die Ihnen hilft, Ihre Menschen, Prozesse und Prioritäten zu koordinieren — bevor Sie Ihre nächste Transformation starten.",
+      "features": [
+        "Veränderungsplanung",
+        "Abstimmungs-Workshops",
+        "Governance-Setup",
+        "Kommunikationsstrategie",
+        "Fähigkeits- und Kulturentwicklung",
+        "Adoptions-Tracking",
+        "Vollständige Implementierungsaufsicht"
+      ],
+      "fullDescription": "Sobald die Prioritäten klar sind, konzentriert sich diese Phase auf die Ausführung — Teams abstimmen, Kommunikation verwalten und sicherstellen, dass Veränderung tatsächlich stattfindet."
+    },
+    "extended-oversight": {
+      "title": "Veränderungsnachhaltigkeit & Verbesserung",
+      "description": "Sorgen Sie dafür, dass Veränderungen bestehen bleiben und Menschen ausgerichtet sind",
+      "subtitle": "Transformation ist nur die halbe Schlacht — sie nachhaltig zu gestalten ist der Punkt, wo echter Wert geliefert wird. Entdecken Sie 5 Taktiken, um Ihre Veränderung dauerhaft zu machen.",
+      "features": [
+        "Post-Implementierung Reviews",
+        "Führungs- und Team-Coaching",
+        "Prozessaudits & Optimierung",
+        "Kontinuierliche Verbesserungssitzungen",
+        "Nachhaltigkeitsplanung"
+      ],
+      "fullDescription": "Transformation ist nicht beendet, wenn die Implementierung endet — diese Phase stellt sicher, dass Ergebnisse bestehen bleiben und Ihre Teams sich weiter verbessern."
+    },
+    "contactForQuote": "Preis auf Anfrage"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",

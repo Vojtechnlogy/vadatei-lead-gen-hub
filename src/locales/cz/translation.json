@@ -215,6 +215,49 @@
       ],
       "fullDescription": "Získejte zkušeného CIO bez nutnosti plného úvazku. Poskytujeme strategické vedení, řízení, správu dodavatelů a praktický koučink pro rozvoj týmu a efektivní realizaci projektů."
     },
+    
+    "diagnostic-deep-dive": {
+      "title": "Strategie změn & diagnostika",
+      "description": "Zjistěte, co potřebujete změnit a proč",
+      "subtitle": "Získejte jasný pohled na to, co funguje, co ne, a přesný plán pro úspěšnou transformaci vaší organizace.",
+      "features": [
+        "Posouzení organizace",
+        "Rozhovory se stakeholdery",
+        "Hodnocení připravenosti",
+        "Analýza mezer a rizik",
+        "Plán transformace",
+        "Doporučení pro implementaci"
+      ],
+      "fullDescription": "Před zahájením jakékoli změny je klíčové pochopit současný stav a identifikovat příležitosti. Tato fáze poskytuje jasnou diagnózu a strategický směr."
+    },
+    "targeted-transformation": {
+      "title": "Řízení změn & implementace",
+      "description": "Přeměňte strategii v akci a akci v implementaci",
+      "subtitle": "Získejte ověřený krok za krokem kontrolní seznam, který vám pomůže sladit lidi, procesy a priority — před zahájením vaší další transformace.",
+      "features": [
+        "Plánování změn",
+        "Workshopy pro sladění",
+        "Nastavení governance",
+        "Komunikační strategie",
+        "Rozvoj schopností a kultury",
+        "Sledování adopce",
+        "Kompletní dohled nad implementací"
+      ],
+      "fullDescription": "Jakmile jsou priority jasné, tato fáze se zaměřuje na provedení — sladění týmů, řízení komunikace a zajištění, že ke změně skutečně dojde."
+    },
+    "extended-oversight": {
+      "title": "Udržení změn & zlepšování",
+      "description": "Udržte změnu a lidi v souladu",
+      "subtitle": "Transformace je pouze polovina bitvy — udržet ji je místo, kde se dodává skutečná hodnota. Objevte 5 taktik, jak udržet vaši změnu.",
+      "features": [
+        "Kontroly po implementaci",
+        "Koučink vedení a týmů",
+        "Audity procesů a optimalizace",
+        "Setkání kontinuálního zlepšování",
+        "Plánování udržitelnosti"
+      ],
+      "fullDescription": "Transformace není dokončena, když implementace skončí — tato fáze zajišťuje, že výsledky vydrží a vaše týmy se nadále zlepšují."
+    },
     "contactForQuote": "Cena na vyžádání"
   },
   "faq": {
