@@ -259,6 +259,51 @@
     },
     "contactForQuote": "Cena na vyžádání"
   },
+  "whoWeHelp": {
+    "heading": "Komu pomáháme",
+    "subhead": "Spolupracujeme s vizionářskými firmami připravenými přijmout změnu a uvolnit svůj plný potenciál.",
+    "commonChallenges": "Časté výzvy:",
+    "profiles": {
+      "growingCompanies": {
+        "title": "Rostoucí společnosti",
+        "desc": "Organizace zažívající rychlý růst, které potřebují škálovat operace, systémy a procesy bez ztráty tempa nebo efektivity.",
+        "highlights": {
+          "0": "Škálovací výzvy se stávajícími systémy a procesy",
+          "1": "Potřeba strukturovaného růstu bez operačního chaosu",
+          "2": "Budování udržitelných základů pro budoucí expanzi"
+        }
+      },
+      "transformation": {
+        "title": "Firmy v transformaci",
+        "desc": "Společnosti procházející významnou změnou — ať už jde o digitální transformaci, restrukturalizaci nebo strategické pivoty.",
+        "highlights": {
+          "0": "Řízení složitých organizačních změn",
+          "1": "Modernizace starších systémů a procesů",
+          "2": "Sladění týmů kolem nového strategického směru"
+        }
+      },
+      "leadership": {
+        "title": "Vedoucí týmy",
+        "desc": "Výkonné týmy a obchodní lídři, kteří uznávají potřebu změny, ale chtějí odborné vedení pro zajištění úspěšné implementace.",
+        "highlights": {
+          "0": "Překlad vize do akčních strategií změn",
+          "1": "Budování organizačního přijetí a momentu",
+          "2": "Zajištění, že iniciativy přinášejí měřitelné výsledky"
+        }
+      },
+      "changeReady": {
+        "title": "Organizace připravené na změnu",
+        "desc": "Proaktivní firmy usilující o to zůstat před změnami trhu průběžným zlepšováním a optimalizací svých operací.",
+        "highlights": {
+          "0": "Udržení konkurenceschopnosti na vyvíjejících se trzích",
+          "1": "Kontinuální zlepšování a optimalizace",
+          "2": "Budování agilních, adaptabilních organizací"
+        }
+      }
+    },
+    "ctaText": "Zní to jako vaše firma?",
+    "ctaHighlight": "Promluvme si o tom, jak vám můžeme pomoci uspět."
+  },
   "faq": {
     "title": "Často kladené dotazy",
     "categories": {

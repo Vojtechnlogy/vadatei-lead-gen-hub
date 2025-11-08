@@ -4,6 +4,7 @@ import { ArrowLeft, CheckCircle, Clock, Users, Building } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { localizedPath } from "../../lib/localize";
 import { useTranslation } from "react-i18next";
+import Header from "@/components/Header";
 
 const DiagnosticDeepDive = () => {
   const navigate = useNavigate();
@@ -25,7 +26,10 @@ const DiagnosticDeepDive = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
+      {/* Header Navigation */}
+      <Header onBookingClick={() => {}} />
+      
+      {/* Page Header */}
       <header className="bg-primary text-white py-6 pt-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button

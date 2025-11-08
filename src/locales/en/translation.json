@@ -134,7 +134,7 @@
   },
 
   "bookingModal": {
-    "title": "Book Your Discovery Call",
+    "title": "Start Your Diagnostic Call",
     "whatToExpect": "What to Expect",
     "consultationTitle": "30-Minute Consultation",
     "consultationDesc": "Focused discussion on your transformation goals",
@@ -147,7 +147,7 @@
     "discussItem2": "Company Goals and priorities",
     "discussItem3": "Next steps and recommendations",
     "readyTitle": "Ready to Transform Business?",
-    "readyBody": "Become another successful organization that has partnered with Vadatei to achieve their transformation goals.",
+    "readyBody": "Become another successful business that has partnered with Vadatei to achieve their transformation goals.",
     "chooseTimeTitle": "Choose Your Preferred Time",
     "chooseTimeDesc": "Click the button below to select an available time slot and schedule your call instantly.",
     "bookButton": "Book a Time Slot",
@@ -195,7 +195,7 @@
     },
     "newsletter": {
       "title": "Newsletter",
-      "desc": "Get occasional updates and insights about IT strategy and transformation.",
+      "desc": "Get occasional updates and insights about change management and transformation.",
       "placeholder": "Your email address",
       "subscribe": "Subscribe"
     },
@@ -217,11 +217,11 @@
     "logoAlt": "Vadatei Logo",
     "nav": {
       "home": "Home",
-      "about": "Our Approach",
-      "services": "About",
+      "about": "About",
+      "services": "Our Approach",
       "faq": "FAQ"
     },
-    "bookNow": "Book Now",
+    "bookNow": "Start Your Diagnostic",
     "bookDiscovery": "Book My Discovery Call"
   },
   "process": {
@@ -262,7 +262,7 @@
     "moreInfoButton": "More Information",
     "cta": {
       "title": "Ready to start your transformation journey?",
-      "body": "Book an initial diagnostic session to find out how we can help you transform your organization.",
+      "body": "Book an initial diagnostic session to find out how we can help you transform your business.",
       "button": "Start With a Diagnostic Call"
     },
 

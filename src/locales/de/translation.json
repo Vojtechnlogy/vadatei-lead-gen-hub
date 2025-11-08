@@ -259,6 +259,51 @@
     },
     "contactForQuote": "Preis auf Anfrage"
   },
+  "whoWeHelp": {
+    "heading": "Wen wir unterstützen",
+    "subhead": "Wir arbeiten mit zukunftsorientierten Unternehmen zusammen, die bereit sind, Veränderungen anzunehmen und ihr volles Potenzial zu entfalten.",
+    "commonChallenges": "Häufige Herausforderungen:",
+    "profiles": {
+      "growingCompanies": {
+        "title": "Wachsende Unternehmen",
+        "desc": "Organisationen mit rapidem Wachstum, die Abläufe, Systeme und Prozesse skalieren müssen, ohne Schwung oder Effizienz zu verlieren.",
+        "highlights": {
+          "0": "Skalierungsherausforderungen mit bestehenden Systemen und Prozessen",
+          "1": "Bedarf an strukturiertem Wachstum ohne operatives Chaos",
+          "2": "Aufbau nachhaltiger Grundlagen für zukünftige Expansion"
+        }
+      },
+      "transformation": {
+        "title": "Unternehmen in Transformation",
+        "desc": "Firmen, die bedeutende Veränderungen durchlaufen — sei es digitale Transformation, organisatorische Umstrukturierung oder strategische Neuausrichtung.",
+        "highlights": {
+          "0": "Management komplexer organisatorischer Veränderungsinitiativen",
+          "1": "Modernisierung veralteter Systeme und Prozesse",
+          "2": "Ausrichtung der Teams auf neue strategische Richtung"
+        }
+      },
+      "leadership": {
+        "title": "Führungsteams",
+        "desc": "Führungskräfte und Geschäftsleiter, die den Bedarf an Veränderung erkennen, aber fachkundige Beratung wünschen, um eine erfolgreiche Umsetzung zu gewährleisten.",
+        "highlights": {
+          "0": "Vision in umsetzbare Veränderungsstrategien übersetzen",
+          "1": "Aufbau von organisatorischer Akzeptanz und Dynamik",
+          "2": "Sicherstellen, dass Initiativen messbare Ergebnisse liefern"
+        }
+      },
+      "changeReady": {
+        "title": "Veränderungsbereite Organisationen",
+        "desc": "Proaktive Unternehmen, die durch kontinuierliche Verbesserung und Optimierung ihrer Abläufe den Marktveränderungen voraus sein wollen.",
+        "highlights": {
+          "0": "Wettbewerbsfähig bleiben in sich wandelnden Märkten",
+          "1": "Kontinuierliche Verbesserung und Optimierung",
+          "2": "Aufbau agiler, anpassungsfähiger Organisationen"
+        }
+      }
+    },
+    "ctaText": "Klingt das nach Ihrem Unternehmen?",
+    "ctaHighlight": "Lassen Sie uns darüber sprechen, wie wir Ihnen zum Erfolg verhelfen können."
+  },
   "faq": {
     "title": "Häufig gestellte Fragen",
     "categories": {

@@ -111,28 +111,28 @@ const Footer = ({ onBookingClick }: FooterProps) => {
             <h4 className="text-xl font-heading font-semibold mb-6">{t("footer.services.title")}</h4>
             <ul className="space-y-3 font-body">
               <li>
-                <button
-                  onClick={() => scrollToSection("services")}
+                <Link
+                  to={localizedPath("/services/change-strategy-diagnostic")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   {t("footer.services.itHealthCheck")}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("services")}
+                <Link
+                  to={localizedPath("/services/change-management-implementation")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   {t("footer.services.digitalTransformation")}
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("services")}
+                <Link
+                  to={localizedPath("/services/change-sustainment-improvement")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   {t("footer.services.cioAsAService")}
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
