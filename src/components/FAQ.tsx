@@ -102,11 +102,11 @@ export default function FAQ(): JSX.Element {
                   aria-controls={`faq-a-${index}`}
                   onClick={() => toggle(index)}
                   type="button"
-                  className="ml-4 inline-flex items-center justify-center w-10 h-10 rounded-full text-sm"
+                  className="ml-4 inline-flex items-center justify-center w-12 h-12 rounded-full hover:bg-primary/10 transition-colors flex-shrink-0"
                   aria-label={isOpen ? "Close answer" : "Open answer"}
                 >
                   <svg
-                    className={`w-4 h-4 transform transition-transform ${isOpen ? "rotate-90" : "rotate-0"}`}
+                    className={`w-6 h-6 transform transition-transform ${isOpen ? "rotate-90" : "rotate-0"}`}
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
