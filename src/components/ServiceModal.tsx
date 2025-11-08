@@ -91,7 +91,6 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
         details: ""
       });
 
-      onClose();
     } catch (error) {
       toast({
         title: t("serviceModal.toast.errorTitle"),
@@ -237,7 +236,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                 {/* View Full Service Page Button */}
                 <Button
                   variant="outline"
-                  className="w-full mt-4"
+                  className="w-full mt-4 group"
                   onClick={() => {
                     const serviceUrlMap: Record<string, string> = {
                       'diagnostic-deep-dive': 'change-strategy-diagnostic',
@@ -250,7 +249,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                   }}
                 >
                   View Full Service Details
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </section>
 
@@ -268,7 +267,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                   </div>
 
                   <div className="flex items-start gap-2">
-                    <Phone className="h-4 w-4 mt-1" />
+                    <Phone className="h-5 w-5 mt-2.5" />
                     <div className="flex flex-col">
                       {(() => {
                         const raw = t("contact.phone");
@@ -376,6 +375,42 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                 >
                    {loading ? t("serviceModal.sending") : t("serviceModal.submit")}
                  </Button>
+
+                {/* Additional content for diagnostic-deep-dive service */}
+                {service.id === 'diagnostic-deep-dive' && (
+                  <div className="mt-6">
+                    <p className="text-sm font-body text-foreground mb-2">
+                      <span className="font-semibold">{t("serviceModal.bonus.diagnostic-deep-dive.title")}</span> {t("serviceModal.bonus.diagnostic-deep-dive.subtitle")}
+                    </p>
+                    <p className="text-sm font-body text-foreground">
+                      {t("serviceModal.bonus.diagnostic-deep-dive.confidential")}
+                    </p>
+                  </div>
+                )}
+
+                {/* Additional content for targeted-transformation service */}
+                {service.id === 'targeted-transformation' && (
+                  <div className="mt-6">
+                    <p className="text-sm font-body text-foreground mb-2">
+                      <span className="font-semibold">{t("serviceModal.bonus.targeted-transformation.title")}</span> {t("serviceModal.bonus.targeted-transformation.subtitle")}
+                    </p>
+                    <p className="text-sm font-body text-foreground">
+                      {t("serviceModal.bonus.targeted-transformation.confidential")}
+                    </p>
+                  </div>
+                )}
+
+                {/* Additional content for extended-oversight service */}
+                {service.id === 'extended-oversight' && (
+                  <div className="mt-6">
+                    <p className="text-sm font-body text-foreground mb-2">
+                      <span className="font-semibold">{t("serviceModal.bonus.extended-oversight.title")}</span> {t("serviceModal.bonus.extended-oversight.subtitle")}
+                    </p>
+                    <p className="text-sm font-body text-foreground">
+                      {t("serviceModal.bonus.extended-oversight.confidential")}
+                    </p>
+                  </div>
+                )}
               </form>
             </div>
           </div>

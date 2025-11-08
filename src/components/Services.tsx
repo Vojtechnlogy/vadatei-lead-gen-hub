@@ -51,12 +51,11 @@ const Services = ({ onBookingClick }: ServicesProps) => {
       // Fallback: hardcode the features for the modal too
       if (id === 'diagnostic-deep-dive') {
         features = [
-          "Organizational assessment",
-          "Stakeholder interviews",
-          "Readiness evaluation",
-          "Gap and risk analysis", 
-          "Transformation roadmap",
-          "And more!"
+          "Organization assessment & culture scan",
+          "Stakeholder interviews for insight",
+          "Change readiness evaluation",
+          "Gap and risk analysis",
+          "Strategic transformation roadmap"
         ];
       } else if (id === 'targeted-transformation') {
         features = [
@@ -201,12 +200,11 @@ const Services = ({ onBookingClick }: ServicesProps) => {
               // Fallback: hardcode the features to ensure they show up
               if (service.id === 'diagnostic-deep-dive') {
                 features = [
-                  "Organizational assessment",
-                  "Stakeholder interviews",
-                  "Readiness evaluation", 
+                  "Organizational assessment & culture scan",
+                  "Stakeholder interviews for insight & buy-in",
+                  "Change readiness evaluation",
                   "Gap and risk analysis",
-                  "Transformation roadmap",
-                  "And more!"
+                  "Strategic transformation roadmap"
                 ];
               } else if (service.id === 'targeted-transformation') {
                 features = [
@@ -244,10 +242,9 @@ const Services = ({ onBookingClick }: ServicesProps) => {
                     {t(`services.${service.id}.description`)}
                   </p>
 
-                  {/* What You Receive subtitle with icon and separator */}
+                  {/* What's Included subtitle and separator */}
                   <div className="flex items-center gap-2 mb-3 mt-2">
-                    <Gift className="h-5 w-5 text-primary" aria-hidden="true" />
-                    <h4 className="text-lg font-heading font-semibold text-primary">What You Receive: </h4>
+                    <h4 className="text-lg font-heading font-semibold text-primary">What's Included: </h4>
                   </div>
                   <Separator className="mb-4 bg-primary/20" />
 

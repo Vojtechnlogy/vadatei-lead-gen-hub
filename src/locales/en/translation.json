@@ -56,9 +56,27 @@
     },
     "sending": "Sending...",
     "submit": "Receive Free Targeted Advice",
+    "bonus": {
+      "diagnostic-deep-dive": {
+        "title": "📄 Includes:",
+        "subtitle": "\"5 Warning Signs Your Organization Isn't Ready for Change\"",
+        "description": "Discover the most common — and costly — oversights that cause change initiatives to stall before they begin. This short guide helps you assess your leadership alignment, risk factors, and planning gaps.",
+        "confidential": "🔒 100% confidential. No spam, no automation. You'll receive personalized insights within 48 hours."
+      },
+      "targeted-transformation": {
+        "title": "📄 Includes:",
+        "subtitle": "\"The Change Adoption Checklist\"",
+        "confidential": "🔄 Your input is reviewed personally. We'll respond with tailored insights or a no-pressure option to schedule a call."
+      },
+      "extended-oversight": {
+        "title": "📄 Includes:",
+        "subtitle": "\"Sustain the Shift: 5 Tactics to Prevent Backslide After Change\"",
+        "confidential": "🧠 You'll receive practical, customized advice based on your organization's needs — not a generic autoresponder."
+      }
+    },
     "toast": {
       "successTitle": "Inquiry Submitted",
-      "successDescription": "Thank you for your interest in {{service}}. We'll be in touch within 24 hours.",
+      "successDescription": "Thank you for your interest in {{service}}. We'll be in touch within 48 hours.",
       "errorTitle": "Submission Failed",
       "errorDescription": "There was an error submitting your inquiry. Please try again later."
     },
@@ -144,7 +162,7 @@
   },
   "infoCard": {
     "readyTitle": "Ready to Get Started?",
-    "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization."
+    "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization or click here for a full break down."
   },
   "hero": {
     "headline": "Change & Transformation Management",
@@ -199,8 +217,8 @@
     "logoAlt": "Vadatei Logo",
     "nav": {
       "home": "Home",
-      "about": "About",
-      "services": "Our Approach",
+      "about": "Our Approach",
+      "services": "About",
       "faq": "FAQ"
     },
     "bookNow": "Book Now",
@@ -241,7 +259,7 @@
   "services": {
     "sectionTitle": "The Vadatei Transformation Model",
     "sectionIntro": "Every organization faces change differently. We provide structured consulting support across the full transformation cycle from diagnosing what needs to change, to managing implementation, to ensuring lasting results.",
-    "moreInfoButton": "More information",
+    "moreInfoButton": "More Information",
     "cta": {
       "title": "Ready to start your transformation journey?",
       "body": "Book an initial diagnostic session to find out how we can help you transform your organization.",
@@ -250,44 +268,43 @@
 
     "diagnostic-deep-dive": {
       "title": "Change Strategy & Diagnostic",
-      "description": "Understand what needs to change, why and how",
+      "description": "Before any successful transformation, you need clarity. This phase uncovers the root causes of misalignment and provides a tailored, actionable roadmap.",
       "subtitle": "Discover the 5 hidden warning signs that most leadership teams miss and how to fix them before it's too late.",
       "features": [
-        "Organizational assessment",
-        "Stakeholder interviews",
-        "Readiness evaluation",
+        "Organization assessment & culture scan",
+        "Stakeholder interviews for insight",
+        "Change readiness evaluation",
         "Gap and risk analysis",
-        "Transformation roadmap"
+        "Strategic transformation roadmap"
       ],
       "fullDescription": "Focused expert analysis that uncovers root causes, quantifies impact and defines practical next steps. For targeted diagnostic please select priority areas on the right."
     },
 
     "targeted-transformation": {
       "title": "Change Management & Implementation",
-      "description": "Turn strategy into action and action into implementation",
+      "description": "With priorities defined, we lead the change process, align your teams, and manage implementation to ensure momentum, accountability, and adoption.",
       "subtitle": "Receive a proven step-by-step checklist to help you align your people, processes, and priorities — before launching your next transformation.",
       "features": [
-        "Change planning",
-        "Alignment workshops",
-        "Governance setup",
-        "Communication strategy",
-        "Capability and culture development",
-        "Adoption tracking",
-        "Full Implementation oversight"
+        "Change planning & execution oversight",
+        "Alignment workshops for leadership & teams",
+        "Governance model setup",
+        "Strategic communication plan",
+        "Capability building & culture development",
+        "Adoption metrics & tracking"
       ],
       "fullDescription": "Once priorities are clear, this phase focuses on execution aligning teams, managing communication, and ensuring change actually happens."
     },
 
     "extended-oversight": {
       "title": "Change Sustainment & Improvement",
-      "description": "Make change stick and people aligned",
+      "description": "Even well-executed change can backslide. This phase ensures long-term impact through reinforcement, optimization, and continuous improvement",
       "subtitle": "Transformation is only half the battle — sustaining it is where real value is delivered. Discover 5 tactics to make your change stick.",
       "features": [
-        "Post-implementation reviews",
+        "Post-implementation reviews & course corrections",
         "Leadership and team coaching",
-        "Process audits & optimization",
-        "Continuous improvement sessions",
-        "Sustainment planning"
+        "Process audits & optimization roadmaps",
+        "Ongoing improvement sessions",
+        "Long-term sustainment planning"
       ],
       "fullDescription": "Transformation isn't finished when implementation ends this phase ensures results stick, and your teams continue to improve."
     },
