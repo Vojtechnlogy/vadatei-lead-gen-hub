@@ -75,8 +75,8 @@
       }
     },
     "toast": {
-      "successTitle": "Inquiry Submitted",
-      "successDescription": "Thank you for your interest in {{service}}. We'll be in touch within 48 hours.",
+      "successTitle": "Inquiry Recived!",
+      "successDescription": "Thank you for your interest in {{service}}. We'll be in touch within 48 hours. Heres your Free Targeted Advice.",
       "errorTitle": "Submission Failed",
       "errorDescription": "There was an error submitting your inquiry. Please try again later."
     },
@@ -158,7 +158,7 @@
     "fullName": "Full Name *",
     "email": "Email Address *",
     "companyName": "Company Name",
-    "phone": "Phone Number"
+    "phone": "Phone Number *"
   },
   "infoCard": {
     "readyTitle": "Ready to Get Started?",

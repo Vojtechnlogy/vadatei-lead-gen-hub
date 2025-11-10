@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { X, Mail, Phone, Building, ArrowRight } from "lucide-react";
+import { X, Mail, Phone, Building, ArrowRight, Download } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from "react-i18next";
 
@@ -81,7 +81,23 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
       toast({
         title: t("serviceModal.toast.successTitle"),
         description: t("serviceModal.toast.successDescription", { service: service.title }),
+        duration: 10000,
       });
+
+      // Download PDF after successful submission
+      // Google Drive direct download links
+      const pdfMap: Record<string, string> = {
+        'diagnostic-deep-dive': "https://drive.google.com/uc?export=download&id=1PoI6lYWAnEWWhZBZRBzsNDWK43dtU4zw",
+        'targeted-transformation': "https://drive.google.com/uc?export=download&id=1QC9SD2Agng1y0krlw9fOJcvwfx1PCtuL",
+        'extended-oversight': "https://drive.google.com/uc?export=download&id=18smKfNZ0hSH17pKaOVS1bj86JZJDP2_1"
+      };
+      
+      if (pdfMap[service.id]) {
+        const pdfPath = pdfMap[service.id];
+        
+        // Direct download from external URL
+        window.location.href = pdfPath;
+      }
 
       setFormData({
         fullName: "",
@@ -92,10 +108,12 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
       });
 
     } catch (error) {
+
       toast({
         title: t("serviceModal.toast.errorTitle"),
         description: t("serviceModal.toast.errorDescription"),
         variant: "destructive",
+        duration: 10000,
       });
     } finally {
       setLoading(false);
@@ -373,8 +391,9 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                   className="w-full hover:bg-purple-600 transition-colors"
                   disabled={loading}
                 >
-                   {loading ? t("serviceModal.sending") : t("serviceModal.submit")}
-                 </Button>
+                  <Download className="mr-2 h-4 w-4" />
+                  {loading ? t("serviceModal.sending") : "Get Free Guide & Targeted Advice"}
+                </Button>
 
                 {/* Additional content for diagnostic-deep-dive service */}
                 {service.id === 'diagnostic-deep-dive' && (

@@ -18,14 +18,13 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+Creat the ICP 
+Create the PDFs
+Create the Extended Service Modal 
 
-run script in terminal this generates or updates the site map
-npm run generate-sitemap
 
 !!!!!!!
 Create good quality translations for the website ask Daniel for German Translation and ask Czech Person for Czech Translation
-
-Try to figure out a way that we can add a phone number calling code - picker not priority
 
 Future add a Partners section and a Reviews section -- ADD aggregateRating and Review to the Schema
 
