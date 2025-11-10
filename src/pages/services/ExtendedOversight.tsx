@@ -1,14 +1,15 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle, Clock, Users, Shield, TrendingUp } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { localizedPath } from "../../lib/localize";
 import { useTranslation } from "react-i18next";
 import Header from "@/components/Header";
 
 const ExtendedOversight = () => {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   const features = [
     "Post-implementation reviews",
@@ -35,11 +36,27 @@ const ExtendedOversight = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button
             variant="ghost"
-            onClick={() => navigate(localizedPath())}
+            onClick={() => {
+              const fromService = searchParams.get('from');
+              const currentLang = i18n.language || 'en';
+              if (fromService) {
+                // Navigate back to homepage with service modal parameter and scroll to services section
+                const targetUrl = `${localizedPath()}?service=${fromService}`;
+                navigate(targetUrl);
+                
+                // Force scroll to services section after navigation
+                setTimeout(() => {
+                  window.location.hash = 'services';
+                }, 100);
+              } else {
+                // Fallback to regular back navigation
+                navigate(-1);
+              }
+            }}
             className="text-white hover:bg-white/10 mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            {t("privacy.backToHome")}
+            {t("privacy.back")}
           </Button>
           <h1 className="text-4xl font-heading font-bold">{t("services.extended-oversight.title")}</h1>
           <p className="text-white/90 mt-2">{t("services.extended-oversight.description")}</p>

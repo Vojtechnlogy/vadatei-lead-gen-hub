@@ -1,10 +1,10 @@
 {
-  "title": "Vadatei - Strategic Change & Transformation Partner | 30+ Years Experience",
-  "description": "70% of change efforts fail. We ensure you're in the winning 30%. Expert change management consulting with 30+ years experience. Start with our diagnostic deep-dive to discover the 5 hidden warning signs most leadership teams miss.",
+  "title": "Vadatei - Strategic Change & Transformation Partner | 30+ Years of Experience",
+  "description": "70% of change efforts fail. We ensure you're in the winning 30%. Expert change management consulting with 30+ years of experience. Start with our diagnostic deep-dive to discover the 5 hidden warning signs most leadership teams miss.",
   "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
   "meta": {
-    "title": "Vadatei - Strategic Change & Transformation Partner | 30+ Years Experience",
-    "description": "70% of change efforts fail. We ensure you're in the winning 30%. Expert change management consulting with 30+ years experience. Start with our diagnostic deep-dive to discover the 5 hidden warning signs most leadership teams miss.",
+    "title": "Vadatei - Strategic Change & Transformation Partner | 30+ Years of Experience",
+    "description": "70% of change efforts fail. We ensure you're in the winning 30%. Expert change management consulting with 30+ years of experience. Start with our diagnostic deep-dive to discover the 5 hidden warning signs most leadership teams miss.",
     "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
   },
   "about": {
@@ -179,7 +179,7 @@
   },
   "footer": {
     "company": "Vadatei",
-    "description": "Strategic change & transformation partner with 30+ years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
+    "description": "Strategic change & transformation partner with 30+ years of experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     "bookDiscovery": "Book a Discovery Call",
     "quickLinks": {
       "title": "Quick Links",
@@ -208,7 +208,7 @@
   },
   "organization": {
     "name": "Vadatei",
-    "description": "Strategic change & transformation partner with 30+ years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
+    "description": "Strategic change & transformation partner with 30+ of years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     "contactType": "customer service",
     "areaServed": "Europe"
   },
@@ -360,6 +360,7 @@
   },
   "lang": "en",
   "privacy": {
+    "back": "Back",
     "backToHome": "Back to Home",
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: August 2025",

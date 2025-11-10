@@ -263,7 +263,7 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                     };
                     const serviceSlug = serviceUrlMap[service.id] || service.id;
                     const currentLang = i18n.language || 'en';
-                    window.location.href = `/${currentLang}/services/${serviceSlug}`;
+                    window.location.href = `/${currentLang}/services/${serviceSlug}?from=${service.id}`;
                   }}
                 >
                   View Full Service Details

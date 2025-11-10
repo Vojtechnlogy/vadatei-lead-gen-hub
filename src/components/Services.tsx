@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -20,11 +20,19 @@ import { Separator } from "@/components/ui/separator";
 
 interface ServicesProps {
   onBookingClick: () => void;
+  initialServiceId?: string | null;
 }
 
-const Services = ({ onBookingClick }: ServicesProps) => {
-  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
+const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
+  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(initialServiceId || null);
   const { t, i18n } = useTranslation();
+
+  // Update selectedServiceId when initialServiceId changes
+  useEffect(() => {
+    if (initialServiceId) {
+      setSelectedServiceId(initialServiceId);
+    }
+  }, [initialServiceId]);
 
   const services = [
     { id: "diagnostic-deep-dive", icon: Search, image: "/src/assets/digital-transformation.jpg" },
