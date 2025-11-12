@@ -35,20 +35,99 @@
     }
   },
   "serviceModal": {
-    "title": "Weitere Informationen anfordern: {{service}}",
+    "title": "Start Your: {{service}}",
     "sr_description": "Füllen Sie das Formular aus, um weitere Informationen zu {{service}} anzufordern.",
     "overviewTitle": "Überblick",
     "featuresTitle": "Hauptmerkmale",
-    "heading": "Weitere Informationen anfordern",
-    "details_label": "Details (Interesse an: {{service}})",
-    "placeholder_details": "Beschreiben Sie Ihre Anforderungen an {{service}}...",
+    "heading": "Erzählen Sie uns von sich",
+    "headings": {
+      "diagnostic-deep-dive": "Ist Ihre Organisation bereit für Veränderungen?",
+      "targeted-transformation": "Erzählen Sie uns von Ihren Transformationszielen", 
+      "extended-oversight": "Erzählen Sie uns von Ihren laufenden Anforderungen"
+    },
+    "details_label": "Details für {{service}}",
+    "placeholder_details": "Erzählen Sie uns mehr über Ihre {{service}}-Anforderungen...",
+    "placeholders": {
+      "diagnostic-deep-dive": "Vor welchen Herausforderungen stehen Sie? Welche Bereiche Ihrer Organisation benötigen die meiste Aufmerksamkeit? Teilen Sie uns spezifische Bedenken oder Ziele mit, auf die wir uns während der Diagnosephase konzentrieren sollen.",
+      "targeted-transformation": "Welche Transformationsziele haben Sie? Welche Abteilungen oder Prozesse müssen umstrukturiert werden? Erzählen Sie uns von Ihrem Zeitplan, Prioritäten und spezifischen Veränderungen, die Sie umsetzen möchten.",
+      "extended-oversight": "Welche laufende Unterstützung benötigen Sie? Welche Bereiche erfordern kontinuierliche Verbesserung? Teilen Sie Details über Ihren aktuellen Stand und langfristige Nachhaltigkeitsziele mit."
+    },
     "sending": "Wird gesendet...",
-    "submit": "Anfrage senden",
+    "submit": "Kostenlose gezielte Beratung erhalten",
+    "bonus": {
+      "diagnostic-deep-dive": {
+        "title": "📄 Inklusive:",
+        "subtitle": "\"5 Warnzeichen, dass Ihre Organisation nicht bereit für Veränderungen ist\"",
+        "description": "Entdecken Sie die häufigsten – und kostspieligsten – Versäumnisse, die dazu führen, dass Change-Initiativen ins Stocken geraten, bevor sie beginnen. Dieser kurze Leitfaden hilft Ihnen, Ihre Führungsausrichtung, Risikofaktoren und Planungslücken zu bewerten.",
+        "confidential": "🔒 100% vertraulich. Kein Spam, keine Automatisierung. Sie erhalten persönliche Einblicke innerhalb von 48 Stunden."
+      },
+      "targeted-transformation": {
+        "title": "📄 Inklusive:",
+        "subtitle": "\"Die Change-Adoption-Checkliste\"",
+        "confidential": "🔄 Ihr Input wird persönlich geprüft. Wir antworten mit maßgeschneiderten Einblicken oder einer unverbindlichen Option, einen Anruf zu vereinbaren."
+      },
+      "extended-oversight": {
+        "title": "📄 Inklusive:",
+        "subtitle": "\"Die Veränderung aufrechterhalten: 5 Taktiken zur Vermeidung von Rückschritten nach dem Change\"",
+        "confidential": "🧠 Sie erhalten praktische, maßgeschneiderte Beratung basierend auf den Bedürfnissen Ihrer Organisation – keine generische Autoresponder-Nachricht."
+      }
+    },
     "toast": {
-      "successTitle": "Anfrage gesendet",
-      "successDescription": "Vielen Dank für Ihr Interesse an {{service}}. Wir melden uns innerhalb von 24 Stunden.",
+      "successTitle": "Anfrage erhalten!",
+      "successDescription": "Vielen Dank für Ihr Interesse an {{service}}. Wir melden uns innerhalb von 48 Stunden. Hier ist Ihre kostenlose gezielte Beratung.",
       "errorTitle": "Übermittlung fehlgeschlagen",
       "errorDescription": "Beim Senden Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    },
+
+    "priorityServices": {
+      "title": "Prioritätsbereiche (Wählen Sie einen oder mehrere)",
+      "options": {
+        "vendorSelection": "Anbieterauswahl",
+        "projectPortfolio": "Projektportfolio steuern",
+        "changeManagement": "Change Management & Organisation",
+        "resourceNeeds": "Ressourcenbedarf definieren"
+      }
+    },
+
+    "premiumServices": {
+      "title": "Premium-Dienste",
+      "options": {
+        "coaching": "Coaching und Mentoring",
+        "strategicAdvisory": "Strategische Beratung",
+        "teamManagement": "Teammanagement",
+        "crisisManagement": "Krisen- & Vorfallmanagement",
+        "interimLeadership": "Interim Leadership / Executive Support",
+        "implementationManagement": "Implementierungsmanagement",
+        "riskCompliance": "Risiko- & Compliance-Überwachung",
+        "performanceMonitoring": "Leistungsüberwachung & Berichterstattung",
+        "stakeholderAlignment": "Stakeholder- & Team-Ausrichtung",
+        "continuousImprovement": "Kontinuierliche Verbesserung"
+      },
+      "hints": {
+        "interimLeadership": "Bringen Sie hochrangige Führung direkt in Ihre Organisation ein, um kritische Transformationsinitiativen zu überwachen.",
+        "implementationManagement": "Verwalten Sie direkt die Umsetzung abteilungsübergreifender Veränderungen, überwachen Sie den Fortschritt und lösen Sie Hindernisse.",
+        "riskCompliance": "Identifizieren und mindern Sie Risiken während der Implementierung und stellen Sie sicher, dass Prozesse rechtlichen, Sicherheits- und Betriebsstandards entsprechen.",
+        "performanceMonitoring": "Verfolgen Sie KPIs und Projektmeilensteine und liefern Sie der Führung umsetzbare Erkenntnisse.",
+        "stakeholderAlignment": "Koordinieren Sie Teams, Anbieter und Führungskräfte, um klare Kommunikation und Verantwortlichkeit aufrechtzuerhalten.",
+        "continuousImprovement": "Nehmen Sie iterative Anpassungen während der Ausführung vor, um dauerhafte, messbare Ergebnisse zu gewährleisten."
+      }
+    },
+    "priorityAreas": {
+      "title": "Prioritätsbereiche (Wählen Sie einen oder mehrere)",
+      "options": {
+        "securityRisk": "Sicherheit & Risiko",
+        "itSystems": "IT & Systeme",
+        "peopleRoles": "Menschen & Rollen (HR)",
+        "operationsWorkflow": "Betrieb & Arbeitsablauf",
+        "costsResources": "Kosten & Ressourcenzuteilung"
+      },
+      "hints": {
+        "securityRisk": "Bewerten Sie Schwachstellen in Ihrer IT-Umgebung, Datenverarbeitung und Compliance-Position.",
+        "itSystems": "Prüfen Sie Infrastruktur, Software, Geräteverwaltung und digitale Arbeitsabläufe. Identifizieren Sie Risiken, Ineffizienzen oder nicht ausgerichtete Tools.",
+        "peopleRoles": "Überprüfen Sie Teamstruktur, Rollenklarheit, interne Kommunikation, Einstellungsprozesse und Leistungssysteme.",
+        "operationsWorkflow": "Kartieren und analysieren Sie, wie Arbeit über Abteilungen hinweg erledigt wird. Identifizieren Sie Engpässe, Duplikate und Automatisierungsmöglichkeiten.",
+        "costsResources": "Analysieren Sie Ausgaben vs. Wert, Personalbesetzung, Toolnutzung und leistungsschwache Investitionen, um Kosteneinsparungsmöglichkeiten hervorzuheben."
+      }
     }
   },
   "bookingModal": {

@@ -35,20 +35,99 @@
     }
   },
   "serviceModal": {
-    "title": "Žádost o více informací: {{service}}",
+    "title": "Začněte s: {{service}}",
     "sr_description": "Vyplňte formulář a požádejte o více informací o službě {{service}}.",
     "overviewTitle": "Přehled",
     "featuresTitle": "Klíčové vlastnosti",
-    "heading": "Žádost o více informací",
-    "details_label": "Detaily (Zájem o: {{service}})",
-    "placeholder_details": "Popište své potřeby ohledně služby {{service}}...",
+    "heading": "Řekněte nám o sobě",
+    "headings": {
+      "diagnostic-deep-dive": "Je vaše organizace připravena na změny?",
+      "targeted-transformation": "Řekněte nám o vašich transformačních cílech", 
+      "extended-oversight": "Řekněte nám o vašich průběžných potřebách"
+    },
+    "details_label": "Podrobnosti o {{service}}",
+    "placeholder_details": "Řekněte nám více o vašich potřebách {{service}}...",
+    "placeholders": {
+      "diagnostic-deep-dive": "Jakým výzvám čelíte? Které oblasti vaší organizace potřebují nejvíce pozornosti? Sdílejte konkrétní obavy nebo cíle, na které se chcete zaměřit během diagnostické fáze.",
+      "targeted-transformation": "Jaké máte transformační cíle? Které oddělení nebo procesy je třeba restrukturalizovat? Řekněte nám o vašem časovém plánu, prioritách a konkrétních změnách, které chcete implementovat.",
+      "extended-oversight": "Jakou průběžnou podporu potřebujete? Které oblasti vyžadují kontinuální zlepšování? Sdílejte podrobnosti o vašem současném stavu a dlouhodobých cílech udržitelnosti."
+    },
     "sending": "Odesílání...",
-    "submit": "Odeslat poptávku",
+    "submit": "Získat bezplatnou cílenou radu",
+    "bonus": {
+      "diagnostic-deep-dive": {
+        "title": "📄 Zahrnuje:",
+        "subtitle": "\"5 varovných signálů, že vaše organizace není připravena na změnu\"",
+        "description": "Objevte nejčastější – a nejnákladnější – opomenutí, která způsobují, že iniciativy změn uvíznou ještě předtím, než začnou. Tento krátký průvodce vám pomůže posoudit sladění vedení, rizikové faktory a mezery v plánování.",
+        "confidential": "🔒 100% důvěrné. Žádný spam, žádná automatizace. Personalizované poznatky obdržíte do 48 hodin."
+      },
+      "targeted-transformation": {
+        "title": "📄 Zahrnuje:",
+        "subtitle": "\"Kontrolní seznam přijetí změn\"",
+        "confidential": "🔄 Váš vstup je osobně zkontrolován. Odpovíme s přizpůsobenými poznatky nebo nezávaznou možností naplánovat hovor."
+      },
+      "extended-oversight": {
+        "title": "📄 Zahrnuje:",
+        "subtitle": "\"Udržet změnu: 5 taktik jak zabránit návratu po změně\"",
+        "confidential": "🧠 Obdržíte praktickou, přizpůsobenou radu na základě potřeb vaší organizace – ne generickou automatickou odpověď."
+      }
+    },
     "toast": {
-      "successTitle": "Poptávka odeslána",
-      "successDescription": "Děkujeme za váš zájem o službu {{service}}. Ozveme se vám do 24 hodin.",
+      "successTitle": "Poptávka přijata!",
+      "successDescription": "Děkujeme za váš zájem o {{service}}. Ozveme se vám do 48 hodin. Zde je vaše bezplatná cílená rada.",
       "errorTitle": "Odeslání selhalo",
-      "errorDescription": "Při odesílání došlo k chybě. Zkuste to prosím později."
+      "errorDescription": "Při odesílání vaší poptávky došlo k chybě. Zkuste to prosím později."
+    },
+
+    "priorityServices": {
+      "title": "Prioritní oblasti (Vyberte jednu nebo více)",
+      "options": {
+        "vendorSelection": "Výběr dodavatele",
+        "projectPortfolio": "Řízení projektového portfolia",
+        "changeManagement": "Change management & organizace",
+        "resourceNeeds": "Definování potřeb zdrojů"
+      }
+    },
+
+    "premiumServices": {
+      "title": "Prémiové služby",
+      "options": {
+        "coaching": "Koučování a mentoring",
+        "strategicAdvisory": "Strategické poradenství",
+        "teamManagement": "Řízení týmu",
+        "crisisManagement": "Krizové & incidentní řízení",
+        "interimLeadership": "Dočasné vedení / Výkonná podpora",
+        "implementationManagement": "Řízení implementace",
+        "riskCompliance": "Dohled nad riziky a compliance",
+        "performanceMonitoring": "Monitorování výkonu & reportování",
+        "stakeholderAlignment": "Sladění zainteresovaných stran & týmu",
+        "continuousImprovement": "Kontinuální zlepšování"
+      },
+      "hints": {
+        "interimLeadership": "Zabudujte vedení na seniorní úrovni přímo do vaší organizace k dohledu nad kritickými transformačními iniciativami.",
+        "implementationManagement": "Přímo říďte realizaci změn v odděleních, monitorujte pokrok a řešte překážky.",
+        "riskCompliance": "Identifikujte a zmírněte rizika během implementace, zajistěte, aby procesy splňovaly právní, bezpečnostní a provozní standardy.",
+        "performanceMonitoring": "Sledujte KPI a projektové milníky a poskytujte vedení použitelné poznatky.",
+        "stakeholderAlignment": "Koordinujte týmy, dodavatele a vedoucí pracovníky k udržení jasné komunikace a odpovědnosti.",
+        "continuousImprovement": "Provádějte iterativní úpravy během realizace k zajištění trvalých, měřitelných výsledků."
+      }
+    },
+    "priorityAreas": {
+      "title": "Prioritní oblasti (Vyberte jednu nebo více)",
+      "options": {
+        "securityRisk": "Bezpečnost & riziko",
+        "itSystems": "IT & systémy",
+        "peopleRoles": "Lidé & role (HR)",
+        "operationsWorkflow": "Operace & pracovní tok",
+        "costsResources": "Náklady & alokace zdrojů"
+      },
+      "hints": {
+        "securityRisk": "Posouzení zranitelností ve vašem IT prostředí, zpracování dat a compliance postavení.",
+        "itSystems": "Audit infrastruktury, softwaru, správy zařízení a digitálních pracovních toků. Identifikace rizik, neefektivností nebo nevhodných nástrojů.",
+        "peopleRoles": "Přehled struktury týmu, jasnosti rolí, interní komunikace, náborových procesů a výkonnostních systémů.",
+        "operationsWorkflow": "Mapování a analýza toho, jak se práce provádí napříč odděleními. Identifikace úzkých míst, duplicit a příležitostí k automatizaci.",
+        "costsResources": "Analýza výdajů vs. hodnoty, úrovně personálu, využití nástrojů a nevýkonných investic k zvýraznění příležitostí k úspoře nákladů."
+      }
     }
   },
   "bookingModal": {
