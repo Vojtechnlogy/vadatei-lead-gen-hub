@@ -146,21 +146,21 @@ const Header = ({ onBookingClick }: HeaderProps) => {
                   }}
                 >
                   <Link
-                    to={localizedPath("/services/change-strategy-diagnostic")}
+                    to={localizedPath("/services/transformation-blueprint")}
                     className="block px-4 py-2 text-sm hover:bg-primary/10 transition-colors"
                     onClick={() => setIsServicesMenuOpen(false)}
                   >
                     {t("footer.services.itHealthCheck")}
                   </Link>
                   <Link
-                    to={localizedPath("/services/change-management-implementation")}
+                    to={localizedPath("/services/transformation-execution")}
                     className="block px-4 py-2 text-sm hover:bg-primary/10 transition-colors"
                     onClick={() => setIsServicesMenuOpen(false)}
                   >
                     {t("footer.services.digitalTransformation")}
                   </Link>
                   <Link
-                    to={localizedPath("/services/change-sustainment-improvement")}
+                    to={localizedPath("/services/transformation-leadership")}
                     className="block px-4 py-2 text-sm hover:bg-primary/10 transition-colors"
                     onClick={() => setIsServicesMenuOpen(false)}
                   >

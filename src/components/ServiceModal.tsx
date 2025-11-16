@@ -256,14 +256,14 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                   variant="outline"
                   className="w-full mt-4 group"
                   onClick={() => {
-                    const serviceUrlMap: Record<string, string> = {
-                      'diagnostic-deep-dive': 'change-strategy-diagnostic',
-                      'targeted-transformation': 'change-management-implementation',
-                      'extended-oversight': 'change-sustainment-improvement'
+                    const servicePageMap: Record<string, string> = {
+                      'diagnostic-deep-dive': 'transformation-blueprint',
+                      'targeted-transformation': 'transformation-execution',
+                      'extended-oversight': 'transformation-leadership'
                     };
-                    const serviceSlug = serviceUrlMap[service.id] || service.id;
+                    const serviceSlug = servicePageMap[service.id] || service.id;
                     const currentLang = i18n.language || 'en';
-                    window.location.href = `/${currentLang}/services/${serviceSlug}?from=${service.id}`;
+                    window.location.href = `/${currentLang}/services/${serviceSlug}`;
                   }}
                 >
                   View Full Service Details

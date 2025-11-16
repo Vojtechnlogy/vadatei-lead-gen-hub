@@ -163,8 +163,11 @@ const About = () => {
             <p className="text-[1.21rem] text-foreground mb-7 font-body leading-relaxed" itemProp="description">
               {t("about.p1")}
             </p>
-            <p className="text-[1.21rem] text-foreground mb-9 font-body leading-relaxed">
+            <p className="text-[1.21rem] text-foreground mb-7 font-body leading-relaxed">
               {t("about.p2")}
+            </p>
+            <p className="text-[1.21rem] text-foreground mb-9 font-body leading-relaxed">
+              {t("about.p3")}
             </p>
           </article>
 

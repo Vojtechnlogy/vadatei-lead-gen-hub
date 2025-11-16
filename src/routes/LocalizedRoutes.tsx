@@ -29,9 +29,9 @@ export default function LocalizedRoutes() {
       <Route path="/" element={<Navigate to="/en" replace />} />
       <Route path="/:lang" element={<LangWrapper><Index /></LangWrapper>} />
       <Route path="/:lang/privacy-policy" element={<LangWrapper><PrivacyPolicy /></LangWrapper>} />
-      <Route path="/:lang/services/change-strategy-diagnostic" element={<LangWrapper><DiagnosticDeepDive /></LangWrapper>} />
-      <Route path="/:lang/services/change-management-implementation" element={<LangWrapper><TargetedTransformation /></LangWrapper>} />
-      <Route path="/:lang/services/change-sustainment-improvement" element={<LangWrapper><ExtendedOversight /></LangWrapper>} />
+      <Route path="/:lang/services/transformation-blueprint" element={<LangWrapper><DiagnosticDeepDive /></LangWrapper>} />
+      <Route path="/:lang/services/transformation-execution" element={<LangWrapper><TargetedTransformation /></LangWrapper>} />
+      <Route path="/:lang/services/transformation-leadership" element={<LangWrapper><ExtendedOversight /></LangWrapper>} />
       {/* add other localized routes here */}
       <Route path="*" element={<Navigate to="/en" replace />} />
     </Routes>

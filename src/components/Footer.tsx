@@ -112,7 +112,7 @@ const Footer = ({ onBookingClick }: FooterProps) => {
             <ul className="space-y-3 font-body">
               <li>
                 <Link
-                  to={localizedPath("/services/change-strategy-diagnostic")}
+                  to={localizedPath("/services/transformation-blueprint")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   {t("footer.services.itHealthCheck")}
@@ -120,7 +120,7 @@ const Footer = ({ onBookingClick }: FooterProps) => {
               </li>
               <li>
                 <Link
-                  to={localizedPath("/services/change-management-implementation")}
+                  to={localizedPath("/services/transformation-execution")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   {t("footer.services.digitalTransformation")}
@@ -128,7 +128,7 @@ const Footer = ({ onBookingClick }: FooterProps) => {
               </li>
               <li>
                 <Link
-                  to={localizedPath("/services/change-sustainment-improvement")}
+                  to={localizedPath("/services/transformation-leadership")}
                   className="text-white/80 hover:text-white transition-colors"
                 >
                   {t("footer.services.cioAsAService")}

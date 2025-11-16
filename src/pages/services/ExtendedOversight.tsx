@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, CheckCircle, Clock, Users, Shield, TrendingUp } from "lucide-react";
+import { ArrowLeft, CheckCircle } from "lucide-react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { localizedPath } from "../../lib/localize";
 import { useTranslation } from "react-i18next";
@@ -10,16 +10,6 @@ const ExtendedOversight = () => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const [searchParams] = useSearchParams();
-
-  const features = [
-    "Post-implementation reviews",
-    "Leadership and team coaching",
-    "Process audits & optimization",
-    "Continuous improvement sessions",
-    "Sustainment planning",
-    "Performance monitoring",
-    "Strategic guidance"
-  ];
 
   // Scroll to top on mount
   useEffect(() => {
@@ -59,111 +49,230 @@ const ExtendedOversight = () => {
             {t("privacy.back")}
           </Button>
           <h1 className="text-4xl font-heading font-bold">{t("services.extended-oversight.title")}</h1>
-          <p className="text-white/90 mt-2">{t("services.extended-oversight.description")}</p>
+          <p className="text-white/90 mt-2">{t("services.extended-oversight.pageSubtitle")}</p>
         </div>
       </header>
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-lg max-w-none font-body">
-          <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("serviceModal.overviewTitle")}</h2>
-            <p className="text-foreground leading-relaxed mb-4">
-              {t("services.extended-oversight.fullDescription")}
-            </p>
-            <p className="text-foreground leading-relaxed mb-4">
-              Ensure your transformation investments deliver lasting value. Our extended oversight services provide 
-              ongoing strategic guidance, performance optimization, and continuous improvement to sustain your organizational changes.
+          {/* Overview */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔷 {t("serviceModal.overviewTitle")}</h2>
+            <p className="text-foreground leading-relaxed">
+              {t("services.extended-oversight.overview")}
             </p>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">{t("serviceModal.featuresTitle")}</h2>
-            <ul className="list-disc pl-6 mb-4 text-foreground">
-              {features.map((feature, index) => (
-                <li key={index}>{feature}</li>
+          {/* Why It Matters */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.whyItMatters.title")}</h2>
+            <p className="text-foreground leading-relaxed mb-4">
+              {t("services.extended-oversight.whyItMatters.intro")}
+            </p>
+            <ul className="list-disc pl-6 mb-4 text-foreground space-y-2">
+              {(t("services.extended-oversight.whyItMatters.issues", { returnObjects: true }) as string[]).map((issue, index) => (
+                <li key={index}>{issue}</li>
+              ))}
+            </ul>
+            <p className="text-foreground leading-relaxed">
+              {t("services.extended-oversight.whyItMatters.conclusion")}
+            </p>
+          </section>
+
+          {/* What You Get - Deliverables */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.deliverables.title")}</h2>
+            <p className="text-foreground leading-relaxed mb-6">
+              {t("services.extended-oversight.deliverables.subtitle")}
+            </p>
+            {(t("services.extended-oversight.deliverables.items", { returnObjects: true }) as Array<{number: string, title: string, description: string}>).map((item, index) => (
+              <div key={index} className="mb-6">
+                <h3 className="text-lg font-heading font-semibold text-primary mb-2">
+                  🔹 {item.number}. {item.title}
+                </h3>
+                <p className="text-foreground leading-relaxed pl-6">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </section>
+
+          {/* How It Works - Process */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.process.title")}</h2>
+            {(t("services.extended-oversight.process.steps", { returnObjects: true }) as Array<{number: string, title: string, description: string, output: string}>).map((step, index) => (
+              <div key={index} className="mb-6">
+                <h3 className="text-lg font-heading font-semibold text-primary mb-2">
+                  STEP {step.number} — {step.title}
+                </h3>
+                <p className="text-foreground leading-relaxed mb-2">
+                  {step.description}
+                </p>
+                <p className="text-foreground/70 italic text-sm">
+                  Output: {step.output}
+                </p>
+              </div>
+            ))}
+          </section>
+
+          {/* Timeline & Effort */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("serviceModal.timelineEffort")}</h2>
+            <div className="bg-muted p-6 rounded-lg">
+              <table className="w-full text-foreground">
+                <tbody>
+                  <tr className="border-b border-border">
+                    <td className="py-2 font-semibold">Duration</td>
+                    <td className="py-2">{t("services.extended-oversight.timelineTable.duration")}</td>
+                  </tr>
+                  <tr className="border-b border-border">
+                    <td className="py-2 font-semibold">Monthly Effort</td>
+                    <td className="py-2">{t("services.extended-oversight.timelineTable.effort")}</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 font-semibold">Meetings</td>
+                    <td className="py-2">{t("services.extended-oversight.timelineTable.meetings")}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          {/* Investment/Pricing */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ Investment</h2>
+            <div className="bg-primary/10 p-6 rounded-lg border border-primary/20">
+              <p className="text-2xl font-heading font-bold text-primary">{t("services.extended-oversight.pricing.amount")}</p>
+              <p className="text-foreground mt-1">{t("services.extended-oversight.pricing.note")}</p>
+              <p className="text-foreground mt-2">{t("services.extended-oversight.pricing.value")}</p>
+            </div>
+          </section>
+
+          {/* What This Solves */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.whatThisSolves.title")}</h2>
+            <p className="text-foreground leading-relaxed mb-4">
+              {t("services.extended-oversight.whatThisSolves.intro")}
+            </p>
+            <ul className="list-disc pl-6 mb-4 text-foreground space-y-2">
+              {(t("services.extended-oversight.whatThisSolves.issues", { returnObjects: true }) as string[]).map((issue, index) => (
+                <li key={index}>{issue}</li>
+              ))}
+            </ul>
+            <p className="text-foreground leading-relaxed italic">
+              {t("services.extended-oversight.whatThisSolves.conclusion")}
+            </p>
+          </section>
+
+          {/* Expected Outcomes */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ Expected Outcomes</h2>
+            <ul className="space-y-3">
+              {(t("services.extended-oversight.outcomes", { returnObjects: true }) as string[]).map((outcome, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                  <span className="text-foreground">{outcome}</span>
+                </li>
               ))}
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Our Comprehensive Oversight Framework</h2>
-            <div className="space-y-4">
-              <div className="bg-muted p-4 rounded-lg">
-                <div className="flex items-start gap-4">
-                  <Shield className="h-6 w-6 text-primary mt-1" />
-                  <div>
-                    <h3 className="text-xl font-heading font-semibold text-primary mb-2">Risk Mitigation</h3>
-                    <p className="text-foreground leading-relaxed">
-                      Proactive identification and management of potential setbacks or challenges.
-                    </p>
-                  </div>
-                </div>
+          {/* Typical Results - Real Examples */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.realExamples.title")}</h2>
+            {(t("services.extended-oversight.realExamples.examples", { returnObjects: true }) as Array<{title: string, description: string}>).map((example, index) => (
+              <div key={index} className="mb-6 bg-muted p-6 rounded-lg border-l-4 border-primary">
+                <h3 className="text-lg font-heading font-semibold text-primary mb-2">
+                  🔹 Example #{index + 1} — {example.title}
+                </h3>
+                <p className="text-foreground leading-relaxed">
+                  {example.description}
+                </p>
               </div>
-              <div className="bg-muted p-4 rounded-lg">
-                <div className="flex items-start gap-4">
-                  <TrendingUp className="h-6 w-6 text-primary mt-1" />
-                  <div>
-                    <h3 className="text-xl font-heading font-semibold text-primary mb-2">Performance Optimization</h3>
-                    <p className="text-foreground leading-relaxed">
-                      Continuous monitoring and enhancement of key performance indicators.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-muted p-4 rounded-lg">
-                <div className="flex items-start gap-4">
-                  <Users className="h-6 w-6 text-primary mt-1" />
-                  <div>
-                    <h3 className="text-xl font-heading font-semibold text-primary mb-2">Leadership Development</h3>
-                    <p className="text-foreground leading-relaxed">
-                      Ongoing coaching and capability building for sustained leadership excellence.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">The Value of Ongoing Partnership</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-muted p-4 rounded-lg">
-                <h3 className="text-xl font-heading font-semibold text-primary mb-3">Short-term Benefits</h3>
-                <ul className="list-disc pl-6 text-foreground">
-                  <li>Immediate issue resolution</li>
-                  <li>Process optimization</li>
-                  <li>Team alignment</li>
-                </ul>
-              </div>
-              <div className="bg-muted p-4 rounded-lg">
-                <h3 className="text-xl font-heading font-semibold text-primary mb-3">Long-term Impact</h3>
-                <ul className="list-disc pl-6 text-foreground">
-                  <li>Sustainable transformation</li>
-                  <li>Cultural evolution</li>
-                  <li>Competitive advantage</li>
-                </ul>
-              </div>
-            </div>
+          {/* Signs You Need Leadership */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.needsChecklist.title")}</h2>
+            <ul className="space-y-3">
+              {(t("services.extended-oversight.needsChecklist.items", { returnObjects: true }) as string[]).map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <input type="checkbox" className="mt-1 h-5 w-5" />
+                  <span className="text-foreground">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-foreground leading-relaxed mt-4 italic font-semibold">
+              {t("services.extended-oversight.needsChecklist.conclusion")}
+            </p>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">Why Choose Extended Oversight?</h2>
-            <div className="grid md:grid-cols-3 gap-6 mb-4">
-              <div className="bg-muted p-4 rounded-lg">
-                <Clock className="h-8 w-8 text-primary mb-3" />
-                <h3 className="text-xl font-heading font-semibold text-primary mb-2">Flexible Engagement</h3>
-                <p className="text-foreground">Scalable support based on your needs</p>
+          {/* Why Vadatei */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.whyVadatei.title")}</h2>
+            <p className="text-foreground leading-relaxed mb-4">
+              {t("services.extended-oversight.whyVadatei.intro")}
+            </p>
+            <p className="text-foreground leading-relaxed mb-4">
+              {t("services.extended-oversight.whyVadatei.strengths")}
+            </p>
+            <ul className="space-y-3 mb-4">
+              {(t("services.extended-oversight.whyVadatei.points", { returnObjects: true }) as string[]).map((point, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                  <span className="text-foreground">{point}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-foreground leading-relaxed">
+              {t("services.extended-oversight.whyVadatei.conclusion")}
+            </p>
+          </section>
+
+          {/* FAQ */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.faq.title")}</h2>
+            {(t("services.extended-oversight.faq.questions", { returnObjects: true }) as Array<{q: string, a: string}>).map((faq, index) => (
+              <div key={index} className="mb-6">
+                <h3 className="text-lg font-heading font-semibold text-primary mb-2">
+                  {faq.q}
+                </h3>
+                <p className="text-foreground leading-relaxed pl-4">
+                  {faq.a}
+                </p>
               </div>
-              <div className="bg-muted p-4 rounded-lg">
-                <Shield className="h-8 w-8 text-primary mb-3" />
-                <h3 className="text-xl font-heading font-semibold text-primary mb-2">Risk Protection</h3>
-                <p className="text-foreground">Safeguard your transformation investment</p>
-              </div>
-              <div className="bg-muted p-4 rounded-lg">
-                <TrendingUp className="h-8 w-8 text-primary mb-3" />
-                <h3 className="text-xl font-heading font-semibold text-primary mb-2">Continuous Growth</h3>
-                <p className="text-foreground">Ongoing optimization and improvement</p>
+            ))}
+          </section>
+
+          {/* CTA Section */}
+          <section className="mt-12 pt-8 border-t border-border">
+            <div className="bg-primary/5 p-8 rounded-lg text-center">
+              <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.extended-oversight.cta.title")}</h2>
+              <p className="text-foreground mb-6 max-w-2xl mx-auto">
+                {t("services.extended-oversight.cta.description")}
+              </p>
+              <div className="flex gap-4 justify-center flex-wrap">
+                <Button 
+                  size="lg" 
+                  className="font-heading"
+                  onClick={() => {
+                    navigate(`${localizedPath()}#services`);
+                  }}
+                >
+                  {t("services.extended-oversight.cta.button")}
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="font-heading"
+                  onClick={() => {
+                    navigate(`${localizedPath()}#services`);
+                  }}
+                >
+                  {t("services.extended-oversight.cta.buttonAlt")}
+                </Button>
               </div>
             </div>
           </section>
