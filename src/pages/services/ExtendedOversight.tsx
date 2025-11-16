@@ -43,7 +43,7 @@ const ExtendedOversight = () => {
                 navigate(-1);
               }
             }}
-            className="text-white hover:bg-white/10 mb-4"
+            className="text-white hover:bg-white/10 justify-start px-2 mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             {t("privacy.back")}
@@ -125,10 +125,6 @@ const ExtendedOversight = () => {
                   <tr className="border-b border-border">
                     <td className="py-2 font-semibold">Duration</td>
                     <td className="py-2">{t("services.extended-oversight.timelineTable.duration")}</td>
-                  </tr>
-                  <tr className="border-b border-border">
-                    <td className="py-2 font-semibold">Monthly Effort</td>
-                    <td className="py-2">{t("services.extended-oversight.timelineTable.effort")}</td>
                   </tr>
                   <tr>
                     <td className="py-2 font-semibold">Meetings</td>
