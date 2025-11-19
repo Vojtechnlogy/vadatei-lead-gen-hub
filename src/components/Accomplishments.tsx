@@ -71,7 +71,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
     const observers: IntersectionObserver[] = [];
     accomplishments.forEach((_, i) => {
       if (!cardRefs.current[i]) return;
-      // Skip the first card, already visible
+      // Skip the first card, already visible (for mobile)
       if (i === 0) return;
       const observer = new window.IntersectionObserver(
         ([entry]) => {
@@ -95,6 +95,21 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Ensure desktop cards are visible when carousel index changes
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (window.innerWidth < 1024) return; // Only run on desktop
+    setVisibleCards(prev => {
+      const updated = [...prev];
+      // Show the two currently visible cards
+      [0, 1].forEach(offset => {
+        const idx = (currentIndex + offset) % accomplishments.length;
+        updated[idx] = true;
+      });
+      return updated;
+    });
+  }, [currentIndex, accomplishments.length]);
 
   return (
     <section className="py-24 bg-gradient-to-br from-corporate-light via-white to-gray-50" id="accomplishments">
@@ -140,8 +155,10 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
           <div>
             {/* Desktop: 2-at-a-time carousel */}
             <div className="hidden lg:grid lg:grid-cols-2 gap-8" style={{ minHeight: '280px' }}>
-              {accomplishments.slice(currentIndex, currentIndex + 2).map((accomplishment, index) => {
-                const realIndex = currentIndex + index;
+              {[0, 1].map((offset) => {
+                // Wrap around if needed
+                const realIndex = (currentIndex + offset) % accomplishments.length;
+                const accomplishment = accomplishments[realIndex];
                 const IconComponent = accomplishment.icon;
                 return (
                   <div
@@ -153,7 +170,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                     }
                     style={{
                       minHeight: '280px',
-                      animationDelay: `${index * 150}ms`,
+                      animationDelay: `${offset * 150}ms`,
                       animationFillMode: 'both'
                     }}
                   >

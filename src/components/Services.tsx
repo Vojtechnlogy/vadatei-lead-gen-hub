@@ -35,9 +35,9 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
   }, [initialServiceId]);
 
   const services = [
-    { id: "diagnostic-deep-dive", icon: Search, image: "/src/assets/digital-transformation.jpg" },
-    { id: "targeted-transformation", icon: Route, image: "/src/assets/digital-transformation.jpg" },
-    { id: "extended-oversight", icon: UserStar, image: "/src/assets/hero-consulting.jpg" },
+    { id: "diagnostic-deep-dive", icon: Search, image: "/assets/digital-transformation.jpg" },
+    { id: "targeted-transformation", icon: Route, image: "/assets/digital-transformation.jpg" },
+    { id: "extended-oversight", icon: UserStar, image: "/assets/hero-consulting.jpg" },
   ];
 
   const openService = (id: string) => setSelectedServiceId(id);
@@ -194,7 +194,7 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
           <div className="mt-12 mb-8">
             <div className="bg-corporate-light p-4 sm:p-8 rounded-lg transition-all duration-300 hover:-translate-y-2">
               <img 
-                src="/src/assets/White_graphic.svg" 
+                src="/assets/White_graphic.svg" 
                 alt="Vadatei Transformation Model Infographic"
                 className="w-full max-w-5xl mx-auto rounded-lg shadow-card bg-corporate-light block"
                 style={{ display: 'block' }}
