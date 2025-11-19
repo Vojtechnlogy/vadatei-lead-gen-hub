@@ -58,7 +58,7 @@ const TargetedTransformation = () => {
         <div className="prose prose-lg max-w-none font-body">
           {/* Overview */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔷 {t("serviceModal.overviewTitle")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔍 {t("serviceModal.overviewTitle")}</h2>
             <p className="text-foreground leading-relaxed">
               {t("services.targeted-transformation.overview")}
             </p>
@@ -66,7 +66,7 @@ const TargetedTransformation = () => {
 
           {/* Why It Matters */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.whyItMatters.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">💡 {t("services.targeted-transformation.whyItMatters.title")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
               {t("services.targeted-transformation.whyItMatters.intro")}
             </p>
@@ -82,7 +82,7 @@ const TargetedTransformation = () => {
 
           {/* What You Get - Deliverables */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.deliverables.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">✅ {t("services.targeted-transformation.deliverables.title")}</h2>
             <p className="text-foreground leading-relaxed mb-6">
               {t("services.targeted-transformation.deliverables.subtitle")}
             </p>
@@ -100,7 +100,7 @@ const TargetedTransformation = () => {
 
           {/* How It Works - Process */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.process.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔢 {t("services.targeted-transformation.process.title")}</h2>
             {(t("services.targeted-transformation.process.steps", { returnObjects: true }) as Array<{number: string, title: string, description: string, output: string}>).map((step, index) => (
               <div key={index} className="mb-6">
                 <h3 className="text-lg font-heading font-semibold text-primary mb-2">
@@ -118,7 +118,7 @@ const TargetedTransformation = () => {
 
           {/* Timeline & Effort */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("serviceModal.timelineEffort")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">📅 {t("serviceModal.timelineEffort")}</h2>
             <div className="bg-muted p-6 rounded-lg">
               <table className="w-full text-foreground">
                 <tbody>
@@ -137,7 +137,7 @@ const TargetedTransformation = () => {
 
           {/* Investment/Pricing */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ Investment</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">💰 Investment</h2>
             <div className="bg-primary/10 p-6 rounded-lg border border-primary/20">
               <p className="text-2xl font-heading font-bold text-primary">{t("services.targeted-transformation.pricing.amount")}</p>
               <p className="text-foreground mt-1">{t("services.targeted-transformation.pricing.note")}</p>
@@ -147,7 +147,7 @@ const TargetedTransformation = () => {
 
           {/* What This Solves */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.whatThisSolves.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔧 {t("services.targeted-transformation.whatThisSolves.title")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
               {t("services.targeted-transformation.whatThisSolves.intro")}
             </p>
@@ -163,7 +163,7 @@ const TargetedTransformation = () => {
 
           {/* Expected Outcomes */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ Expected Outcomes</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🎯 Expected Outcomes</h2>
             <ul className="space-y-3">
               {(t("services.targeted-transformation.outcomes", { returnObjects: true }) as string[]).map((outcome, index) => (
                 <li key={index} className="flex items-start gap-3">
@@ -176,7 +176,7 @@ const TargetedTransformation = () => {
 
           {/* Typical Results - Real Examples */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.realExamples.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">📊 {t("services.targeted-transformation.realExamples.title")}</h2>
             {(t("services.targeted-transformation.realExamples.examples", { returnObjects: true }) as Array<{title: string, description: string}>).map((example, index) => (
               <div key={index} className="mb-6 bg-muted p-6 rounded-lg border-l-4 border-primary">
                 <h3 className="text-lg font-heading font-semibold text-primary mb-2">
@@ -191,7 +191,7 @@ const TargetedTransformation = () => {
 
           {/* Signs You Need Execution */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.needsChecklist.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⚠️ {t("services.targeted-transformation.needsChecklist.title")}</h2>
             <ul className="space-y-3">
               {(t("services.targeted-transformation.needsChecklist.items", { returnObjects: true }) as string[]).map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
@@ -207,7 +207,7 @@ const TargetedTransformation = () => {
 
           {/* Why Vadatei */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.whyVadatei.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🏆 {t("services.targeted-transformation.whyVadatei.title")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
               {t("services.targeted-transformation.whyVadatei.intro")}
             </p>
@@ -229,7 +229,7 @@ const TargetedTransformation = () => {
 
           {/* FAQ */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.faq.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">❓ {t("services.targeted-transformation.faq.title")}</h2>
             {(t("services.targeted-transformation.faq.questions", { returnObjects: true }) as Array<{q: string, a: string}>).map((faq, index) => (
               <div key={index} className="mb-6">
                 <h3 className="text-lg font-heading font-semibold text-primary mb-2">
@@ -245,7 +245,7 @@ const TargetedTransformation = () => {
           {/* CTA Section */}
           <section className="mt-12 pt-8 border-t border-border">
             <div className="bg-primary/5 p-8 rounded-lg text-center">
-              <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.targeted-transformation.cta.title")}</h2>
+              <h2 className="text-2xl font-heading font-bold text-primary mb-4">➡️ {t("services.targeted-transformation.cta.title")}</h2>
               <p className="text-foreground mb-6 max-w-2xl mx-auto">
                 {t("services.targeted-transformation.cta.description")}
               </p>

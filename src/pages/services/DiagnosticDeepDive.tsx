@@ -58,7 +58,7 @@ const DiagnosticDeepDive = () => {
         <div className="prose prose-lg max-w-none font-body">
           {/* Overview */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔷 {t("serviceModal.overviewTitle")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔍 {t("serviceModal.overviewTitle")}</h2>
             <p className="text-foreground leading-relaxed">
               {t("services.diagnostic-deep-dive.overview")}
             </p>
@@ -66,7 +66,7 @@ const DiagnosticDeepDive = () => {
 
           {/* Why It Matters */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.whyItMatters.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">💡 {t("services.diagnostic-deep-dive.whyItMatters.title")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
               {t("services.diagnostic-deep-dive.whyItMatters.intro")}
             </p>
@@ -85,7 +85,7 @@ const DiagnosticDeepDive = () => {
 
           {/* What You Get - Deliverables */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.deliverables.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">✅ {t("services.diagnostic-deep-dive.deliverables.title")}</h2>
             <p className="text-foreground leading-relaxed mb-6">
               {t("services.diagnostic-deep-dive.deliverables.subtitle")}
             </p>
@@ -103,7 +103,7 @@ const DiagnosticDeepDive = () => {
 
           {/* How It Works - Process */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.process.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔢 {t("services.diagnostic-deep-dive.process.title")}</h2>
             {(t("services.diagnostic-deep-dive.process.steps", { returnObjects: true }) as Array<{number: string, title: string, description: string, output: string}>).map((step, index) => (
               <div key={index} className="mb-6">
                 <h3 className="text-lg font-heading font-semibold text-primary mb-2">
@@ -121,7 +121,7 @@ const DiagnosticDeepDive = () => {
 
           {/* Timeline & Effort */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("serviceModal.timelineEffort")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">📅 {t("serviceModal.timelineEffort")}</h2>
             <div className="bg-muted p-6 rounded-lg">
               <table className="w-full text-foreground">
                 <tbody>
@@ -144,7 +144,7 @@ const DiagnosticDeepDive = () => {
 
           {/* Investment/Pricing */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ Investment</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">💰 Investment</h2>
             <div className="bg-primary/10 p-6 rounded-lg border border-primary/20">
               <p className="text-2xl font-heading font-bold text-primary">{t("services.diagnostic-deep-dive.pricing.amount")}</p>
               <p className="text-foreground mt-1">{t("services.diagnostic-deep-dive.pricing.note")}</p>
@@ -154,7 +154,7 @@ const DiagnosticDeepDive = () => {
 
           {/* What This Solves */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.whatThisSolves.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔧 {t("services.diagnostic-deep-dive.whatThisSolves.title")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
               {t("services.diagnostic-deep-dive.whatThisSolves.intro")}
             </p>
@@ -170,7 +170,7 @@ const DiagnosticDeepDive = () => {
 
           {/* Expected Outcomes */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ Expected Outcomes</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🎯 Expected Outcomes</h2>
             <p className="text-foreground leading-relaxed mb-4">
               After completing the Blueprint, you can expect:
             </p>
@@ -186,7 +186,7 @@ const DiagnosticDeepDive = () => {
 
           {/* Typical Results - Real Examples */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.realExamples.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">📊 {t("services.diagnostic-deep-dive.realExamples.title")}</h2>
             {(t("services.diagnostic-deep-dive.realExamples.examples", { returnObjects: true }) as Array<{title: string, description: string}>).map((example, index) => (
               <div key={index} className="mb-6 bg-muted p-6 rounded-lg border-l-4 border-primary">
                 <h3 className="text-lg font-heading font-semibold text-primary mb-2">
@@ -201,7 +201,7 @@ const DiagnosticDeepDive = () => {
 
           {/* Signs You Need a Blueprint */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.needsChecklist.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⚠️ {t("services.diagnostic-deep-dive.needsChecklist.title")}</h2>
             <ul className="space-y-3">
               {(t("services.diagnostic-deep-dive.needsChecklist.items", { returnObjects: true }) as string[]).map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
@@ -217,7 +217,7 @@ const DiagnosticDeepDive = () => {
 
           {/* Why Vadatei */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.whyVadatei.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">🏆 {t("services.diagnostic-deep-dive.whyVadatei.title")}</h2>
             <p className="text-foreground leading-relaxed mb-4">
               {t("services.diagnostic-deep-dive.whyVadatei.intro")}
             </p>
@@ -239,7 +239,7 @@ const DiagnosticDeepDive = () => {
 
           {/* FAQ */}
           <section className="mb-12">
-            <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.faq.title")}</h2>
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">❓ {t("services.diagnostic-deep-dive.faq.title")}</h2>
             {(t("services.diagnostic-deep-dive.faq.questions", { returnObjects: true }) as Array<{q: string, a: string}>).map((faq, index) => (
               <div key={index} className="mb-6">
                 <h3 className="text-lg font-heading font-semibold text-primary mb-2">
@@ -255,7 +255,7 @@ const DiagnosticDeepDive = () => {
           {/* CTA Section */}
           <section className="mt-12 pt-8 border-t border-border">
             <div className="bg-primary/5 p-8 rounded-lg text-center">
-              <h2 className="text-2xl font-heading font-bold text-primary mb-4">⭐ {t("services.diagnostic-deep-dive.cta.title")}</h2>
+              <h2 className="text-2xl font-heading font-bold text-primary mb-4">➡️ {t("services.diagnostic-deep-dive.cta.title")}</h2>
               <p className="text-foreground mb-6 max-w-2xl mx-auto">
                 {t("services.diagnostic-deep-dive.cta.description")}
               </p>
