@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Accomplishments from "@/components/Accomplishments";
 import About from "@/components/About";
 import Process from "@/components/Process";
 import Services from "@/components/Services";
@@ -81,7 +82,8 @@ const Index = () => {
       
       {/* Main content with top padding for fixed header */}
       <main className="pt-16">
-        <Hero onBookingClick={handleBookingClick} />  
+        <Hero onBookingClick={handleBookingClick} />
+        <Accomplishments />
         <Services onBookingClick={handleBookingClick} initialServiceId={initialServiceId} />
         {/* <Process /> */}
         <About />

@@ -189,6 +189,24 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-body leading-relaxed">
             {t("services.sectionIntro")}
           </p>
+
+          {/* White_graphic Infographic directly below the title */}
+          <div className="mt-12 mb-8">
+            <div className="bg-corporate-light p-8 rounded-lg transition-all duration-300 hover:-translate-y-2">
+              <img 
+                src="/src/assets/White_graphic.svg" 
+                alt="Vadatei Transformation Model Infographic"
+                className="w-full max-w-5xl mx-auto rounded-lg shadow-card bg-corporate-light"
+              />
+            </div>
+          </div>
+
+          {/* New section title below the infographic */}
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+              Tailor Made Services For Your Business Needs
+            </h2>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
