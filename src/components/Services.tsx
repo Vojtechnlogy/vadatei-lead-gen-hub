@@ -196,7 +196,7 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
               <img 
                 src="/assets/White_graphic.svg" 
                 alt="Vadatei Transformation Model Infographic"
-                className="w-full max-w-5xl mx-auto rounded-lg shadow-card bg-corporate-light block"
+                className="w-[95vw] max-w-[600px] sm:w-full sm:max-w-5xl mx-auto rounded-lg shadow-card bg-corporate-light block"
                 style={{ display: 'block' }}
               />
             </div>
