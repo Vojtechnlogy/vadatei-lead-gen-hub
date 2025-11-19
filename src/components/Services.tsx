@@ -192,11 +192,12 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
 
           {/* White_graphic Infographic directly below the title */}
           <div className="mt-12 mb-8">
-            <div className="bg-corporate-light p-8 rounded-lg transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-corporate-light p-4 sm:p-8 rounded-lg transition-all duration-300 hover:-translate-y-2">
               <img 
                 src="/src/assets/White_graphic.svg" 
                 alt="Vadatei Transformation Model Infographic"
-                className="w-full max-w-5xl mx-auto rounded-lg shadow-card bg-corporate-light"
+                className="w-full max-w-5xl mx-auto rounded-lg shadow-card bg-corporate-light block"
+                style={{ display: 'block' }}
               />
             </div>
           </div>

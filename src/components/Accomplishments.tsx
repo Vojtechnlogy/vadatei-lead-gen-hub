@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import BookingModal from "@/components/BookingModal"; // adjust path as needed
+// import BookingModal from "@/components/BookingModal"; // BookingModal is now globally controlled
 
 interface AccomplishmentsProps {
   onBookingClick?: () => void;
@@ -12,7 +12,7 @@ interface AccomplishmentsProps {
 const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [modalOpen, setModalOpen] = useState(false);
+  // Removed local modal state; modal is now globally controlled
 
   // Animation: track which cards are visible
   const accomplishments = [
@@ -59,13 +59,20 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
   ];
 
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [visibleCards, setVisibleCards] = useState<boolean[]>(Array(accomplishments.length).fill(false));
+  const [visibleCards, setVisibleCards] = useState<boolean[]>(() => {
+    // Make the first card visible immediately for faster pop-in
+    const arr = Array(accomplishments.length).fill(false);
+    arr[0] = true;
+    return arr;
+  });
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const observers: IntersectionObserver[] = [];
     accomplishments.forEach((_, i) => {
       if (!cardRefs.current[i]) return;
+      // Skip the first card, already visible
+      if (i === 0) return;
       const observer = new window.IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
@@ -174,41 +181,54 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
               })}
             </div>
             {/* Mobile: horizontal scroll */}
-            <div className="flex lg:hidden gap-4 overflow-x-auto pb-2 snap-x snap-mandatory" style={{ minHeight: '280px' }}>
-              {accomplishments.map((accomplishment, index) => {
-                const IconComponent = accomplishment.icon;
-                return (
-                  <div
-                    key={index}
-                    ref={el => (cardRefs.current[index] = el)}
-                    className={
-                      `bg-white rounded-xl p-8 shadow-card border border-gray-100 flex-shrink-0 w-80 snap-center group flex flex-col hover:shadow-xl transition-all duration-500 hover:-translate-y-2`
-                      + (visibleCards[index] ? ' animate-in slide-in-from-right-5 fade-in duration-700' : ' opacity-0')
-                    }
-                    style={{ minHeight: '280px', animationDelay: `${index * 100}ms`, animationFillMode: 'both' }}
-                  >
-                    <div className="flex items-start gap-6 flex-1">
-                      <div className="w-16 h-16 bg-gradient-corporate rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-125 transition-all duration-300 group-hover:rotate-6">
-                        <IconComponent className="h-8 w-8 text-white transition-all duration-300 group-hover:scale-110" />
-                      </div>
-                      <div className="flex-1 flex flex-col">
-                        <h3 className="text-lg font-heading font-bold text-primary mb-3 leading-snug transition-colors duration-300 group-hover:text-primary/90">
-                          {accomplishment.stat}
-                        </h3>
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className="w-6 h-0.5 bg-primary transition-all duration-300 group-hover:w-8 group-hover:bg-primary/80"></div>
-                          <span className="text-sm font-medium text-primary transition-colors duration-300 group-hover:text-primary/80">Impact</span>
+            <div className="flex lg:hidden flex-col gap-2">
+              <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory" style={{ minHeight: '280px' }}>
+                {accomplishments.map((accomplishment, index) => {
+                  const IconComponent = accomplishment.icon;
+                  return (
+                    <div
+                      key={index}
+                      ref={el => (cardRefs.current[index] = el)}
+                      className={
+                        `bg-white rounded-xl p-8 shadow-card border border-gray-100 flex-shrink-0 w-80 snap-center group flex flex-col hover:shadow-xl transition-all duration-500 hover:-translate-y-2`
+                        + (visibleCards[index] ? ' animate-in slide-in-from-right-5 fade-in duration-700' : ' opacity-0')
+                      }
+                      style={{ minHeight: '280px', animationDelay: `${index === 0 ? 0 : index * 100}ms`, animationFillMode: 'both' }}
+                    >
+                      <div className="flex items-start gap-6 flex-1">
+                        <div className="w-16 h-16 bg-gradient-corporate rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-125 transition-all duration-300 group-hover:rotate-6">
+                          <IconComponent className="h-8 w-8 text-white transition-all duration-300 group-hover:scale-110" />
                         </div>
-                        <div className="flex-1">
-                          <p className="text-muted-foreground font-body leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">
-                            {accomplishment.description}
-                          </p>
+                        <div className="flex-1 flex flex-col">
+                          <h3 className="text-lg font-heading font-bold text-primary mb-3 leading-snug transition-colors duration-300 group-hover:text-primary/90">
+                            {accomplishment.stat}
+                          </h3>
+                          <div className="flex items-center gap-2 mb-3">
+                            <div className="w-6 h-0.5 bg-primary transition-all duration-300 group-hover:w-8 group-hover:bg-primary/80"></div>
+                            <span className="text-sm font-medium text-primary transition-colors duration-300 group-hover:text-primary/80">Impact</span>
+                          </div>
+                          <div className="flex-1">
+                            <p className="text-muted-foreground font-body leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">
+                              {accomplishment.description}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
+              {/* Mobile dots indicator */}
+              <div className="flex justify-center gap-2 mt-2 lg:hidden">
+                {accomplishments.map((_, idx) => (
+                  <span
+                    key={idx}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      visibleCards[idx] ? 'bg-primary scale-110' : 'bg-primary/30'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
 
@@ -253,7 +273,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
           </div>
         </div>
       </div>
-      <BookingModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      {/* BookingModal is now globally controlled in App.tsx */}
     </section>
   );
 };
