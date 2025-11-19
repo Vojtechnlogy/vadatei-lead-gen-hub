@@ -3,10 +3,16 @@ import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import BookingModal from "@/components/BookingModal"; // adjust path as needed
 
-const Accomplishments = () => {
+interface AccomplishmentsProps {
+  onBookingClick?: () => void;
+}
+
+const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [modalOpen, setModalOpen] = useState(false);
 
   // Animation: track which cards are visible
   const accomplishments = [
@@ -236,7 +242,10 @@ const Accomplishments = () => {
               variant="corporate-outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary"
-              // onClick={onBookingClick} // Uncomment and pass onBookingClick as prop if needed
+              onClick={onBookingClick ? onBookingClick : () => {
+                // fallback: dispatch a custom event for global modal handler
+                window.dispatchEvent(new CustomEvent('open-booking-modal'));
+              }}
             >
               {t("services.cta.button")}
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -244,6 +253,7 @@ const Accomplishments = () => {
           </div>
         </div>
       </div>
+      <BookingModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   );
 };
