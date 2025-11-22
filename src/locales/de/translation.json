@@ -150,15 +150,53 @@
     "bookButton": "Termin buchen",
     "availability": "Verfügbar Montag – Freitag, 8:00 – 16:00 Uhr"
   },
-  "form": {
-    "fullName": "Vollständiger Name *",
-    "email": "E-Mail-Adresse *",
-    "companyName": "Firmenname",
-    "phone": "Telefonnummer"
-  },
-  "infoCard": {
-    "readyTitle": "Bereit loszulegen?",
-    "readyBody": "Füllen Sie das Kontaktformular aus, um mehr darüber zu erfahren, wie {{service}} Ihrem Unternehmen helfen kann."
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "categories": {
+      "general": "Allgemein",
+      "services": "Leistungen",
+      "process": "Prozess",
+      "results": "Ergebnisse & ROI"
+    },
+    "questions": {
+      "services": [
+        {
+          "q": "Mit welchen Arten von Unternehmen arbeiten Sie zusammen?",
+          "a": "Wir arbeiten mit kleinen und mittelständischen Unternehmen in Branchen wie Gastgewerbe, Fertigung und Transport – insbesondere mit solchen, die Wachstum, Restrukturierung oder Modernisierung durchlaufen. Die meisten Kunden kommen zu uns, wenn ihre Abläufe oder Kultur nicht mehr zu ihren Zielen passen."
+        },
+        {
+          "q": "Wie lange dauert eine typische Zusammenarbeit?",
+          "a": "Zusammenarbeiten dauern in der Regel 3–12 Wochen, je nach Stufe: Transformation Blueprint: 2–4 Wochen, Transformation Execution: 8–12 Wochen, Transformation Leadership: fortlaufend (monatliches Honorar). Der genaue Zeitplan wird im Rahmen des Diagnosegesprächs festgelegt."
+        },
+        {
+          "q": "Wie ist die Preisstruktur aufgebaut?",
+          "a": "Wir bieten klare, feste Paketpreise nach dem Vadatei-Modell: Blueprint: Festpreis, Execution: Festpreis oder Meilenstein-basiert, Leadership: monatliches Honorar. Das sorgt für Planbarkeit und vermeidet offene Rechnungen."
+        }
+      ],
+      "locations": [
+        {
+          "q": "Können wir mit einem kleineren Projekt starten?",
+          "a": "Absolut. Die meisten Kunden beginnen mit der Transformation Blueprint, die Klarheit über Prioritäten schafft, bevor größere Projekte umgesetzt werden."
+        },
+        {
+          "q": "Arbeiten Sie remote oder vor Ort?",
+          "a": "Die meisten Leistungen werden aus Effizienzgründen remote erbracht. Vor-Ort-Workshops, Führungsausrichtung und Kick-offs können organisiert werden, wenn persönliche Zusammenarbeit Mehrwert bringt."
+        }
+      ],
+      "process": [
+        {
+          "q": "Was ist der erste Schritt, wenn wir zusammenarbeiten möchten?",
+          "a": "Starten Sie mit einem kurzen Diagnosegespräch – ein unverbindliches Gespräch über Ihre Ziele, Herausforderungen und Transformationsprioritäten. Danach skizzieren wir Umfang, Zeitplan und Optionen für die Zusammenarbeit."
+        }
+      ],
+      "results": [
+        {
+          "q": "Welche Ergebnisse können wir erwarten?",
+          "a": "Sie können klarere Prioritäten, reibungslosere Abläufe, stärkere Teamabstimmung und messbare Fortschritte in der Arbeitsweise und Kommunikation Ihres Unternehmens erwarten."
+        }
+      ],
+      "security": []
+    }
   },
   "hero": {
     "headline": "Schaffen Sie das Rückgrat, das Ihr Unternehmen braucht",
@@ -383,88 +421,7 @@
     "ctaText": "Klingt das nach Ihrem Unternehmen?",
     "ctaHighlight": "Lassen Sie uns darüber sprechen, wie wir Ihnen zum Erfolg verhelfen können."
   },
-  "faq": {
-    "title": "Häufig gestellte Fragen",
-    "categories": {
-      "services": "Leistungen",
-      "locations": "Standorte & Verfügbarkeit",
-      "process": "Prozess & Onboarding",
-      "security": "Sicherheit & Vertrauen",
-      "results": "Ergebnisse & ROI"
-    },
-    "questions": {
-      "services": [
-        {
-          "q": "Was macht ein IT-Berater?",
-          "a": "Ein IT-Berater bewertet Ihre Technologie, empfiehlt Verbesserungen, entwickelt Lösungen und unterstützt bei der Umsetzung strategischer Projekte."
-        },
-        {
-          "q": "Warum sollte mein Unternehmen einen IT-Berater engagieren?",
-          "a": "Ein Berater bringt Erfahrung und Objektivität, löst technische Probleme schneller, reduziert Risiken, optimiert Kosten und richtet IT an der Geschäftsstrategie aus."
-        },
-        {
-          "q": "Können Sie neue Software in meine bestehenden Systeme integrieren?",
-          "a": "Ja — wir entwerfen Integrationsmuster, bauen Konnektoren, planen Datenmigrationen und prüfen End-to-End-Workflows für eine reibungslose Einführung."
-        }
-      ],
-      "locations": [
-        {
-          "q": "Wo sind Ihre Leistungen verfügbar?",
-          "a": "Wir sind in Ostrava ansässig und betreuen Kunden in ganz Tschechien und der EU; Vor-Ort-Besuche nach Bedarf."
-        },
-        {
-          "q": "Bieten Sie Remote-IT-Beratung an?",
-          "a": "Ja — die meisten Arbeiten können remote erledigt werden; wir kombinieren Remote-Zusammenarbeit mit Vor-Ort-Besuchen für Workshops oder Implementierungen."
-        },
-        {
-          "q": "Wie schnell können wir zusammenarbeiten?",
-          "a": "Erste Analyse innerhalb weniger Tage, Angebot in 1–2 Wochen, Projektstart nach Einigung über Umfang und Konditionen."
-        }
-      ],
-      "process": [
-        {
-          "q": "Wie sieht Ihr Beratungsprozess aus?",
-          "a": "Wir starten mit einer Analyse, definieren Ziele, entwickeln Lösungen, setzen diese schrittweise um und validieren die Ergebnisse mit KPIs und Wissenstransfer an Ihr Team."
-        },
-        {
-          "q": "Bieten Sie einmalige Beratungen oder dauerhafte Unterstützung an?",
-          "a": "Beides — einmalige Beratung, Projektengagements und laufende Unterstützung nach Bedarf."
-        },
-        {
-          "q": "Bieten Sie ein kostenloses Erstgespräch an?",
-          "a": "Ja — ein kurzes, kostenloses Erstgespräch, um den Bedarf zu verstehen und nächste Schritte vorzuschlagen."
-        }
-      ],
-      "security": [
-        {
-          "q": "Können Sie bei Sicherheits-Audits helfen?",
-          "a": "Ja — Sicherheitsbewertungen, Schwachstellenanalysen, Richtlinienprüfungen und Empfehlungen zur Behebung sind möglich."
-        },
-        {
-          "q": "Schließen Sie NDAs mit Kunden ab?",
-          "a": "Ja — wir schließen NDAs ab, um vertrauliche Informationen vor detaillierten Gesprächen oder Zugriff auf sensible Daten zu schützen."
-        },
-        {
-          "q": "Wie stellen Sie die Sicherheit der Unternehmensdaten sicher?",
-          "a": "Wir befolgen Sicherheitsstandards, nutzen verschlüsselte Kanäle, setzen das Prinzip der minimalen Rechte um und helfen bei der Einführung von Richtlinien."
-        }
-      ],
-      "results": [
-        {
-          "q": "Wie verbessert IT-Beratung mein Unternehmen?",
-          "a": "Beratung steigert die Effizienz, reduziert Ausfallzeiten, ermöglicht bessere Entscheidungen und richtet Technologieinvestitionen an den Geschäftszielen aus."
-        },
-        {
-          "q": "Können Sie IT-Kosten senken?",
-          "a": "Ja — durch Optimierung, Konsolidierung, Automatisierung und kosteneffiziente Cloud-/Lizenzstrategien senken wir die Gesamtkosten."
-        },
-        {
-          "q": "Welchen ROI kann ich erwarten?",
-          "a": "Der ROI variiert je nach Projekt; wir definieren messbare KPIs während der Analyse und konzentrieren uns auf konkrete Ergebnisse."
-        }
-      ]
-    }
-  },
+  
   "lang": "de",
   "privacy": {
     "back": "Zurück",
@@ -518,4 +475,5 @@
     "privacy": "Datenschutzerklärung"
   }
 }
+
 

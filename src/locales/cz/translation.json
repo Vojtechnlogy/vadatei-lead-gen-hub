@@ -9,28 +9,30 @@
   },
   "about": {
     "title": "O Vadatei",
-    "tagline": "Zkušenosti, kterým můžete věřit. Výsledky, které můžete měřit.",
-    "heading": "Váš strategický partner pro transformaci a technologie",
-    "p1": "S více než 30 lety v IT vedení a transformacích Marek Tolasz pomohl organizacím zefektivnit provoz, snížit náklady a nastartovat růst.",
-    "p2": "Vadatei vzniklo, aby přineslo tuto odbornost rostoucím firmám, které chtějí navrhnout a restrukturalizovat své podnikání pro škálovatelný a strategický růst. Od identifikace klíčových výzev po implementaci praktických řešení zajišťujeme, že vaše systémy a týmy jsou sladěny pro měřitelný úspěch.",
+    "tagline": "Transformace nemusí být chaotická, matoucí ani zahlcující. Po více než 30 letech vedení IT, transformací a organizačních změn v HEINEKEN a Coca-Cola jsme viděli, jak se opakují stejné vzorce – dobré firmy selhávají ne kvůli strategii, ale kvůli realizaci.",
+    "heading": "Váš strategický partner pro změny a transformaci",
+    "p1": "Vadatei vzniklo s jednoduchou vírou: transformace nemusí být chaotická, matoucí ani zahlcující. Po více než 30 letech vedení IT, transformací a organizačních změn v HEINEKEN a Coca-Cola jsme viděli, jak se opakují stejné vzorce – dobré firmy selhávají ne kvůli strategii, ale kvůli realizaci.",
+    "p2": "Proto Vadatei existuje. Pomáháme organizacím pochopit, co je třeba změnit, podporujeme týmy během celé cesty a budujeme governance a strukturu, která udržuje vše v pohybu. Nejsme jen poradci z povzdálí. Seděli jsme na vaší židli – vedli globální programy, řídili velké týmy, zvládali komplexitu a dosahovali výsledků pod tlakem. Naším cílem je pomoci vaší firmě transformovat se s jasností, jistotou a dlouhodobou stabilitou.",
+    "p3": "Nejsme jen poradci z povzdálí. Vedli jsme globální programy, řídili velké týmy, zvládali komplexitu a dosahovali výsledků pod tlakem.",
     "imageName": "Marek Tolasz",
     "imageRole": "Vadatei, zakladatel & hlavní konzultant",
+    "valuesHeading": "Proč si klienti vybírají Vadatei",
     "values": {
       "experience": {
         "title": "30+ let zkušeností",
-        "description": "Více než 30 let ověřených výsledků s vedením IT týmů a transformačních projektů v různých odvětvích"
+        "description": "Více než 30 let ověřených výsledků s vedením IT týmů a transformačních projektů v různých odvětvích."
       },
       "impact": {
         "title": "Měřitelný obchodní dopad",
-        "description": "Řešení, která snižují náklady, zefektivňují provoz a přinášejí měřitelné výsledky"
+        "description": "Řešení, která snižují náklady, zefektivňují provoz a přinášejí měřitelné obchodní výsledky."
       },
       "diagnosis": {
         "title": "Rychlá a přesná diagnostika",
-        "description": "Rychle identifikujeme skutečné překážky, takže každé řešení je cílené, efektivní a s vysokým dopadem"
+        "description": "Rychle identifikujeme skutečné překážky, takže každé řešení je cílené, efektivní a s vysokým dopadem."
       },
       "lowRisk": {
         "title": "Nízkorizikový první krok",
-        "description": "Začněte s cílenou úvodní analýzou — nízké riziko, jasné poznatky a plán pro škálovatelné zlepšení"
+        "description": "Začněte s cílenou úvodní analýzou — nízké riziko, jasné poznatky a plán pro škálovatelné zlepšení."
       }
     }
   },
@@ -81,18 +83,45 @@
 
     "priorityServices": {
       "title": "Prioritní oblasti (Vyberte jednu nebo více)",
-      "options": {
-        "vendorSelection": "Výběr dodavatele",
-        "projectPortfolio": "Řízení projektového portfolia",
-        "changeManagement": "Change management & organizace",
-        "resourceNeeds": "Definování potřeb zdrojů"
-      }
-    },
-
-    "premiumServices": {
-      "title": "Prémiové služby",
-      "options": {
-        "coaching": "Koučování a mentoring",
+      "questions": {
+        "services": [
+          {
+            "q": "S jakými typy organizací spolupracujete?",
+            "a": "Spolupracujeme s malými a středními firmami v odvětvích jako je pohostinství, výroba a doprava – zejména s těmi, které procházejí růstem, restrukturalizací nebo modernizací. Většina klientů se na nás obrací, když jejich provoz nebo kultura již neodpovídá jejich cílům."
+          },
+          {
+            "q": "Jak dlouho trvá typická spolupráce?",
+            "a": "Spolupráce obvykle trvá 3–12 týdnů podle zvolené úrovně: Transformation Blueprint: 2–4 týdny, Transformation Execution: 8–12 týdnů, Transformation Leadership: průběžně (měsíční paušál). Přesný harmonogram se stanoví během úvodní diagnostické konzultace."
+          },
+          {
+            "q": "Jak je nastavena cenová struktura?",
+            "a": "Nabízíme jasné, pevné balíčky podle modelu Vadatei: Blueprint: pevná projektová cena, Execution: pevná nebo milníková cena, Leadership: měsíční paušál. To zajišťuje předvídatelnost a eliminuje neomezené fakturace."
+          }
+        ],
+        "locations": [
+          {
+            "q": "Můžeme začít menším projektem?",
+            "a": "Rozhodně. Většina klientů začíná s Transformation Blueprint, která poskytuje jasnost priorit před většími projekty."
+          },
+          {
+            "q": "Pracujete vzdáleně nebo na místě?",
+            "a": "Většina realizace probíhá vzdáleně kvůli efektivitě. Osobní workshopy, sezení pro sladění vedení a zahájení transformace lze domluvit, pokud osobní spolupráce přináší hodnotu."
+          }
+        ],
+        "process": [
+          {
+            "q": "Jaký je první krok, pokud chceme spolupracovat?",
+            "a": "Začněte krátkým diagnostickým hovorem – nezávaznou diskusí o vašich cílech, výzvách a prioritách transformace. Poté stanovíme rozsah, časový plán a možnosti spolupráce."
+          }
+        ],
+        "results": [
+          {
+            "q": "Jaké výsledky můžeme očekávat?",
+            "a": "Můžete očekávat jasnější priority, hladší provoz, silnější sladění týmu a měřitelný pokrok v tom, jak vaše firma funguje a komunikuje."
+          }
+        ],
+        "security": []
+      },
         "strategicAdvisory": "Strategické poradenství",
         "teamManagement": "Řízení týmu",
         "crisisManagement": "Krizové & incidentní řízení",
@@ -128,8 +157,8 @@
         "operationsWorkflow": "Mapování a analýza toho, jak se práce provádí napříč odděleními. Identifikace úzkých míst, duplicit a příležitostí k automatizaci.",
         "costsResources": "Analýza výdajů vs. hodnoty, úrovně personálu, využití nástrojů a nevýkonných investic k zvýraznění příležitostí k úspoře nákladů."
       }
-    }
-  },
+    },
+
   "bookingModal": {
     "title": "Rezervujte si úvodní konzultaci",
     "whatToExpect": "Co očekávat",
@@ -150,22 +179,60 @@
     "bookButton": "Rezervovat termín",
     "availability": "K dispozici pondělí – pátek, 8:00 – 16:00"
   },
-  "form": {
-    "fullName": "Celé jméno *",
-    "email": "E-mailová adresa *",
-    "companyName": "Název společnosti",
-    "phone": "Telefonní číslo"
-  },
-  "infoCard": {
-    "readyTitle": "Připraveni začít?",
-    "readyBody": "Vyplňte kontaktní formulář a zjistěte, jak vám služba {{service}} může pomoci."
+    "faq": {
+    "title": "Still Have Questions?",
+    "categories": {
+      "services": "Services",
+      "locations": "Locations & Availability",
+      "process": "Process & Onboarding",
+      "security": "Security & Trust",
+      "results": "Results & ROI"
+    },
+    "questions": {
+      "services": [
+        {
+          "q": "What kinds of organizations do you work with?",
+          "a": "We work with small and medium-sized companies in industries such as hospitality, manufacturing, and transportation — particularly those undergoing growth, restructuring, or modernization. Most clients reach out when their operations or culture are no longer aligned with their goals."
+        },
+        {
+          "q": "How long does a typical engagement last?",
+          "a": "Engagements typically run 3–12 weeks depending on the tier: Transformation Blueprint: 2–4 weeks, Transformation Execution: 8–12 weeks, Transformation Leadership: ongoing (monthly retainer). A precise timeline is agreed during the Diagnostic Call."
+        },
+        {
+          "q": "How is pricing structured?",
+          "a": "We offer clear, fixed-fee packages based on the Vadatei Transformation Model: Blueprint: fixed project fee, Execution: fixed or milestone-based, Leadership: monthly retainer. This ensures predictability and eliminates open-ended billing."
+        }
+      ],
+      "locations": [
+        {
+          "q": "Can we start with a smaller project?",
+          "a": "Absolutely. Most clients begin with the Transformation Blueprint, which provides clarity on priorities before committing to larger execution work."
+        },
+        {
+          "q": "Do you work remotely or on-site?",
+          "a": "Most delivery is done remotely for efficiency. On-site workshops, leadership alignment sessions, and transformation kick-offs can be arranged when in-person collaboration adds value."
+        }
+      ],
+      "process": [
+        {
+          "q": "What's the first step if we want to work together?",
+          "a": "Start with a short Diagnostic Call — a no-pressure conversation about your goals, challenges, and transformation priorities. From there, we outline scope, timelines, and engagement options."
+        },
+        {
+          "q": "What outcomes can we expect?",
+          "a": "You can expect clearer priorities, smoother operations, stronger team alignment, and measurable progress in how your company works and communicates."
+        }
+      ],
+      "security": [],
+      "results": []
+    }
   },
   "hero": {
-    "headline": "Vytvořte páteř, kterou vaše firma potřebuje",
-    "subhead": "Pomáháme rostoucím firmám restrukturalizovat IT a provozní oddělení tak, aby systémy, procesy a týmy byly připraveny na efektivní a bezpečné škálování.",
+    "headline": "Každá organizace přistupuje ke změně jinak.",
+    "subhead": "Nabízíme strukturovaný transformační model, který vás provede od úvodního auditu až po trvalé výsledky. Každý krok navazuje na předchozí, zajišťuje jasnost, sladění a udržitelnou změnu.",
     "cta": {
-      "book": "Rezervovat bezplatnou 30min konzultaci",
-      "services": "S čím pomáháme"
+      "book": "Rezervovat bezplatnou konzultaci",
+      "services": "Model transformace Vadatei"
     },
     "stats": {
       "years": "Let zkušeností",
@@ -190,35 +257,35 @@
       "cioAsAService": "CIO jako služba",
       "contactForQuote": "Cena na vyžádání"
     },
-    "newsletter": {
-      "title": "Newsletter",
-      "desc": "Získejte občasné novinky a tipy o IT strategii a transformaci.",
-      "placeholder": "Váš e-mail",
-      "subscribe": "Odebírat"
+    "about": {
+      "title": "O Vadatei",
+      "tagline": "Zkušenosti, kterým můžete věřit. Výsledky, které můžete měřit.",
+      "heading": "Váš strategický partner pro řízení změn a technologie",
+      "p1": "S více než 30 lety zkušeností v IT leadershipu a transformačním řízení Marek Tolasz pomohl organizacím zefektivnit provoz, snížit náklady a nastartovat růst.",
+      "p2": "Vadatei vzniklo, aby přineslo tuto odbornost firmám, které chtějí navrhnout a restrukturalizovat své podnikání pro škálovatelný růst. Od identifikace klíčových výzev po implementaci praktických řešení zajišťujeme, že vaše systémy a týmy jsou sladěny pro měřitelný úspěch.",
+      "p3": "Naše hodnoty: zkušenosti, měřitelný dopad, rychlá diagnostika a nízkorizikový první krok.",
+      "imageName": "Marek Tolasz",
+      "imageRole": "Vadatei, zakladatel & hlavní konzultant",
+      "values": {
+        "experience": {
+          "title": "30+ let zkušeností",
+          "description": "Více než 30 let ověřených výsledků s vedením IT týmů a transformačních projektů v různých odvětvích."
+        },
+        "impact": {
+          "title": "Měřitelný obchodní dopad",
+          "description": "Řešení, která snižují náklady, zefektivňují provoz a přinášejí měřitelné výsledky."
+        },
+        "diagnosis": {
+          "title": "Rychlá a přesná diagnostika",
+          "description": "Rychle identifikujeme skutečné překážky, takže každé řešení je cílené, efektivní a s vysokým dopadem."
+        },
+        "lowRisk": {
+          "title": "Nízkorizikový první krok",
+          "description": "Začněte s cílenou úvodní analýzou — nízké riziko, jasné poznatky a plán pro škálovatelné zlepšení."
+        }
+      }
     },
-    "copy": "© {{year}} Vadatei. Všechna práva vyhrazena.",
-    "privacy": "Zásady ochrany osobních údajů"
-  },
-  "contact": {
-    "email": "info@vadatei.com",
-    "phone": "+31 6 82 49 46 90 nebo +420 602 396 416"
-  },
-  "organization": {
-    "name": "Vadatei",
-    "description": "Strategický partner pro řízení změn s více než 30 lety zkušeností. Pomáháme organizacím pochopit, co je třeba změnit, efektivně implementovat transformaci a udržovat trvalé zlepšení.",
-    "contactType": "zákaznický servis",
-    "areaServed": "Evropa"
-  },
-  "header": {
-    "company": "Vadatei",
-    "logoAlt": "Logo Vadatei",
-    "nav": {
-      "about": "O nás",
-      "services": "Služby",
-      "process": "Proces"
-    },
-    "bookNow": "Rezervovat",
-    "bookDiscovery": "Rezervovat konzultaci"
+    "bookNow": "Rezervovat"
   },
   "process": {
     "heading": "Náš osvědčený proces",
@@ -383,88 +450,7 @@
     "ctaText": "Zní to jako vaše firma?",
     "ctaHighlight": "Promluvme si o tom, jak vám můžeme pomoci uspět."
   },
-  "faq": {
-    "title": "Často kladené dotazy",
-    "categories": {
-      "services": "Služby",
-      "locations": "Lokalita & dostupnost",
-      "process": "Proces & spolupráce",
-      "security": "Bezpečnost & důvěra",
-      "results": "Výsledky & návratnost"
-    },
-    "questions": {
-      "services": [
-        {
-          "q": "Co dělá IT konzultant?",
-          "a": "IT konzultant hodnotí vaši technologii, doporučuje vylepšení, navrhuje řešení a pomáhá s implementací strategických projektů."
-        },
-        {
-          "q": "Proč si najmout IT konzultanta?",
-          "a": "Konzultant přináší zkušenosti a objektivitu, řeší technické problémy rychleji, snižuje rizika, optimalizuje náklady a sladí IT s obchodní strategií."
-        },
-        {
-          "q": "Pomůžete s integrací nového softwaru?",
-          "a": "Ano — navrhujeme integrační postupy, vytváříme konektory, plánujeme migrace dat a ověřujeme funkčnost celého řešení."
-        }
-      ],
-      "locations": [
-        {
-          "q": "Kde jsou vaše služby dostupné?",
-          "a": "Sídlíme v Ostravě a obsluhujeme klienty po celé ČR a EU; osobní návštěvy dle potřeby."
-        },
-        {
-          "q": "Nabízíte vzdálené IT poradenství?",
-          "a": "Ano — většinu práce lze provést na dálku, kombinujeme vzdálenou spolupráci s osobními návštěvami pro workshopy nebo implementace."
-        },
-        {
-          "q": "Jak rychle můžeme začít spolupracovat?",
-          "a": "Úvodní analýza během několika dnů, návrh do 1–2 týdnů, zahájení projektu po dohodě o rozsahu a podmínkách."
-        }
-      ],
-      "process": [
-        {
-          "q": "Jak vypadá váš konzultační proces?",
-          "a": "Začínáme analýzou, stanovíme cíle, navrhneme řešení, implementujeme po fázích a ověřujeme výsledky pomocí KPI a předání znalostí vašemu týmu."
-        },
-        {
-          "q": "Nabízíte jednorázové konzultace i dlouhodobou podporu?",
-          "a": "Obojí — jednorázové poradenství, projektové spolupráce i dlouhodobá podpora dle potřeby."
-        },
-        {
-          "q": "Nabízíte úvodní konzultaci zdarma?",
-          "a": "Ano — krátká úvodní konzultace zdarma pro pochopení potřeb a návrh dalších kroků."
-        }
-      ],
-      "security": [
-        {
-          "q": "Pomůžete s bezpečnostním auditem?",
-          "a": "Ano — nabízíme bezpečnostní audity, zhodnocení zranitelností, kontrolu politik a doporučení k nápravě."
-        },
-        {
-          "q": "Podepisujete NDA s klienty?",
-          "a": "Ano — podepisujeme NDA pro ochranu důvěrných informací před detailní diskusí nebo přístupem k citlivým datům."
-        },
-        {
-          "q": "Jak zajistíte bezpečnost dat mé firmy?",
-          "a": "Dodržujeme bezpečnostní standardy, používáme šifrované kanály, princip minimálních oprávnění a pomáháme zavádět potřebné politiky."
-        }
-      ],
-      "results": [
-        {
-          "q": "Jak IT poradenství zlepší mé podnikání?",
-          "a": "Poradenství zvyšuje efektivitu, snižuje výpadky, umožňuje lepší rozhodování a sladí investice do technologií s obchodními cíli."
-        },
-        {
-          "q": "Pomůžete snížit IT náklady?",
-          "a": "Ano — optimalizací, konsolidací, automatizací a efektivními cloud/licenčními strategiemi snižujeme celkové náklady."
-        },
-        {
-          "q": "Jakou návratnost mohu očekávat?",
-          "a": "ROI závisí na projektu; během analýzy stanovíme měřitelné cíle a zaměříme se na konkrétní výsledky."
-        }
-      ]
-    }
-  },
+ 
   "lang": "cz",
   "privacy": {
     "back": "Zpět",
@@ -518,4 +504,10 @@
     "privacy": "Zásady ochrany osobních údajů"
   }
 }
+
+
+
+
+
+
 

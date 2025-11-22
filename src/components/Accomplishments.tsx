@@ -12,13 +12,14 @@ interface AccomplishmentsProps {
 const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
-  // Removed local modal state; modal is now globally controlled
+  // Track the most visible card index for mobile dots
+  const [mobileActiveIndex, setMobileActiveIndex] = useState(0);
 
   // Animation: track which cards are visible
   const accomplishments = [
     {
       icon: TrendingUp,
-      stat: "Reduced IT operating costs by up to 25%",
+      stat: "Reduced IT operating costs by 25%",
       description: "Freeing budget for growth initiatives and innovation instead of maintenance."
     },
     {
@@ -82,7 +83,6 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
               updated[i] = true;
               return updated;
             });
-            observer.disconnect();
           }
         },
         { threshold: 0.2 }
@@ -90,8 +90,44 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
       observer.observe(cardRefs.current[i]!);
       observers.push(observer);
     });
+
+    // Mobile: track most centered card for dots
+    let scrollContainer: HTMLDivElement | null = null;
+    let removeScrollListeners: (() => void) | null = null;
+    if (window.innerWidth < 1024) {
+      scrollContainer = document.querySelector('#accomplishments-mobile-scroll');
+      const handleScroll = () => {
+        if (!scrollContainer) return;
+        const containerRect = scrollContainer.getBoundingClientRect();
+        let minDistance = Infinity;
+        let activeIdx = 0;
+        cardRefs.current.forEach((card, idx) => {
+          if (!card) return;
+          const cardRect = card.getBoundingClientRect();
+          // Calculate card center relative to container center
+          const cardCenter = cardRect.left + cardRect.width / 2;
+          const containerCenter = containerRect.left + containerRect.width / 2;
+          const distance = Math.abs(cardCenter - containerCenter);
+          if (distance < minDistance) {
+            minDistance = distance;
+            activeIdx = idx;
+          }
+        });
+        setMobileActiveIndex(activeIdx);
+      };
+      // Initial call and add scroll listener
+      handleScroll();
+      scrollContainer?.addEventListener('scroll', handleScroll);
+      window.addEventListener('resize', handleScroll);
+      // Clean up function for scroll/resize listeners
+      removeScrollListeners = () => {
+        scrollContainer?.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('resize', handleScroll);
+      };
+    }
     return () => {
       observers.forEach(o => o.disconnect());
+      if (removeScrollListeners) removeScrollListeners();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -116,7 +152,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-            Proven Results That Speak For Themselves
+            Results That Speak For Themselves
           </h2>
         </div>
 
@@ -199,7 +235,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
             </div>
             {/* Mobile: horizontal scroll */}
             <div className="flex lg:hidden flex-col gap-2">
-              <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory" style={{ minHeight: '280px' }}>
+              <div id="accomplishments-mobile-scroll" className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory" style={{ minHeight: '280px' }}>
                 {accomplishments.map((accomplishment, index) => {
                   const IconComponent = accomplishment.icon;
                   return (
@@ -241,7 +277,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                   <span
                     key={idx}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      visibleCards[idx] ? 'bg-primary scale-110' : 'bg-primary/30'
+                      mobileActiveIndex === idx ? 'bg-primary scale-110' : 'bg-gray-300'
                     }`}
                   />
                 ))}
@@ -270,10 +306,10 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
         <div className="mt-16 text-center">
           <div className="bg-gradient-corporate rounded-2xl p-8 md:p-12">
             <h3 className="text-3xl font-heading font-bold text-white mb-4">
-              {t("services.cta.title")}
+              What Could Your Business Achieve with Higher Profits?
             </h3>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto font-body">
-              {t("services.cta.body")}
+              Unlock your business's full potential. Discover how you can increase profits and drive growth with expert guidance tailored to your needs.
             </p>
             <Button
               variant="corporate-outline"
@@ -284,7 +320,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                 window.dispatchEvent(new CustomEvent('open-booking-modal'));
               }}
             >
-              {t("services.cta.button")}
+              Book a Free Consultation to Find Out
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>

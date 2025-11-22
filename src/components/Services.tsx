@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,6 +13,9 @@ import {
   Gift,
   Check,
   Search,
+  BarChart3,
+  Rocket,
+  Map as LucideMap,
 } from "lucide-react";
 import ServiceModal from "./ServiceModal";
 import { useTranslation } from "react-i18next";
@@ -24,6 +28,11 @@ interface ServicesProps {
 }
 
 const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
+    // State for swipable process steps
+    const [activeStep, setActiveStep] = useState(0);
+    const [animating, setAnimating] = useState(false);
+    const [animationDirection, setAnimationDirection] = useState<'up' | 'down' | null>(null);
+
   const [selectedServiceId, setSelectedServiceId] = useState<string | null>(initialServiceId || null);
   const { t, i18n } = useTranslation();
 
@@ -169,6 +178,51 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
     ]
   };
 
+  // Process steps data
+  const processSteps = [{
+    icon: Search,
+    number: "01",
+    titleKey: "process.steps.audit.title",
+    descKey: "process.steps.audit.description",
+  }, {
+    icon: BarChart3,
+    number: "02",
+    titleKey: "process.steps.strategy.title",
+    descKey: "process.steps.strategy.description",
+  }, {
+    icon: LucideMap,
+    number: "03",
+    titleKey: "process.steps.roadmap.title",
+    descKey: "process.steps.roadmap.description",
+  }, {
+    icon: Rocket,
+    number: "04",
+    titleKey: "process.steps.deployment.title",
+    descKey: "process.steps.deployment.description",
+  }, {
+    icon: Users,
+    number: "∞",
+    titleKey: "process.guidance.title",
+    descKey: "process.guidance.description",
+    guidance: true,
+  }];
+
+  const handleStepChange = (direction: "up" | "down") => {
+    if (animating) return;
+    setAnimationDirection(direction);
+    setAnimating(true);
+    setTimeout(() => {
+      setActiveStep((prev) => {
+        if (direction === "up") {
+          return prev > 0 ? prev - 1 : prev;
+        } else {
+          return prev < processSteps.length - 1 ? prev + 1 : prev;
+        }
+      });
+      setAnimating(false);
+    }, 300); // Animation duration
+  };
+
   return (
     <section id="services" className="py-20 bg-corporate-light">
       {/* Service structured data */}
@@ -182,30 +236,84 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-            {t("services.sectionTitle")}
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-body leading-relaxed">
-            {t("services.sectionIntro")}
-          </p>
-
-          {/* White_graphic Infographic directly below the title */}
-          <div className="mt-12 mb-8">
-            <div className="bg-corporate-light p-4 sm:p-8 rounded-lg transition-all duration-300 hover:-translate-y-2">
+        <div className="mb-16">
+          {/* Section title above SVG, always centered */}
+          <div className="text-center mb-6">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary">
+              {t("services.sectionTitle")}
+            </h2>
+          </div>
+          {/* Responsive flex: row on lg+, column on mobile/tablet */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12">
+            {/* Infographic left on desktop, centered on mobile */}
+            <div className="bg-corporate-light p-4 sm:p-8 rounded-lg flex-shrink-0 w-full lg:w-auto flex justify-center lg:justify-start">
               <img 
-                src="/assets/White_graphic.svg" 
+                src={i18n.language === 'cz' 
+                  ? '/assets/Czech_Grapphic.svg' 
+                  : i18n.language === 'de' 
+                    ? '/assets/German_Graphic.svg' 
+                    : '/assets/English_Graphic.svg'} 
                 alt="Vadatei Transformation Model Infographic"
-                className="w-[95vw] max-w-[600px] sm:w-full sm:max-w-5xl mx-auto rounded-lg shadow-card bg-corporate-light block"
+                className="w-full max-w-[320px] sm:max-w-[400px] lg:max-w-[480px] rounded-lg bg-corporate-light block"
                 style={{ display: 'block' }}
               />
             </div>
+            {/* Process steps vertically next to infographic */}
+            <div className="flex flex-col justify-center lg:justify-start w-full lg:w-[520px]">
+              <p className="text-xl text-muted-foreground max-w-2xl font-body mt-2 mb-6 mx-auto text-center lg:text-left">
+                {t("services.processIntro", "Our transformation process is designed to guide your organization from initial assessment to lasting results. Each step builds on the previous, ensuring clarity, alignment, and sustainable change.")}
+              </p>
+              {/* Swipable Process Step */}
+              <div className="flex flex-col items-center gap-4">
+                <div
+                  className={`flex items-start gap-4 group w-full transition-all duration-300
+                    ${animating ? (animationDirection === 'down' ? 'opacity-0 translate-y-8' : 'opacity-0 -translate-y-8') : 'opacity-100 translate-y-0'}`}
+                  style={{ willChange: 'opacity, transform' }}
+                >
+                  <div className="w-16 h-16 mb-2">
+                    <div className="w-16 h-16 bg-gradient-corporate rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-125 group-hover:rotate-6">
+                      {processSteps[activeStep].icon ? (
+                        React.createElement(processSteps[activeStep].icon, { className: "h-8 w-8 text-white transition-all duration-300 group-hover:scale-110" })
+                      ) : null}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className={`text-lg font-heading font-bold text-primary mb-1${processSteps[activeStep].guidance ? '' : ''}`}>
+                      {t(processSteps[activeStep].titleKey)}
+                    </h4>
+                    <p className={`text-muted-foreground font-body leading-relaxed${processSteps[activeStep].guidance ? ' italic' : ''}`}>
+                      {t(processSteps[activeStep].descKey)}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-2 mt-2">
+                  <button
+                    className={`p-2 rounded-full bg-corporate-light border border-primary text-primary transition disabled:opacity-40 disabled:cursor-not-allowed`}
+                    onClick={() => handleStepChange("up")}
+                    disabled={activeStep === 0 || animating}
+                    aria-label="Previous step"
+                  >
+                    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 15 12 9 18 15"/></svg>
+                  </button>
+                  <button
+                    className={`p-2 rounded-full bg-corporate-light border border-primary text-primary transition disabled:opacity-40 disabled:cursor-not-allowed`}
+                    onClick={() => handleStepChange("down")}
+                    disabled={activeStep === processSteps.length - 1 || animating}
+                    aria-label="Next step"
+                  >
+                    <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </button>
+                </div>
+                <div className="text-sm text-muted-foreground mt-2">
+                  {activeStep + 1} / {processSteps.length}
+                </div>
+              </div>
+            </div>
           </div>
-
-          {/* New section title below the infographic */}
-          <div className="text-center mb-10">
+          {/* Tailor Made Services title below infographic, always centered */}
+          <div className="text-center mt-8 mb-10">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-              Tailor Made Services For Your Business Needs
+              Services Tailored to Your Organization
             </h2>
           </div>
         </div>
