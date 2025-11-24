@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -226,7 +227,6 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
   };
 
   // Use Helmet for SEO structured data injection
-  const Helmet = require('react-helmet-async').Helmet;
   return (
     <section id="services" className="py-20 bg-corporate-light">
       <Helmet>
