@@ -180,47 +180,47 @@
     "availability": "K dispozici pondělí – pátek, 8:00 – 16:00"
   },
     "faq": {
-    "title": "Still Have Questions?",
+    "title": "Ještě máte otázky?",
     "categories": {
-      "services": "Services",
-      "locations": "Locations & Availability",
-      "process": "Process & Onboarding",
-      "security": "Security & Trust",
-      "results": "Results & ROI"
+      "services": "Služby",
+      "locations": "Lokace & dostupnost",
+      "process": "Proces & onboarding",
+      "security": "Bezpečnost & důvěra",
+      "results": "Výsledky & návratnost"
     },
     "questions": {
       "services": [
         {
-          "q": "What kinds of organizations do you work with?",
-          "a": "We work with small and medium-sized companies in industries such as hospitality, manufacturing, and transportation — particularly those undergoing growth, restructuring, or modernization. Most clients reach out when their operations or culture are no longer aligned with their goals."
+          "q": "S jakými typy organizací spolupracujete?",
+          "a": "Spolupracujeme s malými a středními firmami v odvětvích jako je pohostinství, výroba a doprava – zejména s těmi, které procházejí růstem, restrukturalizací nebo modernizací. Většina klientů se na nás obrací, když jejich provoz nebo kultura již neodpovídá jejich cílům."
         },
         {
-          "q": "How long does a typical engagement last?",
-          "a": "Engagements typically run 3–12 weeks depending on the tier: Transformation Blueprint: 2–4 weeks, Transformation Execution: 8–12 weeks, Transformation Leadership: ongoing (monthly retainer). A precise timeline is agreed during the Diagnostic Call."
+          "q": "Jak dlouho trvá typická spolupráce?",
+          "a": "Spolupráce obvykle trvá 3–12 týdnů podle zvolené úrovně: Transformation Blueprint: 2–4 týdny, Transformation Execution: 8–12 týdnů, Transformation Leadership: průběžně (měsíční paušál). Přesný harmonogram se stanoví během úvodní diagnostické konzultace."
         },
         {
-          "q": "How is pricing structured?",
-          "a": "We offer clear, fixed-fee packages based on the Vadatei Transformation Model: Blueprint: fixed project fee, Execution: fixed or milestone-based, Leadership: monthly retainer. This ensures predictability and eliminates open-ended billing."
+          "q": "Jak je nastavena cenová struktura?",
+          "a": "Nabízíme jasné, pevné balíčky podle modelu Vadatei: Blueprint: pevná projektová cena, Execution: pevná nebo milníková cena, Leadership: měsíční paušál. To zajišťuje předvídatelnost a eliminuje neomezené fakturace."
         }
       ],
       "locations": [
         {
-          "q": "Can we start with a smaller project?",
-          "a": "Absolutely. Most clients begin with the Transformation Blueprint, which provides clarity on priorities before committing to larger execution work."
+          "q": "Můžeme začít menším projektem?",
+          "a": "Rozhodně. Většina klientů začíná s Transformation Blueprint, která poskytuje jasnost priorit před většími projekty."
         },
         {
-          "q": "Do you work remotely or on-site?",
-          "a": "Most delivery is done remotely for efficiency. On-site workshops, leadership alignment sessions, and transformation kick-offs can be arranged when in-person collaboration adds value."
+          "q": "Pracujete vzdáleně nebo na místě?",
+          "a": "Většina realizace probíhá vzdáleně kvůli efektivitě. Osobní workshopy, sezení pro sladění vedení a zahájení transformace lze domluvit, pokud osobní spolupráce přináší hodnotu."
         }
       ],
       "process": [
         {
-          "q": "What's the first step if we want to work together?",
-          "a": "Start with a short Diagnostic Call — a no-pressure conversation about your goals, challenges, and transformation priorities. From there, we outline scope, timelines, and engagement options."
+          "q": "Jaký je první krok, pokud chceme spolupracovat?",
+          "a": "Začněte krátkým diagnostickým hovorem – nezávaznou diskusí o vašich cílech, výzvách a prioritách transformace. Poté stanovíme rozsah, časový plán a možnosti spolupráce."
         },
         {
-          "q": "What outcomes can we expect?",
-          "a": "You can expect clearer priorities, smoother operations, stronger team alignment, and measurable progress in how your company works and communicates."
+          "q": "Jaké výsledky můžeme očekávat?",
+          "a": "Můžete očekávat jasnější priority, hladší provoz, silnější sladění týmu a měřitelný pokrok v tom, jak vaše firma funguje a komunikuje."
         }
       ],
       "security": [],

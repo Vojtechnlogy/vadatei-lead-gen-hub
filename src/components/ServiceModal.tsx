@@ -123,48 +123,19 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org/",
-              "@type": "Product",
-              "name": service.title,
-              "description": service.fullDescription,
-              // Add your actual image URL if available:
-              // "image": "https://vadatei.com/path-to-service-image.jpg",
-              "brand": {
-                "@type": "Brand",
-                "name": "Vadatei"
-              },
-              "offers": [
-                {
-                  "@type": "Offer",
-                  "price": 0,
-                  "priceCurrency": "EUR",
-                  "priceValidUntil": "2026-08-29",
-                  "url": "https://vadatei.com/",
-                  "availability": "https://schema.org/InStock"
-                },
-                {
-                  "@type": "Offer",
-                  "price": 0,
-                  "priceCurrency": "CZK",
-                  "priceValidUntil": "2026-08-29",
-                  "url": "https://vadatei.com/",
-                  "availability": "https://schema.org/InStock"
-                }
-              ]
-            })
-          }}
-        />
+        {/* Product schema removed. Only Service schema remains. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Service",
-              "name": service.title,
+                "name": (() => {
+                  if (service.id === "diagnostic-deep-dive") return "Transformation Blueprint";
+                  if (service.id === "targeted-transformation") return "Transformation Execution";
+                  if (service.id === "extended-oversight") return "Transformation Leadership";
+                  return service.title;
+                })(),
               "description": service.fullDescription,
               "image": service.image || "/src/assets/digital-transformation.jpg",
               "provider": {

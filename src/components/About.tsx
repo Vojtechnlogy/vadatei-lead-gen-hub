@@ -51,7 +51,7 @@ const About = () => {
             "description": t("organization.description"),
             "url": "https://vadatei.com/",
             "logo": "https://vadatei.com/favicon.ico",
-            "foundingDate": "2020",
+            "foundingDate": "2024",
             "numberOfEmployees": "1-10",
             "industry": "Business Consulting",
             "serviceArea": {
@@ -117,6 +117,7 @@ const About = () => {
               "name": "Business Management and IT Leadership"
             },
             "knowsAbout": [
+              "Business Growth",
               "Change Management",
               "Digital Transformation", 
               "IT Leadership",

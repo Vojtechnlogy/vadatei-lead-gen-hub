@@ -33,13 +33,17 @@ export default function FAQ(): JSX.Element {
   };
 
   // For FAQ structured data (schema.org)
+  // Get current language from i18next translation context
+  const currentLang = (typeof t === 'function' && t('lang')) || 'en';
+  // Use translated description if available, fallback to English
+  const faqDescription = t('faq.description', { defaultValue: t('description', { defaultValue: "Frequently asked questions about Vadatei's change management and transformation consulting services" }) });
   const ld = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "name": t("faq.title"),
-    "description": "Frequently asked questions about Vadatei's change management and transformation consulting services",
+    "description": faqDescription,
     "url": "https://vadatei.com/#faq",
-    "inLanguage": "en",
+    "inLanguage": currentLang,
     "publisher": {
       "@type": "Organization",
       "name": "Vadatei",
@@ -53,7 +57,7 @@ export default function FAQ(): JSX.Element {
       "acceptedAnswer": { 
         "@type": "Answer", 
         "text": q.answer,
-        "inLanguage": "en",
+        "inLanguage": currentLang,
         "author": {
           "@type": "Organization",
           "name": "Vadatei"
