@@ -43,7 +43,7 @@
     "overviewTitle": "Overview",
     "featuresTitle": "Key Features",
     "detailedDescription": "Detailed Description",
-    "whatsIncluded": "What's Included",
+    "whatsIncluded": "What this looks like in practice",
     "timelineEffort": "Timeline & Effort",
     "pricing": "Pricing",
     "outcomes": "Outcomes",
@@ -176,10 +176,10 @@
   },
   "hero": {
     "headline": "Change & Transformation Management",
-    "subhead": "Most transformation efforts fail because they lack clarity, structure, and sustained leadership. We help you understand what must change, guide your teams through the process, and put the governance in place to make the change last.",
+    "subhead": "We help businesses grow, by helping you understand what must change, guide your teams through the process, and put the governance in place to make those change last.",
     "cta": {
       "book": "Start with a Diagnostic Call",
-      "services": "Begin Your Transformation Journey"
+      "services": "Begin Your Growth Journey"
     },
     "stats": {
       "years": "Years Experience",
@@ -281,7 +281,7 @@
 
     "diagnostic-deep-dive": {
       "title": "Transformation Blueprint",
-      "description": "Clarity before disruption.",
+      "description": "Start small. Get clarity. Decide what’s next.",
       "subtitle": "Discover the 5 hidden warning signs that most leadership teams miss and how to fix them before it's too late.",
       "pageSubtitle": "Understand what must change — and why.",
       "overview": "The Transformation Blueprint is a focused, end-to-end diagnostic that reveals the real barriers holding your organization back — and provides a clear, actionable roadmap for improvement. It is the foundation of the Vadatei Transformation Model and the first step for organizations that want clarity before committing to large-scale change. In 2–4 weeks, we evaluate your operating model, processes, governance, digital capabilities, and team alignment to uncover what needs to change, how to change it, and where to begin.",
@@ -340,7 +340,7 @@
           },
           {
             "number": "8",
-            "title": "90-Day Roadmap",
+            "title": "Transformation Roadmap",
             "description": "Your first 90 days of focused action — clear, realistic, actionable."
           },
           {
@@ -385,7 +385,7 @@
           },
           {
             "number": "6",
-            "title": "90-Day Roadmap",
+            "title": "Transformation Roadmap",
             "description": "We build a realistic plan with timelines, owners, and success metrics.",
             "output": "Roadmap Document"
           },
@@ -398,15 +398,15 @@
         ]
       },
       "timelineTable": {
-        "duration": "2–4 weeks",
+        "duration": "4 weeks",
         "meetings": "4–6 sessions",
         "deliverables": "9 detailed outputs"
       },
       "timeline": {
-        "duration": "2–4 weeks"
+        "duration": "4 weeks"
       },
       "pricing": {
-        "amount": "€4,000 – €7,000",
+        "amount": "€4,997",
         "note": "(fixed fee depending on organization size and scope)",
         "commitment": "No ongoing commitment required."
       },
@@ -523,8 +523,8 @@
         "Operating model review",
         "Process & digital impact overview",
         "Prioritization & risk assessment",
-        "PMO templates and recommendations",
-        "90-day roadmap",
+        "Project Management recommendations",
+        "Transformation roadmap",
         "Leadership briefing"
       ],
       "fullDescription": "A rapid but thorough assessment that identifies what needs to change, why, and how. We map your processes, structure, governance, and digital landscape to uncover barriers, risks, and opportunities. The result is a clear, prioritized, and actionable transformation roadmap your organization can start executing immediately."
@@ -532,7 +532,7 @@
 
     "targeted-transformation": {
       "title": "Transformation Execution",
-      "description": "Hands-on guidance to deliver change.",
+      "description": "Hands-on guidance to deliver impactful change.",
       "subtitle": "Receive a proven step-by-step checklist to help you align your people, processes, and priorities — before launching your next transformation.",
       "pageSubtitle": "Turn strategy into disciplined, measurable change.",
       "overview": "Transformation Execution is where your strategy becomes reality. In this phase, we redesign your operating model, optimize key processes, strengthen governance, and guide your teams through the actual implementation of change. This is hands-on, structured support — not theoretical consulting. We work directly with your leaders and teams to deliver a transformation that is controlled, coordinated, and measurable. If the Blueprint shows what needs to change, Execution ensures it actually happens — effectively and sustainably.",
@@ -552,7 +552,7 @@
         "conclusion": "Execution solves these problems by creating structure, clarity, and the right routines to move your transformation forward."
       },
       "deliverables": {
-        "title": "What You Get (Deliverables)",
+        "title": "What We Focus On",
         "subtitle": "During Transformation Execution, you receive enterprise-grade tools, processes, and leadership support that drive predictable progress.",
         "items": [
           {
@@ -645,14 +645,14 @@
         ]
       },
       "timelineTable": {
-        "duration": "8–12 weeks",
+        "duration": "Custom",
         "sessions": "Weekly governance + leadership syncs"
       },
       "timeline": {
-        "duration": "8–12 weeks"
+        "duration": "Custom"
       },
       "pricing": {
-        "amount": "€15,000 – €30,000",
+        "amount": "€8,997 – €29,997/month",
         "note": "(based on scope, depth, and number of processes)",
         "options": "Milestone-based pricing available."
       },
@@ -771,14 +771,13 @@
         "buttonAlt": "Book Your Diagnostic Call"
       },
       "features": [
-        "Everything from Our Transformation Blueprint",
-        "Operating model redesign",
+        "Turning the blueprint into a working delivery plan",
+        "Redesigning operating model where needed",
         "Deep process mapping (O2C, P2P, S&OP, Commercial)",
-        "PMO setup & weekly governance routines",
-        "ERP/SAP program support",
-        "Vendor & delivery oversight",
-        "Adoption & change management",
-        "KPI dashboards & reporting",
+        "Setting up light, effective PMO and governance",
+        "Supporting ERP / SAP–driven change",
+        "Coordinating vendors and delivery partners",
+        "Managing risks, dependencies, and decisions",
         "Leadership coaching"
       ],
       "fullDescription": "Hands-on support to design, build, and implement the changes your business needs. We redesign operating models, strengthen governance, support ERP and digital initiatives, and guide teams through new ways of working. This service turns strategy into structured execution — ensuring change actually happens, sticks, and delivers measurable results."
@@ -786,7 +785,7 @@
 
     "extended-oversight": {
       "title": "Transformation Leadership",
-      "description": "Long-term advisory and governance.",
+      "description": "Interim transformation leadership for existing clients.",
       "subtitle": "Transformation is only half the battle — sustaining it is where real value is delivered. Discover 5 tactics to make your change stick.",
       "pageSubtitle": "Sustain momentum. Strengthen alignment. Ensure transformation success.",
       "overview": "Transformation Leadership is your long-term partnership for structured, stable, and consistent transformation progress. We act as your fractional Chief Transformation Advisor, providing ongoing oversight, governance, decision support, and leadership guidance to ensure your transformation stays on track — month after month. While Blueprint gives clarity and Execution delivers change, Leadership ensures results last. This is the highest-impact stage of the Vadatei Transformation Model, giving your business the momentum, alignment, and discipline required for long-term success.",
@@ -851,6 +850,15 @@
           }
         ]
       },
+      "rolesCovered": {
+        "title": "Typical roles covered",
+        "items": [
+          "Interim Head of Transformation",
+          "Interim Program / Portfolio Lead",
+          "Interim PMO or Governance Lead",
+          "Executive-level transformation support during transition"
+        ]
+      },
       "process": {
         "title": "How It Works (Leadership Cycle)",
         "steps": [
@@ -900,7 +908,7 @@
         "duration": "Ongoing (3-month minimum)"
       },
       "pricing": {
-        "amount": "€3,500 – €6,500/month",
+        "amount": "€5,997 – €14,997/month",
         "note": "(based on cadence, depth, and portfolio size)",
         "value": "This provides the impact of a senior transformation leader at a fraction of the cost of a full-time executive."
       },
@@ -1018,7 +1026,6 @@
         "buttonAlt": "Book Your Diagnostic Call"
       },
       "features": [
-        "Everything from our Transformation Blueprint and Transformation Execution",
         "Monthly transformation advisory",
         "Continuous PMO/gov oversight",
         "Weekly support calls",

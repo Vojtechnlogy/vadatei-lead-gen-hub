@@ -361,6 +361,26 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
                 ];
               }
             }
+
+            const duration = t(`services.${service.id}.timelineTable.duration`, { defaultValue: "" });
+            const price = t(`services.${service.id}.pricing.amount`, { defaultValue: "" });
+
+            const includedHeading = t("serviceModal.whatsIncluded", {
+              defaultValue: "What this looks like in practice",
+            });
+
+            const isLeadership = service.id === "extended-oversight";
+            const rolesTitleKey = `services.${service.id}.rolesCovered.title`;
+            const rolesItemsKey = `services.${service.id}.rolesCovered.items`;
+            const rolesTitle = isLeadership
+              ? t(rolesTitleKey, { defaultValue: t(rolesTitleKey, { lng: "en", defaultValue: "" }) })
+              : "";
+            let rolesItems = isLeadership
+              ? (t(rolesItemsKey, { returnObjects: true }) as unknown)
+              : [];
+            if (isLeadership && (!Array.isArray(rolesItems) || rolesItems.length === 0)) {
+              rolesItems = t(rolesItemsKey, { returnObjects: true, lng: "en" }) as unknown;
+            }
             
             return (
               <Card key={service.id} className="border-none shadow-card transition-all duration-300 hover:-translate-y-2 group h-full flex flex-col">
@@ -377,9 +397,23 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
                     {t(`services.${service.id}.description`)}
                   </p>
 
+                  {isLeadership && Array.isArray(rolesItems) && rolesItems.length > 0 && (
+                    <section className="mb-6">
+                      <div className="flex items-center gap-2 mb-3 mt-2">
+                        <h4 className="text-lg font-heading font-semibold text-primary">{rolesTitle || "Typical roles covered"}:</h4>
+                      </div>
+                      <Separator className="mb-4 bg-primary/20" />
+                      <ul className="mt-3 list-disc pl-6 text-muted-foreground font-body space-y-2" role="list">
+                        {rolesItems.map((item, index) => (
+                          <li key={index}>{String(item)}</li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
+
                   {/* What's Included subtitle and separator */}
                   <div className="flex items-center gap-2 mb-3 mt-2">
-                    <h4 className="text-lg font-heading font-semibold text-primary">What's Included: </h4>
+                    <h4 className="text-lg font-heading font-semibold text-primary">{includedHeading}: </h4>
                   </div>
                   <Separator className="mb-4 bg-primary/20" />
 
@@ -395,6 +429,23 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
                   </section>
 
                   <div className="flex-1" />
+
+                  {(duration || price) && (
+                    <div className="mb-6 rounded-lg border border-border bg-background/60 p-4">
+                      {duration && (
+                        <p className="text-sm font-body text-muted-foreground">
+                          <span className="font-semibold text-foreground">{t("serviceModal.duration")}</span> {duration}
+                        </p>
+                      )}
+                      {price && (
+                        <p className="text-sm font-body text-muted-foreground">
+                          <span className="font-semibold text-foreground">{t("serviceModal.pricing")}: </span>
+                          {price}
+                        </p>
+                      )}
+                    </div>
+                  )}
+
                   <Button
                     variant="corporate-outline"
                     className="w-full group-hover:bg-primary group-hover:text-white transition-all mt-auto"

@@ -98,6 +98,23 @@ const ExtendedOversight = () => {
             ))}
           </section>
 
+          {/* Typical Roles Covered */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-heading font-bold text-primary mb-4">👤 {t("services.extended-oversight.rolesCovered.title")}</h2>
+            {(() => {
+              const items = t("services.extended-oversight.rolesCovered.items", { returnObjects: true }) as unknown;
+              if (!Array.isArray(items) || items.length === 0) return null;
+
+              return (
+                <ul className="list-disc pl-6 mb-4 text-foreground space-y-2">
+                  {items.map((item, index) => (
+                    <li key={index}>{String(item)}</li>
+                  ))}
+                </ul>
+              );
+            })()}
+          </section>
+
           {/* How It Works - Process */}
           <section className="mb-12">
             <h2 className="text-2xl font-heading font-bold text-primary mb-4">🔢 {t("services.extended-oversight.process.title")}</h2>
