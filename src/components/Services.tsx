@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -28,6 +29,8 @@ interface ServicesProps {
 }
 
 const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
+      // Import Helmet for SEO structured data injection
+      // ...existing code...
     // State for swipable process steps
     const [activeStep, setActiveStep] = useState(0);
     const [animating, setAnimating] = useState(false);
@@ -136,7 +139,7 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
             "name": "Vadatei",
             "description": t("organization.description")
           },
-          "areaServed": ["Europe", "EU", "Czech Republic", "Germany", "Netherlands"],
+          "areaServed": ["Europe", "EU", "Czech Republic", "Germany", "Netherlands", "Austria", "Slovakia", "Poland", "Switzerland"],
           "serviceType": "Business Consulting",
           "category": "Change Management",
           "audience": {
@@ -223,18 +226,13 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
     }, 300); // Animation duration
   };
 
+  // Use Helmet for SEO structured data injection
   return (
     <section id="services" className="py-20 bg-corporate-light">
-      {/* Service structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
-      />
-      {/* Breadcrumb structured data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(servicesJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           {/* Section title above SVG, always centered */}
