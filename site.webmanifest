@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
-  "description": "Vadatei - Digital Transformation and Lead Generation Hub",
+  "description": "Vadatei - Strategic Change & Transformation Partner | 30+ Years Experience",
   "lang": "en",
   "scope": "/",
   "orientation": "portrait",
@@ -66,19 +66,19 @@
       "lang": "en",
       "name": "Vadatei",
       "short_name": "Vadatei",
-      "description": "Vadatei - Digital Transformation and Lead Generation Hub"
+      "description": "Strategic Change & Transformation Partner with 30+ Years Experience"
     },
     {
       "lang": "de",
       "name": "Vadatei",
       "short_name": "Vadatei",
-      "description": "Vadatei - Zentrum für digitale Transformation und Leadgenerierung"
+      "description": "Strategischer Change & Transformationspartner mit 30+ Jahren Erfahrung"
     },
     {
       "lang": "cz",
       "name": "Vadatei",
       "short_name": "Vadatei",
-      "description": "Vadatei - Centrum digitální transformace a generování leadů"
+      "description": "Strategický partner pro řízení změn s 30+ lety zkušeností"
     }
   ]
 }

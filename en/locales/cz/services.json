@@ -1,0 +1,77 @@
+{
+  "sectionTitle": "Model transformace Vadatei",
+  "processIntro": "Každá organizace přistupuje ke změně jinak. Nabízíme strukturovaný, komplexní transformační model – od diagnostiky toho, co je třeba změnit, přes vedení implementace až po zajištění trvalých výsledků.",
+  "process": {
+    "steps": {
+      "audit": {
+        "title": "Audit & zjištění",
+        "description": "Provádíme hloubkové rozhovory a analýzy, abychom zjistili vaše priority, výzvy a příležitosti. To stanoví jasný základ pro další spolupráci."
+      },
+      "strategy": {
+        "title": "Budování strategie",
+        "description": "Detailně poznáme vaše podnikání a navrhneme konkrétní kroky, které posunou vaše cíle vpřed. Tato fáze sbírá poznatky, které řídí každé další rozhodnutí."
+      },
+      "roadmap": {
+        "title": "Plán & roadmapa",
+        "description": "Vytvoříme komplexní a realizovatelný plán na míru s konkrétními změnami, projekty a workshopy, které vám pomohou uspět."
+      },
+      "deployment": {
+        "title": "Implementace",
+        "description": "Podporujeme váš tým při realizaci, poskytujeme nástroje, koučink a průběžnou podporu, aby byly změny efektivně a udržitelně zavedeny."
+      }
+    },
+    "guidance": {
+      "title": "Podpora & spolupráce",
+      "description": "Průběžná podpora, koučink a mentoring v každé fázi, aby byl váš tým informovaný, sladěný a motivovaný."
+    }
+  },
+  "diagnostic-deep-dive": {
+    "title": "Plán transformace",
+    "description": "Jasnost před změnou.",
+    "fullDescription": "Plán transformace je cílená, komplexní diagnostika, která odhalí skutečné bariéry bránící vaší organizaci v růstu – a poskytne jasnou, akční roadmapu pro zlepšení. Je základem modelu Vadatei a prvním krokem pro firmy, které chtějí jasnost před velkou změnou.",
+    "features": [
+      "Audit připravenosti na změnu",
+      "Hodnocení provozního modelu",
+      "Rychlý přehled klíčových procesů",
+      "Kontrola digitálních nástrojů & ERP",
+      "Hodnocení governance & odpovědnosti",
+      "Mapa rizik, problémů & příležitostí",
+      "Rámec prioritizace",
+      "90denní roadmapa",
+      "Prezentace pro vedení"
+    ]
+  },
+  "targeted-transformation": {
+    "title": "Realizace transformace",
+    "description": "Praktické vedení pro úspěšnou změnu.",
+    "fullDescription": "Realizace transformace je fáze, kdy se strategie mění v realitu. Redesignujeme provozní model, optimalizujeme klíčové procesy, posilujeme governance a vedeme týmy skrze skutečnou implementaci změn.",
+    "features": [
+      "Redesign provozního modelu",
+      "Detailní mapování & optimalizace procesů",
+      "Nastavení governance & reporting",
+      "Podpora adopce & změn",
+      "Integrace digitálních nástrojů",
+      "Řízení dodavatelů",
+      "Posilování leadershipu",
+      "Prezentace pro vedení"
+    ]
+  },
+  "extended-oversight": {
+    "title": "Udržení změn & zlepšování",
+    "description": "Udržte změnu a tým v souladu.",
+    "fullDescription": "Transformace nekončí implementací – tato fáze zajišťuje, že výsledky vydrží a vaše týmy se nadále zlepšují. Poskytujeme koučink, audity procesů a kontinuální zlepšování pro dlouhodobou udržitelnost.",
+    "features": [
+      "Postimplementační revize",
+      "Koučink vedení a týmu",
+      "Audit procesů & optimalizace",
+      "Sezení pro kontinuální zlepšování",
+      "Plánování udržitelnosti"
+    ]
+  },
+  "moreInfoButton": "Více informací",
+  "cta": {
+    "title": "Připraveni růst?",
+    "body": "Rezervujte si úvodní diagnostickou schůzku a zjistěte, jak vám můžeme pomoci transformovat vaše podnikání.",
+    "button": "Rezervovat bezplatnou konzultaci"
+  }
+}

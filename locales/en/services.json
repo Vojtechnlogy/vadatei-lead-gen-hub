@@ -1,0 +1,72 @@
+{
+  "sectionTitle": "Our Services",
+  "processIntro": "Our transformation process is designed to guide your organization from initial assessment to lasting results. Each step builds on the previous, ensuring clarity, alignment, and sustainable change.",
+  "process": {
+    "steps": {
+      "audit": {
+        "title": "Audit & Assessment",
+        "description": "We analyze your organization, culture, and readiness for change."
+      },
+      "strategy": {
+        "title": "Strategy & Alignment",
+        "description": "We facilitate workshops and planning to align stakeholders and set clear goals."
+      },
+      "roadmap": {
+        "title": "Roadmap & Planning",
+        "description": "We create a strategic roadmap for transformation, identifying risks and opportunities."
+      },
+      "deployment": {
+        "title": "Deployment & Execution",
+        "description": "We oversee implementation, communication, and capability development."
+      }
+    },
+    "guidance": {
+      "title": "Ongoing Guidance",
+      "description": "We provide continuous support, coaching, and improvement after deployment."
+    }
+  },
+  "diagnostic-deep-dive": {
+    "title": "Diagnostic Deep Dive",
+    "description": "Comprehensive assessment of your organization and change readiness.",
+    "fullDescription": "Our Diagnostic Deep Dive provides a thorough analysis of your organization's culture, processes, and readiness for transformation. We deliver actionable insights and a strategic roadmap for change.",
+    "features": [
+      "Organization assessment & culture scan",
+      "Stakeholder interviews for insight",
+      "Change readiness evaluation",
+      "Gap and risk analysis",
+      "Strategic transformation roadmap"
+    ]
+  },
+  "targeted-transformation": {
+    "title": "Targeted Transformation",
+    "description": "Focused change management and implementation support.",
+    "fullDescription": "Our Targeted Transformation service helps you plan, align, and execute change initiatives. We facilitate workshops, set up governance, and track adoption for successful outcomes.",
+    "features": [
+      "Change planning",
+      "Alignment workshops",
+      "Governance setup",
+      "Communication strategy",
+      "Capability and culture development",
+      "Adoption tracking",
+      "Full Implementation oversight"
+    ]
+  },
+  "extended-oversight": {
+    "title": "Extended Oversight",
+    "description": "Post-implementation reviews and ongoing improvement.",
+    "fullDescription": "Our Extended Oversight service provides leadership coaching, process audits, and continuous improvement sessions to sustain change and optimize results.",
+    "features": [
+      "Post-implementation reviews",
+      "Leadership and team coaching",
+      "Process audits & optimization",
+      "Continuous improvement sessions",
+      "Sustainment planning"
+    ]
+  },
+  "moreInfoButton": "Learn More",
+  "cta": {
+    "title": "Ready to Transform?",
+    "body": "Book a free consultation and discover how Vadatei can help your organization achieve lasting change.",
+    "button": "Book Consultation"
+  }
+}

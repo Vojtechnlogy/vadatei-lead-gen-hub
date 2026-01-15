@@ -1,0 +1,72 @@
+{
+  "sectionTitle": "Vadatei Transformationsmodell",
+  "processIntro": "Unser Transformationsprozess führt Sie von der Diagnose bis zu nachhaltigen Ergebnissen. Jeder Schritt baut auf dem vorherigen auf und sorgt für Klarheit, Abstimmung und dauerhafte Veränderung.",
+  "process": {
+    "steps": {
+      "audit": {
+        "title": "Audit & Diagnose",
+        "description": "Wir analysieren Ihre Organisation, Kultur und Veränderungsbereitschaft."
+      },
+      "strategy": {
+        "title": "Strategie & Abstimmung",
+        "description": "Wir moderieren Workshops und Planungen zur Abstimmung der Stakeholder und zur Festlegung klarer Ziele."
+      },
+      "roadmap": {
+        "title": "Plan & Roadmap",
+        "description": "Wir erstellen eine strategische Transformations-Roadmap, identifizieren Risiken und Chancen."
+      },
+      "deployment": {
+        "title": "Umsetzung & Realisierung",
+        "description": "Wir begleiten die Umsetzung, Kommunikation und Kompetenzentwicklung."
+      }
+    },
+    "guidance": {
+      "title": "Laufende Unterstützung",
+      "description": "Wir bieten kontinuierliche Unterstützung, Coaching und Verbesserung nach der Umsetzung."
+    }
+  },
+  "diagnostic-deep-dive": {
+    "title": "Diagnose-Analyse",
+    "description": "Umfassende Bewertung Ihrer Organisation und Veränderungsbereitschaft.",
+    "fullDescription": "Die Diagnose-Analyse liefert eine gründliche Bewertung von Kultur, Prozessen und Transformationsbereitschaft. Sie erhalten klare Erkenntnisse und eine strategische Roadmap für Veränderungen.",
+    "features": [
+      "Organisationsaudit & Kulturanalyse",
+      "Stakeholder-Interviews",
+      "Bewertung der Veränderungsbereitschaft",
+      "Risiko- und Lückenanalyse",
+      "Strategischer Transformationsplan"
+    ]
+  },
+  "targeted-transformation": {
+    "title": "Gezielte Transformation",
+    "description": "Fokussiertes Change Management und Umsetzungsunterstützung.",
+    "fullDescription": "Gezielte Transformation hilft bei der Planung, Abstimmung und Umsetzung von Veränderungen. Wir moderieren Workshops, setzen Governance auf und begleiten die Adoption für nachhaltige Ergebnisse.",
+    "features": [
+      "Change-Planung",
+      "Abstimmungs-Workshops",
+      "Governance-Einrichtung",
+      "Kommunikationsstrategie",
+      "Kompetenz- und Kulturentwicklung",
+      "Adoptions-Tracking",
+      "Vollständige Implementierungsaufsicht"
+    ]
+  },
+  "extended-oversight": {
+    "title": "Erweiterte Begleitung",
+    "description": "Nachimplementierungs-Review und kontinuierliche Verbesserung.",
+    "fullDescription": "Erweiterte Begleitung bietet Führungskräfte-Coaching, Prozess-Audits und kontinuierliche Verbesserung zur Sicherung und Optimierung der Veränderungen.",
+    "features": [
+      "Nachimplementierungs-Review",
+      "Führungskräfte- und Team-Coaching",
+      "Prozess-Audit & Optimierung",
+      "Sessions zur kontinuierlichen Verbesserung",
+      "Nachhaltigkeitsplanung"
+    ]
+  },
+  "moreInfoButton": "Mehr Informationen",
+  "cta": {
+    "title": "Bereit für Veränderung?",
+    "body": "Buchen Sie eine kostenlose Beratung und erfahren Sie, wie Vadatei nachhaltige Veränderung ermöglicht.",
+    "button": "Beratungsgespräch buchen"
+  }
+}
