@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "sync-locales": "node ./scripts/sync-locales.mjs",
     "build:en": "vite build --outDir dist/en --base /en/ && node ./scripts/localize.cjs en",
     "build:cz": "vite build --outDir dist/cz --base /cz/ && node ./scripts/localize.cjs cz",
     "build:de": "vite build --outDir dist/de --base /de/ && node ./scripts/localize.cjs de",

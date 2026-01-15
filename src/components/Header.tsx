@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import vadateiLogo from "../assets/vadatei_logo_vector_sharp_clean.jpg";
@@ -24,6 +24,12 @@ const Header = ({ onBookingClick }: HeaderProps) => {
   const navigate = useNavigate();
   const location = useLocation();
   const lang = location.pathname.split("/")[1] || "en";
+
+  // Keep i18n language aligned with the URL prefix (Header lives outside LangWrapper)
+  useEffect(() => {
+    if (!SUPPORTED_LANGS.includes(lang)) return;
+    if (i18n.language !== lang) i18n.changeLanguage(lang);
+  }, [lang, i18n]);
 
   const changeLanguage = (newLang: string) => {
     const segments = location.pathname.split("/").filter(Boolean);

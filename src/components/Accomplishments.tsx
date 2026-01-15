@@ -1,7 +1,7 @@
 import { TrendingUp, Users, Zap, Building, Network, Shield, Target, Rocket, ChevronLeft, ChevronRight } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 // import BookingModal from "@/components/BookingModal"; // BookingModal is now globally controlled
 
@@ -10,54 +10,46 @@ interface AccomplishmentsProps {
 }
 
 const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
   // Track the most visible card index for mobile dots
   const [mobileActiveIndex, setMobileActiveIndex] = useState(0);
 
+  const enT = useMemo(() => i18n.getFixedT("en"), [i18n]);
+
+  const getString = useMemo(() => {
+    return (key: string, fallback: string, options?: Record<string, unknown>) => {
+      const current = t(key, { ...(options ?? {}), defaultValue: "" });
+      if (typeof current === "string" && current.trim().length > 0) return current;
+      const en = enT(key, { ...(options ?? {}), defaultValue: "" });
+      if (typeof en === "string" && en.trim().length > 0) return en;
+      return fallback;
+    };
+  }, [t, enT]);
+
+  const getItems = useMemo(() => {
+    return (tFn: typeof t) => {
+      const raw = tFn("accomplishments.items", { returnObjects: true, defaultValue: [] });
+      return Array.isArray(raw) ? raw : [];
+    };
+  }, [t]);
+
   // Animation: track which cards are visible
-  const accomplishments = [
-    {
-      icon: TrendingUp,
-      stat: "Reduced IT operating costs by 25%",
-      description: "Freeing budget for growth initiatives and innovation instead of maintenance."
-    },
-    {
-      icon: Zap,
-      stat: "Improved service performance from 70–80% to 90–95%",
-      description: "Resulting in fewer outages, smoother operations, and higher business productivity."
-    },
-    {
-      icon: Shield,
-      stat: "Delivered seamless SAP and digital platform rollouts with 0% disruption",
-      description: "Ensuring operations stayed fully functional while upgrading core business systems."
-    },
-    {
-      icon: Building,
-      stat: "Redesigned national operating models and simplified legal structures",
-      description: "Shortened decision cycles, reduced complexity, and accelerated execution across teams."
-    },
-    {
-      icon: Users,
-      stat: "Led digital adoption for 2,500+ users and 100+ distributors",
-      description: "Improving speed, accuracy, and efficiency in commercial operations."
-    },
-    {
-      icon: Target,
-      stat: "Created internal transformation and change management capability",
-      description: "Reducing dependency on costly external consulting and increasing self-sufficiency."
-    },
-    {
-      icon: Network,
-      stat: "Standardized business processes across multiple markets",
-      description: "Enabling consistent execution, faster scaling, and easier onboarding of new teams."
-    },
-    {
-      icon: Rocket,
-      stat: "Built multi-year technology and transformation roadmaps",
-      description: "Giving leadership clarity, predictability, and confidence on future prioritization and investment."
-    }
-  ];
+  const accomplishments = useMemo(() => {
+    const icons = [TrendingUp, Zap, Shield, Building, Users, Target, Network, Rocket];
+    const items = getItems(t);
+    const enItems = getItems(enT as unknown as typeof t);
+    const sourceItems = items.length > 0 ? items : enItems;
+
+    return icons.map((icon, idx) => {
+      const item = (sourceItems[idx] ?? {}) as { stat?: unknown; description?: unknown };
+      return {
+        icon,
+        stat: typeof item.stat === "string" ? item.stat : "",
+        description: typeof item.description === "string" ? item.description : "",
+      };
+    });
+  }, [t, enT, getItems]);
 
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleCards, setVisibleCards] = useState<boolean[]>(() => {
@@ -152,7 +144,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-            Results That Speak For Themselves
+            {getString("accomplishments.title", "Results That Speak For Themselves")}
           </h2>
         </div>
 
@@ -168,7 +160,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                 const newIndex = prev - 2;
                 return newIndex < 0 ? Math.max(0, accomplishments.length - 2) : newIndex;
               })}
-              aria-label="Previous accomplishments"
+              aria-label={getString("accomplishments.aria.previous", "Previous accomplishments")}
             >
               <ChevronLeft className="h-5 w-5" />
             </Button>
@@ -181,7 +173,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                 const newIndex = prev + 2;
                 return newIndex >= accomplishments.length ? 0 : newIndex;
               })}
-              aria-label="Next accomplishments"
+              aria-label={getString("accomplishments.aria.next", "Next accomplishments")}
             >
               <ChevronRight className="h-5 w-5" />
             </Button>
@@ -220,7 +212,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                         </h3>
                         <div className="flex items-center gap-2 mb-3">
                           <div className="w-6 h-0.5 bg-primary transition-all duration-300 group-hover:w-8 group-hover:bg-primary/80"></div>
-                          <span className="text-sm font-medium text-primary transition-colors duration-300 group-hover:text-primary/80">Impact</span>
+                          <span className="text-sm font-medium text-primary transition-colors duration-300 group-hover:text-primary/80">{getString("accomplishments.impactLabel", "Impact")}</span>
                         </div>
                         <div className="flex-1">
                           <p className="text-muted-foreground font-body leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">
@@ -258,7 +250,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                           </h3>
                           <div className="flex items-center gap-2 mb-3">
                             <div className="w-6 h-0.5 bg-primary transition-all duration-300 group-hover:w-8 group-hover:bg-primary/80"></div>
-                            <span className="text-sm font-medium text-primary transition-colors duration-300 group-hover:text-primary/80">Impact</span>
+                            <span className="text-sm font-medium text-primary transition-colors duration-300 group-hover:text-primary/80">{getString("accomplishments.impactLabel", "Impact")}</span>
                           </div>
                           <div className="flex-1">
                             <p className="text-muted-foreground font-body leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">
@@ -296,7 +288,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                     : 'bg-primary/30 hover:bg-primary/50'
                 }`}
                 onClick={() => setCurrentIndex(slideStartIndex)}
-                aria-label={`Go to slide ${slideIndex + 1}`}
+                aria-label={getString("accomplishments.aria.goToSlide", "Go to slide {{n}}", { n: slideIndex + 1 })}
               />
             ))}
           </div>
@@ -306,10 +298,13 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
         <div className="mt-16 text-center">
           <div className="bg-gradient-corporate rounded-2xl p-8 md:p-12">
             <h3 className="text-3xl font-heading font-bold text-white mb-4">
-              What Could Your Business Achieve with Higher Profits?
+              {getString("accomplishments.cta.title", "What Could Your Business Achieve with Higher Profits?")}
             </h3>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto font-body">
-              Unlock your business's full potential. Discover how you can increase profits and drive growth with expert guidance tailored to your needs.
+              {getString(
+                "accomplishments.cta.body",
+                "Unlock your business's full potential. Discover how you can increase profits and drive growth with expert guidance tailored to your needs."
+              )}
             </p>
             <Button
               variant="corporate-outline"
@@ -320,7 +315,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
                 window.dispatchEvent(new CustomEvent('open-booking-modal'));
               }}
             >
-              Book a Free Consultation to Find Out
+              {getString("accomplishments.cta.button", "Book a Free Consultation to Find Out")}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>

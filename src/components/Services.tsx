@@ -58,45 +58,26 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
   const getServiceObject = (id: string | null) => {
     if (!id) return null;
     const svc = services.find((s) => s.id === id)!;
-    
-    // Use the same robust feature loading logic
+
+    const getArray = (key: string, lng?: string): string[] => {
+      const value = t(key, {
+        returnObjects: true,
+        lng,
+        defaultValue: [] as unknown as string[],
+      }) as unknown;
+      return Array.isArray(value) ? value.map((v) => String(v)) : [];
+    };
+
+    const getArrayWithEnFallback = (key: string): string[] => {
+      const current = getArray(key);
+      if (current.length) return current;
+      return getArray(key, "en");
+    };
+
     let features: string[] = [];
-    
-    const rawFeatures = t(`services.${id}.features`, { returnObjects: true });
-    console.log(`Modal - Raw features for ${id}:`, rawFeatures);
-    
-    if (Array.isArray(rawFeatures)) {
-      features = rawFeatures as string[];
-    } else {
-      // Fallback: hardcode the features for the modal too
-      if (id === 'diagnostic-deep-dive') {
-        features = [
-          "Organization assessment & culture scan",
-          "Stakeholder interviews for insight",
-          "Change readiness evaluation",
-          "Gap and risk analysis",
-          "Strategic transformation roadmap"
-        ];
-      } else if (id === 'targeted-transformation') {
-        features = [
-          "Change planning",
-          "Alignment workshops",
-          "Governance setup",
-          "Communication strategy",
-          "Capability and culture development",
-          "Adoption tracking",
-          "Full Implementation oversight"
-        ];
-      } else if (id === 'extended-oversight') {
-        features = [
-          "Post-implementation reviews",
-          "Leadership and team coaching",
-          "Process audits & optimization", 
-          "Continuous improvement sessions",
-          "Sustainment planning"
-        ];
-      }
-    }
+    // Prefer the standardized schema, but keep backwards-compatible fallback.
+    features = getArrayWithEnFallback(`services.${id}.includes`);
+    if (!features.length) features = getArrayWithEnFallback(`services.${id}.features`);
     
     return {
       id,
@@ -257,12 +238,12 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
               />
             </div>
             {/* Process steps vertically next to infographic */}
-            <div className="flex flex-col justify-center lg:justify-start w-full lg:w-[520px]">
+            <div className="flex flex-col justify-center lg:justify-start lg:pt-16 xl:pt-16 w-full lg:w-[520px]">
               <p className="text-xl text-muted-foreground max-w-2xl font-body mt-2 mb-6 mx-auto text-center lg:text-left">
-                {t("services.processIntro", "Our transformation process is designed to guide your organization from initial assessment to lasting results. Each step builds on the previous, ensuring clarity, alignment, and sustainable change.")}
+                {t("services.processIntro", "Our transformation process is designed to guide your organization from initial assessment to lasting results. Each step builds on the previous, ensuring clarity, alignment, and sustainable transformation.")}
               </p>
               {/* Swipable Process Step */}
-              <div className="flex flex-col items-center gap-4">
+              <div className="flex flex-col items-center gap-4 mt-8 lg:mt-20">
                 <div
                   className={`flex items-start gap-4 group w-full transition-all duration-300
                     ${animating ? (animationDirection === 'down' ? 'opacity-0 translate-y-8' : 'opacity-0 -translate-y-8') : 'opacity-100 translate-y-0'}`}

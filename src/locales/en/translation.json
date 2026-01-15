@@ -10,7 +10,7 @@
   "about": {
     "title": "About Vadatei",
     "tagline": "",
-    "heading": "Your Strategic Change & Transformation Partner",
+    "heading": "Your Strategic Transformation Partner",
     "p1": "Vadatei was created with a simple belief: transformation shouldn't be chaotic, confusing, or overwhelming. After more than 30 years leading IT, transformation, and organizational change across HEINEKEN and Coca-Cola, we saw the same pattern repeat itself good companies struggled not because of the strategy, but because of the execution.",
     "p2": "That's why Vadatei exists. We help organizations understand what needs to change, support teams through the journey, and build the governance and structure that keep everything moving forward. We don't just advise from the sidelines. We've sat in your seat leading global programs, steering large teams, managing complexity, and delivering results under pressure. Our goal is to help your business transform with clarity, confidence, and long-term stability.",
     "p3": "We don’t just advise from the sidelines. We’ve sat in your seat leading global programs, steering large teams, managing complexity, and delivering results under pressure.",
@@ -39,6 +39,7 @@
   },
   "serviceModal": {
     "title": "Start Your: {{service}}",
+    "viewFullDetails": "View Full Service Details",
     "sr_description": "Fill out the form to request more information about {{service}}.",
     "overviewTitle": "Overview",
     "featuresTitle": "Key Features",
@@ -154,9 +155,9 @@
     "noObligationDesc": "Free consultation with no strings attached",
     "weWillDiscussTitle": "We'll Discuss:",
     "discussItem1": "Your current transformation plans and challenges",
-    "discussItem2": "Company Goals and priorities",
+    "discussItem2": "Company goals and priorities",
     "discussItem3": "Next steps and recommendations",
-    "readyTitle": "Ready to Transform Business?",
+    "readyTitle": "Ready to Transform Your Business?",
     "readyBody": "Become another successful business that has partnered with Vadatei to achieve their transformation goals.",
     "chooseTimeTitle": "Choose Your Preferred Time",
     "chooseTimeDesc": "Click the button below to select an available time slot and schedule your call instantly.",
@@ -175,8 +176,8 @@
     "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization or click here for a full break down."
   },
   "hero": {
-    "headline": "Change & Transformation Management",
-    "subhead": "We help businesses grow, by helping you understand what must change, guide your teams through the process, and put the governance in place to make those change last.",
+    "headline": "Stratgy & Transformation Management",
+    "subhead": "We help businesses grow, by helping you understand your bottle necks, guide your teams through the transformation process, and by putting the governance in place to make those transformations last.",
     "cta": {
       "book": "Start with a Diagnostic Call",
       "services": "Begin Your Growth Journey"
@@ -189,7 +190,7 @@
   },
   "footer": {
     "company": "Vadatei",
-    "description": "Strategic change & transformation partner with 30+ years of experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
+    "description": "Strategic transformation partner with 30+ years of experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     "bookDiscovery": "Book a Discovery Call",
     "quickLinks": {
       "title": "Quick Links",
@@ -282,8 +283,14 @@
     "diagnostic-deep-dive": {
       "title": "Transformation Blueprint",
       "description": "Start small. Get clarity. Decide what’s next.",
+      "whatIs": "A short, focused engagement to assess readiness, align leadership, and define a credible transformation path.",
+      "connectToExecution": [
+        "This engagement is often used as a preparatory step for transformation execution.",
+        "The roadmap and governance created here are designed to be directly executable — whether internally, with partners, or through continued support."
+      ],
+      "nextStep": "Short introductory call to confirm fit and discuss whether execution support is required.",
       "subtitle": "Discover the 5 hidden warning signs that most leadership teams miss and how to fix them before it's too late.",
-      "pageSubtitle": "Understand what must change — and why.",
+      "pageSubtitle": "This engagement is often used as a preparatory step for transformation execution. The roadmap and governance created here provide a clear, low-risk foundation for coordinated delivery. Most clients choose to continue into Transformation Execution to implement the roadmap with continuity of context and accountability. Others use the outputs internally or with existing partners.",
       "overview": "The Transformation Blueprint is a focused, end-to-end diagnostic that reveals the real barriers holding your organization back — and provides a clear, actionable roadmap for improvement. It is the foundation of the Vadatei Transformation Model and the first step for organizations that want clarity before committing to large-scale change. In 2–4 weeks, we evaluate your operating model, processes, governance, digital capabilities, and team alignment to uncover what needs to change, how to change it, and where to begin.",
       "whyItMatters": {
         "title": "Why the Blueprint Matters",
@@ -402,12 +409,22 @@
         "meetings": "4–6 sessions",
         "deliverables": "9 detailed outputs"
       },
+      "lightProcess": [
+        "Week 1: Context review & interviews",
+        "Weeks 2–3: Analysis and structuring",
+        "Week 4: Alignment, refinement, and leadership briefing"
+      ],
+      "howSteps": [
+        "Week 1: Context review & interviews",
+        "Weeks 2–3: Analysis and structuring",
+        "Week 4: Alignment, refinement, and leadership briefing"
+      ],
       "timeline": {
         "duration": "4 weeks"
       },
       "pricing": {
         "amount": "€4,997",
-        "note": "(fixed fee depending on organization size and scope)",
+        "note": "(Final scope confirmed after a short introductory call)",
         "commitment": "No ongoing commitment required."
       },
       "whatThisSolves": {
@@ -426,7 +443,27 @@
         ],
         "conclusion": "If you feel \"something isn't working\" but don't know what — the Blueprint identifies it."
       },
+      "whenSignals": [
+        "Unclear priorities",
+        "Slow decision-making",
+        "Overlapping projects",
+        "Inefficient processes",
+        "Poor digital/ERP adoption",
+        "Role confusion",
+        "Siloed communication",
+        "Lack of governance",
+        "Organizational friction"
+      ],
       "outcomes": [
+        "Complete clarity on your top priorities",
+        "Understanding of what's slowing your teams down",
+        "A realistic plan for improvement",
+        "Fast leadership alignment",
+        "A clear starting point for transformation",
+        "Avoiding expensive mistakes early on",
+        "Measurable progress within 90 days"
+      ],
+      "outcomesBullets": [
         "Complete clarity on your top priorities",
         "Understanding of what's slowing your teams down",
         "A realistic plan for improvement",
@@ -527,14 +564,25 @@
         "Transformation roadmap",
         "Leadership briefing"
       ],
+      "includes": [
+        "Transformation readiness check",
+        "Operating model review",
+        "Process & digital impact overview",
+        "Prioritization & risk assessment",
+        "Project Management recommendations",
+        "Transformation roadmap",
+        "Leadership briefing"
+      ],
       "fullDescription": "A rapid but thorough assessment that identifies what needs to change, why, and how. We map your processes, structure, governance, and digital landscape to uncover barriers, risks, and opportunities. The result is a clear, prioritized, and actionable transformation roadmap your organization can start executing immediately."
     },
 
     "targeted-transformation": {
       "title": "Transformation Execution",
-      "description": "Hands-on guidance to deliver impactful change.",
+      "description": "Hands-on guidance to deliver transformation.",
+      "quietSentence": "We take on a limited number of Execution engagements at a time to protect delivery quality and senior involvement.",
       "subtitle": "Receive a proven step-by-step checklist to help you align your people, processes, and priorities — before launching your next transformation.",
       "pageSubtitle": "Turn strategy into disciplined, measurable change.",
+      "whatIs": "Translate strategic direction into coordinated, accountable, and measurable transformation that enables your organization to achieve its goals.",
       "overview": "Transformation Execution is where your strategy becomes reality. In this phase, we redesign your operating model, optimize key processes, strengthen governance, and guide your teams through the actual implementation of change. This is hands-on, structured support — not theoretical consulting. We work directly with your leaders and teams to deliver a transformation that is controlled, coordinated, and measurable. If the Blueprint shows what needs to change, Execution ensures it actually happens — effectively and sustainably.",
       "whyItMatters": {
         "title": "Why Execution Matters",
@@ -645,15 +693,25 @@
         ]
       },
       "timelineTable": {
-        "duration": "Custom",
+        "duration": "Custom, depending on scope",
         "sessions": "Weekly governance + leadership syncs"
       },
+      "lightProcess": [
+        "Phase 1 – Setup & Alignment: Define scope, owners, and working rhythm",
+        "Phase 2 – Design & Governance: Structure operating model and prioritize processes",
+        "Phase 3 – Delivery & Issue Resolution: Track progress, manage decisions, and address risks"
+      ],
+      "howSteps": [
+        "Phase 1 – Setup & Alignment: Define scope, owners, and working rhythm",
+        "Phase 2 – Design & Governance: Structure operating model and prioritize processes",
+        "Phase 3 – Delivery & Issue Resolution: Track progress, manage decisions, and address risks"
+      ],
       "timeline": {
         "duration": "Custom"
       },
       "pricing": {
-        "amount": "€8,997 – €29,997/month",
-        "note": "(based on scope, depth, and number of processes)",
+        "amount": "€9,000 – €30,000 / month",
+        "note": "Final scope confirmed after a short introductory call.",
         "options": "Milestone-based pricing available."
       },
       "whatThisSolves": {
@@ -672,16 +730,35 @@
         ],
         "conclusion": "It brings order, structure, and momentum where there is currently inconsistency or friction."
       },
+      "whenSignals": [
+        "rising operational complexity",
+        "ERP or digital transformation challenges",
+        "slow or unclear decision-making",
+        "inconsistent performance",
+        "broken or undocumented processes",
+        "low adoption of new tools or systems",
+        "siloed collaboration",
+        "unclear roles & responsibilities",
+        "too many overlapping initiatives"
+      ],
+      "whenIntro": "This service is designed for organizations experiencing one or more of the following:",
       "outcomes": [
+        "Achievement of your strategic and operational goals through structured, accountable transformation",
         "Simplified and aligned operating model",
         "Clearer decision-making and accountability",
         "Higher process efficiency and consistency",
         "Strong governance with real visibility",
-        "Improved ERP / digital adoption",
-        "Faster execution and fewer delays",
-        "Team alignment on goals and responsibilities",
-        "Predictable progress toward transformation goals"
+        "Improved ERP / digital adoption and faster execution"
       ],
+      "outcomesBullets": [
+        "Achievement of your strategic and operational goals through structured, accountable transformation",
+        "Simplified and aligned operating model",
+        "Clearer decision-making and accountability",
+        "Higher process efficiency and consistency",
+        "Strong governance with real visibility",
+        "Improved ERP / digital adoption and faster execution"
+      ],
+      "nextStep": "Short introductory call to confirm fit and review alignment with your transformation roadmap.",
       "realExamples": {
         "title": "Typical Results (Real Examples)",
         "examples": [
@@ -771,23 +848,34 @@
         "buttonAlt": "Book Your Diagnostic Call"
       },
       "features": [
-        "Turning the blueprint into a working delivery plan",
-        "Redesigning operating model where needed",
-        "Deep process mapping (O2C, P2P, S&OP, Commercial)",
-        "Setting up light, effective PMO and governance",
-        "Supporting ERP / SAP–driven change",
-        "Coordinating vendors and delivery partners",
-        "Managing risks, dependencies, and decisions",
-        "Leadership coaching"
+        "Translate the blueprint into an actionable delivery plan",
+        "Redesign operating model where required",
+        "Targeted deep dives into critical processes (O2C, P2P, S&OP, Commercial)",
+        "Establish lightweight PMO and governance for accountability",
+        "Guide ERP / SAP transformation and adoption",
+        "Coordinate vendors and partners with clear ownership",
+        "Proactively manage risks, dependencies, and critical decisions"
+      ],
+      "includes": [
+        "Translate the blueprint into an actionable delivery plan",
+        "Redesign operating model where required",
+        "Targeted deep dives into critical processes (O2C, P2P, S&OP, Commercial)",
+        "Establish lightweight PMO and governance for accountability",
+        "Guide ERP / SAP transformation and adoption",
+        "Coordinate vendors and partners with clear ownership",
+        "Proactively manage risks, dependencies, and critical decisions"
       ],
       "fullDescription": "Hands-on support to design, build, and implement the changes your business needs. We redesign operating models, strengthen governance, support ERP and digital initiatives, and guide teams through new ways of working. This service turns strategy into structured execution — ensuring change actually happens, sticks, and delivers measurable results."
     },
 
     "extended-oversight": {
       "title": "Transformation Leadership",
-      "description": "Interim transformation leadership for existing clients.",
+      "description": "Interim leadership for existing clients.",
+      "quietSentence": "Transformation Leadership is designed for long-term partners who want consistent senior guidance, governance discipline, and steady momentum.",
       "subtitle": "Transformation is only half the battle — sustaining it is where real value is delivered. Discover 5 tactics to make your change stick.",
       "pageSubtitle": "Sustain momentum. Strengthen alignment. Ensure transformation success.",
+      "whatIs": "Provide consistent interim leadership to sustain transformation momentum, strengthen alignment, and ensure your strategic goals are achieved.",
+      "nextStep": "Short introductory call to confirm fit and review alignment with existing roadmaps or execution plans.",
       "overview": "Transformation Leadership is your long-term partnership for structured, stable, and consistent transformation progress. We act as your fractional Chief Transformation Advisor, providing ongoing oversight, governance, decision support, and leadership guidance to ensure your transformation stays on track — month after month. While Blueprint gives clarity and Execution delivers change, Leadership ensures results last. This is the highest-impact stage of the Vadatei Transformation Model, giving your business the momentum, alignment, and discipline required for long-term success.",
       "whyItMatters": {
         "title": "Why Leadership Matters",
@@ -901,15 +989,25 @@
         ]
       },
       "timelineTable": {
-        "duration": "Ongoing (3-month minimum)",
+        "duration": "ongoing (3-month minimum)",
         "meetings": "Weekly governance + monthly leadership advisory"
       },
+      "lightProcess": [
+        "Month 1 – Baseline & Priorities: Establish governance rhythm and align leadership",
+        "Ongoing – Weekly Support: Executive advisory, portfolio oversight, and decision management",
+        "Quarterly – Roadmap Refresh: Review progress, KPIs, and portfolio risk"
+      ],
+      "howSteps": [
+        "Month 1 – Baseline & Priorities: Establish governance rhythm and align leadership",
+        "Ongoing – Weekly Support: Executive advisory, portfolio oversight, and decision management",
+        "Quarterly – Roadmap Refresh: Review progress, KPIs, and portfolio risk"
+      ],
       "timeline": {
-        "duration": "Ongoing (3-month minimum)"
+        "duration": "ongoing (3-month minimum)"
       },
       "pricing": {
-        "amount": "€5,997 – €14,997/month",
-        "note": "(based on cadence, depth, and portfolio size)",
+        "amount": "€6,000 – €15,000 / month",
+        "note": "Final scope confirmed after short introductory call.",
         "value": "This provides the impact of a senior transformation leader at a fraction of the cost of a full-time executive."
       },
       "whatThisSolves": {
@@ -928,14 +1026,31 @@
         ],
         "conclusion": "It provides the structure, rhythm, and clarity needed to keep transformation moving."
       },
+      "whenSignals": [
+        "Loss of momentum",
+        "Conflicting priorities",
+        "Weak governance",
+        "Low digital adoption",
+        "Vendor misalignment",
+        "Poor visibility of progress",
+        "Leadership disconnect",
+        "Delayed decisions",
+        "Uncontrolled complexity"
+      ],
+      "whenIntro": "This service is designed for organizations experiencing one or more of the following:",
       "outcomes": [
-        "Strong, consistent transformation governance",
-        "Faster and more confident decision-making",
-        "Higher adoption of new processes and tools",
-        "Clear visibility across all projects and risks",
-        "More aligned and accountable leadership",
-        "Predictable, stable delivery",
-        "Transformation that sticks — not slips backwards"
+        "Strong, consistent transformation governance and accountability",
+        "Faster, more confident decision-making",
+        "Higher adoption of processes and tools",
+        "Clear visibility across projects, risks, and dependencies",
+        "Aligned, accountable leadership and predictable delivery"
+      ],
+      "outcomesBullets": [
+        "Strong, consistent transformation governance and accountability",
+        "Faster, more confident decision-making",
+        "Higher adoption of processes and tools",
+        "Clear visibility across projects, risks, and dependencies",
+        "Aligned, accountable leadership and predictable delivery"
       ],
       "realExamples": {
         "title": "Typical Results (Real Examples)",
@@ -1026,14 +1141,22 @@
         "buttonAlt": "Book Your Diagnostic Call"
       },
       "features": [
-        "Monthly transformation advisory",
-        "Continuous PMO/gov oversight",
-        "Weekly support calls",
-        "Quarterly roadmap refresh",
-        "Portfolio risk & KPI management",
-        "Issue resolution & crisis support",
-        "Vendor performance management",
-        "Priority access"
+        "Ongoing executive-level transformation advisory",
+        "Continuous oversight of PMO, governance, and portfolio",
+        "Structured weekly leadership support calls",
+        "Quarterly roadmap refresh and portfolio review",
+        "Active portfolio risk and KPI management",
+        "Rapid issue resolution and crisis support",
+        "Vendor performance management with accountability"
+      ],
+      "includes": [
+        "Ongoing executive-level transformation advisory",
+        "Continuous oversight of PMO, governance, and portfolio",
+        "Structured weekly leadership support calls",
+        "Quarterly roadmap refresh and portfolio review",
+        "Active portfolio risk and KPI management",
+        "Rapid issue resolution and crisis support",
+        "Vendor performance management with accountability"
       ],
       "fullDescription": "A long-term partnership that provides continuous oversight, direction, and advisory for your transformation journey. We act as your Chief Transformation Advisor — supporting leadership, stabilizing programs, guiding governance, and ensuring progress stays on track. This service brings predictability, maturity, and long-term stability to your full transformation portfolio."
     },
@@ -1056,11 +1179,11 @@
         },
         {
           "q": "How long does a typical engagement last?",
-          "a": "Engagements typically run 3–12 weeks depending on the tier: Transformation Blueprint: 2–4 weeks, Transformation Execution: 8–12 weeks, Transformation Leadership: ongoing (monthly retainer). A precise timeline is agreed during the Diagnostic Call."
+          "a": "Engagements typically run 4–52 weeks depending on the task at hand: Transformation Blueprint: 4 weeks, Transformation Execution: 8–52 weeks, Transformation Leadership: ongoing (monthly retainer). A precise timeline is agreed on during the Diagnostic Call."
         },
         {
           "q": "How is pricing structured?",
-          "a": "We offer clear, fixed-fee packages based on the Vadatei Transformation Model: Blueprint: fixed project fee, Execution: fixed or milestone-based, Leadership: monthly retainer. This ensures predictability and eliminates open-ended billing."
+          "a": "We offer clear, fixed-fee packages based on the Vadatei Transformation Model: Blueprint: fixed project fee, Execution: fixed or milestone-based, Leadership: monthly. This ensures predictability and eliminates open-ended billing."
         }
       ],
       "locations": [
@@ -1086,6 +1209,27 @@
       "security": [],
       "results": []
     }
+  },
+  "servicePage": {
+    "sections": {
+      "whatIs": "What this service is",
+      "when": "When this service makes sense",
+      "outcomes": "What changes after this engagement",
+      "includes": "What this includes",
+      "how": "How it works",
+      "connectToExecution": "How this connects to execution",
+      "howFallback": "A short introductory call confirms scope, timing, and fit. Then we align on next steps.",
+      "practicalities": "Practicalities"
+    },
+    "fields": {
+      "duration": "Typical duration",
+      "investment": "Investment",
+      "nextStep": "Next step"
+    },
+    "nextStep": "Short introductory call to confirm fit.",
+    "cta": "Book a Diagnostic Call",
+    "backToServices": "Back to services",
+    "quietSentence": ""
   },
   "lang": "en",
   "privacy": {
@@ -1133,6 +1277,54 @@
     "contactTitle": "Contact Us",
     "contactText": "If you have questions about this Privacy Policy or our data practices, please contact us at:",
     "or": "or"
+  },
+  "accomplishments": {
+    "title": "Results That Speak For Themselves",
+    "impactLabel": "Impact",
+    "items": [
+      {
+        "stat": "Reduced IT operating costs by 25%",
+        "description": "Freeing budget for growth initiatives and innovation instead of maintenance."
+      },
+      {
+        "stat": "Improved service performance from 70–80% to 90–95%",
+        "description": "Resulting in fewer outages, smoother operations, and higher business productivity."
+      },
+      {
+        "stat": "Delivered seamless SAP and digital platform rollouts with 0% disruption",
+        "description": "Ensuring operations stayed fully functional while upgrading core business systems."
+      },
+      {
+        "stat": "Redesigned national operating models and simplified legal structures",
+        "description": "Shortened decision cycles, reduced complexity, and accelerated execution across teams."
+      },
+      {
+        "stat": "Led digital adoption for 2,500+ users and 100+ distributors",
+        "description": "Improving speed, accuracy, and efficiency in commercial operations."
+      },
+      {
+        "stat": "Created internal transformation and change management capability",
+        "description": "Reducing dependency on costly external consulting and increasing self-sufficiency."
+      },
+      {
+        "stat": "Standardized business processes across multiple markets",
+        "description": "Enabling consistent execution, faster scaling, and easier onboarding of new teams."
+      },
+      {
+        "stat": "Built multi-year technology and transformation roadmaps",
+        "description": "Giving leadership clarity, predictability, and confidence on future prioritization and investment."
+      }
+    ],
+    "cta": {
+      "title": "What Could Your Business Achieve with Higher Profits?",
+      "body": "Unlock your business's full potential. Discover how you can increase profits and drive growth with expert guidance tailored to your needs.",
+      "button": "Book a Free Consultation to Find Out"
+    },
+    "aria": {
+      "previous": "Previous accomplishments",
+      "next": "Next accomplishments",
+      "goToSlide": "Go to slide {{n}}"
+    }
   }
 }
 

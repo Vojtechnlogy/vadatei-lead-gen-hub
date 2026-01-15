@@ -32,17 +32,20 @@
         "title": "Risikoarmer erster Schritt",
         "description": "Starten Sie mit einer gezielten Analyse – geringes Risiko, klare Erkenntnisse und ein Fahrplan für skalierbare Verbesserungen"
       }
-    }
+    },
+    "p3": "We don’t just advise from the sidelines. We’ve sat in your seat leading global programs, steering large teams, managing complexity, and delivering results under pressure.",
+    "valuesHeading": "Why Clients Choose Vadatei"
   },
   "serviceModal": {
-    "title": "Start Your: {{service}}",
+    "title": "Starten Sie mit: {{service}}",
+    "viewFullDetails": "Service-Details ansehen",
     "sr_description": "Füllen Sie das Formular aus, um weitere Informationen zu {{service}} anzufordern.",
     "overviewTitle": "Überblick",
     "featuresTitle": "Hauptmerkmale",
     "heading": "Erzählen Sie uns von sich",
     "headings": {
       "diagnostic-deep-dive": "Ist Ihre Organisation bereit für Veränderungen?",
-      "targeted-transformation": "Erzählen Sie uns von Ihren Transformationszielen", 
+      "targeted-transformation": "Erzählen Sie uns von Ihren Transformationszielen",
       "extended-oversight": "Erzählen Sie uns von Ihren laufenden Anforderungen"
     },
     "details_label": "Details für {{service}}",
@@ -78,7 +81,6 @@
       "errorTitle": "Übermittlung fehlgeschlagen",
       "errorDescription": "Beim Senden Ihrer Anfrage ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
     },
-
     "priorityServices": {
       "title": "Prioritätsbereiche (Wählen Sie einen oder mehrere)",
       "options": {
@@ -88,7 +90,6 @@
         "resourceNeeds": "Ressourcenbedarf definieren"
       }
     },
-
     "premiumServices": {
       "title": "Premium-Dienste",
       "options": {
@@ -128,7 +129,16 @@
         "operationsWorkflow": "Kartieren und analysieren Sie, wie Arbeit über Abteilungen hinweg erledigt wird. Identifizieren Sie Engpässe, Duplikate und Automatisierungsmöglichkeiten.",
         "costsResources": "Analysieren Sie Ausgaben vs. Wert, Personalbesetzung, Toolnutzung und leistungsschwache Investitionen, um Kosteneinsparungsmöglichkeiten hervorzuheben."
       }
-    }
+    },
+    "detailedDescription": "Detailed Description",
+    "whatsIncluded": "What this looks like in practice",
+    "timelineEffort": "Timeline & Effort",
+    "pricing": "Pricing",
+    "outcomes": "Outcomes",
+    "whoFor": "Who It's For",
+    "typicalResults": "Typical Results",
+    "example": "Example",
+    "duration": "Duration:"
   },
   "bookingModal": {
     "title": "Ihr Beratungsgespräch buchen",
@@ -156,7 +166,9 @@
       "general": "Allgemein",
       "services": "Leistungen",
       "process": "Prozess",
-      "results": "Ergebnisse & ROI"
+      "results": "Ergebnisse & ROI",
+      "locations": "Locations & Availability",
+      "security": "Security & Trust"
     },
     "questions": {
       "services": [
@@ -187,6 +199,10 @@
         {
           "q": "Was ist der erste Schritt, wenn wir zusammenarbeiten möchten?",
           "a": "Starten Sie mit einem kurzen Diagnosegespräch – ein unverbindliches Gespräch über Ihre Ziele, Herausforderungen und Transformationsprioritäten. Danach skizzieren wir Umfang, Zeitplan und Optionen für die Zusammenarbeit."
+        },
+        {
+          "q": "What outcomes can we expect?",
+          "a": "You can expect clearer priorities, smoother operations, stronger team alignment, and measurable progress in how your company works and communicates."
         }
       ],
       "results": [
@@ -219,7 +235,8 @@
       "title": "Schnellzugriff",
       "about": "Über uns",
       "services": "Leistungen",
-      "process": "Unser Prozess"
+      "process": "Unser Prozess",
+      "home": "Home"
     },
     "services": {
       "title": "Leistungen",
@@ -251,11 +268,16 @@
     "company": "Vadatei",
     "logoAlt": "Vadatei Logo",
     "nav": {
+      "home": "Startseite",
+      "services": "Lösungen",
+      "approach": "Unser Ansatz",
       "about": "Über uns",
-      "services": "Leistungen",
+      "results": "Ergebnisse",
+      "faq": "FAQ",
+      "startDiagnostic": "Diagnose starten",
       "process": "Prozess"
     },
-    "bookNow": "Jetzt buchen",
+    "bookNow": "Diagnose starten",
     "bookDiscovery": "Beratungsgespräch buchen"
   },
   "process": {
@@ -332,47 +354,883 @@
       ],
       "fullDescription": "Nutzen Sie erfahrene CIO-Kompetenz ohne Festanstellung. Wir bieten strategische Führung, Governance, Lieferantenmanagement und praxisnahes Coaching für die Teamentwicklung und effektive Umsetzung."
     },
-    
     "diagnostic-deep-dive": {
       "title": "Veränderungsstrategie & Diagnostik",
       "description": "Finden Sie heraus, was Sie ändern müssen und warum",
       "subtitle": "Erhalten Sie klare Einblicke in das, was funktioniert, was nicht, und einen präzisen Plan für die erfolgreiche Transformation Ihrer Organisation.",
+      "whatIs": "Ein kurzes, fokussiertes Engagement, um Readiness zu bewerten, Leadership zu alignen und einen glaubwürdigen Transformationspfad zu definieren.",
+      "connectToExecution": [
+        "Dieses Engagement wird häufig als vorbereitender Schritt für die Execution genutzt.",
+        "Die hier erarbeitete Roadmap und Governance sind so gestaltet, dass sie direkt umsetzbar sind — intern, mit Partnern oder mit weiterführender Unterstützung."
+      ],
+      "nextStep": "Kurzes Erstgespräch, um den Fit zu bestätigen und zu klären, ob Execution-Support erforderlich ist.",
       "features": [
         "Organisations- & Kulturbewertung",
         "Stakeholder-Interviews für Einsicht & Zustimmung",
         "Bereitschaftsevaluierung für Veränderungen",
         "Lücken- und Risikoanalyse",
-        "Strategische Transformations-Roadmap"
+        "Strategische Transformations-Roadmap",
+        "Transformation roadmap",
+        "Leadership briefing"
       ],
-      "fullDescription": "Bevor Sie eine Veränderung beginnen, ist es entscheidend, den aktuellen Zustand zu verstehen und Chancen zu identifizieren. Diese Phase liefert klare Diagnose und strategische Richtung."
+      "includes": [
+        "Organisations- & Kulturbewertung",
+        "Stakeholder-Interviews für Einsicht & Zustimmung",
+        "Bereitschaftsevaluierung für Veränderungen",
+        "Lücken- und Risikoanalyse",
+        "Strategische Transformations-Roadmap",
+        "Transformation roadmap",
+        "Leadership briefing"
+      ],
+      "fullDescription": "Bevor Sie eine Veränderung beginnen, ist es entscheidend, den aktuellen Zustand zu verstehen und Chancen zu identifizieren. Diese Phase liefert klare Diagnose und strategische Richtung.",
+      "lightProcess": [
+        "Woche 1: Kontext klären & Interviews",
+        "Wochen 2–3: Analyse und Strukturierung",
+        "Woche 4: Alignment, Feinschliff und Leadership-Briefing"
+      ],
+      "howSteps": [
+        "Woche 1: Kontext klären & Interviews",
+        "Wochen 2–3: Analyse und Strukturierung",
+        "Woche 4: Alignment, Feinschliff und Leadership-Briefing"
+      ],
+      "timelineTable": {
+        "duration": "4 Wochen",
+        "meetings": "4–6 Sessions",
+        "deliverables": "9 detaillierte Outputs"
+      },
+      "pricing": {
+        "amount": "€4.997",
+        "note": "(Finaler Scope nach kurzem Erstgespräch bestätigt)",
+        "commitment": "Keine laufende Bindung erforderlich."
+      },
+      "whatThisSolves": {
+        "issues": [
+          "Unklare Prioritäten",
+          "Langsame Entscheidungen",
+          "Überlappende Initiativen",
+          "Ineffiziente Prozesse",
+          "Schwache Adoption digitaler Tools / ERP",
+          "Unklare Rollen",
+          "Silo-Kommunikation",
+          "Fehlende Governance",
+          "Organisatorische Reibung"
+        ],
+        "title": "What This Solves",
+        "intro": "Companies use the Blueprint when they are experiencing:",
+        "conclusion": "If you feel \"something isn't working\" but don't know what — the Blueprint identifies it."
+      },
+      "whenSignals": [
+        "Unklare Prioritäten",
+        "Langsame Entscheidungen",
+        "Überlappende Initiativen",
+        "Ineffiziente Prozesse",
+        "Schwache Adoption digitaler Tools / ERP",
+        "Unklare Rollen",
+        "Silo-Kommunikation",
+        "Fehlende Governance",
+        "Organisatorische Reibung"
+      ],
+      "outcomes": [
+        "Klare Prioritäten für das Leadership-Team",
+        "Verständnis dafür, was Teams tatsächlich ausbremst",
+        "Ein realistischer Verbesserungsplan",
+        "Schnelles Leadership-Alignment",
+        "Ein klarer Startpunkt für Transformation",
+        "Vermeidung teurer Fehler in der Anfangsphase",
+        "Measurable progress within 90 days"
+      ],
+      "outcomesBullets": [
+        "Klare Prioritäten für das Leadership-Team",
+        "Verständnis dafür, was Teams tatsächlich ausbremst",
+        "Ein realistischer Verbesserungsplan",
+        "Schnelles Leadership-Alignment",
+        "Ein klarer Startpunkt für Transformation",
+        "Vermeidung teurer Fehler in der Anfangsphase",
+        "Measurable progress within 90 days"
+      ],
+      "pageSubtitle": "This engagement is often used as a preparatory step for transformation execution. The roadmap and governance created here provide a clear, low-risk foundation for coordinated delivery. Most clients choose to continue into Transformation Execution to implement the roadmap with continuity of context and accountability. Others use the outputs internally or with existing partners.",
+      "overview": "The Transformation Blueprint is a focused, end-to-end diagnostic that reveals the real barriers holding your organization back — and provides a clear, actionable roadmap for improvement. It is the foundation of the Vadatei Transformation Model and the first step for organizations that want clarity before committing to large-scale change. In 2–4 weeks, we evaluate your operating model, processes, governance, digital capabilities, and team alignment to uncover what needs to change, how to change it, and where to begin.",
+      "whyItMatters": {
+        "title": "Why the Blueprint Matters",
+        "intro": "Most transformations fail because the root causes aren't understood. Teams see symptoms — slow processes, unclear ownership, ineffective tools — but not the system underneath.",
+        "description": "The Blueprint brings a structured, experienced outside view to identify:",
+        "items": [
+          "What is working",
+          "What is broken",
+          "What is missing",
+          "What must change urgently",
+          "What can wait",
+          "And why"
+        ],
+        "conclusion": "This ensures every decision, investment, and effort is focused on the right things."
+      },
+      "deliverables": {
+        "title": "What You Get (Deliverables)",
+        "subtitle": "A Transformation Blueprint engagement includes clear, tangible outputs that your leadership team can act on immediately.",
+        "items": [
+          {
+            "number": "1",
+            "title": "Transformation Readiness Assessment",
+            "description": "A structured review of your organization's ability to execute change."
+          },
+          {
+            "number": "2",
+            "title": "Operating Model Evaluation",
+            "description": "We assess roles, structure, responsibilities, decision-making, and cross-functional collaboration."
+          },
+          {
+            "number": "3",
+            "title": "High-Level Process Review",
+            "description": "Light mapping of key flows such as: Order-to-Cash (O2C), Procure-to-Pay (P2P), Sales & Operations Planning (S&OP), Commercial processes"
+          },
+          {
+            "number": "4",
+            "title": "Digital & ERP Impact Check",
+            "description": "We identify gaps, risks, and opportunities related to your digital tools and ERP ecosystem."
+          },
+          {
+            "number": "5",
+            "title": "Governance & Accountability Assessment",
+            "description": "We review how decisions are made, escalated, and communicated."
+          },
+          {
+            "number": "6",
+            "title": "Risk, Issue & Opportunity Map",
+            "description": "A structured overview of bottlenecks, capability gaps, and improvement areas."
+          },
+          {
+            "number": "7",
+            "title": "Prioritization Framework",
+            "description": "Clear ranking of quick wins, medium-term improvements, and long-term initiatives."
+          },
+          {
+            "number": "8",
+            "title": "Transformation Roadmap",
+            "description": "Your first 90 days of focused action — clear, realistic, actionable."
+          },
+          {
+            "number": "9",
+            "title": "Leadership Briefing",
+            "description": "A final presentation summarizing findings, actions, and recommended next steps."
+          }
+        ]
+      },
+      "process": {
+        "title": "How It Works (Our Process)",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Discovery & Alignment",
+            "description": "We meet with leadership to understand goals, challenges, and concerns. You decide the scope. We align expectations.",
+            "output": "Alignment Brief"
+          },
+          {
+            "number": "2",
+            "title": "Data & Process Review",
+            "description": "We analyze your existing documentation, process flows, reports, performance metrics, and org structure.",
+            "output": "Assessment Pack"
+          },
+          {
+            "number": "3",
+            "title": "Interviews & Workshops",
+            "description": "We speak with key stakeholders to understand the real-world bottlenecks.",
+            "output": "Issue & Opportunity List"
+          },
+          {
+            "number": "4",
+            "title": "Analysis & Mapping",
+            "description": "We identify patterns, gaps, risks, and improvement areas across your organization.",
+            "output": "Diagnostic Summary"
+          },
+          {
+            "number": "5",
+            "title": "Prioritization",
+            "description": "We classify issues into: High impact / urgent, High impact / medium term, Medium impact, Long-term improvements",
+            "output": "Prioritization Matrix"
+          },
+          {
+            "number": "6",
+            "title": "Transformation Roadmap",
+            "description": "We build a realistic plan with timelines, owners, and success metrics.",
+            "output": "Roadmap Document"
+          },
+          {
+            "number": "7",
+            "title": "Leadership Briefing",
+            "description": "A structured executive presentation that gives you clarity, confidence, and direction.",
+            "output": "Leadership Deck"
+          }
+        ]
+      },
+      "timeline": {
+        "duration": "4 weeks"
+      },
+      "realExamples": {
+        "title": "Typical Results (Real Examples)",
+        "examples": [
+          {
+            "title": "40% performance gain",
+            "description": "A European distributor discovered 40% of delays were caused by unclear ownership. Resetting responsibilities fixed the issue in weeks."
+          },
+          {
+            "title": "2 months saved on ERP prep",
+            "description": "A manufacturing company learned their ERP challenges were due to missing governance, not the system itself. With the Blueprint, they aligned their teams and avoided a 2-month delay."
+          },
+          {
+            "title": "17% faster order-to-cash cycle",
+            "description": "A beverage company optimized its O2C flow after the Blueprint highlighted handover gaps and redundant approvals."
+          }
+        ]
+      },
+      "needsChecklist": {
+        "title": "Signs You Need a Transformation Blueprint",
+        "items": [
+          "Your teams disagree on priorities",
+          "Processes feel slow or inconsistent",
+          "Digital tools or ERP are underused",
+          "There is confusion in roles or decision-making",
+          "You see recurring operational issues",
+          "Leaders do not have a shared view of the situation",
+          "You want improvement but don't know where to start",
+          "Projects feel siloed, late, or unclear"
+        ],
+        "conclusion": "If you checked 3 or more, the Blueprint is the right next step."
+      },
+      "whyVadatei": {
+        "title": "Why Vadatei?",
+        "intro": "Vadatei brings 30+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group — experience leading real transformations, not just advising on them.",
+        "strengths": "Our Blueprint is rooted in:",
+        "points": [
+          "Proven operating model expertise",
+          "Deep cross-functional experience",
+          "Practical, non-theoretical analysis",
+          "Clear, structured decision frameworks",
+          "Executive-level communication"
+        ],
+        "conclusion": "You get enterprise-grade transformation leadership, now available for mid-sized companies."
+      },
+      "faq": {
+        "title": "FAQ — Transformation Blueprint",
+        "questions": [
+          {
+            "q": "Is the Blueprint enough to make meaningful improvements?",
+            "a": "Yes — many clients see measurable gains from the 90-day plan alone."
+          },
+          {
+            "q": "Do we need to commit to Execution after Blueprint?",
+            "a": "No. The Blueprint is a standalone phase."
+          },
+          {
+            "q": "How many people do you interview?",
+            "a": "Typically 5–12 stakeholders, depending on scope."
+          },
+          {
+            "q": "Does it include detailed process documentation?",
+            "a": "No — that is part of Transformation Execution. Blueprint focuses on clarity and direction, not deep mapping."
+          },
+          {
+            "q": "Will we receive a presentation?",
+            "a": "Yes — a full leadership briefing is included."
+          }
+        ]
+      },
+      "whoFor": "Companies preparing for growth, digital adoption, or structural change who need clarity before taking action.",
+      "typicalResults": [
+        "Teams aligned around shared priorities",
+        "Faster and more confident decision-making",
+        "Initial risks identified early",
+        "Clear execution path"
+      ],
+      "example": "A mid-market distributor used the Blueprint to identify unclear ownership as the root cause of 40% of operational delays. A simple role/decision fix removed the bottleneck within two weeks.",
+      "cta": {
+        "title": "Start With a Transformation Blueprint",
+        "description": "Get clarity, confidence, and a clear roadmap in 2–4 weeks.",
+        "button": "Book Your Diagnostic Call",
+        "buttonAlt": "Request Blueprint Scope & Pricing"
+      }
     },
     "targeted-transformation": {
       "title": "Change Management & Implementierung",
       "description": "Verwandeln Sie Strategie in Aktion und Aktion in Implementierung",
       "subtitle": "Erhalten Sie eine bewährte Schritt-für-Schritt-Checkliste, die Ihnen hilft, Ihre Menschen, Prozesse und Prioritäten zu koordinieren — bevor Sie Ihre nächste Transformation starten.",
+      "quietSentence": "Wir nehmen nur eine begrenzte Anzahl an Execution-Engagements gleichzeitig an, um Delivery-Qualität und Senior-Involvement zu schützen.",
+      "whatIs": "Strategische Richtung in koordinierte, verantwortliche und messbare Transformation übersetzen, damit Ihre Organisation ihre Ziele erreicht.",
+      "whenIntro": "Dieser Service ist für Organisationen gedacht, die eines oder mehrere der folgenden Themen erleben:",
       "features": [
-        "Veränderungsplanung",
-        "Abstimmungs-Workshops",
-        "Governance-Setup",
-        "Kommunikationsstrategie",
-        "Fähigkeits- und Kulturentwicklung",
-        "Adoptions-Tracking",
-        "Vollständige Implementierungsaufsicht"
+        "Die Blueprint-Ergebnisse in einen umsetzbaren Delivery-Plan übersetzen",
+        "Operating Model bei Bedarf neu ausrichten",
+        "Gezielte Deep-Dives in kritische Prozesse (O2C, P2P, S&OP, Commercial)",
+        "Leichtgewichtiges PMO und Governance für Accountability etablieren",
+        "ERP / SAP Transformation und Adoption steuern",
+        "Vendors und Partner mit klarer Ownership koordinieren",
+        "Risiken, Abhängigkeiten und kritische Entscheidungen proaktiv managen"
       ],
-      "fullDescription": "Sobald die Prioritäten klar sind, konzentriert sich diese Phase auf die Ausführung — Teams abstimmen, Kommunikation verwalten und sicherstellen, dass Veränderung tatsächlich stattfindet."
+      "includes": [
+        "Die Blueprint-Ergebnisse in einen umsetzbaren Delivery-Plan übersetzen",
+        "Operating Model bei Bedarf neu ausrichten",
+        "Gezielte Deep-Dives in kritische Prozesse (O2C, P2P, S&OP, Commercial)",
+        "Leichtgewichtiges PMO und Governance für Accountability etablieren",
+        "ERP / SAP Transformation und Adoption steuern",
+        "Vendors und Partner mit klarer Ownership koordinieren",
+        "Risiken, Abhängigkeiten und kritische Entscheidungen proaktiv managen"
+      ],
+      "fullDescription": "Sobald die Prioritäten klar sind, konzentriert sich diese Phase auf die Ausführung — Teams abstimmen, Kommunikation verwalten und sicherstellen, dass Veränderung tatsächlich stattfindet.",
+      "lightProcess": [
+        "Phase 1 – Setup & Alignment: Scope, Owner und Arbeitsrhythmus definieren",
+        "Phase 2 – Design & Governance: Operating Model strukturieren und Prozesse priorisieren",
+        "Phase 3 – Delivery & Issue Resolution: Fortschritt tracken, Entscheidungen managen und Risiken adressieren"
+      ],
+      "howSteps": [
+        "Phase 1 – Setup & Alignment: Scope, Owner und Arbeitsrhythmus definieren",
+        "Phase 2 – Design & Governance: Operating Model strukturieren und Prozesse priorisieren",
+        "Phase 3 – Delivery & Issue Resolution: Fortschritt tracken, Entscheidungen managen und Risiken adressieren"
+      ],
+      "timelineTable": {
+        "duration": "Individuell, je nach Scope",
+        "sessions": "Wöchentliche Governance + Leadership-Syncs"
+      },
+      "pricing": {
+        "amount": "€9.000 – €30.000 / Monat",
+        "note": "Finaler Scope nach kurzem Erstgespräch bestätigt.",
+        "options": "Milestone-based pricing available."
+      },
+      "whatThisSolves": {
+        "issues": [
+          "Steigende operative Komplexität",
+          "ERP- oder Digital-Transformation Herausforderungen",
+          "Langsame oder unklare Entscheidungen",
+          "Inkonsistente Performance",
+          "Defekte oder nicht dokumentierte Prozesse",
+          "Niedrige Adoption neuer Tools oder Systeme",
+          "Silo-Zusammenarbeit",
+          "Unklare Rollen und Verantwortlichkeiten",
+          "Zu viele überlappende Initiativen"
+        ],
+        "title": "What This Solves",
+        "intro": "Execution is ideal for companies facing:",
+        "conclusion": "It brings order, structure, and momentum where there is currently inconsistency or friction."
+      },
+      "whenSignals": [
+        "Steigende operative Komplexität",
+        "ERP- oder Digital-Transformation Herausforderungen",
+        "Langsame oder unklare Entscheidungen",
+        "Inkonsistente Performance",
+        "Defekte oder nicht dokumentierte Prozesse",
+        "Niedrige Adoption neuer Tools oder Systeme",
+        "Silo-Zusammenarbeit",
+        "Unklare Rollen und Verantwortlichkeiten",
+        "Zu viele überlappende Initiativen"
+      ],
+      "outcomes": [
+        "Erreichen Ihrer strategischen und operativen Ziele durch strukturierte, verantwortliche Transformation",
+        "Vereinfachtes und ausgerichtetes Operating Model",
+        "Klarere Entscheidungen und Accountability",
+        "Höhere Prozesseffizienz und Konsistenz",
+        "Starke Governance mit echter Transparenz",
+        "Bessere ERP-/Digital-Adoption und schnellere Umsetzung"
+      ],
+      "outcomesBullets": [
+        "Erreichen Ihrer strategischen und operativen Ziele durch strukturierte, verantwortliche Transformation",
+        "Vereinfachtes und ausgerichtetes Operating Model",
+        "Klarere Entscheidungen und Accountability",
+        "Höhere Prozesseffizienz und Konsistenz",
+        "Starke Governance mit echter Transparenz",
+        "Bessere ERP-/Digital-Adoption und schnellere Umsetzung"
+      ],
+      "nextStep": "Kurzes Erstgespräch, um den Fit zu bestätigen und die Ausrichtung mit Ihrer Transformations-Roadmap zu prüfen.",
+      "pageSubtitle": "Turn strategy into disciplined, measurable change.",
+      "overview": "Transformation Execution is where your strategy becomes reality. In this phase, we redesign your operating model, optimize key processes, strengthen governance, and guide your teams through the actual implementation of change. This is hands-on, structured support — not theoretical consulting. We work directly with your leaders and teams to deliver a transformation that is controlled, coordinated, and measurable. If the Blueprint shows what needs to change, Execution ensures it actually happens — effectively and sustainably.",
+      "whyItMatters": {
+        "title": "Why Execution Matters",
+        "intro": "Most transformations fail not because of poor strategy, but because of poor execution:",
+        "issues": [
+          "unclear roles",
+          "slow decisions",
+          "inconsistent processes",
+          "low adoption",
+          "missing governance",
+          "disorganized initiatives",
+          "vendor misalignment",
+          "uncontrolled complexity"
+        ],
+        "conclusion": "Execution solves these problems by creating structure, clarity, and the right routines to move your transformation forward."
+      },
+      "deliverables": {
+        "title": "What We Focus On",
+        "subtitle": "During Transformation Execution, you receive enterprise-grade tools, processes, and leadership support that drive predictable progress.",
+        "items": [
+          {
+            "number": "1",
+            "title": "Operating Model Redesign",
+            "description": "Clear roles, responsibilities, decision paths, and organizational structure."
+          },
+          {
+            "number": "2",
+            "title": "Deep-Dive Process Mapping & Optimization",
+            "description": "Detailed mapping and improvement of flows such as: Order-to-Cash (O2C), Procure-to-Pay (P2P), Sales & Operations Planning (S&OP), Customer Service, Logistics, Production, Commercial processes & field operations"
+          },
+          {
+            "number": "3",
+            "title": "PMO Setup & Weekly Governance",
+            "description": "A structured rhythm for: prioritization, issue escalation, decision-making, progress tracking, risk & KPI reporting"
+          },
+          {
+            "number": "4",
+            "title": "ERP / SAP Support",
+            "description": "Expert guidance on: design validation, process alignment, adoption & change, testing approach, go-live readiness"
+          },
+          {
+            "number": "5",
+            "title": "Digital Adoption Management",
+            "description": "Ensure tools are used correctly and consistently across teams."
+          },
+          {
+            "number": "6",
+            "title": "Vendor & Partner Alignment",
+            "description": "We ensure all external partners deliver on commitments and integrate into your governance."
+          },
+          {
+            "number": "7",
+            "title": "Leadership Coaching",
+            "description": "Strengthening leadership capability, communication, and decision-making."
+          },
+          {
+            "number": "8",
+            "title": "Implementation Guidance",
+            "description": "We stay close to your teams, helping solve bottlenecks as they arise."
+          }
+        ]
+      },
+      "process": {
+        "title": "How It Works (Execution Process)",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Setup & Alignment",
+            "description": "We define scope, owners, objectives, and working routines.",
+            "output": "Execution Plan"
+          },
+          {
+            "number": "2",
+            "title": "Operating Model Redesign",
+            "description": "We uncover role gaps, unclear responsibilities, and decision bottlenecks.",
+            "output": "Operating Model Design"
+          },
+          {
+            "number": "3",
+            "title": "Process Mapping",
+            "description": "We map and optimize the most critical end-to-end flows.",
+            "output": "Process Maps & Improvements"
+          },
+          {
+            "number": "4",
+            "title": "PMO & Governance Setup",
+            "description": "We create a weekly rhythm that builds discipline, visibility, and momentum.",
+            "output": "Steering Pack, KPI Dashboard"
+          },
+          {
+            "number": "5",
+            "title": "ERP / Digital Alignment",
+            "description": "We ensure process, data, and roles match the technology being implemented.",
+            "output": "Change Impact Summary"
+          },
+          {
+            "number": "6",
+            "title": "Leadership Coaching & Communication",
+            "description": "We guide leadership and teams through new ways of working.",
+            "output": "Leadership Guidance Plan"
+          },
+          {
+            "number": "7",
+            "title": "Delivery & Issue Management",
+            "description": "We help resolve blockers, manage vendors, and keep projects moving.",
+            "output": "Issue / Risk Tracker & Progress Reports"
+          }
+        ]
+      },
+      "timeline": {
+        "duration": "Custom"
+      },
+      "realExamples": {
+        "title": "Typical Results (Real Examples)",
+        "examples": [
+          {
+            "title": "17% Faster O2C Cycle",
+            "description": "A beverage company improved order-to-cash speed after we identified redundant approvals and redesigned handovers."
+          },
+          {
+            "title": "Service Level Improvement (80% → 90%)",
+            "description": "At a HEINEKEN operation, redesigned processes and governance improved SLAs while reducing team workload."
+          },
+          {
+            "title": "SAP Program Stabilization",
+            "description": "A country team avoided a 4–6 month ERP delay by aligning processes, resetting governance, and strengthening vendor accountability."
+          },
+          {
+            "title": "Cost Reduction (10%+)",
+            "description": "Improved structure and elimination of redundant tasks reduced operational costs without headcount reduction."
+          }
+        ]
+      },
+      "needsChecklist": {
+        "title": "Signs You Need Transformation Execution",
+        "items": [
+          "Your processes vary by person or location",
+          "Your ERP/SAP system causes frustration or low adoption",
+          "Teams work in silos",
+          "You have recurring operational issues",
+          "Projects are late or unclear",
+          "Teams don't fully understand their roles",
+          "You've grown fast and processes no longer fit",
+          "Leadership feels misaligned or overloaded"
+        ],
+        "conclusion": "If you checked 3 or more, you need Execution — not more planning."
+      },
+      "whyVadatei": {
+        "title": "Why Vadatei?",
+        "intro": "Vadatei brings 30+ years of first-hand transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. Not just consulting — actual delivery experience inside large organizations.",
+        "strengths": "Our approach is:",
+        "points": [
+          "Hands-on",
+          "Structured",
+          "Practical",
+          "Transparent",
+          "Focused on measurable results"
+        ],
+        "conclusion": "You get execution support from someone who has led transformations at national and regional scale."
+      },
+      "faq": {
+        "title": "FAQ — Transformation Execution",
+        "questions": [
+          {
+            "q": "Do we need to complete the Blueprint first?",
+            "a": "Yes — Execution builds directly on Blueprint findings."
+          },
+          {
+            "q": "How many processes can be mapped?",
+            "a": "Typically 2–4 high-priority processes depending on depth."
+          },
+          {
+            "q": "Does this include training?",
+            "a": "We provide change guidance — formal training can be added as an add-on."
+          },
+          {
+            "q": "Do you replace our PMO?",
+            "a": "No — we complement your PMO or act as a temporary enhancer."
+          },
+          {
+            "q": "Will you work with our ERP/vendor team?",
+            "a": "Yes — we manage collaboration and alignment."
+          }
+        ]
+      },
+      "whoFor": "Organizations actively undergoing transformation and needing hands-on leadership to ensure delivery success.",
+      "typicalResults": [
+        "10–20% improvement in service levels",
+        "5–15% cost efficiency improvements",
+        "ERP/digital program stabilization",
+        "Clear, repeatable operating rhythms",
+        "Increased team accountability"
+      ],
+      "example": "A consumer goods company reduced order-to-cash cycle time by 17% after Vadatei redesigned processes and introduced weekly governance routines that eliminated decision bottlenecks.",
+      "cta": {
+        "title": "Get Structured, Hands-On Transformation Execution",
+        "description": "Turn your roadmap into real, disciplined, measurable progress.",
+        "button": "Request a Transformation Execution Proposal",
+        "buttonAlt": "Book Your Diagnostic Call"
+      }
     },
     "extended-oversight": {
       "title": "Veränderungsnachhaltigkeit & Verbesserung",
       "description": "Sorgen Sie dafür, dass Veränderungen bestehen bleiben und Menschen ausgerichtet sind",
       "subtitle": "Transformation ist nur die halbe Schlacht — sie nachhaltig zu gestalten ist der Punkt, wo echter Wert geliefert wird. Entdecken Sie 5 Taktiken, um Ihre Veränderung dauerhaft zu machen.",
+      "quietSentence": "Transformation Leadership ist für langfristige Partner gedacht, die konstante Senior Guidance, Governance-Disziplin und stabiles Momentum wollen.",
+      "whatIs": "Konsistentes Interim-Leadership bereitstellen, um Transformationsmomentum zu sichern, Alignment zu stärken und sicherzustellen, dass Ihre strategischen Ziele erreicht werden.",
+      "whenIntro": "Dieser Service ist für Organisationen gedacht, die eines oder mehrere der folgenden Themen erleben:",
       "features": [
-        "Post-Implementierung Reviews",
-        "Führungs- und Team-Coaching",
-        "Prozessaudits & Optimierung",
-        "Kontinuierliche Verbesserungssitzungen",
-        "Nachhaltigkeitsplanung"
+        "Laufendes Executive-Level Transformations-Advisory",
+        "Kontinuierliche Aufsicht über PMO, Governance und Portfolio",
+        "Strukturierte wöchentliche Leadership-Support-Calls",
+        "Quartalsweiser Roadmap-Refresh und Portfolio-Review",
+        "Aktives Portfolio-Risikomanagement und KPI-Steuerung",
+        "Schnelle Issue-Resolution und Krisen-Support",
+        "Vendor-Performance-Management mit Accountability"
       ],
-      "fullDescription": "Transformation ist nicht beendet, wenn die Implementierung endet — diese Phase stellt sicher, dass Ergebnisse bestehen bleiben und Ihre Teams sich weiter verbessern."
+      "includes": [
+        "Laufendes Executive-Level Transformations-Advisory",
+        "Kontinuierliche Aufsicht über PMO, Governance und Portfolio",
+        "Strukturierte wöchentliche Leadership-Support-Calls",
+        "Quartalsweiser Roadmap-Refresh und Portfolio-Review",
+        "Aktives Portfolio-Risikomanagement und KPI-Steuerung",
+        "Schnelle Issue-Resolution und Krisen-Support",
+        "Vendor-Performance-Management mit Accountability"
+      ],
+      "fullDescription": "Transformation ist nicht beendet, wenn die Implementierung endet — diese Phase stellt sicher, dass Ergebnisse bestehen bleiben und Ihre Teams sich weiter verbessern.",
+      "lightProcess": [
+        "Monat 1 – Baseline & Prioritäten: Governance-Rhythmus etablieren und Leadership alignen",
+        "Laufend – Wöchentlicher Support: Executive Advisory, Portfolio-Oversight und Decision-Management",
+        "Quartalsweise – Roadmap Refresh: Fortschritt, KPIs und Portfolio-Risiken reviewen"
+      ],
+      "howSteps": [
+        "Monat 1 – Baseline & Prioritäten: Governance-Rhythmus etablieren und Leadership alignen",
+        "Laufend – Wöchentlicher Support: Executive Advisory, Portfolio-Oversight und Decision-Management",
+        "Quartalsweise – Roadmap Refresh: Fortschritt, KPIs und Portfolio-Risiken reviewen"
+      ],
+      "timelineTable": {
+        "duration": "laufend (mind. 3 Monate)",
+        "meetings": "Wöchentliche Governance + monatliches Leadership Advisory"
+      },
+      "pricing": {
+        "amount": "€6.000 – €15.000 / Monat",
+        "note": "Finaler Scope nach kurzem Erstgespräch bestätigt.",
+        "value": "This provides the impact of a senior transformation leader at a fraction of the cost of a full-time executive."
+      },
+      "whatThisSolves": {
+        "issues": [
+          "Momentumverlust",
+          "Konfliktierende Prioritäten",
+          "Schwache Governance",
+          "Niedrige Digital-Adoption",
+          "Vendor-Misalignment",
+          "Geringe Sichtbarkeit des Fortschritts",
+          "Leadership disconnect",
+          "Delayed decisions",
+          "Uncontrolled complexity"
+        ],
+        "title": "What This Solves",
+        "intro": "Transformation Leadership prevents the most common causes of transformation failure:",
+        "conclusion": "It provides the structure, rhythm, and clarity needed to keep transformation moving."
+      },
+      "whenSignals": [
+        "Momentumverlust",
+        "Konfliktierende Prioritäten",
+        "Schwache Governance",
+        "Niedrige Digital-Adoption",
+        "Vendor-Misalignment",
+        "Geringe Sichtbarkeit des Fortschritts",
+        "Leadership disconnect",
+        "Delayed decisions",
+        "Uncontrolled complexity"
+      ],
+      "outcomes": [
+        "Starke, konsistente Transformations-Governance und Accountability",
+        "Schnellere, souveränere Entscheidungen",
+        "Höhere Adoption von Prozessen und Tools",
+        "Klare Transparenz über Projekte, Risiken und Abhängigkeiten",
+        "Ausgerichtetes, verantwortliches Leadership und planbare Delivery"
+      ],
+      "outcomesBullets": [
+        "Starke, konsistente Transformations-Governance und Accountability",
+        "Schnellere, souveränere Entscheidungen",
+        "Höhere Adoption von Prozessen und Tools",
+        "Klare Transparenz über Projekte, Risiken und Abhängigkeiten",
+        "Ausgerichtetes, verantwortliches Leadership und planbare Delivery"
+      ],
+      "nextStep": "Kurzes Erstgespräch, um den Fit zu bestätigen und die Ausrichtung mit bestehenden Roadmaps oder Execution-Plänen zu prüfen.",
+      "pageSubtitle": "Sustain momentum. Strengthen alignment. Ensure transformation success.",
+      "overview": "Transformation Leadership is your long-term partnership for structured, stable, and consistent transformation progress. We act as your fractional Chief Transformation Advisor, providing ongoing oversight, governance, decision support, and leadership guidance to ensure your transformation stays on track — month after month. While Blueprint gives clarity and Execution delivers change, Leadership ensures results last. This is the highest-impact stage of the Vadatei Transformation Model, giving your business the momentum, alignment, and discipline required for long-term success.",
+      "whyItMatters": {
+        "title": "Why Leadership Matters",
+        "intro": "Transformations don't fail at the beginning. They fail after momentum slows:",
+        "issues": [
+          "Teams drift back to old habits",
+          "Governance breaks down",
+          "Digital tools become underutilized",
+          "Decisions take too long",
+          "Priorities shift without alignment",
+          "Vendors become mismanaged",
+          "Leadership visibility declines",
+          "Issues get buried"
+        ],
+        "conclusion": "Transformation Leadership prevents this. It keeps your transformation alive, aligned, and progressing."
+      },
+      "deliverables": {
+        "title": "What You Get (Deliverables)",
+        "subtitle": "You receive continuous senior transformation guidance — the same leadership expertise normally found only in global enterprises.",
+        "items": [
+          {
+            "number": "1",
+            "title": "Monthly Executive Advisory",
+            "description": "Strategic guidance, decision support, escalation handling, and leadership alignment."
+          },
+          {
+            "number": "2",
+            "title": "Continuous PMO Oversight",
+            "description": "We keep projects on track with visibility, reporting, KPIs, and structured routines."
+          },
+          {
+            "number": "3",
+            "title": "Quarterly Roadmap Refresh",
+            "description": "We regularly update the 90-day and long-term roadmap based on progress and business needs."
+          },
+          {
+            "number": "4",
+            "title": "Portfolio Performance Review",
+            "description": "We track risks, dependencies, delays, and performance across all transformation initiatives."
+          },
+          {
+            "number": "5",
+            "title": "Vendor & Partner Management",
+            "description": "Alignment, performance review, and integration into governance."
+          },
+          {
+            "number": "6",
+            "title": "Issue & Crisis Support",
+            "description": "When problems emerge, we intervene early to prevent escalation and delays."
+          },
+          {
+            "number": "7",
+            "title": "Weekly Support & Check-Ins",
+            "description": "Hands-on guidance, issue tracking, alignment calls, and progress planning."
+          },
+          {
+            "number": "8",
+            "title": "Priority Access for Insights & Decisions",
+            "description": "Leadership and teams can rely on fast, expert input whenever needed."
+          }
+        ]
+      },
+      "rolesCovered": {
+        "title": "Typical roles covered",
+        "items": [
+          "Interim Head of Transformation",
+          "Interim Program / Portfolio Lead",
+          "Interim PMO or Governance Lead",
+          "Executive-level transformation support during transition"
+        ]
+      },
+      "process": {
+        "title": "How It Works (Leadership Cycle)",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Strategic Alignment",
+            "description": "Monthly session with leadership to review priorities, risks, and decisions.",
+            "output": "Leadership Summary"
+          },
+          {
+            "number": "2",
+            "title": "Governance Rhythm",
+            "description": "Weekly or bi-weekly routines to keep teams aligned and projects predictable.",
+            "output": "Steering Pack, KPI Updates"
+          },
+          {
+            "number": "3",
+            "title": "Performance Monitoring",
+            "description": "We track the health of your portfolio: deliverables, timelines, risks, adoption, vendor performance",
+            "output": "Portfolio Health Report"
+          },
+          {
+            "number": "4",
+            "title": "Issue & Risk Management",
+            "description": "We identify issues early, manage escalations, and maintain momentum.",
+            "output": "Issue Resolution Plan"
+          },
+          {
+            "number": "5",
+            "title": "Roadmap Refresh (Quarterly)",
+            "description": "We adjust priorities and timelines as your business evolves.",
+            "output": "Updated Roadmap"
+          },
+          {
+            "number": "6",
+            "title": "Leadership Coaching & Communication",
+            "description": "Support for managers adapting to new processes, roles, and routines.",
+            "output": "Transformation Coaching Plan"
+          }
+        ]
+      },
+      "timeline": {
+        "duration": "ongoing (3-month minimum)"
+      },
+      "realExamples": {
+        "title": "Typical Results (Real Examples)",
+        "examples": [
+          {
+            "title": "Avoided a 6-Month ERP Delay",
+            "description": "Weekly governance and vendor oversight stabilized the program and brought timelines back under control."
+          },
+          {
+            "title": "20–40% Faster Project Delivery",
+            "description": "Clear routines and portfolio management decreased delays and rework."
+          },
+          {
+            "title": "Leadership Alignment Across 3 Countries",
+            "description": "Quarterly roadmap refreshes kept teams aligned during large regional transformation."
+          },
+          {
+            "title": "Higher Digital Adoption (30–50% improvement)",
+            "description": "Structured communication and coaching helped teams fully embrace new tools."
+          }
+        ]
+      },
+      "needsChecklist": {
+        "title": "Signs You Need Transformation Leadership",
+        "items": [
+          "Your transformation feels \"paused\" or unfocused",
+          "Teams revert to old habits after initial improvements",
+          "Decisions take too long or aren't clear",
+          "Vendor performance is inconsistent",
+          "You lack visibility into project progress",
+          "Communication between teams feels fragmented",
+          "Leadership is overloaded",
+          "Governance routines are missing or not followed",
+          "Digital tools or ERP are underutilized"
+        ],
+        "conclusion": "If 3 or more apply, your transformation needs sustained leadership."
+      },
+      "whyVadatei": {
+        "title": "Why Vadatei?",
+        "intro": "Vadatei brings 30+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. This isn't theoretical consulting — it's real-world transformation delivery at scale.",
+        "strengths": "What makes us different:",
+        "points": [
+          "We bring enterprise-level discipline to mid-sized organizations",
+          "We work hands-on — not as distant advisors",
+          "We understand both digital AND organizational change",
+          "We build governance that leaders can actually use",
+          "We know how to keep transformations moving, even when stressed"
+        ],
+        "conclusion": "You're not just getting advice. You're getting a partner who has led successful transformations for decades."
+      },
+      "faq": {
+        "title": "FAQ — Transformation Leadership",
+        "questions": [
+          {
+            "q": "Is this a replacement for a full-time transformation leader?",
+            "a": "Yes — at a fraction of the cost."
+          },
+          {
+            "q": "Does this include project management?",
+            "a": "We oversee PMO and governance, but operational PM roles remain internal or vendor-based."
+          },
+          {
+            "q": "Can we adjust hours from month to month?",
+            "a": "Yes — plans are flexible to your transformation rhythm."
+          },
+          {
+            "q": "Do you work with our existing vendors?",
+            "a": "Absolutely — vendor alignment is a key part of this service."
+          },
+          {
+            "q": "Is this only for large transformations?",
+            "a": "No — it benefits any organization implementing significant change over time."
+          }
+        ]
+      },
+      "whoFor": "Organizations wanting long-term transformation stability without hiring a full-time transformation leader.",
+      "typicalResults": [
+        "20–40% improvement in portfolio on-time delivery",
+        "Higher adoption & engagement",
+        "Faster decisions at leadership level",
+        "More predictable, structured operations"
+      ],
+      "example": "A wholesaler avoided a 6-month ERP delay when Vadatei stepped in to establish governance, re-baseline the plan, and supervise vendor performance.",
+      "cta": {
+        "title": "Strengthen Your Transformation With Ongoing Leadership",
+        "description": "Ensure your transformation stays aligned, on track, and delivering lasting value.",
+        "button": "Apply for a Transformation Leadership Partnership",
+        "buttonAlt": "Book Your Diagnostic Call"
+      }
     },
     "contactForQuote": "Preis auf Anfrage"
   },
@@ -421,7 +1279,27 @@
     "ctaText": "Klingt das nach Ihrem Unternehmen?",
     "ctaHighlight": "Lassen Sie uns darüber sprechen, wie wir Ihnen zum Erfolg verhelfen können."
   },
-  
+  "servicePage": {
+    "sections": {
+      "whatIs": "Worum es bei diesem Service geht",
+      "when": "Wann dieser Service sinnvoll ist",
+      "outcomes": "Was sich nach dem Engagement verändert",
+      "includes": "Was enthalten ist",
+      "how": "Wie es abläuft",
+      "connectToExecution": "Wie das zur Execution passt",
+      "howFallback": "Ein kurzes Erstgespräch klärt Scope, Timing und Fit. Danach stimmen wir die nächsten Schritte ab.",
+      "practicalities": "Rahmenbedingungen"
+    },
+    "fields": {
+      "duration": "Typische Dauer",
+      "investment": "Investment",
+      "nextStep": "Nächster Schritt"
+    },
+    "nextStep": "Kurzes Erstgespräch, um den Fit zu bestätigen.",
+    "cta": "Erstgespräch buchen",
+    "backToServices": "Zurück zu den Leistungen",
+    "quietSentence": ""
+  },
   "lang": "de",
   "privacy": {
     "back": "Zurück",
@@ -473,7 +1351,63 @@
     "home": "Startseite",
     "about": "Über Vadatei",
     "privacy": "Datenschutzerklärung"
+  },
+  "accomplishments": {
+    "title": "Ergebnisse, die für sich sprechen",
+    "impactLabel": "Wirkung",
+    "items": [
+      {
+        "stat": "IT-Betriebskosten um 25% gesenkt",
+        "description": "Mehr Budget für Wachstum und Innovation statt Wartung."
+      },
+      {
+        "stat": "Service-Performance von 70–80% auf 90–95% verbessert",
+        "description": "Weniger Ausfälle, reibungslosere Abläufe und höhere Produktivität."
+      },
+      {
+        "stat": "SAP- und Digitalplattform-Rollouts mit 0% Unterbrechung umgesetzt",
+        "description": "Der Betrieb blieb vollständig funktionsfähig – auch bei Upgrades zentraler Systeme."
+      },
+      {
+        "stat": "Nationale Operating-Modelle neu gestaltet und Rechtsstrukturen vereinfacht",
+        "description": "Kürzere Entscheidungszyklen, weniger Komplexität und schnellere Umsetzung in Teams."
+      },
+      {
+        "stat": "Digitale Adoption für 2.500+ Nutzer und 100+ Distributoren geleitet",
+        "description": "Mehr Geschwindigkeit, Genauigkeit und Effizienz in kommerziellen Abläufen."
+      },
+      {
+        "stat": "Interne Transformation- und Change-Management-Kompetenz aufgebaut",
+        "description": "Weniger Abhängigkeit von teurer externer Beratung und mehr Selbstständigkeit."
+      },
+      {
+        "stat": "Geschäftsprozesse über mehrere Märkte standardisiert",
+        "description": "Konsistente Ausführung, schnelleres Skalieren und leichteres Onboarding neuer Teams."
+      },
+      {
+        "stat": "Mehrjährige Technologie- und Transformations-Roadmaps entwickelt",
+        "description": "Klarheit, Planbarkeit und Sicherheit für Priorisierung und Investitionen."
+      }
+    ],
+    "cta": {
+      "title": "Was könnte Ihr Unternehmen mit höheren Gewinnen erreichen?",
+      "body": "Entfalten Sie das volle Potenzial Ihres Unternehmens. Erfahren Sie, wie Sie Gewinne steigern und Wachstum vorantreiben – mit maßgeschneiderter, praxisnaher Unterstützung.",
+      "button": "Kostenlose Beratung buchen"
+    },
+    "aria": {
+      "previous": "Vorherige Ergebnisse",
+      "next": "Nächste Ergebnisse",
+      "goToSlide": "Zu Folie {{n}} wechseln"
+    }
+  },
+  "form": {
+    "fullName": "Full Name *",
+    "email": "Email Address *",
+    "companyName": "Company Name",
+    "phone": "Phone Number *"
+  },
+  "infoCard": {
+    "readyTitle": "Ready to Get Started?",
+    "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization or click here for a full break down."
   }
 }
-
-
