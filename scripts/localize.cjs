@@ -24,11 +24,16 @@ const meta = JSON.parse(fs.readFileSync(transFile, "utf8"));
 let html = fs.readFileSync(distIndex, "utf8");
 
 // set html lang (use meta.lang or the folder)
-const langVal = meta.lang || lang;
+let langVal = (meta.lang || lang || "").toLowerCase();
+// Normalize common project codes to valid BCP 47.
+if (langVal === "cz") langVal = "cs";
 html = html.replace(/<html([^>]*)>/i, (m, attrs) => {
   if (/lang=/.test(attrs)) return `<html${attrs.replace(/lang="[^"]*"/i, `lang="${langVal}"`)}>`;
   return `<html${attrs} lang="${langVal}">`;
 });
+
+// Normalize React/JSX attribute name to HTML hreflang in the built output.
+html = html.replace(/\bhrefLang=/g, "hreflang=");
 
 // set title
 const title = (meta.title || "").replace(/"/g, "&quot;");
@@ -38,6 +43,7 @@ html = html.replace(/<title>[\s\S]*?<\/title>/i, `<title>${title}</title>`);
 html = html
   .replace(/<meta[^>]+name=["']description["'][^>]*>\s*/gi, "")
   .replace(/<meta[^>]+property=["']og:[^"']+["'][^>]*>\s*/gi, "")
+  .replace(/<meta[^>]+name=["']twitter:[^"']+["'][^>]*>\s*/gi, "")
   .replace(/<link[^>]+rel=["']canonical["'][^>]*>\s*/gi, "");
 
 // build new tags
@@ -52,6 +58,8 @@ const tags = [
   `<meta property="og:image" content="${ogImage}">`,
   `<meta property="og:url" content="${url}">`,
   `<meta name="twitter:card" content="summary_large_image">`,
+  `<meta name="twitter:site" content="@vadatei">`,
+  `<meta name="twitter:image" content="${ogImage}">`,
   `<link rel="canonical" href="${url}">`
 ].join("\n  ");
 

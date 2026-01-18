@@ -1,36 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Cookiebot Consent Management -->
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="c73a80bb-4f3f-436a-bc67-9688e2dfa18c"
-      data-blockingmode="auto"
-      type="text/javascript"
-    ></script>
-
-    <!-- Google Consent Mode -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'analytics_storage': 'denied'
-      });
-    </script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-04FF5YVF9C"></script>
-    <script>
-      gtag('js', new Date());
-      gtag('config', 'G-04FF5YVF9C', { send_page_view: false });
-      gtag('config', 'AW-17502148935');
-    </script>
+    <!-- Analytics/consent scripts are injected via src/pageTemplate.tsx during build (vite-plugin-react-meta-map).
+         Keeping index.html clean prevents loading the same tag twice. -->
     
     <!-- seznam meta tags-->
     <meta name="seznam-wmt" content="aOzH3Q2gu3YWjgXBtgyqcYhYK1RxfboC" />
-    <meta http-equiv="content-language" content="cs" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

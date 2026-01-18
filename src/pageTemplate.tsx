@@ -62,20 +62,20 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="https://vadatei.com/assets/digital-transformation.jpg" />
+      <meta property="og:image" content={image || "https://vadatei.com/assets/digital-transformation.jpg"} />
       <meta property="og:see_also" content="https://www.linkedin.com/company/vadatei/" />
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@vadatei" />
-      <meta name="twitter:image" content="https://vadatei.com/assets/digital-transformation.jpg" />
+      <meta name="twitter:image" content={image || "https://vadatei.com/assets/digital-transformation.jpg"} />
 
       {/* Canonical + Hreflang */}
-    <link rel="canonical" href="https://vadatei.com/en/" />
-    <link rel="alternate" href="https://vadatei.com/en/" hrefLang="en" />
-    <link rel="alternate" href="https://vadatei.com/cz/" hrefLang="cs" />
-    <link rel="alternate" href="https://vadatei.com/de/" hrefLang="de" />
-    <link rel="alternate" href="https://vadatei.com/" hrefLang="x-default" />
+      <link rel="canonical" href={canonical} />
+      <link rel="alternate" href="https://vadatei.com/en/" hrefLang="en" />
+      <link rel="alternate" href="https://vadatei.com/cz/" hrefLang="cs" />
+      <link rel="alternate" href="https://vadatei.com/de/" hrefLang="de" />
+      <link rel="alternate" href="https://vadatei.com/" hrefLang="x-default" />
     
       {/* Favicons / Touch icons / Manifest */}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
