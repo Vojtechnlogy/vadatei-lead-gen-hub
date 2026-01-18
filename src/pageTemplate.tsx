@@ -29,12 +29,12 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
             }}
           />
           {/* Google tag (gtag.js) - load once and configure both IDs */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLZ99GFK4S"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-04FF5YVF9C"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
                 gtag('js', new Date());
-                gtag('config', 'G-NLZ99GFK4S', { send_page_view: false });
+                gtag('config', 'G-04FF5YVF9C', { send_page_view: false });
                 gtag('config', 'AW-17502148935');
               `,
             }}
