@@ -15,27 +15,15 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
             data-blockingmode="auto"
             type="text/javascript"
           />
-          {/* Google Consent Mode */}
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);} 
-                gtag('consent', 'default', {
-                  'ad_storage': 'denied',
-                  'analytics_storage': 'denied'
-                });
-              `,
-            }}
-          />
-          {/* Google tag (gtag.js) - load once and configure both IDs */}
+          {/* Google tag (gtag.js) */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-04FF5YVF9C"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-04FF5YVF9C', { send_page_view: false });
-                gtag('config', 'AW-17502148935');
+                gtag('config', 'G-04FF5YVF9C');
               `,
             }}
           />

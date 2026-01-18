@@ -6,15 +6,16 @@ import LocalizedRoutes from "./routes/LocalizedRoutes";
 import Header from "./components/Header";
 import HeadMeta from "@/components/MetaHead";
 import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import BookingModal from "@/components/BookingModal";
-import { startScrollDepthTracking, trackPageView } from "@/lib/analytics";
+import { setAnalyticsPagePath, startScrollDepthTracking, trackPageView } from "@/lib/analytics";
 
 const queryClient = new QueryClient();
 
 
 const App = () => {
   const location = useLocation();
+  const hasSentInitialPageView = useRef(false);
   // Hide header if the path includes 'privacy-policy'
   const hideHeader = location.pathname.includes("privacy-policy");
 
@@ -29,7 +30,14 @@ const App = () => {
 
   useEffect(() => {
     const pagePath = `${location.pathname}${location.search}${location.hash}`;
-    trackPageView(pagePath);
+    // GA4 gtag('config') sends the initial page_view automatically.
+    // For SPA navigation we send page_view events manually.
+    if (!hasSentInitialPageView.current) {
+      setAnalyticsPagePath(pagePath);
+      hasSentInitialPageView.current = true;
+    } else {
+      trackPageView(pagePath);
+    }
     window.dispatchEvent(new Event("vadatei:route_change"));
   }, [location.pathname, location.search, location.hash]);
 
