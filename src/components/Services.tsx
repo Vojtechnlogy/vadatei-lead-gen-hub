@@ -150,62 +150,53 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
   };
 
   // Structured data for SEO
-  const servicesJsonLd = {
+  const serviceSlugMap: Record<string, string> = {
+    "diagnostic-deep-dive": "transformation-blueprint",
+    "targeted-transformation": "transformation-execution",
+    "extended-oversight": "transformation-leadership",
+  };
+
+  const servicesCatalogJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "provider": {
-      "@type": "Organization",
-      "name": "Vadatei",
-      "description": t("organization.description"),
-      "url": "https://vadatei.com/",
-      "logo": "https://vadatei.com/favicon.ico",
-      "numberOfEmployees": {
-        "@type": "QuantitativeValue",
-        "minValue": 1,
-        "maxValue": 10
-      },
-      "areaServed": ["Europe", "DE", "NL"],
-      "sameAs": [
-        "https://www.linkedin.com/in/marek-tolasz/"
-      ]
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": t("services.sectionTitle"),
-      "itemListElement": services.map((service, index) => ({
+    "@type": "OfferCatalog",
+    "@id": "https://vadatei.com/#services-catalog",
+    "name": t("services.sectionTitle"),
+    "url": "https://vadatei.com/#services",
+    "inLanguage": resolvedLanguage,
+    "provider": { "@id": "https://vadatei.com/#organization" },
+    "itemListElement": services.map((service, index) => {
+      const slug = serviceSlugMap[service.id] || service.id;
+      const pageUrl = `https://vadatei.com/${resolvedLanguage}/services/${slug}`;
+
+      return {
         "@type": "Offer",
+        "@id": `${pageUrl}#offer`,
         "position": index + 1,
+        "url": pageUrl,
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "Price on request",
+          "priceCurrency": "EUR",
+        },
         "itemOffered": {
           "@type": "Service",
+          "@id": `${pageUrl}#service`,
           "name": t(`services.${service.id}.title`),
           "description": t(`services.${service.id}.description`),
-          "image": service.image,
-          "provider": {
-            "@type": "Organization",
-            "name": "Vadatei",
-            "description": t("organization.description"),
-            "areaServed": ["Europe", "DE", "NL"]
-          },
-          "areaServed": ["Europe", "EU", "Czech Republic", "Germany", "Netherlands", "Austria", "Slovakia", "Poland", "Switzerland"],
+          "url": pageUrl,
+          "image": service.image ? `https://vadatei.com${service.image}` : undefined,
+          "provider": { "@id": "https://vadatei.com/#organization" },
+          "areaServed": ["Europe", "DE", "NL"],
           "serviceType": "Business Consulting",
           "category": "Change Management",
           "audience": {
             "@type": "Audience",
-            "audienceType": "Business"
+            "audienceType": "Business",
           },
-          "offers": {
-            "@type": "Offer",
-            "availability": "https://schema.org/InStock",
-            "validFrom": new Date().toISOString().split('T')[0],
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "price": "Price on request",
-              "priceCurrency": "EUR"
-            }
-          }
-        }
-      }))
-    }
+        },
+      };
+    }),
   };
 
   // Breadcrumb structured data
@@ -278,7 +269,7 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
     <section id="services" className="py-20 bg-corporate-light">
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(merchantListingJsonLd)}</script>
-        <script type="application/ld+json">{JSON.stringify(servicesJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(servicesCatalogJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

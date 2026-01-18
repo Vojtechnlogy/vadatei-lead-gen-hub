@@ -123,66 +123,6 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <>
-        {/* Product schema removed. Only Service schema remains. */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-                "name": (() => {
-                  if (service.id === "diagnostic-deep-dive") return "Transformation Blueprint";
-                  if (service.id === "targeted-transformation") return "Transformation Execution";
-                  if (service.id === "extended-oversight") return "Transformation Leadership";
-                  return service.title;
-                })(),
-              "description": service.fullDescription,
-              "image": service.image || "/src/assets/digital-transformation.jpg",
-              "provider": {
-                "@type": "Organization",
-                "name": "Vadatei",
-                "description": t("organization.description"),
-                "url": "https://vadatei.com/",
-                "logo": "https://vadatei.com/favicon.ico",
-                "numberOfEmployees": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 1,
-                  "maxValue": 10
-                },
-                "areaServed": ["Europe", "DE", "NL"],
-                "sameAs": [
-                  "https://www.linkedin.com/in/marek-tolasz/"
-                ]
-              },
-              "areaServed": ["Europe", "EU", "Czech Republic", "Germany", "Netherlands"],
-              "serviceType": "Business Consulting",
-              "category": "Change Management",
-              "audience": {
-                "@type": "Audience",
-                "audienceType": "Business"
-              },
-              "offers": {
-                "@type": "Offer",
-                "availability": "https://schema.org/InStock",
-                "validFrom": new Date().toISOString().split('T')[0],
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "price": "Price on request",
-                  "priceCurrency": "EUR"
-                }
-              },
-              "hasOfferCatalog": {
-                "@type": "ItemList",
-                "numberOfItems": service.features?.length || 0,
-                "itemListElement": (service.features || []).map((feature, index) => ({
-                  "@type": "ListItem",
-                  "position": index + 1,
-                  "name": feature
-                }))
-              }
-            })
-          }}
-        />
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto" aria-describedby="service-description">
           <DialogHeader>
             <DialogTitle className="text-2xl font-heading font-bold text-primary pr-8">
