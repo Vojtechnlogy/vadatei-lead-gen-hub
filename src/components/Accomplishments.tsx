@@ -1,5 +1,6 @@
 import { TrendingUp, Users, Zap, Building, Network, Shield, Target, Rocket, ChevronLeft, ChevronRight } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import { trackCtaClick } from "@/lib/analytics";
 import { useTranslation } from "react-i18next";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -310,7 +311,11 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
               variant="corporate-outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary whitespace-normal h-auto py-3 leading-snug text-center max-w-full flex-wrap"
-              onClick={onBookingClick ? onBookingClick : () => {
+              onClick={onBookingClick ? () => {
+                trackCtaClick("book_consultation", "accomplishments_cta");
+                onBookingClick();
+              } : () => {
+                trackCtaClick("book_consultation", "accomplishments_cta");
                 // fallback: dispatch a custom event for global modal handler
                 window.dispatchEvent(new CustomEvent('open-booking-modal'));
               }}

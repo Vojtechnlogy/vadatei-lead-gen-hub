@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-consulting.jpg";
 import { useTranslation } from "react-i18next";
+import { trackCtaClick } from "@/lib/analytics";
 
 interface HeroProps {
   onBookingClick: () => void;
@@ -35,7 +36,10 @@ const Hero = ({ onBookingClick }: HeroProps) => {
             <Button 
               variant="cta" 
               size="lg" 
-              onClick={onBookingClick}
+              onClick={() => {
+                trackCtaClick("book_consultation", "hero");
+                onBookingClick();
+              }}
               className="text-lg px-8 py-4 h-auto whitespace-normal leading-snug text-center w-full sm:w-auto flex-wrap"
             >
               {t("hero.cta.book")}
@@ -46,6 +50,7 @@ const Hero = ({ onBookingClick }: HeroProps) => {
               variant="corporate-outline" 
               size="lg"
               onClick={() => {
+                trackCtaClick("view_services", "hero");
                 const element = document.getElementById("services");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}

@@ -22,6 +22,7 @@ import ServiceModal from "./ServiceModal";
 import { useTranslation } from "react-i18next";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { trackCtaClick, trackEvent } from "@/lib/analytics";
 
 interface ServicesProps {
   onBookingClick: () => void;
@@ -434,7 +435,14 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
                   <Button
                     variant="corporate-outline"
                     className="w-full group-hover:bg-primary group-hover:text-white transition-all mt-auto"
-                    onClick={() => openService(service.id)}
+                    onClick={() => {
+                      trackEvent("service_more_info_click", {
+                        service_id: service.id,
+                        service_title: t(`services.${service.id}.title`),
+                        click_location: "services_grid",
+                      });
+                      openService(service.id);
+                    }}
                     aria-label={`Learn more about ${t(`services.${service.id}.title`)}`}
                   >
                     {t(`services.${service.id}.moreInfoButton`, {
@@ -461,7 +469,10 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
               variant="corporate-outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary whitespace-normal h-auto py-3 leading-snug text-center max-w-full flex-wrap"
-              onClick={onBookingClick}
+              onClick={() => {
+                trackCtaClick("book_consultation", "services_cta");
+                onBookingClick();
+              }}
             >
               {t("services.cta.button")}
               <ArrowRight className="ml-2 h-4 w-4" />

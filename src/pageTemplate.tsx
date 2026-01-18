@@ -34,7 +34,7 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
             dangerouslySetInnerHTML={{
               __html: `
                 gtag('js', new Date());
-                gtag('config', 'G-NLZ99GFK4S');
+                gtag('config', 'G-NLZ99GFK4S', { send_page_view: false });
                 gtag('config', 'AW-17502148935');
               `,
             }}

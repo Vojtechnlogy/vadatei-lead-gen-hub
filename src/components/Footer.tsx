@@ -9,6 +9,7 @@ import {
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { localizedPath } from "../lib/localize";
+import { trackCtaClick, trackEmailClick, trackPhoneClick } from "@/lib/analytics";
 
 interface FooterProps {
   onBookingClick: () => void;
@@ -50,7 +51,12 @@ const Footer = ({ onBookingClick }: FooterProps) => {
                     return phones
                       .filter((p) => Boolean(p))
                       .map((p: string, i: number) => (
-                        <a key={i} href={`tel:${p.replace(/\s+/g, "")}`} className="font-body text-white/80">
+                        <a
+                          key={i}
+                          href={`tel:${p.replace(/\s+/g, "")}`}
+                          className="font-body text-white/80"
+                          onClick={() => trackPhoneClick(p, "footer")}
+                        >
                           {p}
                         </a>
                       ));
@@ -59,7 +65,11 @@ const Footer = ({ onBookingClick }: FooterProps) => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-white/60" />
-                <a href={`mailto:${t("contact.email")}`} className="font-body text-white/80 underline">
+                <a
+                  href={`mailto:${t("contact.email")}`}
+                  className="font-body text-white/80 underline"
+                  onClick={() => trackEmailClick(String(t("contact.email")), "footer")}
+                >
                   {t("contact.email")}
                 </a>
               </div>
@@ -67,7 +77,10 @@ const Footer = ({ onBookingClick }: FooterProps) => {
 
             <Button
               variant="corporate-outline"
-              onClick={onBookingClick}
+              onClick={() => {
+                trackCtaClick("book_consultation", "footer");
+                onBookingClick();
+              }}
               className="border-white text-white hover:bg-white hover:text-primary"
             >
               {t("footer.bookDiscovery")}

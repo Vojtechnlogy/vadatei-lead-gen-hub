@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { localizedPath } from "@/lib/localize";
 import { useTranslation } from "react-i18next";
+import { trackCtaClick, trackEvent } from "@/lib/analytics";
 
 type ServiceSubpageTemplateProps = {
   serviceId: "diagnostic-deep-dive" | "targeted-transformation" | "extended-oversight";
@@ -234,13 +235,24 @@ export default function ServiceSubpageTemplate({ serviceId }: ServiceSubpageTemp
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <Button
                 variant="corporate"
-                onClick={() => window.dispatchEvent(new Event("open-booking-modal"))}
+                onClick={() => {
+                  trackEvent("service_page_book_click", {
+                    service_id: serviceId,
+                    click_location: "service_page",
+                  });
+                  trackCtaClick("book_consultation", `service_page:${serviceId}`);
+                  window.dispatchEvent(new Event("open-booking-modal"));
+                }}
               >
                 {tr.getString("servicePage.cta", "Book a Diagnostic Call")}
               </Button>
               <Button
                 variant="corporate-outline"
                 onClick={() => {
+                  trackEvent("service_page_back_to_services_click", {
+                    service_id: serviceId,
+                    click_location: "service_page",
+                  });
                   const currentLang = i18n.language || "en";
                   navigate(`/${currentLang}#services`);
                   setTimeout(() => {

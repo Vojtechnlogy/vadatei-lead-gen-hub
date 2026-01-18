@@ -1,6 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Calendar, Clock, Phone, Video } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { trackOutboundClick } from "@/lib/analytics";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -106,6 +107,7 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
             <a
               href="https://calendar.app.google/3Gr57kHkBUGkHsgS9"
               rel="noopener noreferrer"
+              onClick={() => trackOutboundClick("https://calendar.app.google/3Gr57kHkBUGkHsgS9", "booking_modal", "calendar_booking")}
               className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-md hover:bg-primary-dark transition"
             >
               {t("bookingModal.bookButton")}

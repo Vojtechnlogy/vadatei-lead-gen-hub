@@ -8,6 +8,7 @@ import HeadMeta from "@/components/MetaHead";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import BookingModal from "@/components/BookingModal";
+import { startScrollDepthTracking, trackPageView } from "@/lib/analytics";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,17 @@ const App = () => {
     const handler = () => setBookingModalOpen(true);
     window.addEventListener("open-booking-modal", handler);
     return () => window.removeEventListener("open-booking-modal", handler);
+  }, []);
+
+  useEffect(() => {
+    const pagePath = `${location.pathname}${location.search}${location.hash}`;
+    trackPageView(pagePath);
+    window.dispatchEvent(new Event("vadatei:route_change"));
+  }, [location.pathname, location.search, location.hash]);
+
+  useEffect(() => {
+    const stop = startScrollDepthTracking();
+    return () => stop();
   }, []);
 
   return (

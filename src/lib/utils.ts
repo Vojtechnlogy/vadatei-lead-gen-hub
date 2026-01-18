@@ -7,4 +7,4 @@ export function cn(...inputs: ClassValue[]) {
 
 // Feature flag to control whether the app should write cookies.
 // Set to `false` to disable cookie writes (useful for privacy/testing).
-export const ENABLE_COOKIES = false
+export const ENABLE_COOKIES = true
