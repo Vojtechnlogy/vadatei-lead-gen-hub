@@ -263,7 +263,13 @@
     "name": "Vadatei",
     "description": "Strategischer Change & Transformationspartner mit über 30 Jahren Erfahrung. Wir helfen Organisationen zu verstehen, was sich ändern muss, Transformationen effektiv umzusetzen und nachhaltige Verbesserungen zu erzielen.",
     "contactType": "Kundendienst",
-    "areaServed": "Europa"
+    "areaServed": "Europa",
+    "hqAddress": {
+      "street": "",
+      "city": "",
+      "postalCode": "",
+      "country": ""
+    }
   },
   "header": {
     "company": "Vadatei",

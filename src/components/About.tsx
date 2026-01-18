@@ -52,31 +52,46 @@ const About = () => {
             "url": "https://vadatei.com/",
             "logo": "https://vadatei.com/favicon.ico",
             "foundingDate": "2024",
-            "numberOfEmployees": "1-10",
+            "numberOfEmployees": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 10
+            },
             "industry": "Business Consulting",
             "serviceArea": {
               "@type": "Place",
               "name": "Europe"
             },
-            "address": {
-              "@type": "PostalAddress",
-              "addressRegion": "Europe",
-              "addressCountry": ["CZ", "DE", "NL"]
-            },
+            "areaServed": ["Europe", "DE", "NL"],
+            "address": (() => {
+              const street = t("organization.hqAddress.street", { defaultValue: "" }).trim();
+              const city = t("organization.hqAddress.city", { defaultValue: "" }).trim();
+              const postalCode = t("organization.hqAddress.postalCode", { defaultValue: "" }).trim();
+              const country = t("organization.hqAddress.country", { defaultValue: "" }).trim();
+
+              if (street && city && postalCode && country) {
+                return {
+                  "@type": "PostalAddress",
+                  "streetAddress": street,
+                  "addressLocality": city,
+                  "postalCode": postalCode,
+                  "addressCountry": country,
+                };
+              }
+
+              // Backwards-compatible fallback until HQ fields are provided.
+              return {
+                "@type": "PostalAddress",
+                "addressRegion": "Europe",
+                "addressCountry": ["CZ", "DE", "NL"],
+              };
+            })(),
             "contactPoint": [
               {
                 "@type": "ContactPoint",
-                "telephone": "+31 682 49 46 90",
+                "telephone": ["+31 682 49 46 90", "+420 602 396 416"],
                 "contactType": t("organization.contactType"),
-                "areaServed": t("organization.areaServed"),
-                "email": "info@vadatei.com",
-                "availableLanguage": ["en", "cs", "de"]
-              },
-              {
-                "@type": "ContactPoint",
-                "telephone": "+420 602 396 416",
-                "contactType": t("organization.contactType"),
-                "areaServed": t("organization.areaServed"),
+                "areaServed": ["Europe", "DE", "NL"],
                 "email": "info@vadatei.com",
                 "availableLanguage": ["en", "cs", "de"]
               }

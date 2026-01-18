@@ -144,6 +144,12 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
                 "description": t("organization.description"),
                 "url": "https://vadatei.com/",
                 "logo": "https://vadatei.com/favicon.ico",
+                "numberOfEmployees": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 10
+                },
+                "areaServed": ["Europe", "DE", "NL"],
                 "sameAs": [
                   "https://www.linkedin.com/in/marek-tolasz/"
                 ]

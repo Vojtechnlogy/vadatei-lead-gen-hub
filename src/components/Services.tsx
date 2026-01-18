@@ -104,6 +104,29 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
         "url": "https://vadatei.com/",
         "logo": "https://vadatei.com/favicon.ico",
         "description": t("organization.description"),
+        "numberOfEmployees": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 10
+        },
+        "areaServed": ["Europe", "DE", "NL"],
+        "address": (() => {
+          const street = t("organization.hqAddress.street", { defaultValue: "" }).trim();
+          const city = t("organization.hqAddress.city", { defaultValue: "" }).trim();
+          const postalCode = t("organization.hqAddress.postalCode", { defaultValue: "" }).trim();
+          const country = t("organization.hqAddress.country", { defaultValue: "" }).trim();
+
+          if (street && city && postalCode && country) {
+            return {
+              "@type": "PostalAddress",
+              "streetAddress": street,
+              "addressLocality": city,
+              "postalCode": postalCode,
+              "addressCountry": country,
+            };
+          }
+          return undefined;
+        })(),
         "sameAs": ["https://www.linkedin.com/in/marek-tolasz/"],
       },
       {
@@ -136,6 +159,12 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
       "description": t("organization.description"),
       "url": "https://vadatei.com/",
       "logo": "https://vadatei.com/favicon.ico",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 1,
+        "maxValue": 10
+      },
+      "areaServed": ["Europe", "DE", "NL"],
       "sameAs": [
         "https://www.linkedin.com/in/marek-tolasz/"
       ]
@@ -154,7 +183,8 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
           "provider": {
             "@type": "Organization",
             "name": "Vadatei",
-            "description": t("organization.description")
+            "description": t("organization.description"),
+            "areaServed": ["Europe", "DE", "NL"]
           },
           "areaServed": ["Europe", "EU", "Czech Republic", "Germany", "Netherlands", "Austria", "Slovakia", "Poland", "Switzerland"],
           "serviceType": "Business Consulting",

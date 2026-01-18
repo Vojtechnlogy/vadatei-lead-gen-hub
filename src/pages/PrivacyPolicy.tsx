@@ -15,19 +15,31 @@ const PrivacyPolicy = () => {
     "name": t("organization.name"),
     "url": "https://vadatei.com/",
     "logo": "https://vadatei.com/favicon.ico",
+    "areaServed": ["Europe", "DE", "NL"],
+    "address": (() => {
+      const street = t("organization.hqAddress.street", { defaultValue: "" }).trim();
+      const city = t("organization.hqAddress.city", { defaultValue: "" }).trim();
+      const postalCode = t("organization.hqAddress.postalCode", { defaultValue: "" }).trim();
+      const country = t("organization.hqAddress.country", { defaultValue: "" }).trim();
+
+      if (street && city && postalCode && country) {
+        return {
+          "@type": "PostalAddress",
+          "streetAddress": street,
+          "addressLocality": city,
+          "postalCode": postalCode,
+          "addressCountry": country,
+        };
+      }
+
+      return undefined;
+    })(),
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "+31 682 49 46 90",
+        "telephone": ["+31 682 49 46 90", "+420 602 396 416"],
         "contactType": t("organization.contactType"),
-        "areaServed": t("organization.areaServed"),
-        "email": "info@vadatei.com"
-      },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+420 602 396 416",
-        "contactType": t("organization.contactType"),
-        "areaServed": t("organization.areaServed"),
+        "areaServed": ["Europe", "DE", "NL"],
         "email": "info@vadatei.com"
       }
     ],

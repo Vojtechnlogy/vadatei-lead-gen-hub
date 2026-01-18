@@ -1,6 +1,7 @@
 import { useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { localizedPath } from "@/lib/localize";
 import { useTranslation } from "react-i18next";
@@ -87,8 +88,83 @@ export default function ServiceSubpageTemplate({ serviceId }: ServiceSubpageTemp
     tr.getString("servicePage.quietSentence", "")
   ).trim();
 
+  const resolvedLanguage = i18n.resolvedLanguage || i18n.language || "en";
+  const serviceSlugMap: Record<ServiceSubpageTemplateProps["serviceId"], string> = {
+    "diagnostic-deep-dive": "transformation-blueprint",
+    "targeted-transformation": "transformation-execution",
+    "extended-oversight": "transformation-leadership",
+  };
+  const slug = serviceSlugMap[serviceId];
+  const pageUrl = `https://vadatei.com/${resolvedLanguage}/services/${slug}`;
+
+  const hqStreet = tr.getString("organization.hqAddress.street").trim();
+  const hqCity = tr.getString("organization.hqAddress.city").trim();
+  const hqPostalCode = tr.getString("organization.hqAddress.postalCode").trim();
+  const hqCountry = tr.getString("organization.hqAddress.country").trim();
+  const hqAddress = hqStreet && hqCity && hqPostalCode && hqCountry
+    ? {
+        "@type": "PostalAddress",
+        streetAddress: hqStreet,
+        addressLocality: hqCity,
+        postalCode: hqPostalCode,
+        addressCountry: hqCountry,
+      }
+    : undefined;
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${pageUrl}#service`,
+    name: title,
+    description: subheadline || tr.getString(`services.${serviceId}.fullDescription`) || title,
+    url: pageUrl,
+    inLanguage: resolvedLanguage,
+    provider: {
+      "@type": "Organization",
+      "@id": "https://vadatei.com/#organization",
+      name: tr.getString("organization.name", "Vadatei"),
+      url: "https://vadatei.com/",
+      logo: "https://vadatei.com/favicon.ico",
+      description: tr.getString("organization.description"),
+      numberOfEmployees: {
+        "@type": "QuantitativeValue",
+        minValue: 1,
+        maxValue: 10,
+      },
+      areaServed: ["Europe", "DE", "NL"],
+      address: hqAddress,
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          contactType: tr.getString("organization.contactType"),
+          areaServed: ["Europe", "DE", "NL"],
+          email: "info@vadatei.com",
+          telephone: ["+31 682 49 46 90", "+420 602 396 416"],
+          availableLanguage: ["en", "cs", "de"],
+        },
+      ],
+      sameAs: ["https://www.linkedin.com/in/marek-tolasz/"],
+    },
+    areaServed: ["Europe", "DE", "NL"],
+    serviceType: "Business Consulting",
+    category: "Change Management",
+    offers: {
+      "@type": "Offer",
+      url: pageUrl,
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: "Price on request",
+        priceCurrency: "EUR",
+      },
+    },
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
+      </Helmet>
       <header className="pt-24 pb-10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Button
