@@ -29,12 +29,10 @@ interface ServicesProps {
 }
 
 const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
-      // Import Helmet for SEO structured data injection
-      // ...existing code...
-    // State for swipable process steps
-    const [activeStep, setActiveStep] = useState(0);
-    const [animating, setAnimating] = useState(false);
-    const [animationDirection, setAnimationDirection] = useState<'up' | 'down' | null>(null);
+  // State for swipable process steps
+  const [activeStep, setActiveStep] = useState(0);
+  const [animating, setAnimating] = useState(false);
+  const [animationDirection, setAnimationDirection] = useState<"up" | "down" | null>(null);
 
   const [selectedServiceId, setSelectedServiceId] = useState<string | null>(initialServiceId || null);
   const { t, i18n } = useTranslation();
@@ -55,29 +53,33 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
   const openService = (id: string) => setSelectedServiceId(id);
   const closeService = () => setSelectedServiceId(null);
 
+  const getArray = (key: string, lng?: string): string[] => {
+    const value = t(key, {
+      returnObjects: true,
+      lng,
+      defaultValue: [] as unknown as string[],
+    }) as unknown;
+    return Array.isArray(value) ? value.map((v) => String(v)) : [];
+  };
+
+  const getArrayWithEnFallback = (key: string): string[] => {
+    const current = getArray(key);
+    if (current.length) return current;
+    return getArray(key, "en");
+  };
+
+  const getFeaturesForService = (id: string): string[] => {
+    // Prefer the standardized schema, but keep backwards-compatible fallback.
+    const includes = getArrayWithEnFallback(`services.${id}.includes`);
+    if (includes.length) return includes;
+    return getArrayWithEnFallback(`services.${id}.features`);
+  };
+
   const getServiceObject = (id: string | null) => {
     if (!id) return null;
     const svc = services.find((s) => s.id === id)!;
 
-    const getArray = (key: string, lng?: string): string[] => {
-      const value = t(key, {
-        returnObjects: true,
-        lng,
-        defaultValue: [] as unknown as string[],
-      }) as unknown;
-      return Array.isArray(value) ? value.map((v) => String(v)) : [];
-    };
-
-    const getArrayWithEnFallback = (key: string): string[] => {
-      const current = getArray(key);
-      if (current.length) return current;
-      return getArray(key, "en");
-    };
-
-    let features: string[] = [];
-    // Prefer the standardized schema, but keep backwards-compatible fallback.
-    features = getArrayWithEnFallback(`services.${id}.includes`);
-    if (!features.length) features = getArrayWithEnFallback(`services.${id}.features`);
+    const features = getFeaturesForService(id);
     
     return {
       id,
@@ -88,6 +90,39 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
       icon: svc.icon,
       image: svc.image,
     };
+  };
+
+  const resolvedLanguage = i18n.resolvedLanguage || i18n.language || "en";
+  const merchantListingJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://vadatei.com/#organization",
+        "name": "Vadatei",
+        "url": "https://vadatei.com/",
+        "logo": "https://vadatei.com/favicon.ico",
+        "description": t("organization.description"),
+        "sameAs": ["https://www.linkedin.com/in/marek-tolasz/"],
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vadatei.com/#website",
+        "url": "https://vadatei.com/",
+        "name": "Vadatei",
+        "publisher": { "@id": "https://vadatei.com/#organization" },
+        "inLanguage": resolvedLanguage,
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://vadatei.com/#webpage",
+        "url": "https://vadatei.com/",
+        "name": t("services.sectionTitle"),
+        "isPartOf": { "@id": "https://vadatei.com/#website" },
+        "about": { "@id": "https://vadatei.com/#organization" },
+        "inLanguage": resolvedLanguage,
+      },
+    ],
   };
 
   // Structured data for SEO
@@ -211,6 +246,7 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
   return (
     <section id="services" className="py-20 bg-corporate-light">
       <Helmet>
+        <script type="application/ld+json">{JSON.stringify(merchantListingJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(servicesJsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
       </Helmet>
@@ -299,47 +335,7 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
           {services.map((service) => {
-            // Use robust feature loading logic with debugging
-            let features: string[] = [];
-            
-            // First, let's try the simple approach
-            const rawFeatures = t(`services.${service.id}.features`, { returnObjects: true });
-            console.log(`Raw features for ${service.id}:`, rawFeatures);
-            
-            if (Array.isArray(rawFeatures)) {
-              features = rawFeatures as string[];
-              console.log(`Successfully loaded ${features.length} features for ${service.id}`);
-            } else {
-              console.warn(`Features not loaded as array for ${service.id}, got:`, typeof rawFeatures, rawFeatures);
-              // Fallback: hardcode the features to ensure they show up
-              if (service.id === 'diagnostic-deep-dive') {
-                features = [
-                  "Organizational assessment & culture scan",
-                  "Stakeholder interviews for insight & buy-in",
-                  "Change readiness evaluation",
-                  "Gap and risk analysis",
-                  "Strategic transformation roadmap"
-                ];
-              } else if (service.id === 'targeted-transformation') {
-                features = [
-                  "Change planning",
-                  "Alignment workshops",
-                  "Governance setup",
-                  "Communication strategy",
-                  "Capability and culture development",
-                  "Adoption tracking",
-                  "Full Implementation oversight"
-                ];
-              } else if (service.id === 'extended-oversight') {
-                features = [
-                  "Post-implementation reviews",
-                  "Leadership and team coaching", 
-                  "Process audits & optimization",
-                  "Continuous improvement sessions",
-                  "Sustainment planning"
-                ];
-              }
-            }
+            const features = getFeaturesForService(service.id);
 
             const duration = t(`services.${service.id}.timelineTable.duration`, { defaultValue: "" });
             const price = t(`services.${service.id}.pricing.amount`, { defaultValue: "" });
@@ -411,16 +407,26 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
 
                   {(duration || price) && (
                     <div className="mb-6 rounded-lg border border-border bg-background/60 p-4">
+                      {price && (
+                        <p className="text-xs font-body text-muted-foreground italic mb-2">
+                          {t(
+                            "serviceModal.transparentPricingNote",
+                            "We’re proud to offer 100% transparent pricing—no surprises, no hidden fees."
+                          )}
+                        </p>
+                      )}
                       {duration && (
                         <p className="text-sm font-body text-muted-foreground">
                           <span className="font-semibold text-foreground">{t("serviceModal.duration")}</span> {duration}
                         </p>
                       )}
                       {price && (
-                        <p className="text-sm font-body text-muted-foreground">
-                          <span className="font-semibold text-foreground">{t("serviceModal.pricing")}: </span>
-                          {price}
-                        </p>
+                        <div className="space-y-1">
+                          <p className="text-sm font-body text-muted-foreground">
+                            <span className="font-semibold text-foreground">{t("serviceModal.pricing")}: </span>
+                            {price}
+                          </p>
+                        </div>
                       )}
                     </div>
                   )}
@@ -431,7 +437,9 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
                     onClick={() => openService(service.id)}
                     aria-label={`Learn more about ${t(`services.${service.id}.title`)}`}
                   >
-                    {t("services.moreInfoButton")}
+                    {t(`services.${service.id}.moreInfoButton`, {
+                      defaultValue: t("services.moreInfoButton"),
+                    })}
                     <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                   </Button>
                 </CardContent>
@@ -452,7 +460,7 @@ const Services = ({ onBookingClick, initialServiceId }: ServicesProps) => {
             <Button
               variant="corporate-outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary"
+              className="border-white text-white hover:bg-white hover:text-primary whitespace-normal h-auto py-3 leading-snug text-center max-w-full flex-wrap"
               onClick={onBookingClick}
             >
               {t("services.cta.button")}

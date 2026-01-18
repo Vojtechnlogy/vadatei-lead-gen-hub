@@ -150,6 +150,7 @@
     "whatsIncluded": "What this looks like in practice",
     "timelineEffort": "Timeline & Effort",
     "pricing": "Pricing",
+    "transparentPricingNote": "100% transparentní ceny—žádná překvapení, žádné skryté poplatky.",
     "outcomes": "Outcomes",
     "whoFor": "Who It's For",
     "typicalResults": "Typical Results",
@@ -282,11 +283,11 @@
     }
   },
   "hero": {
-    "headline": "Každá organizace přistupuje ke změně jinak.",
-    "subhead": "Nabízíme strukturovaný transformační model, který vás provede od úvodního auditu až po trvalé výsledky. Každý krok navazuje na předchozí, zajišťuje jasnost, sladění a udržitelnou změnu.",
+    "headline": "Transformace Poháněná Technologií",
+    "subhead": "Pomáháme středně velkým evropským výrobcům odemknout udržitelný růst tím, že odstraňujeme překážky transformace a zavádíme governance, která vydrží",
     "cta": {
-      "book": "Rezervovat bezplatnou konzultaci",
-      "services": "Model transformace Vadatei"
+      "book": "Začněte diagnostickým hovorem",
+      "services": "Začněte svou cestu růstu"
     },
     "stats": {
       "years": "Let zkušeností",
@@ -441,6 +442,7 @@
     },
     "diagnostic-deep-dive": {
       "title": "Strategie změn & diagnostika",
+      "moreInfoButton": "Prozkoumat Blueprint",
       "description": "Zjistěte, co potřebujete změnit a proč",
       "subtitle": "Získejte jasný pohled na to, co funguje, co ne, a přesný plán pro úspěšnou transformaci vaší organizace.",
       "whatIs": "Krátká, cílená spolupráce k posouzení připravenosti, sladění vedení a definování věrohodné transformační cesty.",
@@ -485,7 +487,7 @@
       },
       "pricing": {
         "amount": "€4,997",
-        "note": "(Finální rozsah potvrzen po krátkém úvodním callu)",
+        "note": "(Finální rozsah potvrzen po krátkém úvodním callu.) 100% transparentní ceny—žádná překvapení, žádné skryté poplatky.",
         "commitment": "Bez průběžného závazku."
       },
       "whatThisSolves": {
@@ -736,6 +738,7 @@
     },
     "targeted-transformation": {
       "title": "Řízení změn & implementace",
+      "moreInfoButton": "Objevte svou transformační cestu",
       "description": "Přeměňte strategii v akci a akci v implementaci",
       "subtitle": "Získejte ověřený krok za krokem kontrolní seznam, který vám pomůže sladit lidi, procesy a priority — před zahájením vaší další transformace.",
       "quietSentence": "Bereme jen omezený počet realizačních spoluprací, abychom chránili kvalitu dodávky a seniorní zapojení.",
@@ -776,7 +779,7 @@
       },
       "pricing": {
         "amount": "€9,000 – €30,000 / měsíc",
-        "note": "Finální rozsah potvrzen po krátkém úvodním callu.",
+        "note": "Finální rozsah potvrzen po krátkém úvodním callu. 100% transparentní ceny—žádná překvapení, žádné skryté poplatky.",
         "options": "Milestone-based pricing available."
       },
       "whatThisSolves": {
@@ -1027,6 +1030,7 @@
     },
     "extended-oversight": {
       "title": "Udržení změn & zlepšování",
+      "moreInfoButton": "Zjistěte, co vedení chybí",
       "description": "Udržte změnu a lidi v souladu",
       "subtitle": "Transformace je pouze polovina bitvy — udržet ji je místo, kde se dodává skutečná hodnota. Objevte 5 taktik, jak udržet vaši změnu.",
       "quietSentence": "Transformation Leadership je navržena pro dlouhodobé partnery, kteří chtějí konzistentní seniorní vedení, disciplínu governance a stabilní momentum.",
@@ -1067,7 +1071,7 @@
       },
       "pricing": {
         "amount": "€6,000 – €15,000 / měsíc",
-        "note": "Finální rozsah potvrzen po krátkém úvodním callu.",
+        "note": "Finální rozsah potvrzen po krátkém úvodním callu. 100% transparentní ceny—žádná překvapení, žádné skryté poplatky.",
         "value": "This provides the impact of a senior transformation leader at a fraction of the cost of a full-time executive."
       },
       "whatThisSolves": {
@@ -1443,11 +1447,11 @@
     "items": [
       {
         "stat": "Snížení provozních nákladů IT o 25%",
-        "description": "Uvolnění rozpočtu pro růst a inovace místo údržby."
+        "description": "Přesun rozpočtu z údržby systémů na růst a inovace, například automatizaci, datovou analytiku a umělou inteligenci."
       },
       {
         "stat": "Zlepšení výkonu služeb ze 70–80% na 90–95%",
-        "description": "Méně výpadků, plynulejší provoz a vyšší produktivita."
+        "description": "Výrazné snížení výpadků a provozních narušení, které vedlo k plynulejšímu fungování firmy."
       },
       {
         "stat": "Nasazení SAP a digitálních platforem bez přerušení provozu (0% dopad)",
@@ -1466,7 +1470,7 @@
         "description": "Menší závislost na drahém externím poradenství a vyšší soběstačnost."
       },
       {
-        "stat": "Standardizace procesů napříč více trhy",
+        "stat": "Standardizace procesů napříč více zeměmi",
         "description": "Konzistentní realizace, rychlejší škálování a snazší onboarding nových týmů."
       },
       {
@@ -1475,9 +1479,9 @@
       }
     ],
     "cta": {
-      "title": "Co by vaše firma dokázala s vyššími zisky?",
-      "body": "Odemkněte plný potenciál své firmy. Zjistěte, jak můžete zvýšit ziskovost a podpořit růst díky odbornému vedení na míru.",
-      "button": "Rezervovat bezplatnou konzultaci"
+      "title": "Co By Vaše Firma Dokázala S Plynulejší Transformací?",
+      "body": "Odemkněte plný potenciál své firmy. Zjistěte, jak efektivně dosáhnout vašich dlouhodobých transformačních cílů.",
+      "button": "Rezervovat bezplatnou konzultaci a zjistit víc"
     },
     "aria": {
       "previous": "Předchozí výsledky",

@@ -36,7 +36,7 @@ const Hero = ({ onBookingClick }: HeroProps) => {
               variant="cta" 
               size="lg" 
               onClick={onBookingClick}
-              className="text-lg px-8 py-4 h-auto"
+              className="text-lg px-8 py-4 h-auto whitespace-normal leading-snug text-center w-full sm:w-auto flex-wrap"
             >
               {t("hero.cta.book")}
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -49,7 +49,7 @@ const Hero = ({ onBookingClick }: HeroProps) => {
                 const element = document.getElementById("services");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
-              className="text-lg px-8 py-4 h-auto border-white text-white hover:bg-white hover:text-primary"
+              className="text-lg px-8 py-4 h-auto border-white text-white hover:bg-white hover:text-primary whitespace-normal leading-snug text-center w-full sm:w-auto flex-wrap"
             >
               {t("hero.cta.services")}
             </Button>

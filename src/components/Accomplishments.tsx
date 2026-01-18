@@ -309,7 +309,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
             <Button
               variant="corporate-outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary"
+              className="border-white text-white hover:bg-white hover:text-primary whitespace-normal h-auto py-3 leading-snug text-center max-w-full flex-wrap"
               onClick={onBookingClick ? onBookingClick : () => {
                 // fallback: dispatch a custom event for global modal handler
                 window.dispatchEvent(new CustomEvent('open-booking-modal'));

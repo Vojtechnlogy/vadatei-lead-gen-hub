@@ -47,6 +47,7 @@
     "whatsIncluded": "What this looks like in practice",
     "timelineEffort": "Timeline & Effort",
     "pricing": "Pricing",
+    "transparentPricingNote": "100% transparent pricing—no surprises, no hidden fees.",
     "outcomes": "Outcomes",
     "whoFor": "Who It's For",
     "typicalResults": "Typical Results",
@@ -177,7 +178,7 @@
   },
   "hero": {
     "headline": "Technology Enabled Transformation",
-    "subhead": "We help mid-sized European manufacturers unlock sustainable growth by removing operational bottlenecks and embedding governance that lasts",
+    "subhead": "We help mid-sized European manufacturers unlock sustainable growth by removing transformation bottlenecks and embedding governance that lasts",
     "cta": {
       "book": "Start with a Diagnostic Call",
       "services": "Begin Your Growth Journey"
@@ -282,6 +283,7 @@
 
     "diagnostic-deep-dive": {
       "title": "Transformation Blueprint",
+      "moreInfoButton": "Explore the Blueprint",
       "description": "Start small. Get clarity. Decide what’s next.",
       "whatIs": "A short, focused engagement to assess readiness, align leadership, and define a credible transformation path.",
       "connectToExecution": [
@@ -424,7 +426,7 @@
       },
       "pricing": {
         "amount": "€4,997",
-        "note": "(Final scope confirmed after a short introductory call)",
+        "note": "(Final scope confirmed after a short introductory call.) 100% transparent pricing—no surprises, no hidden fees.",
         "commitment": "No ongoing commitment required."
       },
       "whatThisSolves": {
@@ -578,6 +580,7 @@
 
     "targeted-transformation": {
       "title": "Transformation Execution",
+      "moreInfoButton": "Discover Your Transformation Path",
       "description": "Hands-on guidance to deliver transformation.",
       "quietSentence": "We take on a limited number of Execution engagements at a time to protect delivery quality and senior involvement.",
       "subtitle": "Receive a proven step-by-step checklist to help you align your people, processes, and priorities — before launching your next transformation.",
@@ -711,7 +714,7 @@
       },
       "pricing": {
         "amount": "€9,000 – €30,000 / month",
-        "note": "Final scope confirmed after a short introductory call.",
+        "note": "Final scope confirmed after a short introductory call. 100% transparent pricing—no surprises, no hidden fees.",
         "options": "Milestone-based pricing available."
       },
       "whatThisSolves": {
@@ -870,6 +873,7 @@
 
     "extended-oversight": {
       "title": "Transformation Leadership",
+      "moreInfoButton": "Find Out What Leadership Miss",
       "description": "Interim leadership for existing clients.",
       "quietSentence": "Transformation Leadership is designed for long-term partners who want consistent senior guidance, governance discipline, and steady momentum.",
       "subtitle": "Transformation is only half the battle — sustaining it is where real value is delivered. Discover 5 tactics to make your change stick.",
@@ -1007,7 +1011,7 @@
       },
       "pricing": {
         "amount": "€6,000 – €15,000 / month",
-        "note": "Final scope confirmed after short introductory call.",
+        "note": "Final scope confirmed after short introductory call. 100% transparent pricing—no surprises, no hidden fees.",
         "value": "This provides the impact of a senior transformation leader at a fraction of the cost of a full-time executive."
       },
       "whatThisSolves": {
@@ -1284,11 +1288,11 @@
     "items": [
       {
         "stat": "Reduced IT operating costs by 25%",
-        "description": "Freeing budget for growth initiatives and innovation instead of maintenance."
+        "description": "Shifting spend from system maintenance to growth and innovation initiatives such as automation, data analytics, and artificial intelligence."
       },
       {
         "stat": "Improved service performance from 70–80% to 90–95%",
-        "description": "Resulting in fewer outages, smoother operations, and higher business productivity."
+        "description": "Significantly reducing outages and operational disruptions, leading to smoother business operations."
       },
       {
         "stat": "Delivered seamless SAP and digital platform rollouts with 0% disruption",
@@ -1307,17 +1311,17 @@
         "description": "Reducing dependency on costly external consulting and increasing self-sufficiency."
       },
       {
-        "stat": "Standardized business processes across multiple markets",
+        "stat": "Standardized business processes across multiple countries",
         "description": "Enabling consistent execution, faster scaling, and easier onboarding of new teams."
       },
       {
         "stat": "Built multi-year technology and transformation roadmaps",
-        "description": "Giving leadership clarity, predictability, and confidence on future prioritization and investment."
+        "description": "Giving leadership clear direction, predictability, and confidence in investment decisions."
       }
     ],
     "cta": {
-      "title": "What Could Your Business Achieve with Higher Profits?",
-      "body": "Unlock your business's full potential. Discover how you can increase profits and drive growth with expert guidance tailored to your needs.",
+      "title": "What Could Your Business Achieve with Smoother Transformation?",
+      "body": "Unlock your business’s full potential. Discover how to efficiently achieve your long-term transformation goals.",
       "button": "Book a Free Consultation to Find Out"
     },
     "aria": {

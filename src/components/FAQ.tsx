@@ -11,14 +11,25 @@ const CATEGORY_KEYS = [
 ];
 
 export default function FAQ(): JSX.Element {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const asFaqList = (value: unknown): Array<{ question: string; answer: string }> => {
+    if (!Array.isArray(value)) return [];
+    return value
+      .map((item) => {
+        if (!item || typeof item !== "object") return null;
+        const maybe = item as { q?: unknown; a?: unknown };
+        const question = typeof maybe.q === "string" ? maybe.q.trim() : "";
+        const answer = typeof maybe.a === "string" ? maybe.a.trim() : "";
+        if (!question || !answer) return null;
+        return { question, answer };
+      })
+      .filter((x): x is { question: string; answer: string } => Boolean(x));
+  };
 
   // Get all questions from all categories in one continuous list
   const allQuestions = CATEGORY_KEYS.flatMap((catKey) =>
-    (t(`faq.questions.${catKey}`, { returnObjects: true }) as { q: string; a: string }[]).map((item) => ({
-      question: item.q,
-      answer: item.a,
-    }))
+    asFaqList(t(`faq.questions.${catKey}`, { returnObjects: true, defaultValue: [] }))
   );
 
   const [openSet, setOpenSet] = useState<Set<number>>(() => new Set());
@@ -33,39 +44,28 @@ export default function FAQ(): JSX.Element {
   };
 
   // For FAQ structured data (schema.org)
-  // Get current language from i18next translation context
-  const currentLang = (typeof t === 'function' && t('lang')) || 'en';
-  // Use translated description if available, fallback to English
-  const faqDescription = t('faq.description', { defaultValue: t('description', { defaultValue: "Frequently asked questions about Vadatei's change management and transformation consulting services" }) });
+  const currentLang = i18n.resolvedLanguage || i18n.language || "en";
+  const faqDescription = t("faq.description", {
+    defaultValue: t("description", {
+      defaultValue:
+        "Frequently asked questions about Vadatei's change management and transformation consulting services",
+    }),
+  });
+
   const ld = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "name": t("faq.title"),
-    "description": faqDescription,
-    "url": "https://vadatei.com/#faq",
-    "inLanguage": currentLang,
-    "publisher": {
-      "@type": "Organization",
-      "name": "Vadatei",
-      "url": "https://vadatei.com/",
-      "logo": "https://vadatei.com/favicon.ico"
-    },
-    "mainEntity": allQuestions.map((q, index) => ({
+    name: t("faq.title"),
+    description: faqDescription,
+    inLanguage: currentLang,
+    mainEntity: allQuestions.map((q) => ({
       "@type": "Question",
-      "name": q.question,
-      "position": index + 1,
-      "acceptedAnswer": { 
-        "@type": "Answer", 
-        "text": q.answer,
-        "inLanguage": currentLang,
-        "author": {
-          "@type": "Organization",
-          "name": "Vadatei"
-        }
+      name: q.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: q.answer,
       },
     })),
-    "dateModified": new Date().toISOString().split('T')[0],
-    "dateCreated": "2024-01-01"
   };
 
   return (

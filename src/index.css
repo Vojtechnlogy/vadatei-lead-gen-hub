@@ -126,6 +126,17 @@ All colors MUST be HSL.
     font-family: 'Inter', 'Lato', 'Lora', Arial, Helvetica, sans-serif !important;
   }
 
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     @apply font-sans;
   }

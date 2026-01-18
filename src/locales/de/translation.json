@@ -1,10 +1,10 @@
 {
   "title": "Vadatei - Strategischer Change & Transformationspartner | 30+ Jahre Erfahrung",
-  "description": "70% der Veränderungsprojekte scheitern. Wir sorgen dafür, dass Sie zu den erfolgreichen 30% gehören. Experten-Beratung im Change Management mit über 30 Jahren Erfahrung. Starten Sie mit unserer Diagnose-Analyse.",
+  "description": "Die Hälfte aller Veränderungsvorhaben scheitert. Wir sorgen dafür, dass Sie zur erfolgreichen Hälfte gehören. Expertenberatung im Change Management mit über 30 Jahren Erfahrung. Starten Sie mit unserem Transformation Blueprint und entdecken Sie die 5 versteckten Warnzeichen, die die meisten Führungsteams übersehen.",
   "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
   "meta": {
     "title": "Vadatei - Strategischer Change & Transformationspartner | 30+ Jahre Erfahrung",
-    "description": "70% der Veränderungsprojekte scheitern. Wir sorgen dafür, dass Sie zu den erfolgreichen 30% gehören. Experten-Beratung im Change Management mit über 30 Jahren Erfahrung. Starten Sie mit unserer Diagnose-Analyse.",
+    "description": "Die Hälfte aller Veränderungsvorhaben scheitert. Wir sorgen dafür, dass Sie zur erfolgreichen Hälfte gehören. Expertenberatung im Change Management mit über 30 Jahren Erfahrung. Starten Sie mit unserem Transformation Blueprint und entdecken Sie die 5 versteckten Warnzeichen, die die meisten Führungsteams übersehen.",
     "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
   },
   "about": {
@@ -33,8 +33,8 @@
         "description": "Starten Sie mit einer gezielten Analyse – geringes Risiko, klare Erkenntnisse und ein Fahrplan für skalierbare Verbesserungen"
       }
     },
-    "p3": "We don’t just advise from the sidelines. We’ve sat in your seat leading global programs, steering large teams, managing complexity, and delivering results under pressure.",
-    "valuesHeading": "Why Clients Choose Vadatei"
+    "p3": "Wir beraten nicht nur von der Seitenlinie. Wir saßen selbst auf Ihrer Seite – haben globale Programme geleitet, große Teams gesteuert, Komplexität gemanagt und unter Druck Ergebnisse geliefert.",
+    "valuesHeading": "Warum Kunden Vadatei wählen"
   },
   "serviceModal": {
     "title": "Starten Sie mit: {{service}}",
@@ -130,15 +130,16 @@
         "costsResources": "Analysieren Sie Ausgaben vs. Wert, Personalbesetzung, Toolnutzung und leistungsschwache Investitionen, um Kosteneinsparungsmöglichkeiten hervorzuheben."
       }
     },
-    "detailedDescription": "Detailed Description",
-    "whatsIncluded": "What this looks like in practice",
-    "timelineEffort": "Timeline & Effort",
-    "pricing": "Pricing",
-    "outcomes": "Outcomes",
-    "whoFor": "Who It's For",
-    "typicalResults": "Typical Results",
-    "example": "Example",
-    "duration": "Duration:"
+    "detailedDescription": "Detaillierte Beschreibung",
+    "whatsIncluded": "So sieht das in der Praxis aus",
+    "timelineEffort": "Zeitplan & Aufwand",
+    "pricing": "Preis",
+    "transparentPricingNote": "100% transparente Preise – keine Überraschungen, keine versteckten Gebühren.",
+    "outcomes": "Ergebnisse",
+    "whoFor": "Für wen es geeignet ist",
+    "typicalResults": "Typische Ergebnisse",
+    "example": "Beispiel",
+    "duration": "Dauer:"
   },
   "bookingModal": {
     "title": "Ihr Beratungsgespräch buchen",
@@ -167,8 +168,8 @@
       "services": "Leistungen",
       "process": "Prozess",
       "results": "Ergebnisse & ROI",
-      "locations": "Locations & Availability",
-      "security": "Security & Trust"
+      "locations": "Standorte & Verfügbarkeit",
+      "security": "Sicherheit & Vertrauen"
     },
     "questions": {
       "services": [
@@ -201,8 +202,8 @@
           "a": "Starten Sie mit einem kurzen Diagnosegespräch – ein unverbindliches Gespräch über Ihre Ziele, Herausforderungen und Transformationsprioritäten. Danach skizzieren wir Umfang, Zeitplan und Optionen für die Zusammenarbeit."
         },
         {
-          "q": "What outcomes can we expect?",
-          "a": "You can expect clearer priorities, smoother operations, stronger team alignment, and measurable progress in how your company works and communicates."
+          "q": "Welche Ergebnisse können wir erwarten?",
+          "a": "Sie können klarere Prioritäten, reibungslosere Abläufe, stärkere Teamabstimmung und messbare Fortschritte darin erwarten, wie Ihr Unternehmen arbeitet und kommuniziert."
         }
       ],
       "results": [
@@ -215,11 +216,11 @@
     }
   },
   "hero": {
-    "headline": "Schaffen Sie das Rückgrat, das Ihr Unternehmen braucht",
-    "subhead": "Wir helfen wachsenden Unternehmen, ihre IT- und Betriebsabteilungen so zu restrukturieren, dass Systeme, Abläufe und Teams effizient und sicher skalierbar sind.",
+    "headline": "Technologiegestützte Transformation",
+    "subhead": "Wir helfen mittelständischen europäischen Herstellern, nachhaltiges Wachstum zu erschließen, indem wir Transformationsengpässe beseitigen und Governance verankern, die Bestand hat",
     "cta": {
-      "book": "Kostenloses 30-minütiges Gespräch buchen",
-      "services": "Wobei wir helfen"
+      "book": "Starten Sie mit einem Diagnosegespräch",
+      "services": "Starten Sie Ihre Wachstumsreise"
     },
     "stats": {
       "years": "Jahre Erfahrung",
@@ -356,6 +357,7 @@
     },
     "diagnostic-deep-dive": {
       "title": "Veränderungsstrategie & Diagnostik",
+      "moreInfoButton": "Blueprint entdecken",
       "description": "Finden Sie heraus, was Sie ändern müssen und warum",
       "subtitle": "Erhalten Sie klare Einblicke in das, was funktioniert, was nicht, und einen präzisen Plan für die erfolgreiche Transformation Ihrer Organisation.",
       "whatIs": "Ein kurzes, fokussiertes Engagement, um Readiness zu bewerten, Leadership zu alignen und einen glaubwürdigen Transformationspfad zu definieren.",
@@ -400,7 +402,7 @@
       },
       "pricing": {
         "amount": "€4.997",
-        "note": "(Finaler Scope nach kurzem Erstgespräch bestätigt)",
+        "note": "(Finaler Scope nach kurzem Erstgespräch bestätigt.) 100% transparente Preise – keine Überraschungen, keine versteckten Gebühren.",
         "commitment": "Keine laufende Bindung erforderlich."
       },
       "whatThisSolves": {
@@ -651,6 +653,7 @@
     },
     "targeted-transformation": {
       "title": "Change Management & Implementierung",
+      "moreInfoButton": "Entdecken Sie Ihren Transformationspfad",
       "description": "Verwandeln Sie Strategie in Aktion und Aktion in Implementierung",
       "subtitle": "Erhalten Sie eine bewährte Schritt-für-Schritt-Checkliste, die Ihnen hilft, Ihre Menschen, Prozesse und Prioritäten zu koordinieren — bevor Sie Ihre nächste Transformation starten.",
       "quietSentence": "Wir nehmen nur eine begrenzte Anzahl an Execution-Engagements gleichzeitig an, um Delivery-Qualität und Senior-Involvement zu schützen.",
@@ -691,7 +694,7 @@
       },
       "pricing": {
         "amount": "€9.000 – €30.000 / Monat",
-        "note": "Finaler Scope nach kurzem Erstgespräch bestätigt.",
+        "note": "Finaler Scope nach kurzem Erstgespräch bestätigt. 100% transparente Preise – keine Überraschungen, keine versteckten Gebühren.",
         "options": "Milestone-based pricing available."
       },
       "whatThisSolves": {
@@ -942,6 +945,7 @@
     },
     "extended-oversight": {
       "title": "Veränderungsnachhaltigkeit & Verbesserung",
+      "moreInfoButton": "Finden Sie heraus, was Führung fehlt",
       "description": "Sorgen Sie dafür, dass Veränderungen bestehen bleiben und Menschen ausgerichtet sind",
       "subtitle": "Transformation ist nur die halbe Schlacht — sie nachhaltig zu gestalten ist der Punkt, wo echter Wert geliefert wird. Entdecken Sie 5 Taktiken, um Ihre Veränderung dauerhaft zu machen.",
       "quietSentence": "Transformation Leadership ist für langfristige Partner gedacht, die konstante Senior Guidance, Governance-Disziplin und stabiles Momentum wollen.",
@@ -982,7 +986,7 @@
       },
       "pricing": {
         "amount": "€6.000 – €15.000 / Monat",
-        "note": "Finaler Scope nach kurzem Erstgespräch bestätigt.",
+        "note": "Finaler Scope nach kurzem Erstgespräch bestätigt. 100% transparente Preise – keine Überraschungen, keine versteckten Gebühren.",
         "value": "This provides the impact of a senior transformation leader at a fraction of the cost of a full-time executive."
       },
       "whatThisSolves": {
@@ -1358,11 +1362,11 @@
     "items": [
       {
         "stat": "IT-Betriebskosten um 25% gesenkt",
-        "description": "Mehr Budget für Wachstum und Innovation statt Wartung."
+        "description": "Budget von der Systemwartung hin zu Wachstum und Innovation verlagert – z. B. Automatisierung, Datenanalyse und künstliche Intelligenz."
       },
       {
         "stat": "Service-Performance von 70–80% auf 90–95% verbessert",
-        "description": "Weniger Ausfälle, reibungslosere Abläufe und höhere Produktivität."
+        "description": "Ausfälle und operative Störungen deutlich reduziert – für reibungslosere Geschäftsabläufe."
       },
       {
         "stat": "SAP- und Digitalplattform-Rollouts mit 0% Unterbrechung umgesetzt",
@@ -1381,7 +1385,7 @@
         "description": "Weniger Abhängigkeit von teurer externer Beratung und mehr Selbstständigkeit."
       },
       {
-        "stat": "Geschäftsprozesse über mehrere Märkte standardisiert",
+        "stat": "Geschäftsprozesse über mehrere Länder standardisiert",
         "description": "Konsistente Ausführung, schnelleres Skalieren und leichteres Onboarding neuer Teams."
       },
       {
@@ -1390,9 +1394,9 @@
       }
     ],
     "cta": {
-      "title": "Was könnte Ihr Unternehmen mit höheren Gewinnen erreichen?",
-      "body": "Entfalten Sie das volle Potenzial Ihres Unternehmens. Erfahren Sie, wie Sie Gewinne steigern und Wachstum vorantreiben – mit maßgeschneiderter, praxisnaher Unterstützung.",
-      "button": "Kostenlose Beratung buchen"
+      "title": "Was könnte Ihr Unternehmen mit reibungsloserer Transformation erreichen?",
+      "body": "Entfalten Sie das volle Potenzial Ihres Unternehmens. Erfahren Sie, wie Sie Ihre langfristigen Transformationsziele effizient erreichen.",
+      "button": "Kostenlose Beratung buchen und mehr erfahren"
     },
     "aria": {
       "previous": "Vorherige Ergebnisse",
