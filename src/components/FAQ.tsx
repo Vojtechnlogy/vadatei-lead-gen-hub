@@ -55,6 +55,7 @@ export default function FAQ(): JSX.Element {
   const ld = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://vadatei.com/#faq",
     name: t("faq.title"),
     description: faqDescription,
     inLanguage: currentLang,
@@ -69,13 +70,13 @@ export default function FAQ(): JSX.Element {
   };
 
   return (
-    <section id="faq" className="max-w-6xl mx-auto py-16 px-4" itemScope itemType="https://schema.org/FAQPage">
+    <section id="faq" className="max-w-6xl mx-auto py-16 px-4">
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(ld)}</script>
       </Helmet>
 
       <header className="mb-8">
-        <h2 className="text-3xl font-semibold text-center" itemProp="name">{t("faq.title")}</h2>
+        <h2 className="text-3xl font-semibold text-center">{t("faq.title")}</h2>
       </header>
 
       {/* Single continuous list of all FAQ items */}
@@ -87,16 +88,12 @@ export default function FAQ(): JSX.Element {
               key={index}
               aria-labelledby={`faq-q-${index}`}
               className="bg-white/5 dark:bg-slate-800 rounded-lg p-4 shadow-sm"
-              itemScope 
-              itemType="https://schema.org/Question"
-              itemProp="mainEntity"
               role="listitem"
             >
               <div className="flex items-start justify-between">
                 <h3 
                   id={`faq-q-${index}`} 
                   className="text-lg font-medium"
-                  itemProp="name"
                 >
                   {item.question}
                 </h3>
@@ -129,11 +126,8 @@ export default function FAQ(): JSX.Element {
                 role="region"
                 aria-labelledby={`faq-q-${index}`}
                 className={`mt-3 text-sm leading-relaxed transition-all ${isOpen ? "block" : "hidden"}`}
-                itemScope
-                itemType="https://schema.org/Answer"
-                itemProp="acceptedAnswer"
               >
-                <div itemProp="text">{item.answer}</div>
+                <div>{item.answer}</div>
               </div>
             </article>
           );
