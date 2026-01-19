@@ -7,6 +7,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { X, Mail, Phone, Building, ArrowRight, Download } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from "react-i18next";
+import { trackGenerateLead } from "@/lib/analytics";
 
 interface Service {
   id: string;
@@ -70,12 +71,23 @@ const ServiceModal = ({ service, isOpen, onClose }: ServiceModalProps) => {
       .join('&');
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbysGkfFmGx1La7EVsZf1dHS_co2u6291egwxenTWuV0a789sKmwNJ6A1DWs8kuJkdmL/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbysGkfFmGx1La7EVsZf1dHS_co2u6291egwxenTWuV0a789sKmwNJ6A1DWs8kuJkdmL/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: encoded,
+      });
+
+      if (!response.ok) {
+        throw new Error(`Lead submission failed: ${response.status}`);
+      }
+
+      // GA4: lead generated (avoid sending PII like email/phone)
+      trackGenerateLead("service_modal_form", {
+        form_id: "service_modal",
+        service_id: service.id,
+        service_title: service.title,
       });
 
       toast({

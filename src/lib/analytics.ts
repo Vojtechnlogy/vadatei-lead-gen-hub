@@ -66,6 +66,13 @@ export function trackOutboundClick(url: string, location: string, label?: string
   });
 }
 
+export function trackGenerateLead(source: string, params: EventParams = {}) {
+  trackEvent("generate_lead", {
+    lead_source: source,
+    ...params,
+  });
+}
+
 export function startScrollDepthTracking() {
   if (typeof window === "undefined") return () => {};
 

@@ -1,7 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Calendar, Clock, Phone, Video } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { trackOutboundClick } from "@/lib/analytics";
+import { trackGenerateLead, trackOutboundClick } from "@/lib/analytics";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -10,6 +10,8 @@ interface BookingModalProps {
 
 const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
   const { t } = useTranslation();
+
+  const calendarUrl = "https://calendar.app.google/3Gr57kHkBUGkHsgS9";
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -105,9 +107,17 @@ const BookingModal = ({ isOpen, onClose }: BookingModalProps) => {
               {t("bookingModal.chooseTimeDesc")}
             </p>
             <a
-              href="https://calendar.app.google/3Gr57kHkBUGkHsgS9"
+              href={calendarUrl}
               rel="noopener noreferrer"
-              onClick={() => trackOutboundClick("https://calendar.app.google/3Gr57kHkBUGkHsgS9", "booking_modal", "calendar_booking")}
+              onClick={() => {
+                trackOutboundClick(calendarUrl, "booking_modal", "calendar_booking");
+                // Count ONLY the booking calendar click as a lead
+                trackGenerateLead("booking_calendar", {
+                  click_location: "booking_modal",
+                  url: calendarUrl,
+                  label: "calendar_booking",
+                });
+              }}
               className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-md hover:bg-primary-dark transition"
             >
               {t("bookingModal.bookButton")}
