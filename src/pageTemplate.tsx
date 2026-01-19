@@ -16,14 +16,14 @@ const PageTemplate: React.FC<PageMetaData> = ({ title, description, canonical, l
             type="text/javascript"
           />
           {/* Google tag (gtag.js) */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-04FF5YVF9C"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLZ99GFK4S"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'G-04FF5YVF9C');
+                gtag('config', 'G-NLZ99GFK4S');
               `,
             }}
           />
