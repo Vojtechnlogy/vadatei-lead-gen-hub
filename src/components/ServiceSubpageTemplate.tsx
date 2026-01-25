@@ -160,10 +160,45 @@ export default function ServiceSubpageTemplate({ serviceId }: ServiceSubpageTemp
     },
   };
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${pageUrl}#product`,
+    name: title,
+    description: subheadline || tr.getString(`services.${serviceId}.fullDescription`) || title,
+    url: pageUrl,
+    inLanguage: resolvedLanguage,
+    brand: {
+      "@type": "Organization",
+      "@id": "https://vadatei.com/#organization",
+      name: tr.getString("organization.name", "Vadatei"),
+      url: "https://vadatei.com/",
+    },
+    category: "Change Management",
+    offers: {
+      "@type": "Offer",
+      url: pageUrl,
+      availability: "https://schema.org/InStock",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: "Price on request",
+        priceCurrency: "EUR",
+      },
+    },
+    isRelatedTo: {
+      "@id": `${pageUrl}#service`,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <script type="application/ld+json">{JSON.stringify(serviceJsonLd)}</script>
+        <script id={`ld-service-${serviceId}`} type="application/ld+json">
+          {JSON.stringify(serviceJsonLd)}
+        </script>
+        <script id={`ld-product-${serviceId}`} type="application/ld+json">
+          {JSON.stringify(productJsonLd)}
+        </script>
       </Helmet>
       <header className="pt-24 pb-10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
