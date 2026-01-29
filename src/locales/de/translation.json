@@ -1,24 +1,24 @@
 {
-  "title": "Vadatei - Strategischer Change & Transformationspartner | 30+ Jahre Erfahrung",
-  "description": "Die Hälfte aller Veränderungsvorhaben scheitert. Wir sorgen dafür, dass Sie zur erfolgreichen Hälfte gehören. Expertenberatung im Change Management mit über 30 Jahren Erfahrung. Starten Sie mit unserem Transformation Blueprint und entdecken Sie die 5 versteckten Warnzeichen, die die meisten Führungsteams übersehen.",
+  "title": "Vadatei - Strategischer Change & Transformationspartner | 20+ Jahre Erfahrung",
+  "description": "Die Hälfte aller Veränderungsvorhaben scheitert. Wir sorgen dafür, dass Sie zur erfolgreichen Hälfte gehören. Expertenberatung im Change Management mit über 20 Jahren Erfahrung. Starten Sie mit unserem Transformation Blueprint und entdecken Sie die 5 versteckten Warnzeichen, die die meisten Führungsteams übersehen.",
   "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
   "meta": {
-    "title": "Vadatei - Strategischer Change & Transformationspartner | 30+ Jahre Erfahrung",
-    "description": "Die Hälfte aller Veränderungsvorhaben scheitert. Wir sorgen dafür, dass Sie zur erfolgreichen Hälfte gehören. Expertenberatung im Change Management mit über 30 Jahren Erfahrung. Starten Sie mit unserem Transformation Blueprint und entdecken Sie die 5 versteckten Warnzeichen, die die meisten Führungsteams übersehen.",
+    "title": "Vadatei - Strategischer Change & Transformationspartner | 20+ Jahre Erfahrung",
+    "description": "Die Hälfte aller Veränderungsvorhaben scheitert. Wir sorgen dafür, dass Sie zur erfolgreichen Hälfte gehören. Expertenberatung im Change Management mit über 20 Jahren Erfahrung. Starten Sie mit unserem Transformation Blueprint und entdecken Sie die 5 versteckten Warnzeichen, die die meisten Führungsteams übersehen.",
     "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
   },
   "about": {
     "title": "Über Vadatei",
     "tagline": "Erfahrung, der Sie vertrauen können. Ergebnisse, die Sie messen können.",
     "heading": "Ihr strategischer Partner für Transformation & Technologie",
-    "p1": "Mit über 30 Jahren Erfahrung in IT-Führung und Transformation hat Marek Tolasz Unternehmen geholfen, Abläufe zu optimieren, Kosten zu senken und Wachstum zu ermöglichen.",
+    "p1": "Mit über 20 Jahren Erfahrung in IT-Führung und Transformation hat Marek Tolasz Unternehmen geholfen, Abläufe zu optimieren, Kosten zu senken und Wachstum zu ermöglichen.",
     "p2": "Vadatei wurde gegründet, um dieses Know-how wachsenden Unternehmen zu bieten, die ihr Unternehmen für skalierbares und strategisches Wachstum gestalten und restrukturieren möchten. Von der Identifizierung der wichtigsten Herausforderungen bis zur Umsetzung praxisnaher Lösungen sorgen wir dafür, dass Ihre Systeme und Teams auf messbaren Erfolg ausgerichtet sind.",
     "imageName": "Marek Tolasz",
     "imageRole": "Vadatei, Gründer & Hauptberater",
     "values": {
       "experience": {
-        "title": "30+ Jahre Erfahrung",
-        "description": "Über 30 Jahre nachgewiesene Erfolge in der Leitung von IT-Teams und Transformationsprojekten in verschiedenen Branchen"
+        "title": "20+ Jahre Erfahrung",
+        "description": "Über 20 Jahre nachgewiesene Erfolge in der Leitung von IT-Teams und Transformationsprojekten in verschiedenen Branchen"
       },
       "impact": {
         "title": "Messbarer Geschäftserfolg",
@@ -216,8 +216,8 @@
     }
   },
   "hero": {
-    "headline": "Management der Unternehmenstransformation",
-    "subhead": "Wir helfen mittelgroßen bis großen europäischen Fertigungsunternehmen, nachhaltiges Wachstum zu erschließen, indem wir Transformationsengpässe beseitigen und Lösungen schaffen, die bleiben.",
+    "headline": "Digitale & Business-Transformation",
+    "subhead": "Wir helfen mittelständischen bis großen europäischen Fertigungsunternehmen, nachhaltiges Wachstum zu erschließen, indem wir Transformationsengpässe beseitigen, Lösungen schaffen, die bleiben, und skalierbares Transformationsmanagement verankern.",
     "cta": {
       "book": "Starten Sie mit einem Diagnosegespräch",
       "services": "Starten Sie Ihre Wachstumsreise"
@@ -261,7 +261,7 @@
   },
   "organization": {
     "name": "Vadatei",
-    "description": "Strategischer Change & Transformationspartner mit über 30 Jahren Erfahrung. Wir helfen Organisationen zu verstehen, was sich ändern muss, Transformationen effektiv umzusetzen und nachhaltige Verbesserungen zu erzielen.",
+    "description": "Strategischer Change & Transformationspartner mit über 20 Jahren Erfahrung. Wir helfen Organisationen zu verstehen, was sich ändern muss, Transformationen effektiv umzusetzen und nachhaltige Verbesserungen zu erzielen.",
     "contactType": "Kundendienst",
     "areaServed": "Europa",
     "hqAddress": {
@@ -606,7 +606,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group — experience leading real transformations, not just advising on them.",
+        "intro": "Vadatei brings 20+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group — experience leading real transformations, not just advising on them.",
         "strengths": "Our Blueprint is rooted in:",
         "points": [
           "Proven operating model expertise",
@@ -897,7 +897,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of first-hand transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. Not just consulting — actual delivery experience inside large organizations.",
+        "intro": "Vadatei brings 20+ years of first-hand transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. Not just consulting — actual delivery experience inside large organizations.",
         "strengths": "Our approach is:",
         "points": [
           "Hands-on",
@@ -1191,7 +1191,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. This isn't theoretical consulting — it's real-world transformation delivery at scale.",
+        "intro": "Vadatei brings 20+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. This isn't theoretical consulting — it's real-world transformation delivery at scale.",
         "strengths": "What makes us different:",
         "points": [
           "We bring enterprise-level discipline to mid-sized organizations",

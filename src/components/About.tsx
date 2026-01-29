@@ -115,7 +115,7 @@ const About = () => {
             "@type": "Person",
             "name": t("about.imageName"),
             "jobTitle": t("about.imageRole"),
-            "description": "Founder and Principal Consultant with over 30 years of experience in IT leadership and transformation management",
+            "description": "Founder and Principal Consultant with over 20 years of experience in IT leadership and transformation management",
             "image": "/src/assets/marekTolasz.jpg",
             "nationality": "Czech",
             "workLocation": {
