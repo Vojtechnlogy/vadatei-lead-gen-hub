@@ -816,31 +816,6 @@
         ],
         "conclusion": "You get execution support from someone who has led transformations at national and regional scale."
       },
-      "faq": {
-        "title": "FAQ — Transformation Execution",
-        "questions": [
-          {
-            "q": "Do we need to complete the Blueprint first?",
-            "a": "Yes — Execution builds directly on Blueprint findings."
-          },
-          {
-            "q": "How many processes can be mapped?",
-            "a": "Typically 2–4 high-priority processes depending on depth."
-          },
-          {
-            "q": "Does this include training?",
-            "a": "We provide change guidance — formal training can be added as an add-on."
-          },
-          {
-            "q": "Do you replace our PMO?",
-            "a": "No — we complement your PMO or act as a temporary enhancer."
-          },
-          {
-            "q": "Will you work with our ERP/vendor team?",
-            "a": "Yes — we manage collaboration and alignment."
-          }
-        ]
-      },
       "whoFor": "Organizations actively undergoing transformation and needing hands-on leadership to ensure delivery success.",
       "typicalResults": [
         "10–20% improvement in service levels",
@@ -1111,31 +1086,7 @@
         ],
         "conclusion": "You're not just getting advice. You're getting a partner who has led successful transformations for decades."
       },
-      "faq": {
-        "title": "FAQ — Transformation Leadership",
-        "questions": [
-          {
-            "q": "Is this a replacement for a full-time transformation leader?",
-            "a": "Yes — at a fraction of the cost."
-          },
-          {
-            "q": "Does this include project management?",
-            "a": "We oversee PMO and governance, but operational PM roles remain internal or vendor-based."
-          },
-          {
-            "q": "Can we adjust hours from month to month?",
-            "a": "Yes — plans are flexible to your transformation rhythm."
-          },
-          {
-            "q": "Do you work with our existing vendors?",
-            "a": "Absolutely — vendor alignment is a key part of this service."
-          },
-          {
-            "q": "Is this only for large transformations?",
-            "a": "No — it benefits any organization implementing significant change over time."
-          }
-        ]
-      },
+      
       "whoFor": "Organizations wanting long-term transformation stability without hiring a full-time transformation leader.",
       "typicalResults": [
         "20–40% improvement in portfolio on-time delivery",
@@ -1185,11 +1136,11 @@
       "services": [
         {
           "q": "What kinds of organizations do you work with?",
-          "a": "We work with small and medium-sized companies in industries such as hospitality, manufacturing, and transportation — particularly those undergoing growth, restructuring, or modernization. Most clients reach out when their operations or culture are no longer aligned with their goals."
+          "a": "We work with mid- to large-sized European companies in the manufacturing industry — particularly those undergoing growth, restructuring, or modernization. Most clients reach out when their operations or culture are no longer aligned with their goals."
         },
         {
           "q": "How long does a typical engagement last?",
-          "a": "Engagements typically run 4–52 weeks depending on the task at hand: Transformation Blueprint: 4 weeks, Transformation Execution: 8–52 weeks, Transformation Leadership: ongoing (monthly retainer). A precise timeline is agreed on during the Diagnostic Call."
+          "a": "Engagements are not time limited each of our projects is different. Transformation Blueprint is always around 4 weeks. Our Execution and Leadership offers are ongoing, with timelines and milestones defined after our on boarding calls."
         },
         {
           "q": "How is pricing structured?",
