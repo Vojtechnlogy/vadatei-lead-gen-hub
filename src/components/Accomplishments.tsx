@@ -301,7 +301,7 @@ const Accomplishments = ({ onBookingClick }: AccomplishmentsProps) => {
             <h3 className="text-3xl font-heading font-bold text-white mb-4">
               {getString("accomplishments.cta.title", "What Could Your Business Achieve with Higher Profits?")}
             </h3>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto font-body">
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto font-body whitespace-pre-line">
               {getString(
                 "accomplishments.cta.body",
                 "Unlock your business's full potential. Discover how you can increase profits and drive growth with expert guidance tailored to your needs."

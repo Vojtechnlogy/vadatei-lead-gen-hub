@@ -72,7 +72,9 @@ export default function FAQ(): JSX.Element {
   return (
     <section id="faq" className="max-w-6xl mx-auto py-16 px-4">
       <Helmet>
-        <script type="application/ld+json">{JSON.stringify(ld)}</script>
+        <script id="ld-faqpage" type="application/ld+json">
+          {JSON.stringify(ld)}
+        </script>
       </Helmet>
 
       <header className="mb-8">

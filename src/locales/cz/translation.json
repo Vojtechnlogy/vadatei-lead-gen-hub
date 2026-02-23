@@ -1,17 +1,26 @@
 {
+<<<<<<< HEAD
   "title": "Operational & Digital Transformation",
   "description": "70% organizačních změn selže. Zajistíme, aby vaše patřila mezi úspěšných 30%. Expertní poradenství v řízení změn s více než 30 lety zkušeností. Začněte s naší diagnostickou analýzou.",
   "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
   "meta": {
     "title": "Operational & Digital Transformation",
     "description": "70% organizačních změn selže. Zajistíme, aby vaše patřila mezi úspěšných 30%. Expertní poradenství v řízení změn s více než 30 lety zkušeností. Začněte s naší diagnostickou analýzou.",
+=======
+  "title": "Vadatei - Strategický Partner pro Řízení Změn | 20+ Let Zkušeností",
+  "description": "Polovina změnových iniciativ selže. Zajistíme, že budete v té úspěšné polovině. Expertní poradenství v řízení změn s více než 20 lety zkušeností. Začněte s naším Transformation Blueprint a objevte 5 skrytých varovných signálů, které většina týmů vedení přehlíží.",
+  "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
+  "meta": {
+    "title": "Vadatei - Strategický Partner pro Řízení Změn | 20+ Let Zkušeností",
+    "description": "Polovina změnových iniciativ selže. Zajistíme, že budete v té úspěšné polovině. Expertní poradenství v řízení změn s více než 20 lety zkušeností. Začněte s naším Transformation Blueprint a objevte 5 skrytých varovných signálů, které většina týmů vedení přehlíží.",
+>>>>>>> 1308a9b8b913dd666d321b21521bed34d44c1526
     "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
   },
   "about": {
     "title": "O Vadatei",
-    "tagline": "Transformace nemusí být chaotická, matoucí ani zahlcující. Po více než 30 letech vedení IT, transformací a organizačních změn v HEINEKEN a Coca-Cola jsme viděli, jak se opakují stejné vzorce – dobré firmy selhávají ne kvůli strategii, ale kvůli realizaci.",
+    "tagline": "Transformace nemusí být chaotická, matoucí ani zahlcující. Po více než 20 letech vedení IT, transformací a organizačních změn v HEINEKEN a Coca-Cola jsme viděli, jak se opakují stejné vzorce – dobré firmy selhávají ne kvůli strategii, ale kvůli realizaci.",
     "heading": "Váš strategický partner pro změny a transformaci",
-    "p1": "Vadatei vzniklo s jednoduchou vírou: transformace nemusí být chaotická, matoucí ani zahlcující. Po více než 30 letech vedení IT, transformací a organizačních změn v HEINEKEN a Coca-Cola jsme viděli, jak se opakují stejné vzorce – dobré firmy selhávají ne kvůli strategii, ale kvůli realizaci.",
+    "p1": "Vadatei vzniklo s jednoduchou vírou: transformace nemusí být chaotická, matoucí ani zahlcující. Po více než 20 letech vedení IT, transformací a organizačních změn v HEINEKEN a Coca-Cola jsme viděli, jak se opakují stejné vzorce – dobré firmy selhávají ne kvůli strategii, ale kvůli realizaci.",
     "p2": "Proto Vadatei existuje. Pomáháme organizacím pochopit, co je třeba změnit, podporujeme týmy během celé cesty a budujeme governance a strukturu, která udržuje vše v pohybu. Nejsme jen poradci z povzdálí. Seděli jsme na vaší židli – vedli globální programy, řídili velké týmy, zvládali komplexitu a dosahovali výsledků pod tlakem. Naším cílem je pomoci vaší firmě transformovat se s jasností, jistotou a dlouhodobou stabilitou.",
     "p3": "Nejsme jen poradci z povzdálí. Vedli jsme globální programy, řídili velké týmy, zvládali komplexitu a dosahovali výsledků pod tlakem.",
     "imageName": "Marek Tolasz",
@@ -19,8 +28,8 @@
     "valuesHeading": "Proč si klienti vybírají Vadatei",
     "values": {
       "experience": {
-        "title": "30+ let zkušeností",
-        "description": "Více než 30 let ověřených výsledků s vedením IT týmů a transformačních projektů v různých odvětvích."
+        "title": "20+ let zkušeností",
+        "description": "Více než 20 let ověřených výsledků s vedením IT týmů a transformačních projektů v různých odvětvích."
       },
       "impact": {
         "title": "Měřitelný obchodní dopad",
@@ -283,8 +292,13 @@
     }
   },
   "hero": {
+<<<<<<< HEAD
     "headline": "Operational & Digital Transformation",
     "subhead": "Spolupracujeme se středně velkými evropskými společnostmi na jejich cestě k udržitelnému růstu.\nOdstraňujeme bariéry transformace a vytváříme pevné základy řízení, na kterých mohou stavět i v budoucnu.",
+=======
+    "headline": "Digitální a byznysová transformace",
+    "subhead": "Pomáháme středním až velkým evropským výrobním firmám nastartovat udržitelný růst tím, že odstraňujeme úzká místa transformace, vytváříme řešení, která vydrží, a ukotvujeme škálovatelné řízení transformace.",
+>>>>>>> 1308a9b8b913dd666d321b21521bed34d44c1526
     "cta": {
       "book": "Začněte diagnostickým hovorem",
       "services": "Začněte svou cestu růstu"
@@ -332,15 +346,15 @@
       "title": "O Vadatei",
       "tagline": "Zkušenosti, kterým můžete věřit. Výsledky, které můžete měřit.",
       "heading": "Váš strategický partner pro řízení změn a technologie",
-      "p1": "S více než 30 lety zkušeností v IT leadershipu a transformačním řízení Marek Tolasz pomohl organizacím zefektivnit provoz, snížit náklady a nastartovat růst.",
+      "p1": "S více než 20 lety zkušeností v IT leadershipu a transformačním řízení Marek Tolasz pomohl organizacím zefektivnit provoz, snížit náklady a nastartovat růst.",
       "p2": "Vadatei vzniklo, aby přineslo tuto odbornost firmám, které chtějí navrhnout a restrukturalizovat své podnikání pro škálovatelný růst. Od identifikace klíčových výzev po implementaci praktických řešení zajišťujeme, že vaše systémy a týmy jsou sladěny pro měřitelný úspěch.",
       "p3": "Naše hodnoty: zkušenosti, měřitelný dopad, rychlá diagnostika a nízkorizikový první krok.",
       "imageName": "Marek Tolasz",
       "imageRole": "Vadatei, zakladatel & hlavní konzultant",
       "values": {
         "experience": {
-          "title": "30+ let zkušeností",
-          "description": "Více než 30 let ověřených výsledků s vedením IT týmů a transformačních projektů v různých odvětvích."
+          "title": "20+ let zkušeností",
+          "description": "Více než 20 let ověřených výsledků s vedením IT týmů a transformačních projektů v různých odvětvích."
         },
         "impact": {
           "title": "Měřitelný obchodní dopad",
@@ -486,7 +500,7 @@
         "deliverables": "9 detailních výstupů"
       },
       "pricing": {
-        "amount": "€4,997",
+        "amount": "€5,000",
         "note": "(Finální rozsah potvrzen po krátkém úvodním callu.) 100% transparentní ceny—žádná překvapení, žádné skryté poplatky.",
         "commitment": "Bez průběžného závazku."
       },
@@ -685,7 +699,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group — experience leading real transformations, not just advising on them.",
+        "intro": "Vadatei brings 20+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group — experience leading real transformations, not just advising on them.",
         "strengths": "Our Blueprint is rooted in:",
         "points": [
           "Proven operating model expertise",
@@ -778,7 +792,7 @@
         "sessions": "Týdenní governance + leadership sync"
       },
       "pricing": {
-        "amount": "€9,000 – €30,000 / měsíc",
+        "amount": "€15k–€30k / měsíc",
         "note": "Finální rozsah potvrzen po krátkém úvodním callu. 100% transparentní ceny—žádná překvapení, žádné skryté poplatky.",
         "options": "Milestone-based pricing available."
       },
@@ -976,7 +990,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of first-hand transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. Not just consulting — actual delivery experience inside large organizations.",
+        "intro": "Vadatei brings 20+ years of first-hand transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. Not just consulting — actual delivery experience inside large organizations.",
         "strengths": "Our approach is:",
         "points": [
           "Hands-on",
@@ -1070,7 +1084,7 @@
         "meetings": "Týdenní governance + měsíční advisory pro vedení"
       },
       "pricing": {
-        "amount": "€6,000 – €15,000 / měsíc",
+        "amount": "€10k–€18k / měsíc",
         "note": "Finální rozsah potvrzen po krátkém úvodním callu. 100% transparentní ceny—žádná překvapení, žádné skryté poplatky.",
         "value": "This provides the impact of a senior transformation leader at a fraction of the cost of a full-time executive."
       },
@@ -1270,7 +1284,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. This isn't theoretical consulting — it's real-world transformation delivery at scale.",
+        "intro": "Vadatei brings 20+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. This isn't theoretical consulting — it's real-world transformation delivery at scale.",
         "strengths": "What makes us different:",
         "points": [
           "We bring enterprise-level discipline to mid-sized organizations",
@@ -1479,8 +1493,8 @@
       }
     ],
     "cta": {
-      "title": "Co By Vaše Firma Dokázala S Plynulejší Transformací?",
-      "body": "Odemkněte plný potenciál své firmy. Zjistěte, jak efektivně dosáhnout vašich dlouhodobých transformačních cílů.",
+      "title": "Co by vaše firma dokázala s plynulejší transformací?",
+      "body": "Odemkněte plný potenciál své firmy.\u00A0\u00A0Zjistěte, jak efektivně dosáhnout vašich dlouhodobých transformačních cílů.",
       "button": "Rezervovat bezplatnou konzultaci a zjistit víc"
     },
     "aria": {
@@ -1505,7 +1519,7 @@
   },
   "organization": {
     "name": "Vadatei",
-    "description": "Strategic change & transformation partner with 30+ of years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
+    "description": "Strategic change & transformation partner with 20+ of years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     "contactType": "customer service",
     "areaServed": "Europe",
     "hqAddress": {

@@ -1,17 +1,26 @@
 {
+<<<<<<< HEAD
   "title": "Operational & Digital Transformation",
   "description": "Half of change efforts fail. We ensure you're in the winning half. Expert change management consulting with 30+ years of experience. Start with our Transformation Blueprint to discover the 5 hidden warning signs most leadership teams miss.",
   "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
   "meta": {
     "title": "Operational & Digital Transformation",
     "description": "Half of change efforts fail. We ensure you're in the winning half. Expert change management consulting with 30+ years of experience. Start with our Transformation Blueprint to discover the 5 hidden warning signs most leadership teams miss.",
+=======
+  "title": "Vadatei - Digital & Business Transformation | 20+ Years of Experience",
+  "description": "Half of change efforts fail. We ensure you're in the winning half. Expert change management consulting with 20+ years of experience. Start with our Transformation Blueprint to discover the 5 hidden warning signs most leadership teams miss.",
+  "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
+  "meta": {
+    "title": "Vadatei - Digital & Business Transformation | 20+ Years of Experience",
+    "description": "Half of change efforts fail. We ensure you're in the winning half. Expert change management consulting with 20+ years of experience. Start with our Transformation Blueprint to discover the 5 hidden warning signs most leadership teams miss.",
+>>>>>>> 1308a9b8b913dd666d321b21521bed34d44c1526
     "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
   },
   "about": {
     "title": "About Vadatei",
     "tagline": "",
     "heading": "Your Strategic Transformation Partner",
-    "p1": "Vadatei was created with a simple belief: transformation shouldn't be chaotic, confusing, or overwhelming. After more than 30 years leading IT, transformation, and organizational change across HEINEKEN and Coca-Cola, we saw the same pattern repeat itself good companies struggled not because of the strategy, but because of the execution.",
+    "p1": "Vadatei was created with a simple belief: transformation shouldn't be chaotic, confusing, or overwhelming. After more than 20 years leading IT, transformation, and organizational change across HEINEKEN and Coca-Cola, we saw the same pattern repeat itself good companies struggled not because of the strategy, but because of the execution.",
     "p2": "That's why Vadatei exists. We help organizations understand what needs to change, support teams through the journey, and build the governance and structure that keep everything moving forward. We don't just advise from the sidelines. We've sat in your seat leading global programs, steering large teams, managing complexity, and delivering results under pressure. Our goal is to help your business transform with clarity, confidence, and long-term stability.",
     "p3": "We don’t just advise from the sidelines. We’ve sat in your seat leading global programs, steering large teams, managing complexity, and delivering results under pressure.",
     "imageName": "Marek Tolasz",
@@ -19,8 +28,8 @@
     "valuesHeading": "Why Clients Choose Vadatei",
     "values": {
       "experience": {
-        "title": "30+ Years Experience",
-        "description": "Over 30 years of proven results leading IT teams and transformation projects across multiple industries"
+        "title": "20+ Years Experience",
+        "description": "Over 20 years of proven results leading IT teams and transformation projects across multiple industries"
       },
       "impact": {
         "title": "Measurable Business Impact",
@@ -177,8 +186,13 @@
     "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization or click here for a full break down."
   },
   "hero": {
+<<<<<<< HEAD
     "headline": "Operational & Digital Transformation",
     "subhead": "We help mid-sized European firms unlock sustainable growth by removing transformation bottlenecks and embedding governance that lasts",
+=======
+    "headline": "Digital & Business Transformation",
+    "subhead": "We help mid- to large-sized European manufacturing firms unlock sustainable growth by removing transformation bottlenecks, creating solutions that last and by embedding scalable managment.",
+>>>>>>> 1308a9b8b913dd666d321b21521bed34d44c1526
     "cta": {
       "book": "Start with a Diagnostic Call",
       "services": "Begin Your Growth Journey"
@@ -191,7 +205,7 @@
   },
   "footer": {
     "company": "Vadatei",
-    "description": "Strategic transformation partner with 30+ years of experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
+    "description": "Strategic transformation partner with 20+ years of experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     "bookDiscovery": "Book a Discovery Call",
     "quickLinks": {
       "title": "Quick Links",
@@ -220,7 +234,7 @@
   },
   "organization": {
     "name": "Vadatei",
-    "description": "Strategic change & transformation partner with 30+ of years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
+    "description": "Strategic change & transformation partner with 20+ of years experience. We help organizations understand what needs to change, implement transformation effectively, and sustain lasting improvement.",
     "contactType": "customer service",
     "areaServed": "Europe",
     "hqAddress": {
@@ -431,7 +445,7 @@
         "duration": "4 weeks"
       },
       "pricing": {
-        "amount": "€4,997",
+        "amount": "€5,000",
         "note": "(Final scope confirmed after a short introductory call.) 100% transparent pricing—no surprises, no hidden fees.",
         "commitment": "No ongoing commitment required."
       },
@@ -513,7 +527,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group — experience leading real transformations, not just advising on them.",
+        "intro": "Vadatei brings 20+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group — experience leading real transformations, not just advising on them.",
         "strengths": "Our Blueprint is rooted in:",
         "points": [
           "Proven operating model expertise",
@@ -719,7 +733,7 @@
         "duration": "Custom"
       },
       "pricing": {
-        "amount": "€9,000 – €30,000 / month",
+        "amount": "€15k–€30k / month",
         "note": "Final scope confirmed after a short introductory call. 100% transparent pricing—no surprises, no hidden fees.",
         "options": "Milestone-based pricing available."
       },
@@ -805,7 +819,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of first-hand transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. Not just consulting — actual delivery experience inside large organizations.",
+        "intro": "Vadatei brings 20+ years of first-hand transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. Not just consulting — actual delivery experience inside large organizations.",
         "strengths": "Our approach is:",
         "points": [
           "Hands-on",
@@ -1016,7 +1030,7 @@
         "duration": "ongoing (3-month minimum)"
       },
       "pricing": {
-        "amount": "€6,000 – €15,000 / month",
+        "amount": "€10k–€18k / month",
         "note": "Final scope confirmed after short introductory call. 100% transparent pricing—no surprises, no hidden fees.",
         "value": "This provides the impact of a senior transformation leader at a fraction of the cost of a full-time executive."
       },
@@ -1100,7 +1114,7 @@
       },
       "whyVadatei": {
         "title": "Why Vadatei?",
-        "intro": "Vadatei brings 30+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. This isn't theoretical consulting — it's real-world transformation delivery at scale.",
+        "intro": "Vadatei brings 20+ years of transformation leadership at HEINEKEN, Coca-Cola, and ERA Group. This isn't theoretical consulting — it's real-world transformation delivery at scale.",
         "strengths": "What makes us different:",
         "points": [
           "We bring enterprise-level discipline to mid-sized organizations",
@@ -1326,7 +1340,7 @@
       }
     ],
     "cta": {
-      "title": "What Could Your Business Achieve with a Smoother Transformation?",
+      "title": "What could your business achieve with a smoother transformation?",
       "body": "Unlock your business’s full potential. Discover how to efficiently achieve your long-term transformation goals.",
       "button": "Book a Free Consultation to Find Out"
     },
