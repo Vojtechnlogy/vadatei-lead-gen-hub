@@ -1,19 +1,10 @@
 {
-<<<<<<< HEAD
   "title": "Operational & Digital Transformation",
   "description": "70% organizačních změn selže. Zajistíme, aby vaše patřila mezi úspěšných 30%. Expertní poradenství v řízení změn s více než 30 lety zkušeností. Začněte s naší diagnostickou analýzou.",
   "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
   "meta": {
     "title": "Operational & Digital Transformation",
     "description": "70% organizačních změn selže. Zajistíme, aby vaše patřila mezi úspěšných 30%. Expertní poradenství v řízení změn s více než 30 lety zkušeností. Začněte s naší diagnostickou analýzou.",
-=======
-  "title": "Vadatei - Strategický Partner pro Řízení Změn | 20+ Let Zkušeností",
-  "description": "Polovina změnových iniciativ selže. Zajistíme, že budete v té úspěšné polovině. Expertní poradenství v řízení změn s více než 20 lety zkušeností. Začněte s naším Transformation Blueprint a objevte 5 skrytých varovných signálů, které většina týmů vedení přehlíží.",
-  "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
-  "meta": {
-    "title": "Vadatei - Strategický Partner pro Řízení Změn | 20+ Let Zkušeností",
-    "description": "Polovina změnových iniciativ selže. Zajistíme, že budete v té úspěšné polovině. Expertní poradenství v řízení změn s více než 20 lety zkušeností. Začněte s naším Transformation Blueprint a objevte 5 skrytých varovných signálů, které většina týmů vedení přehlíží.",
->>>>>>> 1308a9b8b913dd666d321b21521bed34d44c1526
     "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
   },
   "about": {
@@ -292,13 +283,8 @@
     }
   },
   "hero": {
-<<<<<<< HEAD
     "headline": "Operational & Digital Transformation",
     "subhead": "Spolupracujeme se středně velkými evropskými společnostmi na jejich cestě k udržitelnému růstu.\nOdstraňujeme bariéry transformace a vytváříme pevné základy řízení, na kterých mohou stavět i v budoucnu.",
-=======
-    "headline": "Digitální a byznysová transformace",
-    "subhead": "Pomáháme středním až velkým evropským výrobním firmám nastartovat udržitelný růst tím, že odstraňujeme úzká místa transformace, vytváříme řešení, která vydrží, a ukotvujeme škálovatelné řízení transformace.",
->>>>>>> 1308a9b8b913dd666d321b21521bed34d44c1526
     "cta": {
       "book": "Začněte diagnostickým hovorem",
       "services": "Začněte svou cestu růstu"

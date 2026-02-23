@@ -1,19 +1,10 @@
 {
-<<<<<<< HEAD
   "title": "Operational & Digital Transformation",
   "description": "Half of change efforts fail. We ensure you're in the winning half. Expert change management consulting with 30+ years of experience. Start with our Transformation Blueprint to discover the 5 hidden warning signs most leadership teams miss.",
   "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
   "meta": {
     "title": "Operational & Digital Transformation",
     "description": "Half of change efforts fail. We ensure you're in the winning half. Expert change management consulting with 30+ years of experience. Start with our Transformation Blueprint to discover the 5 hidden warning signs most leadership teams miss.",
-=======
-  "title": "Vadatei - Digital & Business Transformation | 20+ Years of Experience",
-  "description": "Half of change efforts fail. We ensure you're in the winning half. Expert change management consulting with 20+ years of experience. Start with our Transformation Blueprint to discover the 5 hidden warning signs most leadership teams miss.",
-  "ogImage": "https://vadatei.com/assets/digital-transformation.jpg",
-  "meta": {
-    "title": "Vadatei - Digital & Business Transformation | 20+ Years of Experience",
-    "description": "Half of change efforts fail. We ensure you're in the winning half. Expert change management consulting with 20+ years of experience. Start with our Transformation Blueprint to discover the 5 hidden warning signs most leadership teams miss.",
->>>>>>> 1308a9b8b913dd666d321b21521bed34d44c1526
     "ogImage": "https://vadatei.com/assets/digital-transformation.jpg"
   },
   "about": {
@@ -186,13 +177,8 @@
     "readyBody": "Fill out the contact form to learn more about how {{service}} can benefit your organization or click here for a full break down."
   },
   "hero": {
-<<<<<<< HEAD
     "headline": "Operational & Digital Transformation",
     "subhead": "We help mid-sized European firms unlock sustainable growth by removing transformation bottlenecks and embedding governance that lasts",
-=======
-    "headline": "Digital & Business Transformation",
-    "subhead": "We help mid- to large-sized European manufacturing firms unlock sustainable growth by removing transformation bottlenecks, creating solutions that last and by embedding scalable managment.",
->>>>>>> 1308a9b8b913dd666d321b21521bed34d44c1526
     "cta": {
       "book": "Start with a Diagnostic Call",
       "services": "Begin Your Growth Journey"
